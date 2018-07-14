@@ -1,24 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Velveteen Ensemble
+A music group that performs for weddings, corporate events, and can be booked for concerts, tours, and recording sessions. 
 
-Things you may want to cover:
+The main focus of this site is to create a proffessional and modern representation of this company so people know what to expect when hiring them to perform at different venues.
 
-* Ruby version
 
-* System dependencies
 
-* Configuration
+This site is built with **Rails 5.1.6** and is using **AWS S3** as media storage, allowing for better quality images and faster playback of videos.
 
-* Database creation
+The new site was started by entering:
+    ```
+    rails new Velveteen -d postgresql
+    ```
+into the terminal, which prepares it for being launched on heroku without having to worry about switching to postgresql later on.
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The homepage has a slideshow of photos and videos highlighting different buttons at different times of playback, and a header that is clean and proffessional.
