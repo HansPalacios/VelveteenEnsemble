@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Uploads</h1>
+
+<% @uploads.each do |upload| %>
+  <%= link_to upload do %>
+  <img src="<%= upload.name.square %>">
+  <% end %>
+<% end %>
+ 
+<br>
+ 
+<%= link_to 'New upload', new_upload_path %>
