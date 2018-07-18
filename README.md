@@ -17,4 +17,4 @@ into the terminal, which prepares it for being launched on heroku without having
 
 Installing Carrierwave to add, edit, and delete media from AWS S3 storage. Making sure to initially set it up to work with Heroku later on.
 
-The homepage has a slideshow of photos and videos highlighting different buttons at different times of playback.
+Using ```gem 'bxslider-rails'``` with jquery for the Homepage image slideshow, which can be formatted to autoplay and link to highlight the venue buttons at different points.
