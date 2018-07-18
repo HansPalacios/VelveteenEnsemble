@@ -11,3 +11,66 @@
     padding-left: 0;
   }
 }
+a {
+	text-decoration-line: none;
+	color: rgba(0,0,0,.9);
+}
+a:hover {
+		
+		color: rgba(0,0,0,1);
+	}
+#header {
+	padding: 20px;
+	height: 160px;
+	margin: 0 auto;
+	width: 900px;
+	background-color: rgba(255,255,255,.8);
+	img, #logo {
+		height: auto;
+		width: 50%;
+		display: inline-block;
+	}
+	a:hover {
+		font-weight: 600;
+	}
+	
+	ul {
+		display: inline-block;
+		position: absolute;
+		top: 120px;
+		left: 30%;
+		li{
+			display: inline-block;
+			width: 80px;
+			text-align: center;
+			font-size: 18px;
+		}	
+	}
+}
+#home {
+	ul {
+		list-style-type: none;
+		margin-top: 100px;
+		li {
+			margin: 50px;
+			font-size: 30px;
+			font-weight: 400;
+			padding: 5px;
+			a {
+				text-shadow: white 1px 1px;
+				padding: 5px;
+			}
+			a:hover {
+				background-color: rgba(255,255,255,.5);
+			}
+		}
+	}
+}
+#homevideo {
+		position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1;
+	}
