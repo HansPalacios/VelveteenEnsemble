@@ -1,9 +1,21 @@
 <div class="row no-gutters" id="home">
 	<ul>
-		<li><a href="/venues">Weddings</a></li>
-		<li><a href="/venues">Concerts/Tours</a></li>
-		<li><a href="/venues">Recordings</a></li>
-		<li><a href="/venues">Corporate Events</a></li>
+		<li><a href="/venues" id="listone">Weddings</a></li>
+		<li><a href="/venues" id="listtwo">Concerts/Tours</a></li>
+		<li><a href="/venues" id="listthree">Recordings</a></li>
+		<li><a href="/venues" id="listfour">Corporate Events</a></li>
 	</ul>
 </div>
-<%= video_tag(['https://s3.amazonaws.com/velveteenensemble/velveteensmallvideo3.mp4'], :autoplay => true, :loop => true, :id => "homevideo") %>
+
+
+
+<div id="fadeimage" >
+	<%= image_tag image_url('https://d1ogs9i1at6wo0.cloudfront.net
+/PM9A1049.jpg'), :id => "loopOne" %>
+	<%= image_tag image_url('https://d1ogs9i1at6wo0.cloudfront.net
+/PM9A1049.jpg'), :id => "loopTwo", :style => "display: none" %>
+	<%= image_tag image_url('https://d1ogs9i1at6wo0.cloudfront.net
+/PM9A1049.jpg'), :id => "loopThree", :style => "display: none" %>
+	<%= image_tag image_url('https://d1ogs9i1at6wo0.cloudfront.net
+/PM9A1049.jpg'), :id => "loopFour", :style => "display: none" %>
+</div>
