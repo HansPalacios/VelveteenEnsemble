@@ -4,17 +4,11 @@
 
 #venues {
 	top: -100px;
-	position: absolute;
 	h1 {
 		margin: 0 auto;
 		width: 100%;
 		text-shadow: 1px 1px white;
-		position: absolute;
-		top: 350px;
 		font-size: 80px;
-	}
-	.row {
-		text-align: center;
 	}
 	.venue {
 		text-align: center;
@@ -27,29 +21,19 @@
 			padding: 20px;
 			margin: 0 auto;
 		}
-		.background {
-			background-color: rgba(255,255,255,.8);
-		}
 		p {
-			padding: 50px;
+			// padding: 50px;
 			padding-top: 0;
 		}
-	}
-	.fixed {
-		background-attachment: fixed;
-		height: 350px;
-		position: relative;
 	}
 	
 	#venue_1 {
 		.spacing {
-			height: 450px;
+			display: block;
+			padding-top: 150px;
 		}
 	}
-	// #venue_2, #venue_4 {
-	// 	background-attachment: fixed;
-	// 	// height: 750px;
-	// 	position: relative;
-	// 	top: -100px;
-	// }
+	#venue_1, #venue_3 {
+    background-attachment: fixed;
+	}
 }

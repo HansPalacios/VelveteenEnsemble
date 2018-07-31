@@ -28,3 +28,5 @@ There are also a few tables that were scaffolded in order to easily add and edit
 ``rails g scaffold sample title:string artist:string genre:string name:string``
 
 ``rails g scaffold about bio:text``
+
+``rails g scaffold musician name:string image:string instrument:string bio:text ``
