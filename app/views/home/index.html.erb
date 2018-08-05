@@ -1,21 +1,62 @@
-<div class="row no-gutters" id="home">
-	<ul>
+<div class="col-md-12 no-gutters" id="home1">
+	<ul class="col-md-3 no-gutters">
 		<li><a href="/venues" id="listone">Weddings</a></li>
 		<li><a href="/venues" id="listtwo">Concerts/Tours</a></li>
 		<li><a href="/venues" id="listthree">Recordings</a></li>
 		<li><a href="/venues" id="listfour">Corporate Events</a></li>
 	</ul>
+	<div id="fadeimage" class="col-md-9">
+		<%= image_tag image_url('https://d1ogs9i1at6wo0.cloudfront.net
+	/PM9A1049.jpg'), :id => "loopOne" %>
+		<%= image_tag image_url('https://d1ogs9i1at6wo0.cloudfront.net
+	/PM9A1049.jpg'), :id => "loopTwo", :style => "display: none" %>
+		<%= image_tag image_url('https://d1ogs9i1at6wo0.cloudfront.net
+	/PM9A1049.jpg'), :id => "loopThree", :style => "display: none" %>
+		<%= image_tag image_url('https://d1ogs9i1at6wo0.cloudfront.net
+	/PM9A1049.jpg'), :id => "loopFour", :style => "display: none" %>
+	</div>
+</div>
+
+<div class="col-md-12" id="home2">
+	<h1 class="row no-gutters">Newsfeed</h1>
+	<div class="row no-gutters background">
+		<div class="col-md-4">
+			<div id="img1" class="img"></div>
+		</div>
+		<div class="col-md-8">
+			<h3>Miami</h3>
+			<p>Our ensemble is based in New York City and its members have received graduate degrees from the most prestigious Conservatories and are experts in performing and recording Classical, Pop and Jazz Genres. Our repertoire includes classical, Bollywood, Jewish, Broadway and Pop, though we can perform virtually any piece of any genre.  We cannot wait to be a part of your next event!</p>
+		</div>
+	</div>
+	<div class="row no-gutters background">
+		<div class="col-md-8">
+			<h3>China</h3>
+			<p>Our ensemble is based in New York City and its members have received graduate degrees from the most prestigious Conservatories and are experts in performing and recording Classical, Pop and Jazz Genres. Our repertoire includes classical, Bollywood, Jewish, Broadway and Pop, though we can perform virtually any piece of any genre.  We cannot wait to be a part of your next event!</p>
+		</div>
+		<div class="col-md-4">
+			<div id="img2" class="img"></div>
+		</div>
+	</div>
+	<div class="row no-gutters background">
+		<div class="col-md-4">
+			<div id="img3" class="img"></div>
+		</div>
+		<div class="col-md-8">
+			<h3>Wedding</h3>
+			<p>Our ensemble is based in New York City and its members have received graduate degrees from the most prestigious Conservatories and are experts in performing and recording Classical, Pop and Jazz Genres. Our repertoire includes classical, Bollywood, Jewish, Broadway and Pop, though we can perform virtually any piece of any genre.  We cannot wait to be a part of your next event!</p>
+		</div>
+	</div>
+	<div class="row no-gutters background">
+		<div class="col-md-8">
+			<h3>Concert</h3>
+			<p>Our ensemble is based in New York City and its members have received graduate degrees from the most prestigious Conservatories and are experts in performing and recording Classical, Pop and Jazz Genres. Our repertoire includes classical, Bollywood, Jewish, Broadway and Pop, though we can perform virtually any piece of any genre.  We cannot wait to be a part of your next event!</p>
+		</div>
+		<div class="col-md-4">
+			<div id="img4" class="img"></div>
+		</div>
+	</div>
+	
 </div>
 
 
 
-<div id="fadeimage" >
-	<%= image_tag image_url('https://d1ogs9i1at6wo0.cloudfront.net
-/PM9A1049.jpg'), :id => "loopOne" %>
-	<%= image_tag image_url('https://d1ogs9i1at6wo0.cloudfront.net
-/PM9A1049.jpg'), :id => "loopTwo", :style => "display: none" %>
-	<%= image_tag image_url('https://d1ogs9i1at6wo0.cloudfront.net
-/PM9A1049.jpg'), :id => "loopThree", :style => "display: none" %>
-	<%= image_tag image_url('https://d1ogs9i1at6wo0.cloudfront.net
-/PM9A1049.jpg'), :id => "loopFour", :style => "display: none" %>
-</div>

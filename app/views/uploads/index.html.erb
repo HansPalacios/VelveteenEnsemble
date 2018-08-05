@@ -1,13 +1,16 @@
 
+<div id="media" class="col-md-12">
+	<div class="row">
+		<h1>Media</h1>
 
-<h1>Media</h1>
-
-<% @uploads.each do |upload| %>
-  <%= link_to upload do %>
-  <img src="<%= upload.name.square %>">
-  <% end %>
-<% end %>
- 
-<br>
- 
-<%= link_to 'New upload', new_upload_path %>
+		<% @uploads.each do |upload| %>
+		  <%= link_to upload do %>
+		  <img src="<%= upload.name.square %>">
+		  <% end %>
+		<% end %>
+		 
+		<br>
+		 
+		<%= link_to 'New upload', new_upload_path %>
+	</div>
+</div>

@@ -5,7 +5,7 @@ body, html {
     min-height: 100%;
     width: 100%;
     margin: 0;
-    text-align: center;
+    // text-align: center;
     position: absolute;
 }
 body {
@@ -18,17 +18,27 @@ body {
 }
 
 h1 {
-	font-family: 'Arizonia', cursive;
+	// font-family: 'Arizonia', cursive;
 	margin: 0 auto;
 	width: 100%;
 	text-shadow: 1px 1px white;
 	font-size: 80px;
 }
-p, h2, h3, h4, h5, h6 {
-font-family: 'Philosopher', sans-serif;
+p,h1, h2, h3, h4, h5, h6, a, li {
+// font-family: 'Philosopher', sans-serif;
+// font-family: 'Nanum Gothic', sans-serif;
+// font-family: 'Quicksand', sans-serif;
+font-family: 'Abel', sans-serif;
 
-	text-align: center;
-	margin: 0 auto;
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'PT Sans Narrow', sans-serif;
+// font-family: 'Nunito', sans-serif;
+
+text-decoration-line: none;
+text-decoration: none;
+
+	// text-align: center;
+	// margin: 0 auto;
 }
 #notice {
 	z-index: 2;
@@ -38,7 +48,7 @@ font-family: 'Philosopher', sans-serif;
 	background-color: rgba(255,255,255,.8);
 }
 .row {
-	text-align: center;
+	// text-align: center;
 }
 .spacing {
 	display: none;
@@ -71,6 +81,12 @@ font-family: 'Philosopher', sans-serif;
 .no-gutters {
   margin-right: 0;
   margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-right: 0;
+  padding-left: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 
   & > [class^="col-"],
   & > [class*=" col-"] {
@@ -84,6 +100,8 @@ a {
 }
 a:hover {
 		color: rgba(0,0,0,1);
+		text-decoration-line: none;
+		text-decoration: none;
 	}
 .stickyheader {
   position: fixed;
@@ -91,21 +109,24 @@ a:hover {
   width: 100%
 }
 #header {
-	padding: 20px;
-	height: 150px;
-	margin: 50px auto;
-	width: 900px;
-	background-color: rgba(255,255,255,.8);
-	position: absolute;
+	padding: 10px;
+	height: 80px;
+	margin: 0 auto;
+	width: 100%;
+	background-color: rgba(255,255,255,1);
+	position: fixed;
 	z-index: 2;
-	top: 0;
-  left: 0;
-  right: 0;
+	// top: 0;
+  // left: 0;
+  // right: 0;
+  a {
+  	color: black;
+  }
 	#logo {
-		height: 100px;
+		height: 60px;
 		width: auto;
 		display: inline-block;
-		margin-left: 5px;
+		margin-left: 20px;
 	}
 	a:hover {
 		font-weight: 600;
@@ -113,13 +134,15 @@ a:hover {
 	ul {
 		display: inline-block;
 		position: relative;
-		top: 50px;
+		top: 20px;
+		margin-left: 50px;
 		li{
 			display: inline-block;
-			width: 80px;
+			width: 100px;
 			text-align: center;
-			font-size: 28px;
-			font-family: 'Italianno', cursive;
+			font-size: 18px;
+			color: black;
+			// font-family: 'Italianno', cursive;
 		}	
 	}
 	.dropdown {
@@ -149,7 +172,7 @@ a:hover {
 	    padding: 12px 16px;
 	    text-decoration: none;
 	    display: block;
-	    font-family: 'Italianno', cursive;
+	    // font-family: 'Italianno', cursive;
 	    font-size: 25px;
 	}
 	.dropdown-content a:hover {
@@ -160,31 +183,102 @@ a:hover {
 	    display: block;
 	}
 }
-#home {
+#home1 {
 	height: 100%;
 	ul {
+		text-align: left;
 		list-style-type: none;
-		margin-top: 300px;
-		width: 100%;
+		margin-top: 100px;
+		background-color: rgba(255,255,255,1);
 		padding-left: 0;
+		border-top: 1px solid black;
 		li {
-			margin: 50px;
-			font-size: 25px;
+			margin: 40px 20px;
+			font-size: 20px;
 			font-weight: 400;
 			padding: 5px;
-			font-family: 'Cinzel', serif;
+			// border: 1px solid black;
+			// background-color: rgba(20,20,20,1);
+			// font-family: 'Cinzel', serif;
 			a {
 				padding: 5px 10px;
-				color: white;
+				color: black;
 				border: rgba(0,0,0,0) 1px solid;
 			}
 			a:hover, .hovered {
-				background-color: rgba(0,0,0,.5);
+				// background-color: rgba(0,0,0,.5);
 				// border: white 1px solid;
-				box-shadow: 0px 4px 6px 0px rgba(255,255,255,.5);
-				color: white;
+				// box-shadow: 0px 4px 6px 0px rgba(255,255,255,.5);
+				color: rgba(123,210,33,1);
 			}
 		}
+	}
+	#fadeimage {
+		padding-left: 0;
+		padding-right: 0;
+   // position:absolute; 
+   // top:0; 
+   // left:0; 
+   // width:100%; 
+   // height:100%;
+   // z-index: -1;
+   img {
+   	// position:absolute; 
+    // top:0; 
+    // left:0; 
+   	margin:0; 
+   	margin-top: 100px;
+   	width:100%; 
+   	height:353px;
+	}
+}
+}
+#home2 {
+	// background-color: rgba(255,255,255,1);
+	text-align: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url('https://s3.amazonaws.com/velveteenensemble/wine2.jpg');
+	.row {
+		text-align: center;
+	}
+	.background {
+		background-color: rgba(255,255,255,.5);
+	}
+	h1 {
+		width: 300px;
+		margin: 50px auto;
+		display: block;
+		height: 60px;
+		text-align: center;
+		font-size: 55px;
+	}
+	p {
+		padding: 20px;
+		// font-size: 20px;
+	}
+	.col-md-8 {
+		// background-color: rgba(255,255,255,.5);
+	}
+	.img {
+		width: 300px;
+		height: 300px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	#img1 {
+		background-image: url('https://s3.amazonaws.com/velveteenensemble/miami.png');
+	}
+	#img2 {
+		background-image: url('https://s3.amazonaws.com/velveteenensemble/china.png');
+	}
+	#img3 {
+		background-image: url('https://s3.amazonaws.com/velveteenensemble/wedding.png');
+	}
+	#img4 {
+		background-image: url('https://s3.amazonaws.com/velveteenensemble/concert.png');
 	}
 }
 .hovered {
@@ -193,19 +287,4 @@ a:hover {
 	color: white;
 }
 
-#fadeimage {
-   position:fixed; 
-   top:0; 
-   left:0; 
-   width:100%; 
-   height:100%;
-   z-index: -1;
-   img {
-   	position:absolute; 
-    top:0; 
-    left:0; 
-   	margin:0; 
-   	min-width:100%; 
-   	height:100%;
-	}
-}
+

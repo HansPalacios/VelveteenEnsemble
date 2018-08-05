@@ -1,0 +1,351 @@
+/* line 4, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/about.scss */
+#about {
+  padding: 50px;
+  height: 100%;
+  background-image: url("https://s3.amazonaws.com/velveteenensemble/header3.jpg");
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+/* line 13, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/about.scss */
+#about .background {
+  margin: 50px;
+  text-align: center;
+}
+/* line 16, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/about.scss */
+#about .background .row a {
+  margin: 0 auto;
+}
+/* line 20, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/about.scss */
+#about .spacing {
+  display: block;
+}
+/* line 23, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/about.scss */
+#about .eachmusician {
+  padding: 20px;
+  box-shadow: 0px 8px 16px 0px black;
+  margin: 50px auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+/* line 29, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/about.scss */
+#about .eachmusician h4 {
+  margin: 0 auto;
+  margin-bottom: 10px;
+  font-family: 'Arizonia', cursive;
+  font-size: 150%;
+  color: black;
+  text-shadow: none;
+}
+/* line 37, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/about.scss */
+#about .eachmusician h5 {
+  margin: 10px auto;
+}
+/* line 41, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/about.scss */
+#about .musicianpic {
+  margin: 0;
+  margin-right: 0;
+  width: 100%;
+  padding-top: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* line 4, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/home.scss */
+body, html {
+  min-height: 100%;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  position: absolute;
+}
+
+/* line 11, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/home.scss */
+body {
+  min-height: 100%;
+}
+
+/* line 14, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/home.scss */
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+  height: 100%;
+}
+
+/* line 20, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/home.scss */
+h1 {
+  font-family: 'Arizonia', cursive;
+  margin: 0 auto;
+  width: 100%;
+  text-shadow: 1px 1px white;
+  font-size: 80px;
+}
+
+/* line 27, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/home.scss */
+p, h2, h3, h4, h5, h6 {
+  font-family: 'Philosopher', sans-serif;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* line 33, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/home.scss */
+#notice {
+  z-index: 2;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* line 40, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/home.scss */
+.row {
+  text-align: center;
+}
+
+/* line 43, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/home.scss */
+.spacing {
+  display: none;
+  height: 400px;
+  padding-top: 250px;
+  width: 100%;
+}
+
+/* line 49, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/home.scss */
+.background {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 50px;
+}
+
+/* line 64, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/home.scss */
+#trigger1 {
+  height: 20px;
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  z-index: -2;
+}
+
+/* line 71, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/home.scss */
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+/* line 75, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/home.scss */
+.no-gutters > [class^="col-"], .no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* line 81, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/home.scss */
+a {
+  text-decoration-line: none;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+/* line 85, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/home.scss */
+a:hover {
+  color: black;
+}
+
+/* line 88, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/home.scss */
+.stickyheader {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* line 93, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/home.scss */
+#header {
+  padding: 20px;
+  height: 150px;
+  margin: 50px auto;
+  width: 900px;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+/* line 104, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/home.scss */
+#header #logo {
+  height: 100px;
+  width: auto;
+  display: inline-block;
+  margin-left: 5px;
+}
+/* line 110, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/home.scss */
+#header a:hover {
+  font-weight: 600;
+}
+/* line 113, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/home.scss */
+#header ul {
+  display: inline-block;
+  position: relative;
+  top: 50px;
+}
+/* line 117, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/home.scss */
+#header ul li {
+  display: inline-block;
+  width: 80px;
+  text-align: center;
+  font-size: 28px;
+  font-family: 'Italianno', cursive;
+}
+/* line 125, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/home.scss */
+#header .dropdown {
+  position: absolute;
+  right: 50px;
+  top: 20px;
+  display: none;
+}
+/* line 130, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/home.scss */
+#header .dropdown img {
+  height: 30px;
+  cursor: pointer;
+  float: right;
+  position: absolute;
+}
+/* line 137, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/home.scss */
+#header .dropdown-content {
+  display: none;
+  position: absolute;
+  right: -30px;
+  top: 30px;
+  background-color: black;
+  min-width: 130px;
+  box-shadow: 0px 8px 16px 0px black;
+  z-index: 1;
+}
+/* line 147, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/home.scss */
+#header .dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: 'Italianno', cursive;
+  font-size: 25px;
+}
+/* line 155, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/home.scss */
+#header .dropdown-content a:hover {
+  background-color: #282828;
+  font-weight: 400;
+}
+/* line 159, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/home.scss */
+#header .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* line 163, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/home.scss */
+#home {
+  height: 100%;
+}
+/* line 165, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/home.scss */
+#home ul {
+  list-style-type: none;
+  margin-top: 300px;
+  width: 100%;
+  padding-left: 0;
+}
+/* line 170, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/home.scss */
+#home ul li {
+  margin: 50px;
+  font-size: 25px;
+  font-weight: 400;
+  padding: 5px;
+  font-family: 'Cinzel', serif;
+}
+/* line 176, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/home.scss */
+#home ul li a {
+  padding: 5px 10px;
+  color: white;
+  border: rgba(0, 0, 0, 0) 1px solid;
+}
+/* line 181, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/home.scss */
+#home ul li a:hover, #home ul li .hovered {
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 4px 6px 0px rgba(255, 255, 255, 0.5);
+  color: white;
+}
+
+/* line 190, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/home.scss */
+.hovered {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: white 1px solid;
+  color: white;
+}
+
+/* line 196, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/home.scss */
+#fadeimage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+/* line 203, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/home.scss */
+#fadeimage img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  min-width: 100%;
+  height: 100%;
+}
+/* line 5, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/venues.scss */
+#venues {
+  top: -100px;
+}
+/* line 7, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/venues.scss */
+#venues h1 {
+  margin: 0 auto;
+  width: 100%;
+  text-shadow: 1px 1px white;
+  font-size: 80px;
+}
+/* line 13, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/venues.scss */
+#venues .venue {
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 100px;
+  margin-top: 0;
+}
+/* line 20, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/venues.scss */
+#venues .venue h2 {
+  padding: 20px;
+  margin: 0 auto;
+}
+/* line 24, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/venues.scss */
+#venues .venue p {
+  padding-top: 0;
+}
+/* line 31, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/venues.scss */
+#venues #venue_1 .spacing {
+  display: block;
+  padding-top: 150px;
+}
+/* line 36, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/venues.scss */
+#venues #venue_1, #venues #venue_3 {
+  background-attachment: fixed;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
