@@ -14,7 +14,7 @@ $(document).ready(function(){
 		// }
 	function loop(index) {
     // Get the element with that index and do the animation
-    $elements.eq(index).fadeIn(800).delay(4500).fadeOut(800, function() { 
+    $elements.eq(index).fadeIn(600).delay(4500).fadeOut(600, function() { 
 
         // Kind of recursive call, increasing the index and keeping in the
         // the range of valid indexes

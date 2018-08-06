@@ -123,6 +123,27 @@ a:hover {
   a {
   	color: black;
   }
+  #sm1, #sm1 img {
+		height: 20px;
+		width: auto;
+		position: fixed;
+		top: 15px;
+		right: 15px;
+  }
+  #sm2, #sm2 img {
+		height: 20px;
+		width: auto;
+		position: fixed;
+		top: 15px;
+		right: 55px;  	
+  }
+  #sm3, #sm3 img {
+		height: 20px;
+		width: auto;
+		position: fixed;
+		top: 15px;
+		right: 95px;  	
+  }
 	#logo {
 		height: 60px;
 		width: auto;
@@ -248,19 +269,25 @@ li:hover, .hovered {
 }
 }
 #home2 {
+	padding: 100px;
 	// background-color: rgba(255,255,255,1);
 	text-align: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-image: url('https://s3.amazonaws.com/velveteenensemble/wine2.jpg');
+	background-image: url('https://s3.amazonaws.com/velveteenensemble/violinbackground2.png');
 	.row {
 		text-align: center;
 	}
 	.background {
-		background-color: rgba(255,255,255,.5);
+		// background-color: rgba(255,255,255,.5);
 		padding: 20px;
 		margin: 20px;
+	}
+	img {
+		height: 25px;
+		width: auto;
+		margin: 70px 20px;
 	}
 	h1 {
 		width: 300px;
@@ -268,18 +295,20 @@ li:hover, .hovered {
 		display: block;
 		height: 60px;
 		text-align: center;
-		font-size: 55px;
+		font-size: 50px;
+		color: white;
+		text-shadow: none;
 	}
 	p {
 		padding: 20px;
-		// font-size: 20px;
+		font-size: 16px;
 	}
 	.col-md-8 {
 		// background-color: rgba(255,255,255,.5);
 	}
 	.img {
-		width: 300px;
-		height: 300px;
+		width: 100%;
+		height: 250px;
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
@@ -302,5 +331,23 @@ li:hover, .hovered {
 	border: white 1px solid;
 	color: white;
 }
-
+#footer {
+	height: 60px;
+	padding: 10px;
+	p {
+		margin-left: 15%;
+	}
+	#award {
+		height: 50px;
+		width: auto;
+		// margin: 20px;
+		float: right;
+	}
+	h5 {
+		// margin: 0 auto;
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+}
 
