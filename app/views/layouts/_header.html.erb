@@ -1,5 +1,5 @@
 <div class="row no-gutters" >
-	<!-- <div id="trigger1"></div> -->
+	<div id="trigger1"></div>
 	<div id="header">
 		<!-- <a href="https://www.instagram.com/velveteenensemble/" target="_blank" id="sm1"><%=image_tag image_url("https://s3.amazonaws.com/velveteenensemble/blinsta.png")%></a>
 		<a href="https://www.facebook.com/VelveteenEnsemble/" target="_blank" id="sm2"><%=image_tag image_url("https://s3.amazonaws.com/velveteenensemble/blfb.png")%></a>
@@ -28,6 +28,31 @@
 		</div>
 	</div>
 </div>
+<script>
+		$(document).ready(function() {
+			
+		  var controller = new ScrollMagic.Controller();
+
+		  var scene1 = new ScrollMagic.Scene({
+		  	triggerElement: '#trigger1',
+		  	triggerHook: 'onLeave',
+		  }).setTween('#header', 0.1, {height: '80px', padding: '10px'})
+		  .addTo(controller);
+
+		  var scene2 = new ScrollMagic.Scene({
+		  	triggerElement: '#trigger1',
+		  	triggerHook: 'onLeave',
+		  }).setTween('#header #logo', 0.1, {height: '60px'})
+		  .addTo(controller);
+
+		  var scene3 = new ScrollMagic.Scene({
+		  	triggerElement: '#trigger1',
+		  	triggerHook: 'onLeave',
+		  }).setTween('#header ul', 0.1, {top: '20px'})
+		  .addTo(controller);
+
+		});
+</script>
 <!-- <script>
 	<% if !@homepage  %>
 		$(document).ready(function() {
