@@ -240,7 +240,7 @@ li:hover, .hovered {
 				color: rgba(123,210,33,1);
 			}
 	}
-	#fadeimage {
+	.fadeimage {
 		padding-left: 0;
 		padding-right: 0;
 		.img {
@@ -254,17 +254,17 @@ li:hover, .hovered {
    	height:433px;
 		// background-attachment: fixed;
 		}
-	   #loopOne {
+	   .loopOne {
 	   	background-image: url('https://s3.amazonaws.com/velveteenensemble/miami.png');
 	   }
-	   #loopTwo {
+	   .loopTwo {
 	   	background-image: url('https://s3.amazonaws.com/velveteenensemble/china.png');
 	   }
-	   #loopThree {
+	   .loopThree {
 	   	background-image: url('https://s3.amazonaws.com/velveteenensemble/wedding.png');
 	   	background-position: center 70%;
 	   }
-	   #loopFour {
+	   .loopFour {
 	   	background-image: url('https://s3.amazonaws.com/velveteenensemble/concert.png');
 	 }
 }

@@ -1,7 +1,10 @@
-$(document).ready(function(){
 
- var $elements = $('#loopOne, #loopTwo, #loopThree, #loopFour');
- var $listitems = $('#listone, #listtwo, #listthree, #listfour');
+
+( function($) {
+$(document).ready(function(){
+	
+ 	var $elements = $('.loopOne, .loopTwo, .loopThree, .loopFour');
+ 	var $listitems = $('.listone, .listtwo, .listthree, .listfour');
 
  	// function processImages()  {
 		//   if ( loadingFlags[0] || loadingFlags[1] )
@@ -30,9 +33,9 @@ $(document).ready(function(){
 	}
 	
 	// processImages();
+
 	loop(0); 
 	hover(0);
-
 // $.repeatQueryRegister(5000).$('#container img:first').fadeOut().appendTo('#container').fadeIn();
 
         // function loop(){
@@ -86,3 +89,5 @@ $(document).ready(function(){
 	// 	if($current < $imgNum-1){ $current++; } else { $current = 0; }
 	// };
 });
+
+} ) ( jQuery );
