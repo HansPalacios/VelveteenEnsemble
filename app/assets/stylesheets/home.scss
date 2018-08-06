@@ -207,7 +207,7 @@ a:hover {
 }
 #home1 {
 	height: 100%;
-	margin-top: 140px;
+	// margin-top: 140px;
 	// border-top: 1px solid grey;
 	ul {
 		text-align: left;
@@ -269,33 +269,46 @@ li:hover, .hovered {
 }
 }
 #home2 {
-	padding: 50px 100px;
+	// padding: 0 0 0 100px;
 	// background-color: rgba(255,255,255,1);
 	text-align: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+
+	////
+	////
+	//// debating to keep or not:
+	// background-attachment: fixed;
+	////
+	////
+	////
+
 	background-image: url('https://s3.amazonaws.com/velveteenensemble/violinbackground2.png');
 	.row {
 		text-align: center;
 	}
+	.title {
+		background-color: rgba(0,0,0,.6);
+		margin-bottom: 50px;
+	}
 	.background {
-		// background-color: rgba(255,255,255,.5);
+		background-color: rgba(255,255,255,.9);
 		padding: 20px;
-		margin: 20px;
+		margin: 20px 100px 50px 100px;
 	}
 	img {
 		height: 25px;
 		width: auto;
-		margin: 70px 20px;
+		margin: 40px 20px;
 	}
-	h1 {
+	h2 {
 		width: 300px;
-		margin: 50px auto;
+		margin: 30px auto;
 		display: block;
-		height: 60px;
+		height: 40px;
 		text-align: center;
-		font-size: 50px;
+		font-size: 40px;
 		color: white;
 		text-shadow: none;
 	}

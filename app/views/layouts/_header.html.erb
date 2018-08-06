@@ -28,7 +28,15 @@
 		</div>
 	</div>
 </div>
+<style>
+	<% if @homepage %>
+		#header {
+			position: static;
+		}
+	<% end %>
+</style>
 <script>
+	<% if !@homepage  %>
 		$(document).ready(function() {
 			
 		  var controller = new ScrollMagic.Controller();
@@ -36,13 +44,13 @@
 		  var scene1 = new ScrollMagic.Scene({
 		  	triggerElement: '#trigger1',
 		  	triggerHook: 'onLeave',
-		  }).setTween('#header', 0.1, {height: '80px', padding: '10px'})
+		  }).setTween('#header', 0.1, {position: 'fixed', height: '80px', padding: '15px'})
 		  .addTo(controller);
 
 		  var scene2 = new ScrollMagic.Scene({
 		  	triggerElement: '#trigger1',
 		  	triggerHook: 'onLeave',
-		  }).setTween('#header #logo', 0.1, {height: '60px'})
+		  }).setTween('#header #logo', 0.1, {height: '50px'})
 		  .addTo(controller);
 
 		  var scene3 = new ScrollMagic.Scene({
@@ -58,6 +66,7 @@
 		  .addTo(controller);
 
 		});
+	<% end %>
 </script>
 <!-- <script>
 	<% if !@homepage  %>
