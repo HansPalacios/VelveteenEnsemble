@@ -51,6 +51,12 @@
 		  }).setTween('#header ul', 0.1, {top: '20px'})
 		  .addTo(controller);
 
+		  var scene4 = new ScrollMagic.Scene({
+		  	triggerElement: '#trigger1',
+		  	triggerHook: 'onLeave',
+		  }).setTween('#header li', 0.1, {width: '80px',fontSize: '15px'})
+		  .addTo(controller);
+
 		});
 </script>
 <!-- <script>
