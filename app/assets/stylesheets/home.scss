@@ -280,23 +280,29 @@ li:hover, .hovered {
 	////
 	////
 	//// debating to keep or not:
-	background-attachment: fixed;
+	// background-attachment: fixed;
 	////
 	////
 	////
-
-	background-image: url('https://s3.amazonaws.com/velveteenensemble/violinbackground2.png');
+	// background-color: rgba(214,214,214,1);
+	// background-image: url('https://s3.amazonaws.com/velveteenensemble/violinbackground2.png');
 	.row {
 		text-align: center;
 	}
 	.title {
-		background-color: rgba(0,0,0,.7);
-		margin-bottom: 50px;
+		// background-color: rgba(0,0,0,.7);
+		margin: 50px 0;
 	}
 	.background {
-		background-color: rgba(255,255,255,.9);
-		padding: 20px;
-		margin: 20px 100px 50px 100px;
+		background-color: rgba(255,255,255,1);
+		padding: 50px;
+		// margin: 20px 100px 50px 100px;
+		margin: 0 100px
+	}
+	hr {
+		width: 70%;
+		margin: 0 auto;
+		border: 1px solid grey;
 	}
 	img {
 		height: 25px;
@@ -310,7 +316,7 @@ li:hover, .hovered {
 		height: 40px;
 		text-align: center;
 		font-size: 40px;
-		color: white;
+		color: black;
 		text-shadow: none;
 	}
 	p {
