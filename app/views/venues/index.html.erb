@@ -1,14 +1,16 @@
 <div id="venues">
+  <div class="spacing">
+    <h1>Venues</h1>
+  </div>
     <% @venues.each do |venue| %>
+      
       <div class="row no-gutters venue" id="venue_<%= venue.id %>">
-        <div class="spacing">
-          <h1>Venues</h1>
+        <div class="row no-gutters title">
+            <h2><%= venue.title %></h2>
         </div>
         <div class="col-md-12">
           <div class="background">
-            <div class="row">
-              <h2><%= venue.title %></h2>
-            </div> 
+            
             <div class="row">
               <p><%= venue.bio %></p>
             </div>
@@ -28,6 +30,8 @@
               <%= link_to 'Edit', edit_venue_path(venue) %>
             </div>
           </div>
+
+          
         </div>
       </div>
       <style>

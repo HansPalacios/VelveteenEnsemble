@@ -3,7 +3,12 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #venues {
-	top: -100px;
+	// top: -100px;
+	.spacing {
+		display: block;
+		padding-top: 200px;
+		text-align: center;
+	}
 	h1 {
 		margin: 0 auto;
 		width: 100%;
@@ -15,6 +20,7 @@
 		padding: 50px;
 		font-size: 18px; 
 	}
+	
 	.venue {
 		text-align: center;
 		background-size: cover;
@@ -22,9 +28,23 @@
 		background-position: center;
 		padding: 100px;
 		margin-top: 0;
-		 h2 {
-			padding: 20px;
-			margin: 0 auto;
+		position: relative;
+		padding-top: 220px;
+		.title {
+			width: 100%;
+			background-color: rgba(255,255,255,1);
+			padding: 50px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+
+			h2 {
+			 	color: black;
+			 	width: 500px;
+				margin: 0 auto;
+				text-align: center;
+			}
 		}
 		p {
 			// padding: 50px;
@@ -33,7 +53,7 @@
 		.clients .eachclient{
 			text-align: center;
 			padding: 10px;
-			margin: 20px auto;
+			margin: 20px auto 80px auto;
 			img {
 			height: 30px;
 			width: auto;
@@ -54,16 +74,16 @@
 		}
 	}
 	
-	#venue_1 {
-		.spacing {
-			display: block;
-			padding-top: 150px;
-		}
-	}
+	// #venue_1 {
+	// 	.spacing {
+	// 		display: block;
+	// 		padding-top: 150px;
+	// 	}
+	// }
 	#venue_2, #venue_4 {
     background-attachment: fixed;
 	}
 	#venue_1, #venue_3 {
-    background-image: none;
+    // background-image: none;
 	}
 }
