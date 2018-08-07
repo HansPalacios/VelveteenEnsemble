@@ -12,6 +12,18 @@
             <div class="row">
               <p><%= venue.bio %></p>
             </div>
+            <div class="row clients">
+              <% venue.clients.each do |client| %>
+                <div class="eachclient">
+                  <img src="<%= client.name %>">
+                </div>
+              <% end %>
+            </div>
+            <div class="row">
+              <iframe src="<%= venue.video1 %>" allowTransparency="true" allowFullScreen="true" class="video"></iframe>
+              <iframe src="<%= venue.video2 %>" allowTransparency="true" allowFullScreen="true" class="video"></iframe>
+              <iframe src="<%= venue.video3 %>" allowTransparency="true" allowFullScreen="true" class="video"></iframe>
+            </div>
             <div class="row">
               <%= link_to 'Edit', edit_venue_path(venue) %>
             </div>

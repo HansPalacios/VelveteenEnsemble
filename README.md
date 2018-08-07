@@ -25,6 +25,8 @@ There are also a few tables that were scaffolded in order to easily add and edit
 
 ``rails g scaffold venue title:string bio:text name:string``
 
+``rails g scaffold client title:string name:string venue:references``
+
 ``rails g scaffold sample title:string artist:string genre:string name:string``
 
 ``rails g scaffold about bio:text``

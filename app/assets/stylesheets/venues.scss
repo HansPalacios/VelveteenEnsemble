@@ -9,6 +9,11 @@
 		width: 100%;
 		text-shadow: 1px 1px white;
 		font-size: 80px;
+		weight: 900;
+	}
+	p {
+		padding: 50px;
+		font-size: 18px; 
 	}
 	.venue {
 		text-align: center;
@@ -25,6 +30,28 @@
 			// padding: 50px;
 			padding-top: 0;
 		}
+		.clients .eachclient{
+			text-align: center;
+			padding: 10px;
+			margin: 20px auto;
+			img {
+			height: 30px;
+			width: auto;
+			
+			// padding: 10px;
+
+		}
+		}
+		
+		.video {
+			width: 280px;
+			height: 157.5px;
+			overflow: hidden;
+			border: none;
+			scrolling: no;
+			frameborder: 0;
+			margin: 0 auto;
+		}
 	}
 	
 	#venue_1 {
@@ -35,5 +62,8 @@
 	}
 	#venue_2, #venue_4 {
     background-attachment: fixed;
+	}
+	#venue_1, #venue_3 {
+    background-image: none;
 	}
 }
