@@ -5,12 +5,13 @@
     <% @venues.each do |venue| %>
       
       <div class="row no-gutters venue" id="venue_<%= venue.id %>">
-        <div class="row no-gutters title">
-            <h2><%= venue.title %></h2>
-        </div>
+        
         <div class="col-md-12">
           <div class="background">
-            
+            <div class="row no-gutters title">
+              <h2><%= venue.title %></h2>
+            </div>
+            <hr>
             <div class="row">
               <p><%= venue.bio %></p>
             </div>
