@@ -12,4 +12,16 @@
 	margin-top: 0;
 	min-height: 1000px;
 	padding-top: 300px;
+	#player {
+		position: fixed;
+		top: 150px;
+		right: 50px;
+		width: 350px;
+		height: 140px;
+		background-image: url('https://s3.amazonaws.com/velveteenensemble/mediaplayer.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+
+	}
 }
