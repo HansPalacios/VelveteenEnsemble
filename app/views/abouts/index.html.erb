@@ -2,45 +2,27 @@
   <div class="spacing ">
     <h1>About</h1>
   </div>
-  <div class="col-md-3">
-    <!-- <div class="row no-gutters"> -->
-      <% @musicians.each do |musician| %>
-        <div class="row no-gutters eachmusician" >
-          <div class="col-md-6">
-            <div class="row no-gutters musicianpic" id="musician_<%= musician.id %>">
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="row no-gutters">
-              <h4><%= musician.fname %></h4>
-            </div>
-            <div class="row no-gutters">
-              <h4><%= musician.lname %></h4>
-            </div>
-            <div class="row no-gutters">
-              <h5><%= musician.instrument %></h5>
-            </div>
-          </div>
-        </div>
-        <style>
-          #musician_<%= musician.id %> {
-            background-image: url("<%= musician.name %>");
-          }
-        </style>
-      <% end %>
-    <!-- </div> -->
+  <div id="aboutbox" class="col-md-7">
+    <% @abouts.each do |about| %>
+      <!-- <div id="about<%= about.id %>" class="background" > -->
+        <p><%= about.bio %></p>
+        <%= link_to 'Edit', edit_about_path(about) %>
+      <!-- </div> -->
+    <% end %>
+    
   </div>
-  <div class="col-md-9">
-    <div class="row no-gutters background">
-      <% @abouts.each do |about| %>
-        <div class="row no-gutters" >
-          <p><%= about.bio %></p>
-          <%= link_to 'Edit', edit_about_path(about) %>
-        </div>
-      <% end %>
+  <div class="col-md-5">
+    <div id="pics">
+      <div id="pic1" class="pics"></div>
+      <div id="pic2" class="pics"></div>
+      <div id="pic3" class="pics"></div>
+      <div id="pic4" class="pics"></div>
+      <div id="pic5" class="pics"></div>
+      <div id="pic6" class="pics"></div>
+      <div id="pic7" class="pics"></div>
+      <div id="pic8" class="pics"></div>
     </div>
   </div>
-  
 
 </div>
 

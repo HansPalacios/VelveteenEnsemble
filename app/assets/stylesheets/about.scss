@@ -4,12 +4,13 @@
 #about {
 	padding: 50px;
 	height: 100%;
-	background-image: url("https://s3.amazonaws.com/velveteenensemble/header3.jpg");
+	// background-image: url("https://s3.amazonaws.com/velveteenensemble/header3.jpg");
 	text-align: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
+	// position: relative;
 	.background {
 		margin: 50px;
 		text-align: center;
@@ -19,32 +20,91 @@
 	}
 	.spacing{
 		display: block;
-	}
-	.eachmusician {
-		padding: 20px;
-		box-shadow: 0px 8px 16px 0px rgba(0,0,0,1);
+	} 
+	p {
+		width: 80%;
 		margin: 50px auto;
-		background-color: rgba(255,255,255,.8);
-		text-align: center;
-		h4{
+		font-size: 18px;
+	}
+		#pics {
+			position: relative;
+			// padding: 20px;
+			width: 350px;
+			height: 1000px;
 			margin: 0 auto;
-			margin-bottom: 10px;
-			font-family: 'Arizonia', cursive;
-			font-size: 150%;
-			color: black;
-			text-shadow: none;
+
+
+			.pics {
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position: center;
+				position: absolute;
+			}
+			#pic1 {
+				width: 200px;
+				height: 150px;
+				top: 0;
+				right: 0px;
+				background-image: url('https://s3.amazonaws.com/velveteenensemble/recording2.png');
+				z-index: 3;
+			}
+			#pic2 {
+				width: 150px;
+				height: 150px;
+				top: 120px;
+				right: 160px;
+				background-image: url('https://s3.amazonaws.com/velveteenensemble/miami.png');
+				z-index: 2; 
+			}
+			#pic3 {
+				width: 150px;
+				height: 120px;
+				top: 240px;
+				right: 50px;
+				background-image: url('https://s3.amazonaws.com/velveteenensemble/concert.png');
+				z-index: 1;
+			}
+			#pic4 {
+				width: 120px;
+				height: 120px;
+				top: 340px;
+				right: 0px;
+				background-image: url('https://s3.amazonaws.com/velveteenensemble/recording.png');
+				z-index: 3;
+			}
+			#pic5 {
+				width: 200px;
+				height: 180px;
+				top: 420px;
+				right: 70px;
+				background-image: url('https://s3.amazonaws.com/velveteenensemble/wedding2.png');
+				z-index: 2;
+			}
+			#pic6 {
+				width: 130px;
+				height: 100px;
+				top: 580px;
+				right: 20px;
+				background-image: url('https://s3.amazonaws.com/velveteenensemble/PM9A1049.jpg');
+				z-index: 1;
+			}
+			#pic7 {
+				width: 120px;
+				height: 100px;
+				top: 670px;
+				right: 140px;
+				background-image: url('https://s3.amazonaws.com/velveteenensemble/china.png');
+				z-index: 0;
+			}
+			#pic8 {
+				width: 180px;
+				height: 130px;
+				top: 750px;
+				right: 40px;
+				background-image: url('https://s3.amazonaws.com/velveteenensemble/flute.png');
+				z-index: -1;
+			}
 		}
-		h5 {
-			margin: 10px auto;
-		}
-	}
-	.musicianpic {
-		margin: 0;
-		margin-right: 0;
-		width: 100%;
-		padding-top: 100%;
-		background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-	}
+		
+	// }
 }
