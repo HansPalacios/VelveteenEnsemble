@@ -1,8 +1,8 @@
 <div class= "col-md-12 no-gutters" id="songs">
 
-	<h1 class="row no-gutters">Samples</h1>
-  <div id="player">
-  </div>
+	<h1 class="row no-gutters">Songs</h1>
+ <!--  <div id="player">
+  </div> -->
 
 	<table >
 		<thead>
@@ -15,7 +15,7 @@
 	  <tbody>
 				
 				 <% @songs.each do |song| %>
-				  <tr>
+				  <tr class="hover">
 						<td><%= song.title%></td>
 						<td><%= song.artist%></td> 
 						<td><%= song.genre%></td>
