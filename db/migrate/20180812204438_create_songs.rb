@@ -1,10 +1,10 @@
-class CreateSamples < ActiveRecord::Migration[5.1]
+class CreateSongs < ActiveRecord::Migration[5.1]
   def change
-    create_table :samples do |t|
+    create_table :songs do |t|
       t.string :title
       t.string :artist
       t.string :genre
-      t.string :name
+      t.string :file
 
       t.timestamps
     end

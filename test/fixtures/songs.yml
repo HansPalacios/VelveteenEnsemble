@@ -4,10 +4,10 @@ one:
   title: MyString
   artist: MyString
   genre: MyString
-  name: MyString
+  file: MyString
 
 two:
   title: MyString
   artist: MyString
   genre: MyString
-  name: MyString
+  file: MyString

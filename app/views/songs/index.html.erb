@@ -1,0 +1,28 @@
+<div class= "col-md-12 no-gutters" id="songs">
+
+	<h1 class="row no-gutters">Samples</h1>
+  <div id="player">
+  </div>
+
+	<table >
+		<thead>
+		  <tr>
+		    <th>Title</th>
+		    <th>Artist/Composer</th> 
+		    <th>Genre</th>
+	  	</tr>
+	  </thead>
+	  <tbody>
+				
+				 <% @songs.each do |song| %>
+				  <tr>
+						<td><%= song.title%></td>
+						<td><%= song.artist%></td> 
+						<td><%= song.genre%></td>
+					</tr>	
+					<% end %>
+			
+		</tbody>
+	</table>
+</div>
+

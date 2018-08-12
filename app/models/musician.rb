@@ -1,2 +1,0 @@
-class Musician < ApplicationRecord
-end
