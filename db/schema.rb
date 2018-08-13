@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(version: 20180812204438) do
     t.string "artist"
     t.string "genre"
     t.string "file"
+    t.boolean "play"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

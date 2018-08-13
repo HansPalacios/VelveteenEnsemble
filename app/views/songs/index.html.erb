@@ -3,26 +3,56 @@
 	<h1 class="row no-gutters">Songs</h1>
  <!--  <div id="player">
   </div> -->
-
-	<table >
+	<table id="samplesongs" style="overflow-x:scroll;">
 		<thead>
 		  <tr>
 		    <th>Title</th>
 		    <th>Artist/Composer</th> 
 		    <th>Genre</th>
+		    <th class="widecol"></th>
 	  	</tr>
 	  </thead>
 	  <tbody>
 				
-				 <% @songs.each do |song| %>
+				 <% @songs.where( play: true ).each do |song| %>
 				  <tr class="hover">
 						<td><%= song.title%></td>
 						<td><%= song.artist%></td> 
 						<td><%= song.genre%></td>
+						<td class="widecol">
+							<audio controls preload="none" controlsList="nodownload"  height="20px"> 
+							   <source src="<%= song.file%>" type="audio/mpeg">
+							</audio>
+
+						</td>
 					</tr>	
 					<% end %>
 			
 		</tbody>
 	</table>
+	
+
+<br><br><br>
+<div class="row">
+<table id="listsongs">
+		<thead>
+		  <tr>
+		    <th>Title</th>
+		    <th>Artist/Composer</th> 
+	  	</tr>
+	  </thead>
+	  <tbody>
+				
+				 <% @songs.where( genre: [nil, true] ).each do |song| %>
+				  <tr>
+						<td><%= song.title%></td>
+						<td><%= song.artist%></td> 
+					</tr>	
+					<% end %>
+			
+		</tbody>
+	</table>
+	
+</div>
 </div>
 
