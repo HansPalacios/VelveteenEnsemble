@@ -1,0 +1,60 @@
+@media only screen and (max-width: 992px) {
+
+	#home2 {
+		margin-top: 480px;
+	}
+}
+@media only screen and (max-width: 932px) {
+
+	#header {
+		height: 80px;
+		#logo {
+			height: 50px;
+		}
+		ul {
+			padding-left: 0;
+			top: 15px;
+			li {
+				width: 80px;
+				font-size: 15px;
+			}
+		}
+	}
+	#home1 {
+		.fadeimage .img {
+			height: 380px;
+		}
+		ul {
+			height: 380px;
+			li {
+				font-size: 18px;
+				padding: 30.1px 10px;
+			}
+		}
+	}
+	#home2 {
+		margin-top: 420px;
+		h2 {
+			font-size: 35px;
+		}
+		.background {
+			margin: 0;
+		}
+	}
+}
+@media only screen and (max-width: 665px) {
+#header {
+		height: 60px;
+		padding: 10px;
+		text-align: center;
+		#logo {
+			height: 40px;
+		}
+		ul {
+			li {
+				width: 60px;
+				font-size: 15px;
+			}
+		}
+	}	
+}
