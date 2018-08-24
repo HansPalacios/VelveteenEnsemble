@@ -2,6 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 #about {
+	background-image: url('https://s3.amazonaws.com/velveteenensemble/wedding.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 	padding: 50px;
 	height: 100%;
 	// background-image: url("https://s3.amazonaws.com/velveteenensemble/header3.jpg");
@@ -10,103 +14,123 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
+	#aboutbox {
+		margin-top: 50px;
+	}
 	// position: relative;
+	h1 {
+		margin-bottom: 20px; 
+		// background-color: rgba(255,255,255,.9);
+		// top: 40px;
+		// padding: 140px 0 50px 0;
+	}
 	.background {
-		margin: 50px;
+		// margin: 50px;
 		text-align: center;
+		background-color: rgba(255,255,255,.95);
 		.row a {
 			margin: 0 auto;
 		}
 	}
+	img {
+		width: 90%;
+		height: auto;
+		margin: 0 auto;
+	}
 	.spacing{
 		display: block;
-		padding-top: 150px;
+		padding-top: 50px;
 		height: auto;
+		margin-bottom: 50px;
 	} 
 	p {
-		width: 80%;
-		margin: 50px auto;
+		// width: 80%;
+		// margin: 50px ;
 		font-size: 18px;
+		// background-color: rgba(255,255,255,.95);
+		// font-weight: 600;
+		padding: 50px;
 	}
-		#pics {
-			position: relative;
-			// padding: 20px;
-			width: 350px;
-			height: 1000px;
-			margin: 0 auto;
+		// #pics {
+		// 	position: relative;
+		// 	// padding: 20px;
+		// 	width: 350px;
+		// 	height: 1000px;
+		// 	// margin: 0 auto;
 
 
-			.pics {
-				background-size: cover;
-				background-repeat: no-repeat;
-				background-position: center;
-				position: absolute;
-			}
-			#pic1 {
-				width: 200px;
-				height: 150px;
-				top: 0;
-				right: 0px;
-				background-image: url('https://s3.amazonaws.com/velveteenensemble/recording2.png');
-				z-index: 3;
-			}
-			#pic2 {
-				width: 150px;
-				height: 150px;
-				top: 120px;
-				right: 160px;
-				background-image: url('https://s3.amazonaws.com/velveteenensemble/miami.png');
-				z-index: 2; 
-			}
-			#pic3 {
-				width: 150px;
-				height: 120px;
-				top: 240px;
-				right: 50px;
-				background-image: url('https://s3.amazonaws.com/velveteenensemble/concert.png');
-				z-index: 1;
-			}
-			#pic4 {
-				width: 120px;
-				height: 120px;
-				top: 340px;
-				right: 0px;
-				background-image: url('https://s3.amazonaws.com/velveteenensemble/recording.png');
-				z-index: 3;
-			}
-			#pic5 {
-				width: 200px;
-				height: 180px;
-				top: 420px;
-				right: 70px;
-				background-image: url('https://s3.amazonaws.com/velveteenensemble/wedding2.png');
-				z-index: 2;
-			}
-			#pic6 {
-				width: 130px;
-				height: 100px;
-				top: 580px;
-				right: 20px;
-				background-image: url('https://s3.amazonaws.com/velveteenensemble/PM9A1049.jpg');
-				z-index: 1;
-			}
-			#pic7 {
-				width: 120px;
-				height: 100px;
-				top: 670px;
-				right: 140px;
-				background-image: url('https://s3.amazonaws.com/velveteenensemble/china.png');
-				z-index: 0;
-			}
-			#pic8 {
-				width: 180px;
-				height: 130px;
-				top: 750px;
-				right: 40px;
-				background-image: url('https://s3.amazonaws.com/velveteenensemble/flute.png');
-				z-index: -1;
-			}
-		}
+		// 	.pics {
+		// 		background-size: cover;
+		// 		background-repeat: no-repeat;
+		// 		background-position: center;
+		// 		position: absolute;
+		// 		margin: 0 50px;
+		// 	}
+		// 	#pic1 {
+		// 		width: 200px;
+		// 		height: 150px;
+		// 		top: 0;
+		// 		right: 0px;
+		// 		background-image: url('https://s3.amazonaws.com/velveteenensemble/recording2.png');
+		// 		z-index: 3;
+		// 	}
+		// 	#pic2 {
+		// 		width: 150px;
+		// 		height: 150px;
+		// 		top: 120px;
+		// 		right: 160px;
+		// 		background-image: url('https://s3.amazonaws.com/velveteenensemble/miami.png');
+		// 		z-index: 2; 
+		// 	}
+		// 	#pic3 {
+		// 		width: 150px;
+		// 		height: 120px;
+		// 		top: 240px;
+		// 		right: 50px;
+		// 		background-image: url('https://s3.amazonaws.com/velveteenensemble/concert.png');
+		// 		z-index: 1;
+		// 	}
+		// 	#pic4 {
+		// 		width: 120px;
+		// 		height: 120px;
+		// 		top: 340px;
+		// 		right: 0px;
+		// 		background-image: url('https://s3.amazonaws.com/velveteenensemble/recording.png');
+		// 		z-index: 3;
+		// 	}
+		// 	#pic5 {
+		// 		width: 200px;
+		// 		height: 180px;
+		// 		top: 420px;
+		// 		right: 70px;
+		// 		background-image: url('https://s3.amazonaws.com/velveteenensemble/wedding2.png');
+		// 		z-index: 2;
+		// 	}
+		// 	#pic6 {
+		// 		width: 130px;
+		// 		height: 100px;
+		// 		top: 580px;
+		// 		right: 20px;
+		// 		background-image: url('https://s3.amazonaws.com/velveteenensemble/PM9A1049.jpg');
+		// 		z-index: 1;
+		// 	}
+		// 	#pic7 {
+		// 		width: 120px;
+		// 		height: 100px;
+		// 		top: 670px;
+		// 		right: 140px;
+		// 		background-image: url('https://s3.amazonaws.com/velveteenensemble/china.png');
+		// 		z-index: 0;
+		// 	}
+		// 	#pic8 {
+		// 		width: 180px;
+		// 		height: 130px;
+		// 		top: 750px;
+		// 		right: 40px;
+		// 		background-image: url('https://s3.amazonaws.com/velveteenensemble/flute.png');
+		// 		z-index: -1;
+		// 	}
+		// }
 		
 	// }
 }

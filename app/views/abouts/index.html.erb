@@ -1,17 +1,21 @@
 <div id="about" class="row no-gutters">
-  <div class="spacing ">
-    <h1>About</h1>
+<!--   <div class="background">
+ -->  <div class="spacing ">
+    
   </div>
-  <div id="aboutbox" class="col-md-7">
+  <div id="aboutbox" class="background">
+    <!-- <div class="col-md-7"> -->
+    <h1>About</h1>
+    <%= image_tag image_url("https://s3.amazonaws.com/velveteenensemble/miami2.png"), :class => "row" %>
     <% @abouts.each do |about| %>
       <!-- <div id="about<%= about.id %>" class="background" > -->
         <p><%= about.bio %></p>
         <%= link_to 'Edit', edit_about_path(about) %>
       <!-- </div> -->
     <% end %>
+  <!-- </div> -->
     
-  </div>
-  <div class="col-md-5">
+<!--   <div class="col-md-5">
     <div id="pics">
       <div id="pic1" class="pics"></div>
       <div id="pic2" class="pics"></div>
@@ -22,8 +26,9 @@
       <div id="pic7" class="pics"></div>
       <div id="pic8" class="pics"></div>
     </div>
+  </div> -->
   </div>
-
+<!-- </div> -->
 </div>
 
 
