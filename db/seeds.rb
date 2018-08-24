@@ -27,8 +27,8 @@ clients = Client.create([
 
 songs = Song.create([
 	# sample music
-{title: "Eine Kleine Nachtmusik	", artist: "Mozart	", genre: "Classical", file: "https://s3.amazonaws.com/velveteenensemble/eine.mp3", play: true},
-{title: "Alla Hornpipe	", artist: "Handel	", genre: "Classical", file: "https://s3.amazonaws.com/velveteenensemble/hornpipe.mp3", play: true},
+{title: "Eine Kleine Nachtmusik", artist: "Mozart	", genre: "Classical", file: "https://s3.amazonaws.com/velveteenensemble/eine.mp3", play: true},
+{title: "Alla Hornpipe", artist: "Handel	", genre: "Classical", file: "https://s3.amazonaws.com/velveteenensemble/hornpipe.mp3", play: true},
 {title: "I'm Yours", artist: "Jason Mraz	", genre: "Pop", file: "https://s3.amazonaws.com/velveteenensemble/imyours.mp3", play: true},
 {title: "La Vie En Rose	", artist: "Edith Piaf", genre: "Traditional pop", file: "https://s3.amazonaws.com/velveteenensemble/lavieenrose.mp3", play: true},
 {title: "Libertango", artist: "Astor Piazzolla", genre: "Tango Nuevo", file: "https://s3.amazonaws.com/velveteenensemble/libertango.mp3", play: true},

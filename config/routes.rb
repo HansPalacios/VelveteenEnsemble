@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get 'songs/delete'
 
   get 'privacy', to: 'privacy#index'
+  get 'review', to: 'review#index'
 
   resources :musicians
   resources :abouts

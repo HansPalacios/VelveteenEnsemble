@@ -1,0 +1,16 @@
+// Place all the styles related to the Review controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#reviews {
+	background-image: url('https://s3.amazonaws.com/velveteenensemble/musicsheet.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 10%;
+	margin-top: 100px;
+	padding-top: 100px;
+	text-align: center;
+	#ww-widget-reviews {
+		margin: 100px auto;
+	}
+}

@@ -1,3 +1,4 @@
+( function($) {
 $(document).ready(function(){
 
 document.addEventListener('play', function(e){
@@ -25,3 +26,4 @@ document.addEventListener('play', function(e){
 // }
 
 });
+} ) ( jQuery );
