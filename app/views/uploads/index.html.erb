@@ -1,7 +1,18 @@
 
 <div id="media" class="col-md-12">
-	<div class="row">
-		<h1>Instagram</h1>
+	<div class="row background">
+		
+		<div class="row no-gutters title">
+		<div class="col-md-4">
+			<a href="https://www.instagram.com/velveteenensemble/" target="_blank"><%=image_tag image_url("https://s3.amazonaws.com/velveteenensemble/blinsta.png")%></a>
+			<a href="https://www.facebook.com/VelveteenEnsemble/" target="_blank"><%=image_tag image_url("https://s3.amazonaws.com/velveteenensemble/blfb.png")%></a>
+			<a href="https://www.youtube.com/watch?v=Rtennabdzlc&t=21s" target="_blank"><%=image_tag image_url("https://s3.amazonaws.com/velveteenensemble/blyt2.png")%></a>
+		</div>
+		<div class="col-md-4">
+			<a href="https://www.instagram.com/velveteenensemble/" target="_blank" class="center"><h1>Instagram</h1></a>
+		</div>
+		<div class="col-md-4"></div>
+	</div>
 
 			<script>
   			var feed = new Instafeed({
@@ -13,7 +24,7 @@
 	        sortBy: 'most-recent',
 	        limit: 20,
 	        resolution: 'standard_resolution',
-	        template: '<img src="{{image}}"/>',
+	        template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /></a>',
 	        links: true,
         mock: false,
         useHttp: false
