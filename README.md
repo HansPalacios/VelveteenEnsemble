@@ -31,4 +31,11 @@ There are also a few tables that were scaffolded in order to easily add and edit
 
 ``rails g scaffold about bio:text``
 
-``rails g scaffold musician name:string image:string instrument:string bio:text ``
+``rails g scaffold contact text:string``
+
+The Venue page is using parrallax scrolling for every other image to create a more intruguing user experience. It also has linked videos from the clients facebook page for visual examples of their performances.
+
+For the media page I used Instafeed to show the 20 most recent Instagram posts on the website. Which is the maximum amount they allow for public use at the moment. Because it is only showing minimal content the clients account only needs to be in Sandbox mode.
+
+
+

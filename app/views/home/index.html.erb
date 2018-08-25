@@ -1,5 +1,5 @@
 
-<div class="col-md-12 no-gutters" id="home1">
+<div class="col-md-12 col-sm-12 no-gutters" id="home1">
 	<div class="row">
 		<ul>
 			<a href="/venues#weddingplaceholder" class="listone"><li>Weddings</li></a>
@@ -16,57 +16,91 @@
 	</div>
 </div>
 
-<div class="col-md-12 no-gutters" id="home2">
+<div class="col-md-12 col-sm-12 no-gutters" id="home2">
 	<div class="row no-gutters title">
-		<div class="col-md-4">
+		<div class="col-md-4 col-sm-4">
 			<a href="https://www.instagram.com/velveteenensemble/" target="_blank"><%=image_tag image_url("https://s3.amazonaws.com/velveteenensemble/blinsta.png")%></a>
 			<a href="https://www.facebook.com/VelveteenEnsemble/" target="_blank"><%=image_tag image_url("https://s3.amazonaws.com/velveteenensemble/blfb.png")%></a>
 			<a href="https://www.youtube.com/watch?v=Rtennabdzlc&t=21s" target="_blank"><%=image_tag image_url("https://s3.amazonaws.com/velveteenensemble/blyt2.png")%></a>
 		</div>
-		<div class="col-md-4">
+		<div class="col-md-4 col-sm-4">
 			<h2>Newsfeed</h2>
 		</div>
-		<div class="col-md-4"></div>
-	</div>
-	<div class="row no-gutters background">
-		<div class="col-md-4">
-			<div id="img1" class="img"></div>
-		</div>
-		<div class="col-md-8">
-			<h3>Miami</h3>
-			<p>Our ensemble is based in New York City and its members have received graduate degrees from the most prestigious Conservatories and are experts in performing and recording Classical, Pop and Jazz Genres. Our repertoire includes classical, Bollywood, Jewish, Broadway and Pop, though we can perform virtually any piece of any genre.  We cannot wait to be a part of your next event!</p>
-		</div>
+		<div class="col-md-4 col-sm-4"></div>
 	</div>
 	<hr>
-	<div class="row no-gutters background">
-		<div class="col-md-8">
-			<h3>China</h3>
-			<p>Our ensemble is based in New York City and its members have received graduate degrees from the most prestigious Conservatories and are experts in performing and recording Classical, Pop and Jazz Genres. Our repertoire includes classical, Bollywood, Jewish, Broadway and Pop, though we can perform virtually any piece of any genre.  We cannot wait to be a part of your next event!</p>
-		</div>
-		<div class="col-md-4">
-			<div id="img2" class="img"></div>
-		</div>
-	</div>
+	<div class="row background news" id="news1"></div>
 	<hr>
-	<div class="row no-gutters background">
-		<div class="col-md-4">
-			<div id="img3" class="img"></div>
-		</div>
-		<div class="col-md-8">
-			<h3>Wedding</h3>
-			<p>Our ensemble is based in New York City and its members have received graduate degrees from the most prestigious Conservatories and are experts in performing and recording Classical, Pop and Jazz Genres. Our repertoire includes classical, Bollywood, Jewish, Broadway and Pop, though we can perform virtually any piece of any genre.  We cannot wait to be a part of your next event!</p>
-		</div>
-	</div>
+	<div class="row background news" id="news2"></div>
 	<hr>
-	<div class="row no-gutters background">
-		<div class="col-md-8">
-			<h3>Concert</h3>
-			<p>Our ensemble is based in New York City and its members have received graduate degrees from the most prestigious Conservatories and are experts in performing and recording Classical, Pop and Jazz Genres. Our repertoire includes classical, Bollywood, Jewish, Broadway and Pop, though we can perform virtually any piece of any genre.  We cannot wait to be a part of your next event!</p>
-		</div>
-		<div class="col-md-4">
-			<div id="img4" class="img"></div>
-		</div>
-	</div>
-	
+	<div class="row background news" id="news3"></div>
+	<hr>
+	<div class="row background news" id="news4"></div>
 </div>
+<script>
+  			var feed = new Instafeed({
+					target: "news1",
+	        get: 'user',
+	        userId: '<%= ENV['USER_ID'] %>',
+	        get: 'tagged',
+        	tagName: 'wedding',
+	        accessToken: '<%= ENV['ACCESS_TOKEN'] %>',
+	        clientId: '<%= ENV['CLIENT_ID'] %>',
+	        limit: 1,
+	        sortBy: 'most-recent',
+	        resolution: 'standard_resolution',
+	        template: '<div class="col-md-12 col-sm-12"><div class="col-md-5 col-sm-5"><a href="{{link}}" target="_blank"><div id="img1" class="img" style="background-image:url({{image}})"></div></a></div><div class="col-md-7 col-sm-7"><h3>{{location}}</h3><p>{{caption}}</p></div></div>',
+	        links: true
+	    	});
 
+	    	var feed2 = new Instafeed({
+					target: "news2",
+	        get: 'user',
+	        userId: '<%= ENV['USER_ID'] %>',
+	        get: 'tagged',
+        	tagName: 'wedding',
+	        accessToken: '<%= ENV['ACCESS_TOKEN'] %>',
+	        clientId: '<%= ENV['CLIENT_ID'] %>',
+	        limit: 2,
+	        sortBy: 'most-recent',
+	        resolution: 'standard_resolution',
+	        template: '<div class="hide2 col-md-12 col-sm-12"><div class="col-md-7 col-sm-7"><h3>{{location}}</h3><p>{{caption}}</p></div><div class="col-md-5 col-sm-5"><a href="{{link}}" target="_blank"><div id="img2" class="img" style="background-image:url({{image}})"></div></a></div></div>',
+					links: true
+	    	});
+
+	    	var feed3 = new Instafeed({
+					target: "news3",
+	        get: 'user',
+	        userId: '<%= ENV['USER_ID'] %>',
+	        get: 'tagged',
+        	tagName: 'wedding',
+	        accessToken: '<%= ENV['ACCESS_TOKEN'] %>',
+	        clientId: '<%= ENV['CLIENT_ID'] %>',
+	        limit: 3,
+	        sortBy: 'most-recent',
+	        resolution: 'standard_resolution',
+	        template: '<div class="hide3 col-md-12 col-sm-12"><div class="col-md-5 col-sm-5"><a href="{{link}}" target="_blank"><div id="img3" class="img" style="background-image:url({{image}})"></div></a></div><div class="col-md-7 col-sm-7"><h3>{{location}}</h3><p>{{caption}}</p></div></div>',
+	        links: true
+	    	});
+
+	    	var feed4 = new Instafeed({
+					target: "news4",
+	        get: 'user',
+	        userId: '<%= ENV['USER_ID'] %>',
+	        get: 'tagged',
+        	tagName: 'wedding',
+	        accessToken: '<%= ENV['ACCESS_TOKEN'] %>',
+	        clientId: '<%= ENV['CLIENT_ID'] %>',
+	        sortBy: 'most-recent',
+	        limit: 4,
+	        resolution: 'standard_resolution',
+	        template: '<div class="hide4 col-md-12 col-sm-12"><div class="col-md-7 col-sm-7"><h3>{{location}}</h3><p>{{caption}}</p></div><div class="col-md-5 col-sm-5"><a href="{{link}}" target="_blank"><div id="img4" class="img" style="background-image:url({{image}})"></div></a></div></div>',
+	        links: true
+	    	});
+
+			  feed.run();
+			  feed2.run();
+			  feed3.run();
+			  feed4.run();
+
+			</script>

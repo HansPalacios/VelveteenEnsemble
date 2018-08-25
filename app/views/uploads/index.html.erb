@@ -24,7 +24,24 @@
 	        sortBy: 'most-recent',
 	        limit: 20,
 	        resolution: 'standard_resolution',
-	        template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /></a>',
+	        template: '<a href="{{link}}" target="_blank"><div class="img" style="background-image:url({{image}})"></div></a>',
+	        links: true,
+        mock: false,
+        useHttp: false
+	    	});
+			  feed.run();
+
+
+			  var feed = new Instafeed({
+					target: "instafeed",
+	        get: 'user',
+	        userId: '<%= ENV['USER_ID'] %>',
+	        accessToken: '<%= ENV['ACCESS_TOKEN'] %>',
+	        clientId: '<%= ENV['CLIENT_ID'] %>',
+	        sortBy: 'most-recent',
+	        limit: 20,
+	        resolution: 'standard_resolution',
+	        template: '<a href="{{link}}" target="_blank"><div class="img" style="background-image:url({{image}})"></div></a>',
 	        links: true,
         mock: false,
         useHttp: false
@@ -34,7 +51,7 @@
 
 
 
-    <div id="instafeed"></div>
+    <div class="col-md-12" id="instafeed"></div>
 
 	</div>
 </div>

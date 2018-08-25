@@ -118,30 +118,20 @@
 		padding: 20px;
 		width: 200px;
 		height: 472.75px;
-		// float: left;
 		display: inline-block;
 		position: absolute;
 		left: 0;
 		li {
-			// margin: 40px 20px;
 			font-size: 20px;
 			font-weight: 400;
 			padding: 40.1px 10px;
 			width: 100%;
 			color: white;
-			// border: 1px solid black;
-			// background-color: rgba(20,20,20,1);
-			// font-family: 'Cinzel', serif;
 			a {
-				// padding: 5px 10px;
 				color: white;
-				// border: rgba(0,0,0,0) 1px solid;
 				width: 100%;
 			}
 			&:hover, .hovered {
-				// background-color: rgba(0,0,0,.5);
-				// border: white 1px solid;
-				// box-shadow: 0px 4px 6px 0px rgba(255,255,255,.5);
 				color: rgba(123,210,33,1);
 			}
 		}
@@ -155,12 +145,10 @@
 			background-position: center;
 			display: none;
 			margin:0; 
-   		// margin-top: 80px;
    		width: calc(100% - 200px); 
    		height: 472.75px;
    		position: absolute;
    		right: 0;
-			// background-attachment: fixed;
 		}
 	   .loopOne {
 	   	background-image: url('https://s3.amazonaws.com/velveteenensemble/miami.png');
@@ -178,9 +166,7 @@
 	}
 }
 #home2 {
-	margin-top: 432.75px;
-	// padding: 0 0 0 100px;
-	// background-color: rgba(255,255,255,1);
+	margin-top: 472px;
 	text-align: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -190,13 +176,23 @@
 		text-align: center;
 	}
 	.title {
-		margin: 50px 0;
+		// margin: 50px 0;
+		padding: 20px;
 	}
 	.background {
 		background-color: rgba(255,255,255,1);
 		padding: 50px;
 		margin: 0 5%;
 	}
+	.hide2:nth-of-type(1) {
+		display: none;
+	}	
+	.hide3:nth-of-type(1), .hide3:nth-of-type(2) {
+		display: none;
+	}	
+	.hide4:nth-of-type(1), .hide4:nth-of-type(2), .hide4:nth-of-type(3) {
+		display: none;
+	}	
 	img {
 		height: 25px;
 		width: auto;
@@ -216,27 +212,12 @@
 		padding: 20px;
 		font-size: 16px;
 	}
-	.col-md-8 {
-		// background-color: rgba(255,255,255,.5);
-	}
 	.img {
 		width: 100%;
-		height: 250px;
+		height: 200px;
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
-	}
-	#img1 {
-		background-image: url('https://s3.amazonaws.com/velveteenensemble/miami.png');
-	}
-	#img2 {
-		background-image: url('https://s3.amazonaws.com/velveteenensemble/china.png');
-	}
-	#img3 {
-		background-image: url('https://s3.amazonaws.com/velveteenensemble/wedding.png');
-	}
-	#img4 {
-		background-image: url('https://s3.amazonaws.com/velveteenensemble/concert.png');
 	}
 }
 .hovered {

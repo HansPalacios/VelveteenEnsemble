@@ -4,7 +4,7 @@ git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
 end
-# gem 'instagram'
+# Instafeed gem to show recent instagram posts
 gem 'instafeed'
 # Jquery gem
 gem 'jquery-rails'
