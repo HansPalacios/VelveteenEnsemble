@@ -4,7 +4,8 @@ class UploadsController < ApplicationController
   # GET /uploads
   # GET /uploads.json
   def index
-    @uploads = Upload.all
+    # @uploads = Upload.all
+    # @instagram = Instagram.media_popular
   end
 
   # GET /uploads/1

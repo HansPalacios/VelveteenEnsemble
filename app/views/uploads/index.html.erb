@@ -1,16 +1,29 @@
 
 <div id="media" class="col-md-12">
 	<div class="row">
-		<h1>Media</h1>
+		<h1>Instagram</h1>
 
-		<% @uploads.each do |upload| %>
-		  <%= link_to upload do %>
-		  <img src="<%= upload.name.square %>">
-		  <% end %>
-		<% end %>
-		 
-		<br>
-		 
-		<%= link_to 'New upload', new_upload_path %>
+			<script>
+  			var feed = new Instafeed({
+					target: "instafeed",
+	        get: 'user',
+	        userId: '<%= ENV['USER_ID'] %>',
+	        accessToken: '<%= ENV['ACCESS_TOKEN'] %>',
+	        clientId: '<%= ENV['CLIENT_ID'] %>',
+	        sortBy: 'most-recent',
+	        limit: 20,
+	        resolution: 'standard_resolution',
+	        template: '<img src="{{image}}"/>',
+	        links: true,
+        mock: false,
+        useHttp: false
+	    	});
+			  feed.run();
+			</script>
+
+
+
+    <div id="instafeed"></div>
+
 	</div>
 </div>
