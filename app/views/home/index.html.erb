@@ -1,5 +1,5 @@
 
-<div class="col-md-12 col-sm-12 no-gutters" id="home1">
+<div class="col-md-12 col-sm-12 col-xs-12 no-gutters" id="home1">
 	<div class="row">
 		<ul>
 			<a href="/venues#weddingplaceholder" class="listone"><li>Weddings</li></a>
@@ -16,17 +16,17 @@
 	</div>
 </div>
 
-<div class="col-md-12 col-sm-12 no-gutters" id="home2">
+<div class="col-md-12 col-sm-12 col-xs-12 no-gutters" id="home2">
 	<div class="row no-gutters title">
-		<div class="col-md-4 col-sm-4">
+		<div class="col-md-4 col-sm-4 col-xs-4">
 			<a href="https://www.instagram.com/velveteenensemble/" target="_blank"><%=image_tag image_url("https://s3.amazonaws.com/velveteenensemble/blinsta.png")%></a>
 			<a href="https://www.facebook.com/VelveteenEnsemble/" target="_blank"><%=image_tag image_url("https://s3.amazonaws.com/velveteenensemble/blfb.png")%></a>
 			<a href="https://www.youtube.com/watch?v=Rtennabdzlc&t=21s" target="_blank"><%=image_tag image_url("https://s3.amazonaws.com/velveteenensemble/blyt2.png")%></a>
 		</div>
-		<div class="col-md-4 col-sm-4">
+		<div class="col-md-4 col-sm-4 col-xs-4">
 			<h2>Newsfeed</h2>
 		</div>
-		<div class="col-md-4 col-sm-4"></div>
+		<div class="col-md-4 col-sm-4 col-xs-4"></div>
 	</div>
 	<hr>
 	<div class="row background news" id="news1"></div>
@@ -49,7 +49,7 @@
 	        limit: 1,
 	        sortBy: 'most-recent',
 	        resolution: 'standard_resolution',
-	        template: '<div class="col-md-12 col-sm-12"><div class="col-md-5 col-sm-5"><a href="{{link}}" target="_blank"><div id="img1" class="img" style="background-image:url({{image}})"></div></a></div><div class="col-md-7 col-sm-7"><h3>{{location}}</h3><p>{{caption}}</p></div></div>',
+	        template: '<div class="col-md-12 col-sm-12 col-xs-12"><div class="col-md-5 col-sm-5 col-xs-5"><a href="{{link}}" target="_blank"><div id="img1" class="img" style="background-image:url({{image}})"></div></a></div><div class="col-md-7 col-sm-7 col-xs-7"><h3>{{location}}</h3><p>{{caption}}</p></div></div>',
 	        links: true
 	    	});
 
@@ -64,7 +64,7 @@
 	        limit: 2,
 	        sortBy: 'most-recent',
 	        resolution: 'standard_resolution',
-	        template: '<div class="hide2 col-md-12 col-sm-12"><div class="col-md-7 col-sm-7"><h3>{{location}}</h3><p>{{caption}}</p></div><div class="col-md-5 col-sm-5"><a href="{{link}}" target="_blank"><div id="img2" class="img" style="background-image:url({{image}})"></div></a></div></div>',
+	        template: '<div class="hide2 col-md-12 col-sm-12 col-xs-12"><div class="col-md-7 col-sm-7 col-xs-7"><h3>{{location}}</h3><p>{{caption}}</p></div><div class="col-md-5 col-sm-5 col-xs-5"><a href="{{link}}" target="_blank"><div id="img2" class="img" style="background-image:url({{image}})"></div></a></div></div>',
 					links: true
 	    	});
 
@@ -79,7 +79,7 @@
 	        limit: 3,
 	        sortBy: 'most-recent',
 	        resolution: 'standard_resolution',
-	        template: '<div class="hide3 col-md-12 col-sm-12"><div class="col-md-5 col-sm-5"><a href="{{link}}" target="_blank"><div id="img3" class="img" style="background-image:url({{image}})"></div></a></div><div class="col-md-7 col-sm-7"><h3>{{location}}</h3><p>{{caption}}</p></div></div>',
+	        template: '<div class="hide3 col-md-12 col-sm-12 col-xs-12"><div class="col-md-5 col-sm-5 col-xs-5"><a href="{{link}}" target="_blank"><div id="img3" class="img" style="background-image:url({{image}})"></div></a></div><div class="col-md-7 col-sm-7 col-xs-7"><h3>{{location}}</h3><p>{{caption}}</p></div></div>',
 	        links: true
 	    	});
 
@@ -94,7 +94,7 @@
 	        sortBy: 'most-recent',
 	        limit: 4,
 	        resolution: 'standard_resolution',
-	        template: '<div class="hide4 col-md-12 col-sm-12"><div class="col-md-7 col-sm-7"><h3>{{location}}</h3><p>{{caption}}</p></div><div class="col-md-5 col-sm-5"><a href="{{link}}" target="_blank"><div id="img4" class="img" style="background-image:url({{image}})"></div></a></div></div>',
+	        template: '<div class="hide4 col-md-12 col-sm-12 col-xs-12"><div class="col-md-7 col-sm-7 col-xs-7"><h3>{{location}}</h3><p>{{caption}}</p></div><div class="col-md-5 col-sm-5 col-xs-5"><a href="{{link}}" target="_blank"><div id="img4" class="img" style="background-image:url({{image}})"></div></a></div></div>',
 	        links: true
 	    	});
 
