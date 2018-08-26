@@ -1,8 +1,7 @@
 
 
 ( function($) {
-$(document).ready(function(){
-	
+$(document).ready(function(){	
  	var $elements = $('.loopOne, .loopTwo, .loopThree, .loopFour');
  	var $listitems = $('.listone, .listtwo, .listthree, .listfour');
 

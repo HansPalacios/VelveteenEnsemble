@@ -19,6 +19,8 @@ Installing Carrierwave to add, edit, and delete media from AWS S3 storage. Makin
 
 Using jquery for the Homepage image slideshow, which can be formatted to autoplay and link to highlight the venue buttons at different points.
 
+Removed ``//= require turbolinks`` from application.js so jquery elements work correctly when switching pages.
+
 There are also a few tables that were scaffolded in order to easily add and edit the content on the pages:
 
 ``rails g scaffold upload name:string folder:string``
