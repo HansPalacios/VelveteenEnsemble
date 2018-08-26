@@ -18,7 +18,7 @@
 			  <a href="/about">About</a>
 			  <a href="/venues">Venues</a>
 			  <a href="/uploads">Media</a>
-				<a href="/samples">Samples</a>
+				<a href="/songs">Samples</a>
 				<a href="/Reviews">Reviews</a>
 				<a href="/contact">Contact</a>
 			</div>
@@ -30,76 +30,22 @@
 		#header {
 			position: static;
 		}
+		<% else %>
+		#header {
+			height: 80px;
+			padding: 10px;
+		}
+		#header #logo {
+			height: 50px;
+		}
+		#header ul {
+			padding-left: 0;
+			top: 20px;
+		}
+			#header ul li {
+				width: 80px;
+				font-size: 15px;
+			}
+		}
 	<% end %>
 </style>
-<script>
-	$(document).ready(function() {
-      $('#logo').click(function () {
-            location.reload(true); 
-      });    
-   });
-
-	<% if !@homepage  %>
-		$(document).ready(function() {
-			
-		  var controller = new ScrollMagic.Controller();
-
-		  var scene1 = new ScrollMagic.Scene({
-		  	triggerElement: '#trigger1',
-		  	triggerHook: 'onLeave',
-		  }).setTween('#header', 0.1, {position: 'fixed', height: '80px', padding: '10px'})
-		  .addTo(controller);
-
-		  var scene2 = new ScrollMagic.Scene({
-		  	triggerElement: '#trigger1',
-		  	triggerHook: 'onLeave',
-		  }).setTween('#header #logo', 0.1, {height: '50px'})
-		  .addTo(controller);
-
-		  var scene3 = new ScrollMagic.Scene({
-		  	triggerElement: '#trigger1',
-		  	triggerHook: 'onLeave',
-		  }).setTween('#header ul', 0.1, {top: '15px', paddingLeft: '0'})
-		  .addTo(controller);
-
-		  var scene4 = new ScrollMagic.Scene({
-		  	triggerElement: '#trigger1',
-		  	triggerHook: 'onLeave',
-		  }).setTween('#header li', 0.1, {width: '80px',fontSize: '15px'})
-		  .addTo(controller);
-
-		});
-	<% end %>
-</script>
-<!-- <script>
-	<% if !@homepage  %>
-		$(document).ready(function() {
-			
-		  var controller = new ScrollMagic.Controller();
-
-		  var scene1 = new ScrollMagic.Scene({
-		  	triggerElement: '#trigger1',
-		  	triggerHook: 'onLeave',
-		  }).setTween('#header', 0, {top: '0',position: 'fixed', margin: '0', width: 'auto', height: '80px', 'background-color': 'rgba(255,255,255,.9)'})
-		  .addTo(controller);
-
-		  var scene2 = new ScrollMagic.Scene({
-		  	triggerElement: '#trigger1',
-		  	triggerHook: 'onLeave',
-		  }).setTween('#header #logo', 0, {height: '60px', position: 'absolute',left: '30px', top: '5px'})
-		  .addTo(controller);
-
-		  var scene3 = new ScrollMagic.Scene({
-		  	triggerElement: '#trigger1',
-		  	triggerHook: 'onLeave',
-		  }).setTween('#header ul', 0, {display: 'none'})
-		  .addTo(controller);
-
-		  var scene4 = new ScrollMagic.Scene({
-		  	triggerElement: '#trigger1',
-		  	triggerHook: 'onLeave',
-		  }).setTween('#header .dropdown', 0, {display: 'inline-block'})
-		  .addTo(controller);
-		});
-	<% end %>
-</script> -->
