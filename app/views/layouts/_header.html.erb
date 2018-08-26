@@ -30,21 +30,17 @@
 		#header {
 			position: static;
 		}
-		<% else %>
-		#header {
-			height: 80px;
-			padding: 10px;
-		}
-		#header #logo {
-			height: 50px;
-		}
-		#header ul {
-			padding-left: 0;
-			top: 20px;
-		}
-			#header ul li {
-				width: 80px;
-				font-size: 15px;
+		@media only screen and (min-width: 992px) {
+			#header {
+				height: 140px;
+				padding: 25px;
+			}
+			#header #logo {
+				height: 90px;
+			}
+			#header ul {
+				/*padding-left: auto;*/
+				top: 40px;
 			}
 		}
 	<% end %>
