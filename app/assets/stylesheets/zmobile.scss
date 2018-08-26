@@ -8,7 +8,7 @@
 
 	#header {
 		height: 80px;
-		padding: 20px;
+		padding: 10px;
 		#logo {
 			height: 50px;
 		}
@@ -40,6 +40,34 @@
 		}
 		.background {
 			margin: 0;
+		}
+	}
+	#venues {
+		padding-top: 80px;
+		h1 {
+			font-size: 50px;
+			padding: 50px 0 20px 0;
+		}
+		#venue_1 .spacing {
+			height: 150px;
+		}
+		.venue {
+			padding: 50px;
+			hr {
+				margin: 30px auto;
+			}
+			p {
+				font-size: 15px;
+			}
+			.background {
+				padding: 30px;
+			}
+			.clients .eachclient {
+				margin: 0 auto 50px auto;
+				img {
+					height: 20px;
+				}
+			}
 		}
 	}
 	#songs {
@@ -104,6 +132,7 @@
 		}
 		img {
 			margin: 35px 3%;
+			height: 20px;
 		}
 		.img {
 			height: 120px;
@@ -115,8 +144,16 @@
 			font-size: 18px;
 		}
 	}
+	#footer {
+		p, h5, h6, a {
+			font-size: 11px;
+		}
+		#award {
+			height: 40px;
+		}
+	}
 }
-@media only screen and (max-width: 665px) {
+@media only screen and (max-width: 500px) {
 	#header {
 		ul {
 			display: none;
@@ -147,6 +184,23 @@
 	}
 	#home2 {
 		margin-top: 250px;
+		.title {
+			padding: 0 20px;
+		}
+		.news {
+			padding: 20px;
+			h3 {
+				font-size: 15px;
+			}
+			p {
+				padding: 0;
+				font-size: 11px;
+			}
+			.img {
+				height: 100px;
+			}
+		}
+		
 	}
 }
 
