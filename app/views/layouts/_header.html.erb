@@ -1,6 +1,7 @@
 <div class="row no-gutters" >
 	<div id="trigger1"></div>
 	<div id="header">
+		<p id="notice"><%= notice %></p>
 		<a href="/" id="logo" >
 			<%= image_tag image_url('https://s3.amazonaws.com/velveteenensemble/whlogolines.png'), :id => "logo" %>
 		</a>
@@ -10,7 +11,7 @@
 			<li><a href="/uploads">Media</a></li>
 			<li><a href="/songs">Songs</a></li>
 			<li><a href="/review">Reviews</a></li>
-			<li><a href="/contacts">Contact</a></li>
+			<li><a href="/contacts/new">Contact</a></li>
 		</ul>
 		<div class="dropdown">
 			<%= image_tag image_url("https://s3.amazonaws.com/velveteenensemble/hamburgermenu.png") %>

@@ -52,13 +52,7 @@ text-decoration: none;
 	/*text-align: center;*/
 	/*margin: 0 auto;*/
 }
-#notice {
-	z-index: 2;
-	position: fixed;
-	top: 20px;
-	right: 20px;
-	background-color: rgba(255,255,255,.8);
-}
+
 .row {
 	/*text-align: center;*/
 }

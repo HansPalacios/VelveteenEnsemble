@@ -2,10 +2,31 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 #contact {
-	padding: 50px;
-	padding-top: 200px;
-	min-height: 1000px;
+	padding: 100px 50px;
+	min-height: 100%;
+	margin-top: 80px;
+	background-image: url('https://s3.amazonaws.com/velveteenensemble/wedding.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;	
+	text-align: center;
 	h4 {
 		margin: 0 auto;
+	}
+}
+form {
+	width: 500px;
+	text-align: center;
+	margin: 50px auto;
+	label, input {
+		margin: 0 auto;
+		display: block;
+	}
+	input.button {
+		margin: 20px auto;
+	}
+	.nickname {
+		display: none;
 	}
 }

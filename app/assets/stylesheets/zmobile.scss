@@ -3,6 +3,12 @@
 	#home2 {
 		margin-top: 480px;
 	}
+	#media .title {
+		padding: 0;
+		img {
+			margin: 15px 5%;
+		}
+	}
 }
 @media only screen and (max-width: 932px) {
 
@@ -40,6 +46,13 @@
 		}
 		.background {
 			margin: 0;
+		}
+	}
+	#about {
+		.title {
+			img {
+				margin: 15px 3%;
+			}
 		}
 	}
 	#venues {

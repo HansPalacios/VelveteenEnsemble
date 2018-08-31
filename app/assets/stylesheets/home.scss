@@ -18,6 +18,14 @@
 	position: fixed;
 	z-index: 20;
 	text-align: left;
+	#notice {
+		z-index: 10;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		color: rgba(123,210,33,1);
+		background-color: rgba(255,255,255,.8);
+	}
   a {
   	color: black;
   }
@@ -240,9 +248,10 @@
 	}
 	p {
 		margin-left: 15%;
+		margin-bottom: 0;
 	}
 	#award {
-		height: 50px;
+		height: 40px;
 		width: auto;
 		// margin: 20px;
 		float: right;
@@ -252,6 +261,7 @@
 		text-align: center;
 		width: 100%;
 		display: inline-block;
+		margin: 5px auto;
 	}
 }
 
