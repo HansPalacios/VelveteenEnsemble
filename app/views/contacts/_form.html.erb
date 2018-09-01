@@ -2,15 +2,23 @@
     <% if flash[:error].present? %>
         <p> flash[:error]</p>
     <% end %>
-    <%= f.label :name %> <br>
+    <%= f.label :name, 'Name (required) *' %> 
     <%= f.text_field :name, required: true %>
-
     <br>
-    <%= f.label :email %> <br>
+    <%= f.label :email, 'Email (required) *' %>
     <%= f.text_field :email, required: true %>
+    <br>
+    <%= f.label :email, 'Phone No.' %>
+    <%= f.text_field :email, required: false %>
+    <br>
+    <%= f.label :email, 'Event Date' %>
+    <%= f.text_field :email, required: false %>
+    <br>
+    <%= f.label :email, 'Event Location' %>
+    <%= f.text_field :email, required: false %>
 
     <br>
-    <%= f.label :message %> <br>
+    <%= f.label :message %>
     <%= f.text_area :message, as: :text %>
 
   <div class="nickname">

@@ -11,22 +11,26 @@
 	background-position: center;
 	background-attachment: fixed;	
 	text-align: center;
-	h4 {
-		margin: 0 auto;
-	}
 }
-form {
-	width: 500px;
-	text-align: center;
-	margin: 50px auto;
-	label, input {
+.contactform {
+		width: 500px;
 		margin: 0 auto;
-		display: block;
+		h2 {
+			margin: 0 auto;
+		}
+		form {
+			width: 325px;
+			text-align: right;
+			label, input {
+				margin: 10px auto;
+				display: inline-block;
+			}
+			input.button {
+				margin: 20px auto;
+				display: block;
+			}
+			.nickname {
+				display: none;
+			}
+		}
 	}
-	input.button {
-		margin: 20px auto;
-	}
-	.nickname {
-		display: none;
-	}
-}

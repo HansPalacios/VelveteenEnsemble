@@ -181,17 +181,15 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-
 	.row {
 		text-align: center;
 	}
 	.title {
-		// margin: 50px 0;
 		padding: 20px;
 	}
 	.background {
 		background-color: rgba(255,255,255,1);
-		padding: 50px;
+		padding: 40px;
 		margin: 0 5%;
 	}
 	.hide2:nth-of-type(1) {
@@ -229,6 +227,15 @@
 		background-repeat: no-repeat;
 		background-position: center;
 	}
+}
+#home3 {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-image: url('https://s3.amazonaws.com/velveteenensemble/wedding2.png');
+	padding: 100px;
+
 }
 .hovered {
 	background-color: rgba(0,0,0,.5);
