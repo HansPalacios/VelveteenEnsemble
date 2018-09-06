@@ -5,22 +5,35 @@
 	padding: 100px 50px;
 	min-height: 100%;
 	margin-top: 80px;
+	// margin: 0 auto;
 	background-image: url('https://s3.amazonaws.com/velveteenensemble/wedding.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;	
 	text-align: center;
+	p, h2 {
+		width: 100%;
+		margin: 10px auto;
+		display: block;
+	}
+	.row {
+		width: 100%;
+		text-align: center;
+	}
 }
 .contactform {
 		width: 500px;
 		margin: 0 auto;
+		max-width: 800px;
+
 		h2 {
 			margin: 0 auto;
 		}
 		form {
 			width: 325px;
 			text-align: right;
+			margin: 0 auto;
 			label, input {
 				margin: 10px auto;
 				display: inline-block;

@@ -11,6 +11,9 @@
 	margin-top: 80px;
 	padding-top: 100px;
 	text-align: center;
+	.padding {
+		padding: 50px;
+	}
 	#ww-widget-reviews {
 		margin: 0 auto;
 	}
@@ -19,4 +22,11 @@
 		margin: 0 auto;
 		padding: 10px;
 	}
+	.award {
+		width: auto;
+		height: 200px;
+		margin: 50px auto;
+	}
 }
+
+
