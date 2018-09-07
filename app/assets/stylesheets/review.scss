@@ -2,23 +2,27 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 #reviews {
-	background-image: url('https://s3.amazonaws.com/velveteenensemble/recording.png');
+	background-image: url('https://s3.amazonaws.com/velveteenensemble/wedding2.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
-	padding: 10%;
+	padding: 40px;
 	margin-top: 80px;
 	padding-top: 100px;
 	text-align: center;
 	.padding {
-		padding: 50px;
+		padding: 20px;
+		background-color: rgba(255,255,255,.9);
+	}
+	#wwlogo {
+		width: 90%;
 	}
 	#ww-widget-reviews {
 		margin: 0 auto;
 	}
 	#ww-review-me {
-		width: 400px;
+		width: 90%;
 		margin: 0 auto;
 		padding: 10px;
 	}

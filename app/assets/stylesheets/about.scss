@@ -31,16 +31,26 @@
 	.background {
 		text-align: center;
 		background-color: rgba(255,255,255,.95);
+		padding-bottom: 100px;
+		margin-bottom: 50px;
 		.row a {
 			margin: 0 auto;
 		}
 	}
-	img {
-		width: 90%;
-		max-width: 700px;
-		height: auto;
-		margin: 0 auto;
-	}
+	.img {
+			height: 90%;
+			width: 90%;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+		#img1 {
+			background-image: url('https://s3.amazonaws.com/velveteenensemble/miami.png');
+		}
+		#img2 {
+			background-image: url('https://s3.amazonaws.com/velveteenensemble/PM9A1049.jpg');
+		}
+		
 	.spacing{
 		display: block;
 		padding-top: 50px;
@@ -48,12 +58,11 @@
 		margin-bottom: 50px;
 	} 
 	p {
-		// width: 80%;
-		// margin: 50px ;
 		font-size: 18px;
-		// background-color: rgba(255,255,255,.95);
-		// font-weight: 600;
-		padding: 50px;
+		padding: 10px;
+		padding-bottom: 25px;
+		b {
+		}
 	}
 		// #pics {
 		// 	position: relative;
