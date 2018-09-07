@@ -19,9 +19,6 @@
 		width: 100%;
 		padding: 50px 0;
 		padding-top: 0;
-		h2 {
-			// font-size: 45px;
-		}
 		img {
 			height: 25px;
 			width: auto;
@@ -38,115 +35,39 @@
 		}
 	}
 	.img {
-			height: 90%;
-			min-height: 200px;
-			width: 90%;
+			height: 200px;
+			width: auto;
+			display: inline;
 			margin-top: 4%;
-			background-size: cover;
-			background-repeat: no-repeat;
-			background-position: 0% 15%;
 		}
-		#img1 {
-			background-image: url('https://s3.amazonaws.com/velveteenensemble/group.png');
+		.img1 {
+			height: 250px;
 		}
-		#img2 {
-			background-image: url('https://s3.amazonaws.com/velveteenensemble/miami.png');
+		.img2 {
+
 		}
-		
-		
+		p {
+			font-size: 18px;
+			padding: 20px 10px;
+			padding-right: 0;
+			display: inline;
+			width: 90%;
+			margin: 0 auto;
+		}
+	#p1 {
+			width: calc(90% - 200.41px);
+			padding-left: 50px;
+		}
+		#p2 {
+			width: calc(90% - 266.98px);
+			padding-right: 50px;
+		}
+	
 	.spacing{
 		display: block;
 		padding-top: 50px;
 		height: auto;
 		margin-bottom: 50px;
 	} 
-	p {
-		font-size: 18px;
-		padding: 4% 8%;
-		padding-bottom: 25px;
-		b {
-		}
-	}
-		// #pics {
-		// 	position: relative;
-		// 	// padding: 20px;
-		// 	width: 350px;
-		// 	height: 1000px;
-		// 	// margin: 0 auto;
-
-
-		// 	.pics {
-		// 		background-size: cover;
-		// 		background-repeat: no-repeat;
-		// 		background-position: center;
-		// 		position: absolute;
-		// 		margin: 0 50px;
-		// 	}
-		// 	#pic1 {
-		// 		width: 200px;
-		// 		height: 150px;
-		// 		top: 0;
-		// 		right: 0px;
-		// 		background-image: url('https://s3.amazonaws.com/velveteenensemble/recording2.png');
-		// 		z-index: 3;
-		// 	}
-		// 	#pic2 {
-		// 		width: 150px;
-		// 		height: 150px;
-		// 		top: 120px;
-		// 		right: 160px;
-		// 		background-image: url('https://s3.amazonaws.com/velveteenensemble/miami.png');
-		// 		z-index: 2; 
-		// 	}
-		// 	#pic3 {
-		// 		width: 150px;
-		// 		height: 120px;
-		// 		top: 240px;
-		// 		right: 50px;
-		// 		background-image: url('https://s3.amazonaws.com/velveteenensemble/concert.png');
-		// 		z-index: 1;
-		// 	}
-		// 	#pic4 {
-		// 		width: 120px;
-		// 		height: 120px;
-		// 		top: 340px;
-		// 		right: 0px;
-		// 		background-image: url('https://s3.amazonaws.com/velveteenensemble/recording.png');
-		// 		z-index: 3;
-		// 	}
-		// 	#pic5 {
-		// 		width: 200px;
-		// 		height: 180px;
-		// 		top: 420px;
-		// 		right: 70px;
-		// 		background-image: url('https://s3.amazonaws.com/velveteenensemble/wedding2.png');
-		// 		z-index: 2;
-		// 	}
-		// 	#pic6 {
-		// 		width: 130px;
-		// 		height: 100px;
-		// 		top: 580px;
-		// 		right: 20px;
-		// 		background-image: url('https://s3.amazonaws.com/velveteenensemble/PM9A1049.jpg');
-		// 		z-index: 1;
-		// 	}
-		// 	#pic7 {
-		// 		width: 120px;
-		// 		height: 100px;
-		// 		top: 670px;
-		// 		right: 140px;
-		// 		background-image: url('https://s3.amazonaws.com/velveteenensemble/china.png');
-		// 		z-index: 0;
-		// 	}
-		// 	#pic8 {
-		// 		width: 180px;
-		// 		height: 130px;
-		// 		top: 750px;
-		// 		right: 40px;
-		// 		background-image: url('https://s3.amazonaws.com/velveteenensemble/flute.png');
-		// 		z-index: -1;
-		// 	}
-		// }
-		
-	// }
+	
 }
