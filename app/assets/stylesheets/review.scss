@@ -7,13 +7,17 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
-	padding: 40px;
+	padding: 100px 40px;
 	margin-top: 80px;
-	padding-top: 100px;
 	text-align: center;
 	.padding {
-		padding: 20px;
-		background-color: rgba(255,255,255,.9);
+		padding: 15px;
+	}
+	.background {
+		margin: 30px;
+		padding: 30px;
+		background-color: rgba(255,255,255,.95);
+
 	}
 	#wwlogo {
 		width: 90%;
@@ -28,8 +32,23 @@
 	}
 	.award {
 		width: auto;
-		height: 200px;
+		height: 150px;
 		margin: 50px auto;
+	}
+	h4 {
+		margin-top: 50px;
+		padding: 10px;
+	}
+	form {
+		text-align: right;
+		margin: 0 auto;
+		input.button {
+			display: block;
+			margin: 10px auto;
+		}
+		label, input {
+			margin: 10px auto;
+		}
 	}
 }
 

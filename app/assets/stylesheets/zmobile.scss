@@ -4,7 +4,7 @@
 		margin-top: 480px;
 	}
 	#media .title {
-		padding: 0;
+		// padding: 0;
 		img {
 			margin: 15px 5%;
 		}
@@ -12,6 +12,12 @@
 	#media #instafeed .img {
 		width: 150px;
 		height: 100px;
+		margin: 20px 10px;
+	}
+	#reviews {
+		.award{
+			height: 80px;
+		}
 	}
 }
 @media only screen and (max-width: 932px) {
@@ -181,6 +187,13 @@
 	#venues h1 {
 		top: 60px;
 	}
+	#media {
+		padding-top: 10px;
+		.background {
+			margin: 10px;
+			margin-top: 50px;
+		}
+	}
 }
 @media only screen and (max-width: 500px) {
 	#header {
@@ -230,6 +243,14 @@
 			}
 		}
 		
+	}
+	#media {
+		padding: 50px 0;
+		.background {
+			margin: 0;
+			margin-top: 10px;
+			padding: 0;
+		}
 	}
 }
 

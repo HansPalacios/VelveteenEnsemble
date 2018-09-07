@@ -4,33 +4,40 @@
 	<script async src="https://www.gigmasters.com/static/js/reviews-widget.js"></script>
 	<script type="application/javascript" src="//www.weddingwire.com/assets/vendor/widgets/review-me-be458a4df16991a0093c203ac70f2072923e3b89f4a4f68adb0b6142bd97ada6.js"></script>
 	<script type="application/javascript">WeddingWire.ensureInit(function() {WeddingWire.reviewMeInit({"divId":"ww-review-me", "vendor_id":"2e1193e31b76256e","buttonColor": "#ffffff" }); });</script>
-
-	<div class="padding col-md-6 col-sm-6 col-xs-6">
-		<div id="gigmasters-reviews-widget" data-width="100%" data-widget="1" data-member-id="101918"></div> 
-	</div>
-	<div class="padding col-md-6 col-sm-6 col-xs-6">
-		<%=image_tag image_url("https://www.weddingpronews.com/wp-content/uploads/2018/05/WeddingWire1.png"), :id => "wwlogo" %>
-		<br><br>	
-		<div class='ww-reset ww-reviews-widget' id='ww-widget-reviews'>
-			<div class='ww-reviews-placeholder'>
-			Read all of our wedding reviews on our
-				<a target="_blank" href="https://www.weddingwire.com/biz/velveteen-ensemble/2e1193e31b76256e.html">Velveteen Ensemble</a>
-				Storefront at
-				<a alt="WeddingWire" href="https://www.weddingwire.com">
-					<img src="//www.weddingwire.com/assets/widgets/logo/WWlogo-83x19.gif" alt="Wwlogo 83x19" />
-				</a>
+	<div class="background">
+		<div class="padding col-md-6 col-sm-6 col-xs-6">
+			<div id="gigmasters-reviews-widget" data-width="100%" data-widget="1" data-member-id="101918"></div> 
+		</div>
+		<div class="padding col-md-6 col-sm-6 col-xs-6">
+			<%=image_tag image_url("https://www.weddingpronews.com/wp-content/uploads/2018/05/WeddingWire1.png"), :id => "wwlogo" %>
+			<br><br>	
+			<div class='ww-reset ww-reviews-widget' id='ww-widget-reviews'>
+				<div class='ww-reviews-placeholder'>
+				Read all of our wedding reviews on our
+					<a target="_blank" href="https://www.weddingwire.com/biz/velveteen-ensemble/2e1193e31b76256e.html">Velveteen Ensemble</a>
+					Storefront at
+					<a alt="WeddingWire" href="https://www.weddingwire.com">
+						<img src="//www.weddingwire.com/assets/widgets/logo/WWlogo-83x19.gif" alt="Wwlogo 83x19" />
+					</a>
+				</div>
+				
 			</div>
-			
+			<div id="ww-review-me" class="ww-reset ww-review-me-widget"></div>
+			<div class="row">
+				<div class="col-md-6 col-sm-6 col-xs-6">
+				<%=image_tag image_url("https://s3.amazonaws.com/velveteenensemble/award.png"), :class => "award"%>
+			</div>
+			<div class="col-md-6 col-sm-6 col-xs-6">
+				<%=image_tag image_url("https://s3.amazonaws.com/velveteenensemble/gm-5star.png"), :class => "award"%>
+			</div>
 		</div>
-		<div id="ww-review-me" class="ww-reset ww-review-me-widget"></div>
 		<div class="row">
-			<%=image_tag image_url("https://s3.amazonaws.com/velveteenensemble/award.png"), :class => "award"%>
+			<h4>If you have any questions, concerns, or complaints please contact us and we will work with you to the best of our ability.</h4>
 		</div>
 		<div class="row">
-			<%=image_tag image_url("https://s3.amazonaws.com/velveteenensemble/gm-5star.png"), :class => "award"%>
+			<%= render '/contacts/form2', contact: @contact %>
 		</div>
 	</div>
-	
 	<script>
 	  WeddingWire.createReview({"vendorId":"2e1193e31b76256e", "id":"ww-widget-reviews" });
 	</script>

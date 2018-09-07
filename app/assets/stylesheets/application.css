@@ -114,7 +114,9 @@ hr {
 	margin: 0 auto;
 	border: 1px solid grey;
 }
-
+.nickname {
+	display: none;
+}
 
 
 
