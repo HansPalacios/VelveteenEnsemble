@@ -21,7 +21,7 @@ gem 'figaro'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.6'
 # Use postgresql as the database for Active Record
-# gem 'pg', '>= 0.18', '< 2.0'
+gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
@@ -47,15 +47,15 @@ gem 'aws-sdk', '~> 3'
 # gem 'capistrano-rails', group: :development
 gem 'listen', '>= 3.0.5', '< 3.2'
 # Carrierwave and supporting gems for media upload
-gem "carrierwave"
+gem "carrierwave", '~> 1.2.1'
 gem "mini_magick"
-gem 'asset_sync'
+# gem 'asset_sync'
 gem 'fog'
 gem 'fog-aws', group: :production
   # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3', group: :development # Added development group.
-  gem 'pg', group: :production # Added postgres and made it production only.
+  # gem 'pg', group: :production # Added postgres and made it production only.
   gem 'rails_12factor'
 
 group :development, :test do
