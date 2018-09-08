@@ -50,8 +50,8 @@ gem 'listen', '>= 3.0.5', '< 3.2'
 gem "carrierwave"
 gem "mini_magick"
 gem 'asset_sync'
-gem 'fog-aws'       # but also fog-aws!
-
+gem 'fog'
+gem 'fog-aws', group: :production
   # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3', group: :development # Added development group.
