@@ -172,6 +172,9 @@
 			margin-bottom: 0;
 		}
 	}
+	#home3 {
+		background-attachment: static;
+	}
 	#footer {
 		p, h5, h6, a {
 			font-size: 11px;
@@ -180,15 +183,17 @@
 			height: 40px;
 		}
 	}
-	#about, #venues, #media, #contact {
+	#about, #venues, #media, #songs, #contact, #reviews {
 		margin-top: 60px;
-		padding-top: 0;
+		background-attachment: static;
 	}
-	#songs {
-		margin-top: 60px;
-	}
-	#venues h1 {
-		top: 60px;
+	#venues {
+		h1 {
+			top: 60px;
+		}
+		#venues #venue_1, #venues #venue_3 {
+			background-attachment: static;
+		}
 	}
 	#media {
 		padding-top: 10px;
@@ -247,13 +252,57 @@
 		}
 		
 	}
+	#home3 .contactform {
+		width: 90%;
+		h2 {
+			font-size: 20px;
+			margin-bottom: 20px;
+		}
+		form {
+			width: auto;
+		}
+	}
+	#venues {
+		.venue {
+			padding: 20px;
+			.video {
+				width: 70%;
+				margin: 20px auto;
+			}
+			.clients .eachclient {
+				margin: 0 auto 10px auto;
+			}
+			p {
+				padding: 20px;
+			}
+		}
+	}
 	#media {
-		padding: 50px 0;
+		padding: 0;
+		.background {
+			background-color: rgba(255,255,255,.6);
+		}
+		#instafeed .img {
+			width: 40%;
+			height: 120px;
+		}
 		.background {
 			margin: 0;
 			margin-top: 10px;
 			padding: 0;
 		}
+	}
+	#songs {
+		.smallcol, .mobilehide {
+			display: none;
+		}
+		table .mobileshow {
+				display: inline-block;
+				width: 100%;
+				text-align: center;
+				margin: 0 auto;
+			}
+		
 	}
 }
 

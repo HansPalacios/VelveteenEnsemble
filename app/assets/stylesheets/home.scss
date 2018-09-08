@@ -258,7 +258,10 @@
 		height: 40px;
 		width: auto;
 		// margin: 20px;
-		float: right;
+		// float: right;
+		position: absolute;
+		right: 5px;
+		bottom: 0;
 	}
 	h5 {
 		// margin: 0 auto;
