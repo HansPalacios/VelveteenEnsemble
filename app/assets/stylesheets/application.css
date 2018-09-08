@@ -17,7 +17,6 @@ body, html {
     min-height: 100%;
     width: 100%;
     margin: 0;
-    /*text-align: center;*/
     position: absolute;
 }
 body {
@@ -29,33 +28,19 @@ body {
 	height: 100%;
 }
 h1 {
-	/*font-family: 'Arizonia', cursive;*/
 	margin: 0 auto;
 	width: 100%;
 	text-shadow: 1px 1px white;
 	font-size: 80px;
 	color: black;
 }
-p,h1, h2, h3, h4, h5, h6, a, li {
-/*font-family: 'Philosopher', sans-serif;*/
-/*font-family: 'Nanum Gothic', sans-serif;*/
-/*font-family: 'Quicksand', sans-serif;*/
+p,h1, h2, h3, h4, h5, h6, a, li, label, input {
 font-family: 'Abel', sans-serif;
-
-/*font-family: 'Montserrat', sans-serif;*/
-/*font-family: 'PT Sans Narrow', sans-serif;*/
-/*font-family: 'Nunito', sans-serif;*/
-
 text-decoration-line: none;
 text-decoration: none;
 
-	/*text-align: center;*/
-	/*margin: 0 auto;*/
 }
 
-.row {
-	/*text-align: center;*/
-}
 .spacing {
 	display: none;
 	height: 400px;
