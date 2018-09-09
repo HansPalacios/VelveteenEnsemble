@@ -299,14 +299,19 @@
 		}
 	}
 	#songs {
-		.smallcol, .mobilehide {
+		.mobilehide {
 			display: none;
 		}
-		table .mobileshow {
-			display: inline-block;
-			width: 100%;
-			text-align: center;
-			margin: 0 auto;
+		table {
+			.mobileshow {
+				display: inline-block;
+				width: 100%;
+				text-align: center;
+				margin: 0 auto;
+			}
+			audio {
+				width: 100px;
+			}
 		}
 	}
 	#footer {
