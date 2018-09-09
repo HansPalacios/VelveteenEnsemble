@@ -202,6 +202,25 @@
 			margin-top: 50px;
 		}
 	}
+	#songs {
+		.mobilehide {
+			display: none;
+		}
+		table {
+			.mobileshow {
+				display: inline-block;
+				width: 100%;
+				text-align: center;
+				margin: 0 auto;
+			}
+			th, td {
+				width: 100px;
+			}
+			audio {
+				width: 150px;
+			}
+		}
+	}
 }
 @media only screen and (max-width: 500px) {
 	#header {
@@ -296,22 +315,6 @@
 			margin: 0;
 			margin-top: 10px;
 			padding: 0;
-		}
-	}
-	#songs {
-		.mobilehide {
-			display: none;
-		}
-		table {
-			.mobileshow {
-				display: inline-block;
-				width: 100%;
-				text-align: center;
-				margin: 0 auto;
-			}
-			audio {
-				width: 200px;
-			}
 		}
 	}
 	#footer {
