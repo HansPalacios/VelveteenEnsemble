@@ -318,6 +318,12 @@
 			padding: 0;
 		}
 	}
+	#review {
+		.award {
+			height: 60px;
+			margin: 30px auto;
+		}
+	}
 	#footer {
 		p, h5, h6, a {
 			font-size: 9px;
