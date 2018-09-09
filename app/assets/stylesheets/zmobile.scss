@@ -173,7 +173,7 @@
 		}
 	}
 	#home3 {
-		background-attachment: static;
+		background-attachment: initial;
 	}
 	#footer {
 		p, h5, h6, a {
@@ -185,14 +185,14 @@
 	}
 	#about, #venues, #media, #songs, #contact, #reviews {
 		margin-top: 60px;
-		background-attachment: static;
+		background-attachment: initial;
 	}
 	#venues {
 		h1 {
 			top: 60px;
 		}
 		#venues #venue_1, #venues #venue_3 {
-			background-attachment: static;
+			background-attachment: initial;
 		}
 	}
 	#media {
@@ -253,7 +253,7 @@
 		
 	}
 	#home3 .contactform {
-		background-size: 100vh;
+		// background-size: 100vh;
 		width: 90%;
 		h2 {
 			font-size: 20px;
