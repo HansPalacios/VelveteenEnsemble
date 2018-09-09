@@ -8,7 +8,7 @@ $(document).ready(function(){
 
 	function loop(index) {
     elements.eq(index).fadeIn(600).delay(4500).fadeOut(600, function() { 
-      loop((index + 1) % $elements.length);
+      loop((index + 1) % elements.length);
     });
 	}
 
