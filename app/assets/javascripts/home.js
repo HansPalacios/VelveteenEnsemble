@@ -13,10 +13,10 @@ $(document).ready(function(){
 	}
 
 	hamburger.click(function() {
-    if (dropdown.css.('display' === 'none') {
+    if (dropdown.css('display') === 'none') {
       dropdown.show();
       dropdown.css('display', 'block');
-    } else if (dropdown.css.('display') === 'block') {
+    } else if (dropdown.css('display') === 'block') {
       dropdown.hide();
       dropdown.css('display', 'none');
     }
