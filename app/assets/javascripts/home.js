@@ -12,7 +12,7 @@ $(document).ready(function(){
     });
 	}
 
-	hambuger.click(function() {
+	hamburger.click(function() {
     if (dropdown.css.('display') === 'none') {
       dropdown.show();
       dropdown.css('display', 'block');
