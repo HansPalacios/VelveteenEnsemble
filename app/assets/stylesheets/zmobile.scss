@@ -203,6 +203,7 @@
 		}
 	}
 	#songs {
+		padding: 10px;
 		.mobilehide {
 			display: none;
 		}
@@ -213,6 +214,12 @@
 			audio {
 				width: 200px;
 			}
+		}
+	}
+	#reviews {
+		padding: 50px 20px;
+		.background {
+			padding: 0;
 		}
 	}
 }
