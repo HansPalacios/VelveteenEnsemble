@@ -175,14 +175,7 @@
 	#home3 {
 		background-attachment: initial;
 	}
-	#footer {
-		p, h5, h6, a {
-			font-size: 11px;
-		}
-		#award {
-			height: 40px;
-		}
-	}
+	
 	#about, #venues, #media, #songs, #contact, #reviews {
 		margin-top: 60px;
 		background-attachment: initial;
@@ -217,9 +210,17 @@
 		}
 	}
 	#reviews {
-		padding: 50px 20px;
+		padding: 50px 10px;
 		.background {
 			padding: 0;
+		}
+	}
+	#footer {
+		p, h5, h6, a {
+			font-size: 11px;
+		}
+		#award {
+			height: 40px;
 		}
 	}
 }
