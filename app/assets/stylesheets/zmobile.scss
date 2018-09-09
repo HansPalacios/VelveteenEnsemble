@@ -237,7 +237,11 @@
 		margin-top: 250px;
 		.title {
 			padding: 0 20px;
+			h2 {
+				font-size: 25px;
+			}
 		}
+
 		.news {
 			padding: 20px;
 			h3 {
@@ -310,11 +314,15 @@
 			font-size: 9px;
 		}
 		p {
-			margin-top: 6px;
-			margin-left: 10px;
+			margin-top: 2px;
+			margin-left: 15px;
 		}
-		.mobilemargin {
-    	margin-top: 2px;
+		p:first-child {
+    	margin-top: 6px;
+		}
+		#award {
+			float: right;
+			margin-right: -30px;
 		}
 	}
 }
