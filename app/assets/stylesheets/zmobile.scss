@@ -20,12 +20,6 @@
 			height: 80px;
 		}
 	}
-	#footer {
-		#award {
-			float: right;
-			// margin-right: -40px;
-		}
-	}
 }
 @media only screen and (max-width: 932px) {
 
@@ -261,9 +255,6 @@
 		p, h5, h6, a {
 			font-size: 11px;
 		}
-		#award {
-			height: 40px;
-		}
 	}
 }
 
@@ -397,10 +388,6 @@
 		}
 		p:first-child {
     	margin-top: 6px;
-		}
-		#award {
-			float: right;
-			// margin-right: -30px;
 		}
 	}
 }
