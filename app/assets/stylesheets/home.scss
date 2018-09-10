@@ -77,20 +77,20 @@
 	}
 	.dropdown {
 	   position: absolute;
-	   right: 50px;
+	   right: 20px;
 	   top: 20px;
 	   display: none;
+	   min-width: 30px;
+	   min-height: 25px;
 		 img {
 	    height: 30px;
 	    cursor: pointer;
-	    float: right;
-	    position: absolute;
 		}
 	}
 	.dropdown-content {
 	  display: none;
 	  position: absolute;
-	  right: -30px;
+	  right: 0px;
 	  top: 30px;
 	  background-color: rgba(0,0,0,1);
 	  min-width: 100px;
@@ -101,17 +101,13 @@
 		  padding: 12px 0;
 		  text-decoration: none;
 		  display: block;
-		  // font-family: 'Italianno', cursive;
-		  font-size: 13px;
+		  font-size: 14px;
 		  margin: 0 auto;
 	  	&:hover {
 	  		background-color: rgba(40,40,40,1);
 				font-weight: 400;
 	  	}
 		}
-	}
-	.dropdown:hover .dropdown-content, .dropdown:active .dropdown-content {
-	   display: block;
 	}
 }
 #home1 {
