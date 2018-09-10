@@ -20,6 +20,12 @@
 			height: 80px;
 		}
 	}
+	#footer {
+		#award {
+			float: right;
+			// margin-right: -40px;
+		}
+	}
 }
 @media only screen and (max-width: 932px) {
 
@@ -378,6 +384,9 @@
 			margin: 30px auto;
 		}
 	}
+	#contact {
+		padding: 100px 10px;
+	}
 	#footer {
 		p, h5, h6, a {
 			font-size: 9px;
@@ -391,7 +400,7 @@
 		}
 		#award {
 			float: right;
-			margin-right: -30px;
+			// margin-right: -30px;
 		}
 	}
 }
