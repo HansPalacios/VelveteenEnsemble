@@ -11,20 +11,40 @@ class VenuesController < ApplicationController
   # GET /venues/1
   # GET /venues/1.json
   def show
+    unless admin_signed_in? 
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
   end
 
   # GET /venues/new
   def new
+    unless admin_signed_in? 
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
     @venue = Venue.new
   end
 
   # GET /venues/1/edit
   def edit
+    unless admin_signed_in? 
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
   end
 
   # POST /venues
   # POST /venues.json
   def create
+    unless admin_signed_in? 
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
     @venue = Venue.new(venue_params)
 
     respond_to do |format|
@@ -41,6 +61,11 @@ class VenuesController < ApplicationController
   # PATCH/PUT /venues/1
   # PATCH/PUT /venues/1.json
   def update
+    unless admin_signed_in? 
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
     respond_to do |format|
       if @venue.update(venue_params)
         format.html { redirect_to @venue, notice: 'Venue was successfully updated.' }
@@ -55,6 +80,11 @@ class VenuesController < ApplicationController
   # DELETE /venues/1
   # DELETE /venues/1.json
   def destroy
+    unless admin_signed_in? 
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
     @venue.destroy
     respond_to do |format|
       format.html { redirect_to venues_url, notice: 'Venue was successfully destroyed.' }
@@ -65,11 +95,21 @@ class VenuesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_venue
+      unless admin_signed_in? 
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
       @venue = Venue.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def venue_params
+      unless admin_signed_in? 
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
       params.require(:venue).permit(:title, :bio, :name)
     end
 end

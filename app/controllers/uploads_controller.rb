@@ -11,20 +11,40 @@ class UploadsController < ApplicationController
   # GET /uploads/1
   # GET /uploads/1.json
   def show
+    unless admin_signed_in? 
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
   end
 
   # GET /uploads/new
   def new
+    unless admin_signed_in? 
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
     @upload = Upload.new
   end
 
   # GET /uploads/1/edit
   def edit
+    unless admin_signed_in? 
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
   end
 
   # POST /uploads
   # POST /uploads.json
   def create
+    unless admin_signed_in? 
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
     @upload = Upload.new(upload_params)
 
     respond_to do |format|
@@ -41,6 +61,11 @@ class UploadsController < ApplicationController
   # PATCH/PUT /uploads/1
   # PATCH/PUT /uploads/1.json
   def update
+    unless admin_signed_in? 
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
     respond_to do |format|
       if @upload.update(upload_params)
         format.html { redirect_to @upload, notice: 'Upload was successfully updated.' }
@@ -55,6 +80,11 @@ class UploadsController < ApplicationController
   # DELETE /uploads/1
   # DELETE /uploads/1.json
   def destroy
+    unless admin_signed_in? 
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
     @upload.destroy
     respond_to do |format|
       format.html { redirect_to uploads_url, notice: 'Upload was successfully destroyed.' }
@@ -65,11 +95,21 @@ class UploadsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_upload
+      unless admin_signed_in? 
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
       @upload = Upload.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def upload_params
+      unless admin_signed_in? 
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
       params.fetch(:upload).permit(:name)
     end
 end
