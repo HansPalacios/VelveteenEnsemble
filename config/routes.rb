@@ -6,6 +6,8 @@ Rails.application.routes.draw do
 
   get 'privacy', to: 'privacy#index'
   get 'review', to: 'review#index'
+  get 'songs', to: 'songs#index'
+  get 'venues', to: 'venues#index'
   # devise_for :admins, controllers: { sessions: 'users/sessions'
   # }
   # devise_for :admins, controllers: { registrations: 'users/registrations' }
