@@ -13,19 +13,20 @@
  *= require_tree .
  *= require_self
  */
+html,  body {
+	height: 100%;
+}
 body, html {
-    min-height: 100%;
-    width: 100%;
-    margin: 0;
-    position: absolute;
+
+  width: 100%;
+  margin: 0;
 }
-body {
-	min-height: 100%;
-}
+
 .container-fluid {
 	padding-left: 0;
 	padding-right: 0;
-	height: 100%;
+  overflow-y: hidden;
+  display: block;
 }
 h1 {
 	margin: 0 auto;
@@ -50,6 +51,9 @@ text-decoration: none;
 .background {
 	background-color: rgba(255,255,255,.8);
 	padding: 50px;
+}
+.height {
+	min-height: calc(100% - 140px);
 }
 /*.loader {*/
     /*position: fixed;*/

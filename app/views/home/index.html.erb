@@ -1,50 +1,51 @@
 
-<div class="col-md-12 col-sm-12 col-xs-12 no-gutters" id="home1">
-	<div class="row">
-		<ul>
-			<a href="/venues#weddingplaceholder" class="listone"><li>Weddings</li></a>
-			<a href="/venues#venue_2" class="listtwo"><li>Concerts & Tours</li></a>
-			<a href="/venues#venue_3" class="listthree"><li>Corporate Events</li></a>
-			<a href="/venues#venue_4" class="listfour"><li>Recordings</li></a>
-		</ul>
-		<div class="fadeimage">
-			<div class="img loopOne" ></div>
-			<div class="img loopTwo" ></div>
-			<div class="img loopThree" ></div>
-			<div class="img loopFour" ></div>
+<div class="container-fluid height" id="home">
+	<div class="col-md-12 col-sm-12 col-xs-12 no-gutters" id="home1">
+		<div class="row">
+			<ul>
+				<a href="/venues#weddingplaceholder" class="listone"><li>Weddings</li></a>
+				<a href="/venues#venue_2" class="listtwo"><li>Concerts & Tours</li></a>
+				<a href="/venues#venue_3" class="listthree"><li>Corporate Events</li></a>
+				<a href="/venues#venue_4" class="listfour"><li>Recordings</li></a>
+			</ul>
+			<div class="fadeimage">
+				<div class="img loopOne" ></div>
+				<div class="img loopTwo" ></div>
+				<div class="img loopThree" ></div>
+				<div class="img loopFour" ></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-md-12 col-sm-12 col-xs-12 no-gutters" id="home2">
+		<div class="row no-gutters title">
+			<div class="col-md-4 col-sm-4 col-xs-4">
+				<a href="https://www.instagram.com/velveteenensemble/" target="_blank"><%=image_tag image_url("https://s3.amazonaws.com/velveteenensemble/blinsta.png")%></a>
+				<a href="https://www.facebook.com/VelveteenEnsemble/" target="_blank"><%=image_tag image_url("https://s3.amazonaws.com/velveteenensemble/blfb.png")%></a>
+				<a href="https://www.youtube.com/watch?v=Rtennabdzlc&t=21s" target="_blank"><%=image_tag image_url("https://s3.amazonaws.com/velveteenensemble/blyt2.png")%></a>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-4">
+				<h2>Newsfeed</h2>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-4"></div>
+		</div>
+		<hr>
+		<div class="row background news" id="news1"></div>
+		<hr>
+		<div class="row background news" id="news2"></div>
+		<hr>
+		<div class="row background news" id="news3"></div>
+		<hr>
+		<div class="row background news" id="news4"></div>
+	</div>
+
+	<div class="col-md-12 col-sm-12 col-xs-12 no-gutters" id="home3">
+		<div class="background contactform">
+			<h2>Contact us to request info or to inquire about availability</h2>
+			<%= render '/contacts/form', contact: @contact %>
 		</div>
 	</div>
 </div>
-
-<div class="col-md-12 col-sm-12 col-xs-12 no-gutters" id="home2">
-	<div class="row no-gutters title">
-		<div class="col-md-4 col-sm-4 col-xs-4">
-			<a href="https://www.instagram.com/velveteenensemble/" target="_blank"><%=image_tag image_url("https://s3.amazonaws.com/velveteenensemble/blinsta.png")%></a>
-			<a href="https://www.facebook.com/VelveteenEnsemble/" target="_blank"><%=image_tag image_url("https://s3.amazonaws.com/velveteenensemble/blfb.png")%></a>
-			<a href="https://www.youtube.com/watch?v=Rtennabdzlc&t=21s" target="_blank"><%=image_tag image_url("https://s3.amazonaws.com/velveteenensemble/blyt2.png")%></a>
-		</div>
-		<div class="col-md-4 col-sm-4 col-xs-4">
-			<h2>Newsfeed</h2>
-		</div>
-		<div class="col-md-4 col-sm-4 col-xs-4"></div>
-	</div>
-	<hr>
-	<div class="row background news" id="news1"></div>
-	<hr>
-	<div class="row background news" id="news2"></div>
-	<hr>
-	<div class="row background news" id="news3"></div>
-	<hr>
-	<div class="row background news" id="news4"></div>
-</div>
-
-<div class="col-md-12 col-sm-12 col-xs-12 no-gutters" id="home3">
-	<div class="background contactform">
-		<h2>Contact us to request info or to inquire about availability</h2>
-		<%= render '/contacts/form', contact: @contact %>
-	</div>
-</div>
-
 
 
 <script>

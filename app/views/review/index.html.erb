@@ -1,10 +1,10 @@
-<div class="row" id="reviews">
+<div class="container-fluid" id="reviews">
 
 	<script src='//www.weddingwire.com/assets/vendor/widgets/my-reviews.js' type='application/javascript'></script>
 	<script async src="https://www.gigmasters.com/static/js/reviews-widget.js"></script>
 	<script type="application/javascript" src="//www.weddingwire.com/assets/vendor/widgets/review-me-be458a4df16991a0093c203ac70f2072923e3b89f4a4f68adb0b6142bd97ada6.js"></script>
 	<script type="application/javascript">WeddingWire.ensureInit(function() {WeddingWire.reviewMeInit({"divId":"ww-review-me", "vendor_id":"2e1193e31b76256e","buttonColor": "#ffffff" }); });</script>
-	<div class="background">
+	<div class="background col-md-12">
 		<div class="padding col-md-6 col-sm-6 col-xs-12">
 			<div id="gigmasters-reviews-widget" data-width="100%" data-widget="1" data-member-id="101918"></div> 
 		</div>
@@ -30,24 +30,24 @@
 			<!-- <div class="col-md-6 col-sm-6 col-xs-6"> -->
 				<%=image_tag image_url("https://s3.amazonaws.com/velveteenensemble/gm-5star.png"), :class => "award"%>
 			<!-- </div> -->
+			</div>
+			<div class="row">
+				<h4>If you have any concerns, feel free to contact us and we will accomodate you to the best of our abilty.</h4>
+			</div>
+			<div class="row">
+				<%= render '/contacts/form2', contact: @contact %>
+			</div>
 		</div>
-		<div class="row">
-			<h4>If you have any concerns, feel free to contact us and we will accomodate you to the best of our abilty.</h4>
-		</div>
-		<div class="row">
-			<%= render '/contacts/form2', contact: @contact %>
-		</div>
+		<script>
+		  WeddingWire.createReview({"vendorId":"2e1193e31b76256e", "id":"ww-widget-reviews" });
+		</script>
+
+		<style>
+			#ww-widget-reviews, .ww-reviews-widget {
+				min-width: auto;
+				max-width: auto;
+			}
+		</style>
+
 	</div>
-	<script>
-	  WeddingWire.createReview({"vendorId":"2e1193e31b76256e", "id":"ww-widget-reviews" });
-	</script>
-
-	<style>
-		#ww-widget-reviews, .ww-reviews-widget {
-			min-width: auto;
-			max-width: auto;
-		}
-	</style>
-
 </div>
-

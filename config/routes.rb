@@ -1,7 +1,16 @@
 Rails.application.routes.draw do
 
+  devise_for :admins
+  
+  get 'admin', to: 'admin#index'
+
   get 'privacy', to: 'privacy#index'
   get 'review', to: 'review#index'
+  # devise_for :admins, controllers: { sessions: 'users/sessions'
+  # }
+  # devise_for :admins, controllers: { registrations: 'users/registrations' }
+
+
 
   resources :musicians
   resources :abouts

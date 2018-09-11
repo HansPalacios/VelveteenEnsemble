@@ -156,7 +156,7 @@
   text-align: left;
 }
 /* line 21, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/home.scss */
-#header #notice {
+#header #notice, #header .alert {
   z-index: 10;
   position: absolute;
   top: 20px;
@@ -448,7 +448,7 @@
   margin: 5px auto;
 }
 
-/* line 267, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/home.scss */
+/* line 266, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/home.scss */
 #award {
   height: 40px;
   width: auto;
@@ -462,7 +462,7 @@
 }
 /* line 4, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/privacy.scss */
 #privacypolicy h2 {
-  padding: 180px 0 50px 0;
+  padding: 110px 0 50px 0;
   color: white;
   background-color: #171717;
 }
@@ -488,7 +488,7 @@
 }
 /* line 16, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/review.scss */
 #reviews .background {
-  margin: 30px;
+  margin: 30px auto;
   padding: 30px;
   background-color: rgba(255, 255, 255, 0.95);
 }
@@ -636,7 +636,7 @@
 /* line 4, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/uploads.scss */
 #media {
   text-align: center;
-  background-image: url("https://s3.amazonaws.com/velveteenensemble/musicsheet.png");
+  background-image: url("https://s3.amazonaws.com/velveteenensemble/wedding2.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

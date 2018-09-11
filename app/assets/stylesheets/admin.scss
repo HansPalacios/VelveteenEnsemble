@@ -1,0 +1,23 @@
+// Place all the styles related to the admin controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#admin {
+	padding: 100px 50px;
+	// height: auto !important; 
+	// height: 100%;
+	margin-top: 80px;
+	background-image: url('https://s3.amazonaws.com/velveteenensemble/wedding2.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;	
+	.background {
+		width: 500px;
+		margin: 0 auto;
+		text-align: center;
+		.row {
+			width: 100%;
+			text-align: center;
+		}
+	}
+}

@@ -1,6 +1,6 @@
 @media only screen and (max-width: 992px) {
 
-	#home2 {
+	#home #home2 {
 		margin-top: 480px;
 	}
 	#media {
@@ -22,7 +22,9 @@
 	}
 }
 @media only screen and (max-width: 932px) {
-
+	.height {
+		min-height: calc(100% - 140px);
+	}
 	#header {
 		height: 80px;
 		padding: 10px;
@@ -38,25 +40,27 @@
 			}
 		}
 	}
-	#home1 {
-		.fadeimage .img {
-			height: 380px;
-		}
-		ul {
-			height: 380px;
-			li {
-				font-size: 18px;
-				padding: 30.1px 10px;
+	#home{
+		#home1 {
+			.fadeimage .img {
+				height: 380px;
+			}
+			ul {
+				height: 380px;
+				li {
+					font-size: 18px;
+					padding: 30.1px 10px;
+				}
 			}
 		}
-	}
-	#home2 {
-		margin-top: 420px;
-		h2 {
-			font-size: 35px;
-		}
-		.background {
-			margin: 0;
+		#home2 {
+			margin-top: 420px;
+			h2 {
+				font-size: 35px;
+			}
+			.background {
+				margin: 0;
+			}
 		}
 	}
 	#about {
@@ -126,6 +130,9 @@
 	}
 }
 @media only screen and (max-width: 700px) {
+	.height {
+		min-height: calc(100% - 120px);
+	}
 	#header {
 		height: 60px;
 		padding: 10px;
@@ -140,53 +147,55 @@
 			}
 		}
 	}	
-	#home1 {
-		ul {
-			width: 150px;
-			height: 300px;
-			padding: 20px;
-			margin: 0;
-			li {
-				font-size: 13px;
-				padding: 24px 10px;
+	#home {
+		#home1 {
+			ul {
+				width: 150px;
+				height: 300px;
+				padding: 20px;
+				margin: 0;
+				li {
+					font-size: 13px;
+					padding: 24px 10px;
+				}
+			}
+			.fadeimage .img {
+				width: calc(100% - 150px);
+				height: 300px;
 			}
 		}
-		.fadeimage .img {
-			width: calc(100% - 150px);
-			height: 300px;
+		#home2 {
+			margin-top: 320px;
+			h2 {
+				font-size: 30px;
+				width: auto;
+			}
+			p {
+				font-size: 13px;
+				padding: 10px;
+				overflow-y: scroll;
+			}
+			img {
+				margin: 35px 3%;
+				height: 20px;
+			}
+			.img {
+				height: 120px;
+			}
+			.background {
+				padding: 30px;
+			}
+			h3 {
+				font-size: 18px;
+				font-weight: 600;
+				margin: 5px;
+				margin-top: 0;
+				margin-bottom: 0;
+			}
 		}
-	}
-	#home2 {
-		margin-top: 320px;
-		h2 {
-			font-size: 30px;
-			width: auto;
+		#home3 {
+			background-attachment: initial;
 		}
-		p {
-			font-size: 13px;
-			padding: 10px;
-			overflow-y: scroll;
-		}
-		img {
-			margin: 35px 3%;
-			height: 20px;
-		}
-		.img {
-			height: 120px;
-		}
-		.background {
-			padding: 30px;
-		}
-		h3 {
-			font-size: 18px;
-			font-weight: 600;
-			margin: 5px;
-			margin-top: 0;
-			margin-bottom: 0;
-		}
-	}
-	#home3 {
-		background-attachment: initial;
 	}
 	#about, #venues, #media, #songs, #contact, #reviews {
 		margin-top: 60px;
@@ -275,56 +284,61 @@
 			display: inline-block;
 			text-align: center;
 		}
+		#adminlinks {
+			display: none;
+		}
 	}	
-	#home1 {
-		ul {
-			width: 120px;
-			height: 220px;
-			padding: 15px;
-			margin: 0;
-			li {
-				font-size: 13px;
-				padding: 15px 0;
+	#home {
+		#home1 {
+			ul {
+				width: 120px;
+				height: 220px;
+				padding: 15px;
+				margin: 0;
+				li {
+					font-size: 13px;
+					padding: 15px 0;
+				}
+			}
+			.fadeimage .img {
+				width: calc(100% - 120px);
+				height: 220px;
 			}
 		}
-		.fadeimage .img {
-			width: calc(100% - 120px);
-			height: 220px;
-		}
-	}
-	#home2 {
-		margin-top: 250px;
-		.title {
-			padding: 0 20px;
-			h2 {
-				font-size: 25px;
+		#home2 {
+			margin-top: 250px;
+			.title {
+				padding: 0 20px;
+				h2 {
+					font-size: 25px;
+				}
 			}
-		}
 
-		.news {
-			padding: 20px;
-			h3 {
-				font-size: 15px;
+			.news {
+				padding: 20px;
+				h3 {
+					font-size: 15px;
+				}
+				p {
+					padding: 0;
+					font-size: 11px;
+				}
+				.img {
+					height: 100px;
+				}
 			}
-			p {
-				padding: 0;
-				font-size: 11px;
-			}
-			.img {
-				height: 100px;
-			}
+			
 		}
-		
-	}
-	#home3 .contactform {
-		// background-size: 100vh;
-		width: 90%;
-		h2 {
-			font-size: 20px;
-			margin-bottom: 20px;
-		}
-		form {
-			width: auto;
+		#home3 .contactform {
+			// background-size: 100vh;
+			width: 90%;
+			h2 {
+				font-size: 20px;
+				margin-bottom: 20px;
+			}
+			form {
+				width: auto;
+			}
 		}
 	}
 	#about {

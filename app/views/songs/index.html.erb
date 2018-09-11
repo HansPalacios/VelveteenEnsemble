@@ -1,66 +1,66 @@
 
-<div class= "col-md-12 no-gutters" id="songs">
+<div class= "container-fluid no-gutters" id="songs">
+	<div class="col-md-12">
+		<table>
 
-	<table>
+			<thead>
+				<tr>
+					<th class="col-xs-12" colspan="4"><h3>Sample Music</h3></th>
+				</tr>
+			  <tr>
+			    <th class="smallcol">Title</th>
+			    <th class="smallcol">Artist</th> 
+			    <th class="smallcol mobilehide">Genre</th>
+			    <th class="widecol"></th>
+		  	</tr>
+		  </thead>
+		  <tbody>
+					
+					 <% @songs.where( play: true ).each do |song| %>
+					  <tr class="hover">
+							<td><%= song.title%></td>
+							<td><%= song.artist%></td> 
+							<td class="mobilehide"><%= song.genre%></td>
+							<td class="widecol">
+								<audio controls preload="none" controlsList="nodownload"  height="20px"> 
+								   <source src="<%= song.file%>" type="audio/mpeg">
+								</audio>
 
-		<thead>
-			<tr>
-				<th class="col-xs-12" colspan="4"><h3>Sample Music</h3></th>
-			</tr>
-		  <tr>
-		    <th class="smallcol">Title</th>
-		    <th class="smallcol">Artist</th> 
-		    <th class="smallcol mobilehide">Genre</th>
-		    <th class="widecol"></th>
-	  	</tr>
-	  </thead>
-	  <tbody>
+							</td>
+						</tr>	
+						<% end %>
 				
-				 <% @songs.where( play: true ).each do |song| %>
-				  <tr class="hover">
-						<td><%= song.title%></td>
-						<td><%= song.artist%></td> 
-						<td class="mobilehide"><%= song.genre%></td>
-						<td class="widecol">
-							<audio controls preload="none" controlsList="nodownload"  height="20px"> 
-							   <source src="<%= song.file%>" type="audio/mpeg">
-							</audio>
+			</tbody>
+		</table>
+		
 
-						</td>
-					</tr>	
-					<% end %>
-			
-		</tbody>
-	</table>
-	
-
-<br><br><br>
-<div class="row">
-<table id="listsongs" scrolling="yes">
-		<thead>
-			<tr>
-				<th colspan="4"><h4>Song list for String Quartet (Two violins, viola and cello)</h4></th>
-			</tr>
-			<tr>
-				<th colspan="4"><h5> Please do not hesitate to request songs that are not on this list.  We will personally arrange any request.</h5></th>
-			</tr>
-		  <tr>
-		    <th>Title</th>
-		    <th>Artist/Composer</th> 
-	  	</tr>
-	  </thead>
-	  <tbody>
-				
-				 <% @songs.where( genre: [nil, true] ).each do |song| %>
+	<br><br><br>
+	<div class="row">
+		<table id="listsongs" scrolling="yes">
+				<thead>
+					<tr>
+						<th colspan="4"><h4>Song list for String Quartet (Two violins, viola and cello)</h4></th>
+					</tr>
+					<tr>
+						<th colspan="4"><h5> Please do not hesitate to request songs that are not on this list.  We will personally arrange any request.</h5></th>
+					</tr>
 				  <tr>
-						<td><%= song.title%></td>
-						<td><%= song.artist%></td> 
-					</tr>	
-					<% end %>
-			
-		</tbody>
-	</table>
-	
-</div>
+				    <th>Title</th>
+				    <th>Artist/Composer</th> 
+			  	</tr>
+			  </thead>
+			  <tbody>
+						
+						 <% @songs.where( genre: [nil, true] ).each do |song| %>
+						  <tr>
+								<td><%= song.title%></td>
+								<td><%= song.artist%></td> 
+							</tr>	
+							<% end %>
+					
+				</tbody>
+			</table>
+		</div>
+	</div>
 </div>
 
