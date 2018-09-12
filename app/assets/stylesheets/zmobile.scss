@@ -195,6 +195,7 @@
 		}
 		#home3 {
 			background-attachment: initial;
+			padding: 50px 0;
 		}
 	}
 	#about, #venues, #media, #songs, #contact, #reviews {
@@ -233,8 +234,7 @@
 		}
 	}
 	#songs {
-		padding: 10px;
-		padding-top: 50px;
+		padding: 50px 10px;
 		.mobilehide {
 			display: none;
 		}
@@ -257,6 +257,9 @@
 			padding: 0;
 		}
 	}
+	#contact {
+		padding: 50px 10px;
+	}
 	#footer {
 		p, h5, h6, a {
 			font-size: 11px;
@@ -271,7 +274,16 @@
 		height: 150px;
 	}
 }
-
+@media only screen and (max-width: 575px) {
+	#reviews {
+		.padding {
+			padding-bottom: 100px;
+		}
+		h4 {
+			padding: 20px 10%;
+		}
+	}
+}
 @media only screen and (max-width: 500px) {
 	#header {
 		ul {
@@ -327,7 +339,6 @@
 			
 		}
 		#home3 .contactform {
-			// background-size: 100vh;
 			width: 90%;
 			h2 {
 				font-size: 20px;
@@ -367,13 +378,13 @@
 		}
 	}
 	#media {
-		padding: 0;
+		padding: 50px 10px;
 		#instafeed .img {
 			width: 40%;
 			height: 120px;
 		}
 		.background {
-			background-color: rgba(255,255,255,.4);
+			background-color: rgba(255,255,255,.8);
 			margin: 0;
 			padding: 0;
 			padding-bottom: 100px;
@@ -384,9 +395,6 @@
 			height: 60px;
 			margin: 30px auto;
 		}
-	}
-	#contact {
-		padding: 100px 10px;
 	}
 	#footer {
 		p, h5, h6, a {
