@@ -53,6 +53,7 @@ text-decoration: none;
 	padding: 50px;
 	margin-left: 0;
 	margin-right: 0;
+	margin: 0 auto;
 }
 .height {
 	min-height: calc(100% - 140px);
