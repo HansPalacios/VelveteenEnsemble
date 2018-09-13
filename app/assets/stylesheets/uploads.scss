@@ -8,37 +8,37 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
-	padding-bottom: 50px;
 	margin-top: 80px;
-	padding-top: 50px;
+	padding: 50px 10px;
 	.title {
 		width: 100%;
-		padding: 50px;
-		h1 {
-			font-size: 45px;
+		h2 {
+			font-weight: 900;
+			width: 100%;
+			text-align: center;
+		}
+		a {
+			margin: 20px auto;
 		}
 		img {
-			height: 25px;
+			height: 20px;
 			width: auto;
-			margin: 15px 20px;
+			margin: 10px 20px 15px 20px;
 		}
-	}
-	.center {
-		margin: 20px auto;
 	}
 	.background {
 		background-color: rgba(253,253,253,.95);
-		margin: 50px;
-		padding: 0;
-		padding-bottom: 50px;
+		margin: 10px ;
+		padding: 50px 20px;
+		padding-top: 0;
 	}
 	#instafeed {
 		text-align: center;
 		// margin: 50px;
 		padding: 0;
 		.img {
-			width: 250px;
-			height: 200px;
+			width: 25%;
+			height: 100px;
 			margin: 20px 20px;
 			padding: 0;
 			background-size: cover;

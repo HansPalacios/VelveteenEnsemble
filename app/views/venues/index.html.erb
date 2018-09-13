@@ -1,18 +1,30 @@
 <div id="venues" class="container-fluid height">
     <h1>Venues</h1>
-    <div id="weddingplaceholder"></div>
+    
     <% @venues.each do |venue| %>
       
       <div class="row no-gutters venue" id="venue_<%= venue.id %>">
-        <div class="spacing"></div>
         <div class="col-md-12">
           <div class="background">
+            <div id="section<%= venue.id %>" class="placeholder"></div>
             <div class="row no-gutters title">
               <h2><%= venue.title %></h2>
             </div>
             <hr>
             <div class="row">
-              <p><%= venue.bio %></p>
+              <p>
+                <%= venue.bio %>
+
+                <% if admin_signed_in? %>
+                  <div class="edit">
+                <%= link_to 'Edit', edit_venue_path(venue) %>
+              
+              </p>
+
+              
+
+              </div>
+            <% end %>
             </div>
             <div class="row clients">
               <% venue.clients.each do |client| %>
@@ -26,9 +38,7 @@
               <iframe src="<%= venue.video2 %>" allowTransparency="true" allowFullScreen="true" class="video"></iframe>
               <iframe src="<%= venue.video3 %>" allowTransparency="true" allowFullScreen="true" class="video"></iframe>
             </div>
-            <div class="row">
-              <!-- <#%= link_to 'Edit', edit_venue_path(venue) %> -->
-            </div>
+            
           </div>
 
           

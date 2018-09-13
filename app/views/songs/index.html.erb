@@ -12,6 +12,9 @@
 			    <th class="smallcol">Artist</th> 
 			    <th class="smallcol mobilehide">Genre</th>
 			    <th class="widecol"></th>
+			    <% if admin_signed_in? %>
+        		<th class="smallcol"></th>
+      		<% end %>
 		  	</tr>
 		  </thead>
 		  <tbody>
@@ -27,6 +30,13 @@
 								</audio>
 
 							</td>
+							<% if admin_signed_in? %>
+          			<td>
+            			<%= link_to 'Edit', edit_song_path(song) %>
+            			<div class="vertical"></div>
+            			<%= link_to 'Delete', song, :method => :delete, :confirm => "Are you sure?" %>
+       		 			</td>
+      				<% end %>
 						</tr>	
 						<% end %>
 				
@@ -47,6 +57,9 @@
 				  <tr>
 				    <th>Title</th>
 				    <th>Artist/Composer</th> 
+				    <% if admin_signed_in? %>
+          		<th></th>
+      			<% end %>
 			  	</tr>
 			  </thead>
 			  <tbody>
@@ -55,6 +68,13 @@
 						  <tr>
 								<td><%= song.title%></td>
 								<td><%= song.artist%></td> 
+								<% if admin_signed_in? %>
+	          			<td>
+	            			<%= link_to 'Edit', edit_song_path(song) %>
+	            			<div class="vertical"></div>
+	            			<%= link_to 'Delete', song, :method => :delete, :confirm => "Are you sure?" %>
+	       		 			</td>
+      					<% end %>
 							</tr>	
 							<% end %>
 					

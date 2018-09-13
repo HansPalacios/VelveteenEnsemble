@@ -19,3 +19,44 @@
 		}
 	}
 }
+.editmobileshow{
+	display: none;
+}
+.editmobileshow, .editmobilehide {
+	width: 100%;
+}
+.edit, .editmobilehide .edit, .editmobileshow .edit {
+	width: 100%;
+	text-align: center;
+	padding-bottom: 20px;
+	a {
+		color: rgba(123,210,33,1);
+		font-weight: 900;
+		font-size: 18px;
+	}
+}
+.vertical {
+	width: 2px;
+	background-color: black;
+	height: 10px;
+	display: inline-block;
+}
+@media only screen and (max-width: 932px) {
+	.editmobilehide {
+		display: none;
+	}
+	.editmobileshow {
+		display: inline-block;
+		.edit {
+			width: 100%;
+			text-align: center;
+			a {
+				color: rgba(123,210,33,1);
+				font-weight: 900;
+				font-size: 18px;
+			}
+		}
+	}
+}
+
+

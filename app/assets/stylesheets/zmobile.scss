@@ -6,7 +6,7 @@
 	#media {
 		.title {
 			img {
-				margin: 15px 5%;
+				// margin: 15px 5%;
 			}
 		}
 		#instafeed .img {
@@ -83,13 +83,6 @@
 		}
 	}
 	#venues {
-		h1 {
-			font-size: 50px;
-			padding: 20px 0;
-		}
-		#venue_1 .spacing {
-			height: 150px;
-		}
 		.venue {
 			padding: 50px;
 			hr {
@@ -222,8 +215,23 @@
 		}
 	}
 	#venues {
+		h1 {
+			font-size: 40px;
+			padding: 15px 0;
+		}
 		#venue_1, #venue_3 {
 			background-attachment: initial;
+		}
+		#venue_1 {
+			padding-top: 174px;
+		}
+		.venue {
+			h2 {
+				font-size: 25px;
+			}
+			.placeholder {
+				top: -110px;
+			}
 		}
 	}
 	#media {
@@ -363,8 +371,11 @@
 		}
 	}
 	#venues {
+		#venue_1 {
+			padding-top: 149px;
+		}
 		.venue {
-			padding: 20px;
+			padding: 50px 20px;
 			.video {
 				width: 70%;
 				margin: 20px auto;
