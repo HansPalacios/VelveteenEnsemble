@@ -3,7 +3,6 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 #admin, .editpage {
 	padding: 100px 50px;
-	margin-top: 80px;
 	background-image: url('https://s3.amazonaws.com/velveteenensemble/wedding2.png');
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -29,7 +28,6 @@
 .editpage {
 	padding: 50px;
 	.background {
-		width: calc(100%-100px);
 		padding: 35px;
 	}
 	hr {
@@ -141,5 +139,23 @@
 		}
 	}
 }
+@media only screen and (max-width: 550px) {
+	.editpage {
+		padding: 50px 10px;
+		.background {
+			width: calc(100% - 20px);
+			padding: 20px;
+			form {
+				label {
+					width:60px;
+					overflow-wrap: break-word;
 
+				}
+				textarea, input {
+					width: calc(100% - 100px)
+				}
+			}
+		}
+	}
+}
 
