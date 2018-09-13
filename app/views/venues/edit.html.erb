@@ -1,6 +1,16 @@
-<h1>Editing Venue</h1>
-
-<%= render 'form', venue: @venue %>
-
-<%= link_to 'Show', @venue %> |
-<%= link_to 'Back', venues_path %>
+<div class="container-fluid editpage height">
+	<div class="background">
+		<div class="row">
+			<h3>Editing Venue</h3>
+		</div>
+		<div class="row">
+			<%= render 'form', venue: @venue %>
+		</div>
+		<div class="row">
+			<div class="links">
+				<%= link_to 'Show', @venue %> |
+				<%= link_to 'Back', venues_path %>
+			</div>
+		</div>
+	</div>
+</div>

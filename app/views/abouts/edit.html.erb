@@ -1,6 +1,14 @@
-<h1>Editing About</h1>
-
-<%= render 'form', about: @about %>
-
-<%= link_to 'Show', @about %> |
-<%= link_to 'Back', abouts_path %>
+<div class="container-fluid editpage height">
+	<div class="background">
+		<div class="row">
+			<h3>Editing About</h3>
+		</div>
+		<div class="row">
+			<%= render 'form', about: @about %>
+		</div>
+		<div class="row">
+			<%= link_to 'Show', @about %> |
+			<%= link_to 'Back', abouts_path %>
+		</div>
+	</div>
+</div>
