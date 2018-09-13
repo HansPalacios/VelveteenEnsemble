@@ -1,19 +1,26 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Title:</strong>
-  <%= @venue.title %>
-</p>
-
-<p>
-  <strong>Bio:</strong>
-  <%= @venue.bio %>
-</p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @venue.name %>
-</p>
-
-<%= link_to 'Edit', edit_venue_path(@venue) %> |
-<%= link_to 'Back', venues_path %>
+<div class="container-fluid editpage height">
+	<div class="background">
+		<div class="row">
+			<p>
+			  <strong>Title:</strong>
+			  <%= @venue.title %>
+			</p>
+		</div>
+		<div class="row">
+			<p>
+			  <strong>Bio:</strong>
+			  <%= @venue.bio %>
+			</p>
+		</div>
+		<div class="row">
+			<p>
+			  <strong>Image URL:</strong>
+			  <%= @venue.name %>
+			</p>
+		</div>
+		<div class="links">
+			<%= link_to 'Edit', edit_venue_path(@venue) %> |
+			<%= link_to 'Back', venues_path %>
+		</div>
+	</div>
+</div>

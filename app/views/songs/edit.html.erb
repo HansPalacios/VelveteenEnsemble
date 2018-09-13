@@ -1,5 +1,5 @@
 <div class="container-fluid editpage height">
-	<div class="background col-md-12">
+	<div class="background">
 			<div class="row">
 				<h3>Editing Song</h3>
 			</div>
@@ -7,8 +7,10 @@
 				<%= render 'form', song: @song %>
 			</div>
 			<div class="row">
-				<%= link_to 'Show', @song %> |
-				<%= link_to 'Back', songs_path %>
+				<div class="links">
+					<%= link_to 'Show', @song %> |
+					<%= link_to 'Back', songs_path %>
+				</div>
 			</div>
 	</div>
 </div>

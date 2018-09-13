@@ -1,4 +1,17 @@
-<p id="notice"><%= notice %></p>
+<div class="container-fluid editpage height" id="aboutedit">
+	<div class="background">
+		<div class="row">
+			<h3>About  Paragraph #<%= @about.id %></h3>
+		</div>
+		<div class="row">
+			<p><%= @about.bio %></p>
+		</div>
+		<div class="row">
+			<div class="links">
+				<%= link_to 'Edit', edit_about_path(@about) %> |
+				<%= link_to 'Back', abouts_path %>
+			</div>
+		</div>
+	</div>
+</div>
 
-<%= link_to 'Edit', edit_about_path(@about) %> |
-<%= link_to 'Back', abouts_path %>

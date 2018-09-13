@@ -1,5 +1,13 @@
-<h1>New Song</h1>
-
-<%= render 'form', song: @song %>
-
-<%= link_to 'Back', songs_path %>
+<div class="container-fluid editpage height">
+	<div class="background">
+		<div class="row">
+			<h1>New Song</h1>
+		</div>
+		<div class="row">
+			<%= render 'form', song: @song %>
+		</div>
+		<div class="row">
+			<%= link_to 'Back', songs_path %>
+		</div>
+	</div>
+</div>

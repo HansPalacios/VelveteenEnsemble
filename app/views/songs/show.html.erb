@@ -1,29 +1,38 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Title:</strong>
-  <%= @song.title %>
-</p>
-
-<p>
-  <strong>Artist:</strong>
-  <%= @song.artist %>
-</p>
-
-<p>
-  <strong>Genre:</strong>
-  <%= @song.genre %>
-</p>
-
-<p>
-  <strong>File:</strong>
-  <%= @song.file %>
-</p>
-
-<p>
-  <strong>Play:</strong>
-  <%= @song.play %>
-</p>
-
-<%= link_to 'Edit', edit_song_path(@song) %> |
-<%= link_to 'Back', songs_path %>
+<div class="container-fluid editpage height">
+  <div class="background">
+      <div class="row">
+        <p>
+          <strong>Title:</strong>
+          <%= @song.title %>
+        </p>
+      </div>
+      <div class="row">
+        <p>
+          <strong>Artist:</strong>
+          <%= @song.artist %>
+        </p>
+      </div>
+      <div class="row">
+        <p>
+          <strong>Genre:</strong>
+          <%= @song.genre %>
+        </p>
+      </div>
+      <div class="row">
+        <p>
+          <strong>File:</strong>
+          <%= @song.file %>
+        </p>
+      </div>
+      <div class="row">
+        <p>
+          <strong>Play:</strong>
+          <%= @song.play %>
+        </p>
+      </div>
+      <div class="row links">
+        <%= link_to 'Edit', edit_song_path(@song) %> |
+        <%= link_to 'Back', songs_path %>
+      </div>
+    </div>
+  </div>

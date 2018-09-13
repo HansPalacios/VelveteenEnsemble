@@ -21,6 +21,9 @@
     <%= form.text_field :artist, id: :song_artist %>
   </div>
 
+  <hr>
+  <b><h5>Only fill out following  if editing or adding a sample song</b></h5>
+
   <div class="field">
     <%= form.label :genre %>
     <%= form.text_field :genre, id: :song_genre %>
@@ -32,7 +35,7 @@
   </div>
 
   <div class="field">
-    <%= form.label :play %>
+    <%= form.label :play, "Sample" %>
     <%= form.check_box :play, id: :song_play %>
   </div>
 
