@@ -8,21 +8,21 @@ document.addEventListener('play', function(e){
         }
     }
 }, true);
-# //     var result = $('#result')
+//     var result = $('#result')
 
-# // result.hide().html('<%= j @result %>').fadeIn(250);
-# // playAudio(result);
+// result.hide().html('<%= j @result %>').fadeIn(250);
+// playAudio(result);
 
-# // function playAudio(result){
-# //   if (result.html() === "Yes"){
+// function playAudio(result){
+//   if (result.html() === "Yes"){
 
-# //     $('#yes-audio').trigger('play')
-# //   }
-# //   else if (result.html() === "Nope."){
-# //     $('#no-audio').trigger('play')
-# //   }
+//     $('#yes-audio').trigger('play')
+//   }
+//   else if (result.html() === "Nope."){
+//     $('#no-audio').trigger('play')
+//   }
 
-# // }
+// }
 
 });
 } ) ( jQuery );
