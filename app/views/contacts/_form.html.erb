@@ -8,18 +8,25 @@
     <%= f.label :email, 'Email (required) *' %>
     <%= f.text_field :email, required: true %>
     <br>
-    <%= f.label :email, 'Phone No.' %>
-    <%= f.text_field :email, required: false %>
+    <%= f.label :phone, 'Phone No.' %>
+    <%= f.telephone_field :phone, required: false %>
     <br>
-    <%= f.label :email, 'Event Date' %>
-    <%= f.text_field :email, required: false %>
+    <%= f.label :eventdate, 'Event Date' %>
+    <%= f.date_field :eventdate, required: false %>
     <br>
-    <%= f.label :email, 'Event Location' %>
-    <%= f.text_field :email, required: false %>
-
+    <%= f.label :eventlocation, 'Event Location' %>
+    <%= f.text_field :eventlocation, required: false %>
     <br>
-    <%= f.label :message %>
-    <%= f.text_area :message, as: :text %>
+    <%= f.label :length, "Event Length" %>
+    <%= f.select :length, [ "1 hour","1.5 hours","2 hours", "2.5 hours", "3 hours", "3.5 hours", "4 hours", "Over 4 hours" ], :prompt => 'How long will your event be?' %>
+    <br>
+     <%= f.label :type, "Event Type" %>
+    <%= f.select :type, [ "Wedding","Corporate Event","Concert","Recording","Fundraiser","Fashion Show","Other"], :prompt => 'Select one' %>
+    <br>
+    <div class="messagebox">
+        <%= f.label :message, :class => "messagelabel"%>
+        <%= f.text_area :message, as: :text %>
+    </div>
 
   <div class="nickname">
     <%= f.label :nickname %> <br>

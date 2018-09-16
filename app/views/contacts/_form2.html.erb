@@ -11,12 +11,14 @@
     <%= f.label :email, 'Phone No.' %>
     <%= f.text_field :email, required: false %>
     <br>
-    <%= f.label :message %>
-    <%= f.text_area :message, as: :text %>
+    <div class="messagebox">
+        <%= f.label :message, :class => "messagelabel" %>
+        <%= f.text_area :message, as: :text %>
+    </div>
   <div class="nickname">
     <%= f.label :nickname %> <br>
     <%= f.text_field :nickname, hint: 'leave this field blank' %>
   </div>
 
-    <%= f.submit 'Send Message', class: "button" %>
+    <%= f.submit 'Send Message', :class => "button" %>
   <% end %>

@@ -22,9 +22,6 @@
 	}
 }
 @media only screen and (max-width: 932px) {
-	.height {
-		min-height: calc(100% - 140px);
-	}
 	#header {
 		height: 80px;
 		padding: 10px;
@@ -122,6 +119,12 @@
 		}
 	}
 }
+@media only screen and (max-width: 768px) {
+	#media .insta {
+		margin-bottom: 40px;
+	}
+}
+
 @media only screen and (max-width: 700px) {
 	.height {
 		min-height: calc(100% - 120px);
@@ -235,7 +238,8 @@
 	#media {
 		padding-top: 10px;
 		.background {
-			margin: 10px;
+			margin-left: 10px;
+			margin-right: 10px;
 			margin-top: 50px;
 		}
 	}
@@ -287,6 +291,12 @@
 		}
 		h4 {
 			padding: 20px 10%;
+		}
+	}
+	#contact{
+		.contactform {
+			width: calc(100% - 20px);
+			// margin: 50px 10px;
 		}
 	}
 }
@@ -417,12 +427,34 @@
     	margin-top: 6px;
 		}
 	}
+	#contact  {
+		label {
+			margin-right: 0;
+		}
+	}
 }
 @media only screen and (max-width: 400px) {
 	#media {
 		#instafeed .img {
 			width: 80%;
 			height: 200px;
+		}
+	}
+	#review, #contact {
+		.new_contact {
+			text-align: center;
+		}
+		.contactform {
+			text-align: center;
+			label, input, select, .messagebox .messagelabel {
+				margin: 5px auto;
+			}
+			label, .messagebox .messagelabel, input.button {
+				display: block;
+				position: initial;
+				margin-top: 10px;
+			}
+			
 		}
 	}
 }
