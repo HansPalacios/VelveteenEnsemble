@@ -457,6 +457,25 @@
 			
 		}
 	}
+	#reviews {
+		.title {
+			width: 100%;
+			padding-right: 70.28px;
+			a, img {
+				height: 20px;
+			}
+			h2 {
+				font-size: 25px;
+				margin-left: 0;
+			}
+		}
+		h5 {
+			width: 90%;
+		}
+		hr {
+				margin-bottom: 0;
+			}
+	}
 }
 @media only screen and (max-width: 300px) {
 	#media {
@@ -465,6 +484,10 @@
 			height: 100px;
 		}
 	}
+	#reviews .title {
+		padding-right: 0;
+	}
+	
 }
 
 

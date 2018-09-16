@@ -18,7 +18,7 @@
     <%= f.text_field :eventlocation, required: false %>
     <br>
     <%= f.label :length, "Event Length" %>
-    <%= f.select :length, [ "1 hour","1.5 hours","2 hours", "2.5 hours", "3 hours", "3.5 hours", "4 hours", "Over 4 hours" ], :prompt => 'How long will your event be?' %>
+    <%= f.select :length, [ "1 hour","1.5 hours","2 hours", "2.5 hours", "3 hours", "3.5 hours", "4 hours", "Over 4 hours" ], :prompt => 'Select one' %>
     <br>
      <%= f.label :type, "Event Type" %>
     <%= f.select :type, [ "Wedding","Corporate Event","Concert","Recording","Fundraiser","Fashion Show","Other"], :prompt => 'Select one' %>
