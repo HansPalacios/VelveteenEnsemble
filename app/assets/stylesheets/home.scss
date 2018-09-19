@@ -9,16 +9,7 @@
   top: 0;
   width: 100%
 }
-#header {
-	padding: 10px;
-	height: 80px;
-	margin: 0 auto;
-	width: 100%;
-	background-color: rgba(255,255,255,1);
-	position: fixed;
-	z-index: 20;
-	text-align: left;
-	.alert {
+.alert {
 		z-index: 10;
 		position: absolute;
 		top: 10px;
@@ -30,6 +21,16 @@
 		color: rgba(123,210,33,1);
 		background-color: rgba(255,255,255,.8);
 	}
+#header {
+	padding: 10px;
+	height: 80px;
+	margin: 0 auto;
+	width: 100%;
+	background-color: rgba(255,255,255,1);
+	position: fixed;
+	z-index: 20;
+	text-align: left;
+	
 	#adminlinks {
 		position: absolute;
 	  right: 20px;

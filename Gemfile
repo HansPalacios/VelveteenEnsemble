@@ -12,8 +12,6 @@ gem 'devise'
 gem 'mail_form'
 # Sendgrid
 gem 'sendgrid-ruby'
-# Devise for user login
-gem 'devise'
 # Instafeed gem to show recent instagram posts
 gem 'instafeed'
 # Jquery gem
