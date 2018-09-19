@@ -9,16 +9,23 @@ class ContactsController < ApplicationController
 
   # POST /contacts
   # POST /contacts.json
+
   def create
-    @contact = Contact.new(params[:contact])
+    @contact = Contact.new(contact_params) 
     @contact.request = request
+    if @contact.save
+        ContactMailer.new_request(@contact.id).deliver_later
+    end
     if @contact.deliver
-      flash.now[:error] = nil
-  redirect_to new_contact_path, notice: 'Message sent successfully'
+      flash.now[:notice] = 'Thank you for your message. We will contact you soon!'
     else
-      flash.now[:error] = 'Cannot send message'
+      flash.now[:error] = 'Cannot send message.'
       render :new
     end
   end
-
+      private
+    def contact_params 
+      params.require(:contact).permit(:name, :email, :message, :phone, :eventdate, :eventlocation, :type, :length)
+    end
+  end
 end
