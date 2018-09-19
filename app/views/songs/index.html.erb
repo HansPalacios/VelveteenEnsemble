@@ -1,10 +1,12 @@
 
 <div class= "container-fluid height" id="songs">
-	<div class="row newsong">
-		<div class="background">
-			<b><%= link_to 'Add New Song', new_song_path %></b>
+	<% if admin_signed_in? %>
+		<div class="row newsong">
+			<div class="background">
+				<b><%= link_to 'Add New Song', new_song_path %></b>
+			</div>
 		</div>
-	</div>
+	<% end %>
 		<table>
 			<thead>
 				<tr>
@@ -45,8 +47,6 @@
 				
 			</tbody>
 		</table>
-		
-
 	<br><br><br>
 	<div class="row">
 		<table id="listsongs" scrolling="yes">

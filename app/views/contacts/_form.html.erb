@@ -20,8 +20,30 @@
     <%= f.label :length, "Event Length" %>
     <%= f.select :length, [ "1 hour","1.5 hours","2 hours", "2.5 hours", "3 hours", "3.5 hours", "4 hours", "Over 4 hours" ], :prompt => 'Select one' %>
     <br>
+
      <%= f.label :type, "Event Type" %>
-    <%= f.select :type, [ "Wedding","Corporate Event","Concert","Recording","Fundraiser","Fashion Show","Other"], :prompt => 'Select one' %>
+
+    <!--  For some reason the rail tag isnt working?? -> come back to at later date -->
+       <!--  <#%= f.select :type, ["Wedding","Corporate Event", "Concert","Recording","Other"], :prompt => 'Select one', :id => "type" %> -->
+   
+
+
+    <select class="type" name="type" >   
+        <option>Select One</option>   
+        <option value="Wedding">Wedding</option>   
+        <option value="Concert">Concert</option>   
+        <option value="Corporate Event">Corporate Event</option>   
+        <option value="Recording">Recording Session</option> 
+        <option value="Other">Other</option>   
+    </select>   
+
+   <br>
+
+   <div class="other" style="display: none">
+        <%= f.label :type, "Please fill in if other event type" %>
+        <%= f.text_field :type, label: "Other" %>
+    </div>
+
     <br>
     <div class="messagebox">
         <%= f.label :message, :class => "messagelabel"%>
