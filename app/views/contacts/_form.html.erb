@@ -1,6 +1,6 @@
 <%= form_for @contact do |f| %>
     <% if flash[:error].present? %>
-    <p class="notice">flash[:error]</p>
+    <p class="notice"><%= flash[:error] %></p>
 
     <% end %>
     <%= f.label :name, 'Name (required) *' %> 
