@@ -5,7 +5,7 @@ $(document).ready(function() {
 	var other = $('.other');
 
 	$('.type').change(function(){   
-		if(type.val() == "Other")   
+		if(type.val() == 5)   
 		  other.show(); 
 		else 
 		  other.hide(); 

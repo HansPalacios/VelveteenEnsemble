@@ -24,14 +24,14 @@
 
     <%= f.label :type, "Event Type" %>
 
-   <%= f.select :type, ["Wedding","Corporate Event", "Concert","Recording","Other"], :prompt => 'Select one', :id => "type" %>
+   <%= f.select :type, options_for_select([["Wedding", 1],["Corporate Event", 2],["Concert", 3],["Recording", 4],["Other", 5]]), :prompt => 'Select one', :id => "type" %>
 
    <br>
 
-   <div class="other" style="display: none">
-        <%= f.label :type, "Other Event Type:"%>
-        <%= f.text_field :type, label: "Other" %>
-    </div>
+   <!-- <div class="other" style="display: none">
+        <p>Other Event Type:</p>
+        <#%= f.text_field :type %>
+    </div> -->
 
     <br>
     <div class="messagebox">
