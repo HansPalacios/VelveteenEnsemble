@@ -20,7 +20,7 @@
 
     <%= f.label :type, "Event Type" %>
 
-   <%= f.select :type options_for_select([["Wedding", "Wedding"],["Corporate Event", "Corporate Event"],["Concert", "Concert"],["Recording", "Recording"],["Other", "Other"]]), :prompt => 'Select one', :id => "type", required: false %>
+   <%= f.select :type, options_for_select(["Wedding","Corporate Event", "Concert", "Recording", "Other"]), :prompt => 'Select one', :id => "type", required: false %>
 
    <br>
 

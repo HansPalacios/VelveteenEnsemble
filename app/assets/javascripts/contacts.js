@@ -1,11 +1,11 @@
 // hide dropdown when clicking on other option to fill out input
 
 $(document).ready(function() {   
-	var type = $('#type');
+	var type = $('#contact_type');
 	var other = $('#othertype');
 
 	type.change(function(){   
-		if(type.val() == "Other")   
+		if(type.val() == 'Other')
 		  other.show(); 
 		else 
 		  other.hide(); 
