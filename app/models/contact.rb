@@ -2,13 +2,13 @@ class Contact < MailForm::Base
   attribute :name, :validate => true
   attribute :email,     :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
   attribute :phone
-  attribute :eventdate
+  attribute :eventdate, :validate => true
   attribute :eventlocation
   attribute :type
-  attribute :othertype
+  attribute :heardby
   attribute :length
-  attribute :message,   :validate => true
-  attribute :nickname,  :captcha  => true
+  attribute :message, :validate => true
+  attribute :nickname, :captcha  => true
   def headers
     {
       :subject => "Contact Form",
