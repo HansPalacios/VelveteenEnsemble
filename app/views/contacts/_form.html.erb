@@ -25,10 +25,11 @@
    <br>
     <%= f.text_field :type, :id => "othertype", :style => "display: none", required: false %>
     <br>
-    <%= f.label :heard_by, "Where did you hear about us:" %>
+    <%= f.label :heardby, "Where did you hear about us:" %>
 
-    <%= f.select :heard_by, options_for_select(["WeddingWire","The Knot", "GigMasters", "Instagram", "Facebook", "Google", "Other"]), :prompt => 'Select one', :id => "heard_by", required: false %>
-    <%= f.text_field :heard_by, :id => "other_heard_by", :style => "display: none", required: false %>
+    <%= f.select :heardby, options_for_select(["WeddingWire","The Knot", "GigMasters", "Instagram", "Facebook", "Google", "Other"]), :prompt => 'Select one', :id => "heard_by", required: false %>
+    <br>
+    <%= f.text_field :heardby, :id => "other_heard_by", :style => "display: none", required: false %>
     </div>
     <br>
     <div class="messagebox">

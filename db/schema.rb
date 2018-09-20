@@ -57,9 +57,8 @@ ActiveRecord::Schema.define(version: 20180913205215) do
     t.date "eventdate"
     t.string "eventlocation"
     t.string "type"
-    t.string "othertype"
     t.string "length"
-    t.string "heard_by"
+    t.string "heardby"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
