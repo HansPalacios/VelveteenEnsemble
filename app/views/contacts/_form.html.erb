@@ -8,7 +8,7 @@
     <%= f.label :phone, 'Phone No.' %>
     <%= f.telephone_field :phone, required: false %>
     <br>
-    <%= f.label :eventdate, 'Event Date' %>
+    <%= f.label :eventdate, 'Event Date (required) *' %>
     <%= f.date_field :eventdate, required: true %>
     <br>
     <%= f.label :eventlocation, 'Event Location' %>
@@ -20,15 +20,16 @@
 
     <%= f.label :type, "Event Type" %>
 
-   <%= f.select :type, options_for_select(["Wedding","Corporate Event", "Concert", "Recording", "Other"]), :prompt => 'Select one', :id => "type", required: false %>
+    <%= f.select :type, options_for_select(["Wedding","Corporate Event", "Concert", "Recording", "Other"]), :prompt => 'Select one', :id => "type", required: false %>
 
    <br>
+    <%= f.text_field :type, :id => "othertype", :style => "display: none", required: false %>
+    <br>
+    <%= f.label :heard_by, "Where did you hear about us:" %>
 
-   <div id="othertype" style="display: none">
-        <%= f.label :othertype, "Other Event Type:" %>
-        <%= f.text_field :othertype, required: false %>
+    <%= f.select :heard_by, options_for_select(["WeddingWire","The Knot", "GigMasters", "Instagram", "Facebook", "Google", "Other"]), :prompt => 'Select one', :id => "heard_by", required: false %>
+    <%= f.text_field :heard_by, :id => "other_heard_by", :style => "display: none", required: false %>
     </div>
-
     <br>
     <div class="messagebox">
         <%= f.label :message, :class => "messagelabel"%>

@@ -2,12 +2,20 @@
 
 $(document).ready(function() {   
 	var type = $('#contact_type');
-	var other = $('#othertype');
+	var other_type = $('#othertype');
+	var heard = $('#contact_heard_by');
+	var other_heard = $('#other_heard_by');
 
 	type.change(function(){   
 		if(type.val() == 'Other')
-		  other.show(); 
+		  other_type.show(); 
 		else 
-		  other.hide(); 
+		  other_type.hide(); 
+	});   
+	heard.change(function(){   
+		if(heard.val() == 'Other')
+		  other_heard.show(); 
+		else 
+		  other_heard.hide(); 
 	});   
 });   

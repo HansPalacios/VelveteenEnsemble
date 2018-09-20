@@ -10,6 +10,7 @@ class CreateContacts < ActiveRecord::Migration[5.1]
     	t.string :type
       t.string :othertype
     	t.string :length
+      t.string :heard_by
       t.timestamps
     end
   end

@@ -59,6 +59,7 @@ ActiveRecord::Schema.define(version: 20180913205215) do
     t.string "type"
     t.string "othertype"
     t.string "length"
+    t.string "heard_by"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
