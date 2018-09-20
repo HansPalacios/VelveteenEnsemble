@@ -5,6 +5,7 @@ class Contact < MailForm::Base
   attribute :eventdate
   attribute :eventlocation
   attribute :type
+  attribute :othertype
   attribute :length
   attribute :message,   :validate => true
   attribute :nickname,  :captcha  => true
