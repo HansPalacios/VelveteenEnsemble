@@ -3,8 +3,8 @@
 $(document).ready(function() {   
 	var type = $('#contact_type');
 	var other_type = $('#othertype');
-	var heard = $('#contact_heard_by');
-	var other_heard = $('#other_heard_by');
+	var heard = $('#contact_heardby');
+	var other_heard = $('#other_heardby');
 
 	type.change(function(){   
 		if(type.val() == 'Other')

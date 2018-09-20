@@ -9,7 +9,7 @@ class CreateContacts < ActiveRecord::Migration[5.1]
     	t.string :eventlocation
     	t.string :type
     	t.string :length
-      t.string :heardy
+      t.string :heardby
       t.timestamps
     end
   end
