@@ -33,10 +33,20 @@
                 </div>
               <% end %>
             </div>
-            <div class="row">
+            <div class="row venuevideos">
               <iframe src="<%= venue.video1 %>" allowTransparency="true" allowFullScreen="true" class="video"></iframe>
               <iframe src="<%= venue.video2 %>" allowTransparency="true" allowFullScreen="true" class="video"></iframe>
               <iframe src="<%= venue.video3 %>" allowTransparency="true" allowFullScreen="true" class="video"></iframe>
+              <% if (venue.video1 == nil && venue.video2 == nil && venue.video3 == nil)%>
+                <style>
+                  #venue_<%= venue.id %> .venuevideos {
+                    display: none;
+                  }
+                  #venue_<%= venue.id %> .clients .eachclient {
+                    margin: 0 auto 20px auto !important;
+                  }
+                </style>
+              <% end %>
             </div>
             
           </div>

@@ -55,16 +55,14 @@
 			padding-top: 0;
 		}
 		.clients .eachclient{
+			// margin changed with !important in venues index if video1 = nil
 			text-align: center;
 			padding: 10px;
 			margin: 20px auto 80px auto;
 			img {
-			height: 30px;
-			width: auto;
-			
-			// padding: 10px;
-
-		}
+				height: 20px;
+				width: auto;
+			}
 		}
 		
 		.video {
