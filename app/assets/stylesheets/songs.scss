@@ -60,7 +60,16 @@
 	#listsongs {
 		width: 750px;
 		display: block;
-		padding: 0;
+		padding: 10px;
+		::-webkit-scrollbar {
+		  -webkit-appearance: none;
+		  width: 7px;
+		}
+		::-webkit-scrollbar-thumb {
+		  border-radius: 4px;
+		  background-color: rgba(0, 0, 0, .5);
+		  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+		}
 		h4, h5 {
 			font-weight: 900;
 		}

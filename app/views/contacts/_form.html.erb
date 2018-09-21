@@ -11,6 +11,15 @@
     <%= f.label :eventdate, 'Event Date (required) *' %>
     <%= f.date_field :eventdate, required: true %>
     <br>
+    <div class="messagebox">
+        <%= f.label :message, :class => "messagelabel"%>
+        <%= f.text_area :message, as: :text %>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
     <%= f.label :eventlocation, 'Event Location' %>
     <%= f.text_field :eventlocation, required: false %>
     <br>
@@ -33,10 +42,7 @@
         <%= f.text_field :heardby, :id => "other_heardby", :style => "display: none", required: false %>
     </div>
     <br>
-    <div class="messagebox">
-        <%= f.label :message, :class => "messagelabel"%>
-        <%= f.text_area :message, as: :text %>
-    </div>
+   
 
   <div class="nickname">
     <%= f.label :nickname %> <br>
