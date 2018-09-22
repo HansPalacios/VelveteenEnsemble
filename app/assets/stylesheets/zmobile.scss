@@ -21,6 +21,11 @@
 		}
 	}
 }
+
+
+
+
+
 @media only screen and (max-width: 932px) {
 	#header {
 		height: 80px;
@@ -119,11 +124,20 @@
 		}
 	}
 }
+
+
+
+
+
 @media only screen and (max-width: 768px) {
 	#media .insta {
 		margin-bottom: 40px;
 	}
 }
+
+
+
+
 
 @media only screen and (max-width: 700px) {
 	.height {
@@ -278,12 +292,20 @@
 }
 
 
+
+
+
 @media only screen and (max-width: 600px) {
 #media #instafeed .img {
 		width: 40%;
 		height: 150px;
 	}
 }
+
+
+
+
+
 @media only screen and (max-width: 575px) {
 	#reviews {
 		.padding {
@@ -300,6 +322,11 @@
 		}
 	}
 }
+
+
+
+
+
 @media only screen and (max-width: 500px) {
 	#header {
 		ul {
@@ -368,7 +395,7 @@
 				.messagebox {
 					padding-right: 0;
 					textarea {
-						width: 90%;
+						width: calc(100% - 100px);
 					}
 				}
 			}
@@ -446,6 +473,11 @@
 		}
 	}
 }
+
+
+
+
+
 @media only screen and (max-width: 410px) {
 	#home {
 		#home1 {
@@ -556,7 +588,22 @@
 				margin-bottom: 0;
 			}
 	}
+	.contactform {
+			form {
+				.messagebox {
+					textarea {
+						width: calc(100%);
+					}
+				}
+			}
+		}
 }
+
+
+
+
+
+
 @media only screen and (max-width: 350px) {
 	#footer {
 		.col-xs-4  {
@@ -570,6 +617,11 @@
 		}
 	}
 }
+
+
+
+
+
 @media only screen and (max-width: 300px) {
 	#media {
 		#instafeed .img {
