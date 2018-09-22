@@ -14,9 +14,9 @@
 				</tr>
 			  <tr>
 			    <th class="smallcol">Title</th>
-			    <th class="smallcol">Artist</th> 
+			    <th class="smallcol hide410">Artist</th> 
 			    <th class="smallcol mobilehide">Genre</th>
-			    <th class="widecol"></th>
+			    <th class="widecol hide410"></th>
 			    <% if admin_signed_in? %>
         		<th class="smallcol"></th>
       		<% end %>
@@ -27,7 +27,7 @@
 					 <% @songs.where( play: true ).each do |song| %>
 					  <tr class="hover">
 							<td><%= song.title%></td>
-							<td><%= song.artist%></td> 
+							<td class="hide410"><%= song.artist%></td> 
 							<td class="mobilehide"><%= song.genre%></td>
 							<td class="widecol">
 								<audio controls preload="none" controlsList="nodownload"  height="20px"> 
@@ -42,9 +42,10 @@
             			<%= link_to 'Delete', song, :method => :delete, :confirm => "Are you sure?" %>
        		 			</td>
       				<% end %>
-						</tr>	
+						</tr>
+						
 						<% end %>
-				
+						
 			</tbody>
 		</table>
 	<br><br><br>
