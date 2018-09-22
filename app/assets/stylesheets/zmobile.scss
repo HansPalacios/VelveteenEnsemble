@@ -101,6 +101,7 @@
 			}
 			.background {
 				padding: 30px;
+				padding-bottom: 0;
 			}
 			.clients .eachclient {
 				margin: 0 auto 50px auto;
@@ -426,6 +427,9 @@
 		}
 		.venue {
 			padding: 50px 20px;
+			.background {
+				padding-bottom: 30px;
+			}
 			.video {
 				width: 70% !important;
 				margin: 20px auto;
