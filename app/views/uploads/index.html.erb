@@ -17,7 +17,7 @@
 		        sortBy: 'most-recent',
 		        limit: 20,
 		        resolution: 'standard_resolution',
-		        template: '<a href="{{link}}" target="_blank"><div class="img" style="background-image:url({{image}})"></div></a>',
+		        template: '<a href="{{link}}" target="_blank"><div class="img" style="background-image:url({{image}})"><div style="display: none" class="{{type}}tag"><img src="https://s3.amazonaws.com/velveteenensemble/videotag3.png" height="50%" width="auto" ></div></div></a>',
 		        links: true,
 	        mock: false,
 	        useHttp: false
@@ -32,11 +32,21 @@
 	<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 no-gutters">
 		<div class="row background">
   		<div class="row no-gutters title">
-				<a href="https://www.youtube.com/channel/UCtaLy-ddOLTPuIyXznzzu2A" target="_blank"><h2><%=image_tag image_url("https://s3.amazonaws.com/velveteenensemble/blyt2.png")%>Youtube</h2></a>
+				<a href="https://www.youtube.com/channel/UCbvamEukwX1QzIJ6lNwjlIw" target="_blank"><h2><%=image_tag image_url("https://s3.amazonaws.com/velveteenensemble/blyt2.png")%>Youtube</h2></a>
 			</div>
-			<div class="col-lg-6 col-md-12 col-sm-4 col-xs-12 no-gutters youtube">
-		  	<iframe width="90%" height="auto" src="http://www.youtube.com/embed?max-results=1&controls=0&showinfo=0&rel=0&listType=user_uploads&list=marcellione" frameborder="10px" allowfullscreen></iframe> 
+
+
+
+
+			<!-- Change col-sizes once you add in more youtube videos -->
+
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-gutters youtube">
+				<!-- I would need the channel name in order to list out recent videos -->
+		  	<!-- <iframe width="90%" height="auto" src="http://www.youtube.com/embed?max-results=1&controls=0&showinfo=0&rel=0&listType=user_uploads&list=MarcelKrasner" frameborder="10px" allowfullscreen></iframe>  -->
+		  	<iframe width="90%" height="auto" src="https://www.youtube.com/embed/Rtennabdzlc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 		  </div>
 		</div>
 	</div>
 </div>
+
+
