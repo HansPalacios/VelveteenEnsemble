@@ -34,9 +34,9 @@
               <% end %>
             </div>
             <div class="row venuevideos">
-              <iframe src="<%= venue.video1 %>" allowTransparency="true" allowFullScreen="true" class="video"></iframe>
-              <iframe src="<%= venue.video2 %>" allowTransparency="true" allowFullScreen="true" class="video"></iframe>
-              <iframe src="<%= venue.video3 %>" allowTransparency="true" allowFullScreen="true" class="video"></iframe>
+              <iframe src="<%= venue.video1 %>" allowTransparency="true" allowFullScreen="true" class="video video1"></iframe>
+              <iframe src="<%= venue.video2 %>" allowTransparency="true" allowFullScreen="true" class="video video2"></iframe>
+              <iframe src="<%= venue.video3 %>" allowTransparency="true" allowFullScreen="true" class="video video3"></iframe>
               <% if (venue.video1 == nil && venue.video2 == nil && venue.video3 == nil)%>
                 <style>
                   #venue_<%= venue.id %> .venuevideos {
@@ -44,6 +44,36 @@
                   }
                   #venue_<%= venue.id %> .clients .eachclient {
                     margin: 0 auto 20px auto !important;
+                  }
+                </style>
+              <% end %>
+              <% if venue.video1 == nil %>
+                <style>
+                  #venue_<%= venue.id %> .video1 {
+                    display: none;
+                  }
+                  #venue_<%= venue.id %> .video {
+                    width: 40% !important;
+                  }
+                </style>
+              <% end %>
+              <% if venue.video2 == nil %>
+                <style>
+                  #venue_<%= venue.id %> .video2 {
+                    display: none;
+                  }
+                  #venue_<%= venue.id %> .video {
+                    width: 40% !important;
+                  }
+                </style>
+              <% end %>
+              <% if venue.video3 == nil %>
+                <style>
+                  #venue_<%= venue.id %> .video3 {
+                    display: none;
+                  }
+                  #venue_<%= venue.id %> .video {
+                    width: 40% !important;
                   }
                 </style>
               <% end %>
