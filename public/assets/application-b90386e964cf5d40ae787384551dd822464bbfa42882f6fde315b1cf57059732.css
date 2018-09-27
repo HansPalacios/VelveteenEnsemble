@@ -42,16 +42,16 @@
   width: auto;
   display: inline;
 }
-/* line 42, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/about.scss */
+/* line 41, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/about.scss */
 #about .img1 {
   height: 250px;
   margin-left: 50px;
 }
-/* line 46, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/about.scss */
+/* line 45, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/about.scss */
 #about .img2 {
   margin-right: 50px;
 }
-/* line 49, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/about.scss */
+/* line 48, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/about.scss */
 #about p {
   font-size: 18px;
   padding: 20px 10px;
@@ -60,24 +60,25 @@
   width: 90%;
   margin: 0 auto;
 }
-/* line 57, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/about.scss */
+/* line 56, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/about.scss */
 #about #p1 {
   width: calc(90% - 200.41px);
   padding-left: 50px;
 }
 /* line 61, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/about.scss */
 #about #p2 {
-  width: calc(90% - 266.98px);
-  padding-right: 50px;
+  width: calc(100% - 480px);
 }
-/* line 66, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/about.scss */
-#about .spacing {
-  display: block;
-  padding-top: 50px;
-  height: auto;
-  margin-bottom: 50px;
+/* line 64, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/about.scss */
+#about img {
+  margin-top: 20px;
 }
 /* line 4, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
+#contact_eventdate {
+  text-align: center;
+}
+
+/* line 8, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
 #admin, .editpage {
   padding: 100px 50px;
   background-image: url("https://s3.amazonaws.com/velveteenensemble/wedding2.png");
@@ -86,138 +87,138 @@
   background-position: center;
   background-attachment: fixed;
 }
-/* line 11, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
+/* line 15, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
 #admin .background, .editpage .background {
   width: 500px;
   margin: 0 auto;
   text-align: center;
 }
 
-/* line 19, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
+/* line 23, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
 .newsong .background {
   padding: 10px 40px;
   margin: 20px auto;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
-/* line 24, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
+/* line 28, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
 .newsong a {
   color: red;
 }
 
-/* line 28, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
+/* line 32, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
 .editpage {
   padding: 50px;
 }
-/* line 30, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
+/* line 34, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
 .editpage .background {
   padding: 35px;
 }
-/* line 33, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
+/* line 37, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
 .editpage hr {
   margin: 30px auto;
 }
-/* line 36, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
+/* line 40, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
 .editpage h3, .editpage h5 {
   margin: 20px auto;
   margin-top: 0;
   text-align: center;
 }
-/* line 41, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
+/* line 45, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
 .editpage p {
   text-align: left;
   margin: 20px;
 }
-/* line 44, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
+/* line 48, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
 .editpage p strong {
   margin: 10px;
 }
-/* line 48, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
+/* line 52, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
 .editpage form {
   width: 400px;
   text-align: right;
   margin: 10px auto;
 }
-/* line 52, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
+/* line 56, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
 .editpage form textarea {
   height: 100px;
   font-size: 13px;
 }
-/* line 56, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
+/* line 60, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
 .editpage form textarea, .editpage form input {
   width: 300px;
   margin: 10px;
   padding: 10px;
 }
-/* line 61, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
+/* line 65, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
 .editpage form .field {
   position: relative;
 }
-/* line 63, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
+/* line 67, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
 .editpage form .field label {
   margin: 10px;
   position: absolute;
   top: 13px;
   left: 15px;
 }
-/* line 71, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
+/* line 75, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
 .editpage form .actions {
   margin: 0 auto;
   text-align: center;
 }
-/* line 74, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
+/* line 78, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
 .editpage form .actions input {
   width: 200px;
 }
-/* line 80, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
+/* line 84, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
 .editpage .links {
   width: 300px;
   text-align: center;
   margin: 0 auto;
 }
-/* line 84, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
+/* line 88, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
 .editpage .links a {
   margin: 0 auto;
 }
 
-/* line 91, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
+/* line 95, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
 #aboutedit form textarea {
   height: 200px;
 }
-/* line 94, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
+/* line 98, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
 #aboutedit form .actions {
   margin: 20px;
 }
 
-/* line 99, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
+/* line 103, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
 #song_play {
   margin-top: 28px;
   margin-bottom: 20px;
 }
 
-/* line 103, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
+/* line 107, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
 .editmobileshow {
   display: none;
 }
 
-/* line 106, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
+/* line 110, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
 .editmobileshow, .editmobilehide {
   width: 100%;
 }
 
-/* line 109, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
+/* line 113, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
 .edit, .editmobilehide .edit, .editmobileshow .edit {
   width: 100%;
   text-align: center;
   padding-bottom: 20px;
 }
-/* line 113, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
+/* line 117, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
 .edit a, .editmobilehide .edit a, .editmobileshow .edit a {
   color: #7bd221;
   font-weight: 900;
   font-size: 18px;
 }
 
-/* line 119, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
+/* line 123, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
 .vertical {
   width: 2px;
   background-color: black;
@@ -226,21 +227,21 @@
 }
 
 @media only screen and (max-width: 932px) {
-  /* line 126, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
+  /* line 130, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
   .editmobilehide {
     display: none;
   }
 
-  /* line 129, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
+  /* line 133, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
   .editmobileshow {
     display: inline-block;
   }
-  /* line 131, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
+  /* line 135, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
   .editmobileshow .edit {
     width: 100%;
     text-align: center;
   }
-  /* line 134, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
+  /* line 138, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
   .editmobileshow .edit a {
     color: #7bd221;
     font-weight: 900;
@@ -248,21 +249,21 @@
   }
 }
 @media only screen and (max-width: 550px) {
-  /* line 143, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
+  /* line 147, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
   .editpage {
     padding: 50px 10px;
   }
-  /* line 145, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
+  /* line 149, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
   .editpage .background {
     width: calc(100% - 20px);
     padding: 20px;
   }
-  /* line 149, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
+  /* line 153, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
   .editpage .background form label {
     width: 60px;
     overflow-wrap: break-word;
   }
-  /* line 154, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
+  /* line 158, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/admin.scss */
   .editpage .background form textarea, .editpage .background form input {
     width: calc(100% - 100px);
   }
@@ -303,7 +304,7 @@
 
 /* line 31, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/contacts.scss */
 .contactform {
-  width: 900px;
+  width: 700px;
   margin: 0 auto;
   max-width: 800px;
   text-align: center;
@@ -686,37 +687,17 @@
   background-color: white;
 }
 /* line 261, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/home.scss */
-#footer h6 {
-  margin: 0 auto;
-  width: 100px;
+#footer p, #footer p a {
+  margin: 1px auto;
   text-align: center;
+  font-size: 12px;
 }
-/* line 265, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/home.scss */
-#footer h6 a {
-  margin: 0 auto;
-}
-/* line 269, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/home.scss */
-#footer p {
-  margin-left: 15%;
-  margin-bottom: 0;
-}
-/* line 273, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/home.scss */
-#footer p:first-child {
-  margin-top: 2px;
-  margin-bottom: -4px;
-}
-/* line 278, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/home.scss */
+/* line 266, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/home.scss */
 #footer h5 {
   text-align: center;
-  width: 100%;
   display: inline-block;
-  margin: 5px auto;
-}
-/* line 284, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/home.scss */
-#footer #award {
-  height: 40px;
-  width: auto;
-  float: right;
+  margin: 1px auto;
+  text-align: center;
 }
 /* line 1, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/layout.scss */
 html, body {
@@ -819,13 +800,19 @@ a:hover {
 }
 
 /* line 84, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/layout.scss */
+a:visited {
+  text-decoration: none;
+  text-decoration-line: none;
+}
+
+/* line 88, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/layout.scss */
 hr {
   width: 70%;
   margin: 0 auto;
   border: 1px solid grey;
 }
 
-/* line 89, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/layout.scss */
+/* line 93, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/layout.scss */
 .nickname {
   display: none;
 }
@@ -1407,7 +1394,7 @@ hr {
 @media only screen and (max-width: 700px) {
   /* line 164, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
   .height {
-    min-height: calc(100% - 120px);
+    min-height: calc(100% - 110px);
     margin-top: 60px;
     background-attachment: initial;
   }
@@ -1582,29 +1569,33 @@ hr {
     padding: 50px 10px;
   }
 
-  /* line 309, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
-  #footer p, #footer h5, #footer h6, #footer a {
+  /* line 308, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
+  #footer {
+    height: 50px;
+  }
+  /* line 310, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
+  #footer p, #footer h5, #footer p a {
     font-size: 11px;
   }
 }
 @media only screen and (max-width: 600px) {
-  /* line 320, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
+  /* line 321, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
   #media #instafeed .img {
     width: 40%;
     height: 150px;
   }
 }
 @media only screen and (max-width: 575px) {
-  /* line 332, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
+  /* line 333, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
   #reviews .padding {
     padding-bottom: 100px;
   }
-  /* line 335, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
+  /* line 336, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
   #reviews h4 {
     padding: 20px 10%;
   }
 
-  /* line 340, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
+  /* line 341, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
   #contact .contactform {
     width: calc(100% - 20px);
   }
@@ -1761,193 +1752,187 @@ hr {
     margin: 30px auto;
   }
 
-  /* line 479, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
-  #footer p, #footer h5, #footer h6, #footer a {
-    font-size: 9px;
-  }
-  /* line 482, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
-  #footer p {
-    margin-top: 2px;
-    margin-left: 15px;
-  }
-  /* line 486, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
-  #footer p:first-child {
-    margin-top: 6px;
-  }
-
-  /* line 490, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
+  /* line 478, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
   #contact {
     padding: 50px 0;
   }
-  /* line 492, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
+  /* line 480, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
   #contact .contactform {
     padding: 20px 50px;
   }
-  /* line 495, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
+  /* line 483, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
   #contact label {
     margin-right: 0;
   }
+
+  /* line 488, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
+  #footer p, #footer h5, #footer p a {
+    font-size: 9px;
+  }
 }
 @media only screen and (max-width: 410px) {
-  /* line 508, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
+  /* line 501, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
   #home #home1 ul {
     width: 110px;
     height: 170px;
     padding: 15px;
     margin: 0;
   }
-  /* line 513, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
+  /* line 506, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
   #home #home1 ul li {
     font-size: 11px;
     padding: 10px 0;
   }
-  /* line 518, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
+  /* line 511, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
   #home #home1 .fadeimage .img {
     width: calc(100% - 110px);
     height: 170px;
   }
-  /* line 523, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
+  /* line 516, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
   #home #home2 {
     margin-top: 200px;
   }
-  /* line 526, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
+  /* line 519, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
   #home #home2 .title h2 {
     font-size: 20px;
   }
-  /* line 529, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
+  /* line 522, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
   #home #home2 .title img {
     margin: 25px 3%;
     height: 15px;
   }
-  /* line 535, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
+  /* line 528, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
   #home #home2 .news {
     padding: 10px;
   }
-  /* line 537, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
+  /* line 530, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
   #home #home2 .news h3 {
     font-size: 13px;
   }
-  /* line 540, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
+  /* line 533, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
   #home #home2 .news p {
     padding: 0;
     font-size: 10px;
   }
-  /* line 544, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
+  /* line 537, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
   #home #home2 .news .img {
     height: 80px;
   }
 
-  /* line 551, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
+  /* line 544, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
   #media #instafeed .img {
     width: 80%;
     height: 200px;
   }
 
-  /* line 557, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
-  #review .new_contact, #contact .new_contact, #home .new_contact {
+  /* line 550, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
+  #contact .new_contact, #home .new_contact {
     text-align: center;
     width: 80%;
   }
-  /* line 560, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
-  #review .new_contact input, #contact .new_contact input, #home .new_contact input {
-    width: 90%;
+  /* line 553, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
+  #contact .new_contact input, #home .new_contact input {
+    width: 200px;
   }
-  /* line 564, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
-  #review .contactform, #contact .contactform, #home .contactform {
+  /* line 557, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
+  #contact .contactform, #home .contactform {
     text-align: center;
   }
-  /* line 566, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
-  #review .contactform label, #review .contactform input, #review .contactform select, #review .contactform .messagebox .messagelabel, #contact .contactform label, #contact .contactform input, #contact .contactform select, #contact .contactform .messagebox .messagelabel, #home .contactform label, #home .contactform input, #home .contactform select, #home .contactform .messagebox .messagelabel {
+  /* line 559, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
+  #contact .contactform label, #contact .contactform input, #contact .contactform select, #contact .contactform .messagebox .messagelabel, #home .contactform label, #home .contactform input, #home .contactform select, #home .contactform .messagebox .messagelabel {
     margin: 5px auto;
     display: block;
+    text-align: center;
   }
-  /* line 570, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
-  #review .contactform label, #review .contactform .messagebox .messagelabel, #review .contactform input.button, #contact .contactform label, #contact .contactform .messagebox .messagelabel, #contact .contactform input.button, #home .contactform label, #home .contactform .messagebox .messagelabel, #home .contactform input.button {
+  /* line 564, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
+  #contact .contactform label, #contact .contactform .messagebox .messagelabel, #contact .contactform input.button, #home .contactform label, #home .contactform .messagebox .messagelabel, #home .contactform input.button {
     display: block;
     position: initial;
     margin-top: 10px;
   }
 
-  /* line 580, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
+  /* line 574, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
   #songs table th, #songs table td {
     border-bottom: none;
     width: 50%;
   }
-  /* line 584, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
+  /* line 578, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
   #songs table audio {
     width: 160px;
   }
-  /* line 587, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
+  /* line 581, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
   #songs table .hide410 {
     display: none;
   }
-  /* line 590, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
+  /* line 584, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
   #songs table .show410 {
     display: inline-block !important;
   }
 
-  /* line 597, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
+  /* line 591, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
   #reviews .title {
     width: 100%;
     padding-right: 70.28px;
   }
-  /* line 600, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
+  /* line 594, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
   #reviews .title a, #reviews .title img {
     height: 20px;
   }
-  /* line 603, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
+  /* line 597, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
   #reviews .title h2 {
     font-size: 25px;
     margin-left: 0;
   }
-  /* line 608, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
+  /* line 602, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
   #reviews h5 {
     width: 90%;
   }
-  /* line 611, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
+  /* line 605, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
   #reviews hr {
     margin-bottom: 0;
   }
 
-  /* line 618, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
+  /* line 612, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
   .contactform form .messagebox textarea {
     width: calc(100%);
   }
 }
 @media only screen and (max-width: 350px) {
-  /* line 633, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
-  #footer .col-xs-4 {
-    width: 50% !important;
+  /* line 626, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
+  #footer {
+    height: 120px;
   }
-  /* line 635, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
-  #footer .col-xs-4 p, #footer .col-xs-4 h5, #footer .col-xs-4 a {
+  /* line 628, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
+  #footer .col-xs-4 {
+    width: 100% !important;
     margin: 5px auto;
   }
-  /* line 638, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
-  #footer .col-xs-4 #award {
-    display: none;
+  /* line 631, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
+  #footer .col-xs-4 p, #footer .col-xs-4 h5, #footer .col-xs-4 p a {
+    margin: 1px auto;
   }
 }
 @media only screen and (max-width: 300px) {
-  /* line 651, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
+  /* line 644, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
   #media #instafeed .img {
     width: 90%;
     height: 100px;
   }
 
-  /* line 656, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
+  /* line 649, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
   #reviews .title {
     padding-right: 0;
   }
+
+  /* line 654, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
+  #review .new_contact input, #contact .new_contact input, #home .new_contact input {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 300px) {
-  /* line 663, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
+  /* line 662, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
   #footer .col-xs-4 {
     width: 100% !important;
-  }
-  /* line 665, /Users/hans-sebastianpalacios/Desktop/Sites/Velveteen/app/assets/stylesheets/zmobile.scss */
-  #footer .col-xs-4 p {
-    display: none;
   }
 }
 /*
