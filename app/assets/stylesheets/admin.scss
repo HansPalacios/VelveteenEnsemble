@@ -1,6 +1,10 @@
 // Place all the styles related to the admin controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#contact_eventdate {
+	text-align: center;
+}
+
 #admin, .editpage {
 	padding: 100px 50px;
 	background-image: url('https://s3.amazonaws.com/velveteenensemble/wedding2.png');
