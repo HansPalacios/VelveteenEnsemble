@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :emails
   devise_for :admins
   
   get 'admin', to: 'admin#index'

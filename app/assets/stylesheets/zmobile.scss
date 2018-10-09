@@ -665,3 +665,63 @@
 	}
 }
 
+
+
+
+
+// experimental min for venue videos
+
+@media only screen and (min-width: 1155px) {
+	#venues .venue {
+		.video {
+		height: 200px;
+		}
+	}
+	#venue_4 iframe .venue .video {
+		height: 300px;
+	}
+}
+@media only screen and (min-width: 1500px) {
+	#venues .venue {
+		.video {
+		height: 250px;
+		}
+	}
+	#venue_4 iframe .venue .video {
+		height: 350px;
+	}
+}
+@media only screen and (min-width: 2000px) {
+	#venues .venue {
+		.video {
+		height: 300px;
+		}
+	}
+	#venue_4 iframe .venue .video {
+		height: 400px;
+	}
+}
+@media only screen and (min-width: 2500px) {
+	#venues .venue {
+		.video {
+		height: 350px;
+		}
+	}
+	#venue_4 iframe .venue .video {
+		height: 450px;
+	}
+}
+@media only screen and (min-width: 3000px) {
+	#venues .venue {
+		.video {
+		height: 400px;
+		}
+	}
+	#venue_4 iframe .venue .video {
+		height: 500px;
+	}
+}
+
+
+
+

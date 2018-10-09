@@ -1,0 +1,9 @@
+<!-- <#% if @first_visit %> -->
+  <div class="new-visitor-show" id="email">
+	  	<div class="close">X</div>
+	  	<div class="row no-gutters background">
+	  		<%= image_tag image_url('https://s3.amazonaws.com/velveteenensemble/whlogolines.png'), :id => "logo" %>
+	  		<%= render '/emails/form', email: @email %>
+			</div>
+	</div>
+<!-- <#% end %> -->
