@@ -728,3 +728,45 @@
 
 
 
+
+// admin pages
+
+@media only screen and (max-width: 550px) {
+	.editpage {
+		padding: 50px 10px;
+		.background {
+			width: calc(100% - 20px);
+			padding: 20px;
+			form {
+				label {
+					width:60px;
+					overflow-wrap: break-word;
+
+				}
+				textarea, input {
+					width: calc(100% - 100px)
+				}
+			}
+		}
+	}
+	#email .background {
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	#email .background {
+		width: 90%;
+		form input#email_email {
+			width: 90%;
+		}
+		img {
+			height: 80px;
+		}
+	}
+}
+
+
+
+
+
