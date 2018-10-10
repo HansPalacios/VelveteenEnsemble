@@ -1,6 +1,17 @@
-<h1>Editing Email</h1>
+<div class="height container-fluid editpage">
+	<div class="background">
+		<div class="row">
+			<h3>Editing Email</h3>
+		</div>
+		<div class="row">
+			<%= render 'form', email: @email %>
+		</div>
+		<div class="row">
+			<div class="links">
+				<%= link_to 'Back', admin_path %>
+			</div>
+		</div>
+	</div>
 
-<%= render 'form', email: @email %>
-
-<%= link_to 'Show', @email %> |
-<%= link_to 'Back', emails_path %>
+	
+</div>

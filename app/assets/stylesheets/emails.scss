@@ -4,7 +4,7 @@
 
 // call to action page on first visit to site
 #email {
-	display: none;
+	display: block;
 	position: fixed;
 	width: 100%;
 	height: 100%;
@@ -67,8 +67,11 @@
 		position: absolute;
 		top: 20px;
 		right: 20px;
-		font-size: 40px;
-		font-shadow: 1px 1px white;
+		font-size: 30px;
+		opacity: .6;
+		&:hover {
+			opacity: 1;
+		}
 	}
 	
 }

@@ -1,4 +1,5 @@
 <!-- <#% if @first_visit %> -->
+<% if @homepage %>
   <div class="new-visitor-show" id="email">
 	  	<div class="close">X</div>
 	  	<div class="row no-gutters background">
@@ -6,4 +7,5 @@
 	  		<%= render '/emails/form', email: @email %>
 			</div>
 	</div>
+	<% end %>
 <!-- <#% end %> -->

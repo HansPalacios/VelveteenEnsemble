@@ -1,9 +1,15 @@
 $(document).ready(function(){	
 	var close = $('.close');
+	var mailsubmit = $('.mailsubmit');
  	var email = $('#email');
  	var html = $('html');
  	
 	close.click(function() {
+     email.hide(); 
+     html.css('overflow-y', 'scroll');
+  });
+
+  mailsubmit.click(function() {
      email.hide(); 
      html.css('overflow-y', 'scroll');
   });

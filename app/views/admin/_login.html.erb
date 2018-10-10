@@ -1,0 +1,61 @@
+<div class="background row">
+			<div class="col-md-12">
+				<h2>Admin Login</h2>
+			</div>
+
+			<div class="col-md-12">
+				<%= form_for(:admin, :url => session_path(:admin)) do |f| %>
+				  <div class="field">
+				    <%= f.label :email %><br />
+				    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+				  </div>
+
+				  <div class="field">
+				    <%= f.label :password %><br />
+				    <%= f.password_field :password, autocomplete: "off" %>
+				  </div>
+
+				  <div class="field">
+				    <%= f.check_box :remember_me %>
+				    <%= f.label :remember_me %>
+				  </div>
+
+				  <div class="actions">
+				    <%= f.submit "Log in" %>
+				  </div>
+				  <%= link_to "Forgot your password?", new_password_path(:admin) %>
+				<% end %>
+
+
+				<% if admin_signed_in? %>
+					<h1>Emails</h1>
+
+					<table>
+					  <thead>
+					    <tr>
+					      <th>Name</th>
+					      <th>Email</th>
+					      <th colspan="3"></th>
+					    </tr>
+					  </thead>
+
+					  <tbody>
+					    <% @emails.each do |email| %>
+					      <tr>
+					        <td><%= email.name %></td>
+					        <td><%= email.email %></td>
+					        <td><%= link_to 'Edit', edit_email_path(email) %></td>
+					        <td><%= link_to 'Destroy', email, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+					      </tr>
+					    <% end %>
+					  </tbody>
+					</table>
+
+					<br>
+
+					<%= link_to 'New Email', new_email_path %>
+
+				<% end %>
+			</div>
+		</div>
+	<% else %>

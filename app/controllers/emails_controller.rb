@@ -17,6 +17,7 @@ class EmailsController < ApplicationController
 
   # GET /emails/1/edit
   def edit
+    @email = Email.find(params[:id])
   end
 
   # POST /emails
@@ -24,27 +25,23 @@ class EmailsController < ApplicationController
   def create
     @email = Email.new(email_params)
 
-    respond_to do |format|
-      if @email.save
-
-        format.html { redirect to root_path, notice: 'Email was successfully created.' }
-        format.json { render :show, status: :created, location: @email }
-      else
-        format.html { render :new }
-        format.json { render json: @email.errors, status: :unprocessable_entity }
+    # respond_to do |format|
+      if @email.save 
+        flash.notice = '' 
+      else 
+        flash.notice = 'Email was not saved.' 
       end
     end
-  end
+
 
   # PATCH/PUT /emails/1
   # PATCH/PUT /emails/1.json
   def update
     respond_to do |format|
       if @email.update(email_params)
-        format.html { redirect to root_path, notice: 'Email was successfully updated.' }
-        format.json { render :show, status: :ok, location: @email }
+        format.html { redirect_to admin_path, notice: 'Email was successfully updated.' }
       else
-        format.html { render :edit }
+        format.html { render :edit, notice: 'Email was not successfully updated.' }
         format.json { render json: @email.errors, status: :unprocessable_entity }
       end
     end
@@ -55,8 +52,7 @@ class EmailsController < ApplicationController
   def destroy
     @email.destroy
     respond_to do |format|
-      format.html { redirect_to emails_url, notice: 'Email was successfully destroyed.' }
-      format.json { head :no_content }
+      format.html { redirect_to admin_path, notice: 'Email was successfully destroyed.' }
     end
   end
 
@@ -68,6 +64,6 @@ class EmailsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def email_params
-      params.require(:email).permit(:name, :email, :nickname)
+      params.require(:email).permit(:name, :email)
     end
-end
+  end

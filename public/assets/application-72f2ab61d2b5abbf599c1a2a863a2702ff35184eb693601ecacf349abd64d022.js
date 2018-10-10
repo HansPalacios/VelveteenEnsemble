@@ -12063,10 +12063,6 @@ if ( !noGlobal ) {
 return jQuery;
 }));
 (function() {
-
-
-}).call(this);
-(function() {
   var context = this;
 
   (function() {
@@ -12685,8 +12681,8 @@ return jQuery;
 $(document).ready(function() {   
 	var type = $('#contact_type');
 	var other_type = $('#othertype');
-	var heard = $('#contact_heard_by');
-	var other_heard = $('#other_heard_by');
+	var heard = $('#contact_heardby');
+	var other_heard = $('#other_heardby');
 
 	type.change(function(){   
 		if(type.val() == 'Other')
@@ -12701,6 +12697,26 @@ $(document).ready(function() {
 		  other_heard.hide(); 
 	});   
 });   
+$(document).ready(function(){	
+	var close = $('.close');
+	var mailsubmit = $('.mailsubmit');
+ 	var email = $('#email');
+ 	var html = $('html');
+ 	
+	close.click(function() {
+     email.hide(); 
+     html.css('overflow-y', 'scroll');
+  });
+
+  mailsubmit.click(function() {
+     email.hide(); 
+     html.css('overflow-y', 'scroll');
+  });
+
+  if (email.css('display') === 'block') {
+  	html.css('overflow-y', 'hidden');
+  	} 
+});
 
 
 ( function($) {
