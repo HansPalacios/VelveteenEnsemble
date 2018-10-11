@@ -7,6 +7,7 @@ class AdminController < ApplicationController
 
 		@emails.each do |email|
 		 	@copy.push( email.email )
+		 	@copy.push( 'hans@hspalacios.com' )
 		end
 		
 

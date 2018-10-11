@@ -1,48 +1,61 @@
 <div class="container-fluid height" id="admin">
-
 	<% unless admin_signed_in? %>
 			<%= render '/admin/login' %>
 	<% end %>
 
 	<% if admin_signed_in? %>
-		<div class="background row">
-			<table>
-				<thead>
-					<tr>
-						<th class="col-xs-12" colspan="3"><h3>Mailing list</h3></th>
-					</tr>
-				  <tr>
-				    <th class="emailcol">Email</th>
-				    <th>Name</th> 
-				    <th class="linkcol">Links</th>
-			  	</tr>
-			  </thead>
-			  <tbody>
-			  	<% @listemails.each do |email| %>
+		<div class="links col-md-12 no-gutters">
+			<ul class="no-gutters">
+				<li class="col-md-4 col-sm-4 col-xs-4 no-gutters" id="link1">Emails</li>
+				<!-- <div class="vertical"></div> -->
+				<li class="col-md-4 col-sm-4 col-xs-4 no-gutters" id="link2">Calendar</li>
+				<!-- <div class="vertical"></div> -->
+				<li class="col-md-4 col-sm-4 col-xs-4 no-gutters" id="link3">Payments</li>
+			</ul>
+		</div>
+		<div id="admin1" class="hidepages">
+			<div class="background row">
+				<table>
+					<thead>
 						<tr>
-							<td class="emailcol"><%= email.email%></td>
-							<td><%= email.name%></td>
-							<td class="linkcol">
-            			<%= link_to 'Edit', edit_email_path(email) %>
-            			<div class="vertical"></div>
-            			<%= link_to 'Delete', @email = email, :method => :delete, :confirm => "Are you sure?" %>
-       		 			</td>
+							<th class="col-xs-12" colspan="3"><h3>Mailing list</h3></th>
 						</tr>
-					<% end %>	
-				</tbody>
-			</table>
-		</div>
-		<br>
-		<div class="background row emaillist">
+					  <tr>
+					    <th class="emailcol">Email</th>
+					    <th>Name</th> 
+					    <th class="linkcol">Links</th>
+				  	</tr>
+				  </thead>
+				  <tbody>
+				  	<% @listemails.each do |email| %>
+							<tr>
+								<td class="emailcol"><%= email.email%></td>
+								<td><%= email.name%></td>
+								<td class="linkcol">
+	            			<%= link_to 'Edit', edit_email_path(email) %>
+	            			<div class="vertical"></div>
+	            			<%= link_to 'Delete', @email = email, :method => :delete, :confirm => "Are you sure?" %>
+	       		 			</td>
+							</tr>
+						<% end %>	
+					</tbody>
+				</table>
+			</div>
+			<br>
+			<div class="background row emaillist">
 
-			<p id="copyme">
-				<%= @singlecopy %>
-			</p>
+				<p id="copyme">
+					<%= @singlecopy %>
+				</p>
 
-			<button class="clipboard-btn" data-clipboard-action="copy" data-clipboard-target="#copyme">
-			   Copy email list to clipboard
-			</button>
+				<button class="clipboard-btn" data-clipboard-action="copy" data-clipboard-target="#copyme">
+				   Copy email list to clipboard
+				</button>
+			</div>
 		</div>
+		<div id="admin2" class="hidepages"></div>
+		<div id="admin3" class="hidepages"></div>
+
 	<% end %>
 
 </div>

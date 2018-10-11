@@ -4,6 +4,11 @@ class EmailsController < ApplicationController
   # GET /emails
   # GET /emails.json
   def index
+    unless admin_signed_in? 
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
     @emails = Email.all
   end
 
@@ -17,6 +22,11 @@ class EmailsController < ApplicationController
 
   # GET /emails/1/edit
   def edit
+    unless admin_signed_in? 
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
     @email = Email.find(params[:id])
   end
 
@@ -37,6 +47,11 @@ class EmailsController < ApplicationController
   # PATCH/PUT /emails/1
   # PATCH/PUT /emails/1.json
   def update
+    unless admin_signed_in? 
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
     respond_to do |format|
       if @email.update(email_params)
         format.html { redirect_to admin_path, notice: 'Email was successfully updated.' }
@@ -50,6 +65,11 @@ class EmailsController < ApplicationController
   # DELETE /emails/1
   # DELETE /emails/1.json
   def destroy
+    unless admin_signed_in? 
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
     @email.delete
     respond_to do |format|
       format.html { redirect_to admin_path, notice: 'Email was successfully destroyed.' }
