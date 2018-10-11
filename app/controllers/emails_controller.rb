@@ -50,7 +50,7 @@ class EmailsController < ApplicationController
   # DELETE /emails/1
   # DELETE /emails/1.json
   def destroy
-    @email.destroy
+    @email.delete
     respond_to do |format|
       format.html { redirect_to admin_path, notice: 'Email was successfully destroyed.' }
     end

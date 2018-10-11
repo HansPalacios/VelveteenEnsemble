@@ -21,4 +21,7 @@ $(document).ready(function(){
   if (email.css('display') === 'block') {
   	html.css('overflow-y', 'hidden');
   	} 
-});
+  });
+
+    // copy emails to clipboard - for admin use
+

@@ -18,19 +18,30 @@
 			  	</tr>
 			  </thead>
 			  <tbody>
-			  	<% @emails.each do |email| %>
+			  	<% @listemails.each do |email| %>
 						<tr>
 							<td class="emailcol"><%= email.email%></td>
 							<td><%= email.name%></td>
 							<td class="linkcol">
             			<%= link_to 'Edit', edit_email_path(email) %>
             			<div class="vertical"></div>
-            			<%= link_to 'Delete', email_path(:id => email.id), :method => :delete, :confirm => "Are you sure?" %>
+            			<%= link_to 'Delete', @email = email, :method => :delete, :confirm => "Are you sure?" %>
        		 			</td>
 						</tr>
 					<% end %>	
 				</tbody>
 			</table>
+		</div>
+		<br>
+		<div class="background row emaillist">
+
+			<p id="copyme">
+				<%= @singlecopy %>
+			</p>
+
+			<button class="clipboard-btn" data-clipboard-action="copy" data-clipboard-target="#copyme">
+			   Copy email list to clipboard
+			</button>
 		</div>
 	<% end %>
 

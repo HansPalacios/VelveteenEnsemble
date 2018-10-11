@@ -6,6 +6,9 @@ git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
 end
+
+# Copy emails for admin to clipboard
+gem 'clipboard-rails'
 #Devise for user login
 gem 'devise'
 # Mail form for rails
