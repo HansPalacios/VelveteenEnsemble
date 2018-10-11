@@ -2,9 +2,13 @@
 <% if @homepage %>
   <div class="new-visitor-show" id="email">
 	  	<div class="close">X</div>
-	  	<div class="row no-gutters background">
-	  		<%= image_tag image_url('https://s3.amazonaws.com/velveteenensemble/whlogolines.png'), :id => "logo" %>
-	  		<%= render '/emails/form', email: @email %>
+	  	<div class=" no-gutters background">
+	  		<div class="row">
+	  			<%= image_tag image_url('https://s3.amazonaws.com/velveteenensemble/whlogolines.png'), :id => "logo" %>
+	  		</div>
+	  		<div class="row">
+	  			<%= render '/emails/form', email: @email %>
+	  		</div>
 			</div>
 	</div>
 	<% end %>
