@@ -5,13 +5,17 @@ $(document).ready(function(){
  	var html = $('html');
  	
 	close.click(function() {
-     email.hide(); 
-     html.css('overflow-y', 'scroll');
+    email.hide(); 
+    html.css('overflow-y', 'scroll');
+    document.body.scrollTop = 0; 
+    document.documentElement.scrollTop = 0; 
   });
 
   mailsubmit.click(function() {
-     email.hide(); 
-     html.css('overflow-y', 'scroll');
+    email.hide(); 
+    html.css('overflow-y', 'scroll');
+    document.body.scrollTop = 0; 
+    document.documentElement.scrollTop = 0; 
   });
 
   if (email.css('display') === 'block') {
