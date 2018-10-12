@@ -1,4 +1,5 @@
-<div class="container-fluid height" id="admin">
+<div class="container-fluid height" >
+	<div id="admin">
 	<% unless admin_signed_in? %>
 			<%= render '/admin/login' %>
 	<% end %>
@@ -57,5 +58,5 @@
 		<div id="admin3" class="hidepages"></div>
 
 	<% end %>
-
+</div>
 </div>
