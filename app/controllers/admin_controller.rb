@@ -1,5 +1,6 @@
 class AdminController < ApplicationController
 	def index
+		
 		@emails = Email.all
 		@listemails = @emails.uniq 
 
