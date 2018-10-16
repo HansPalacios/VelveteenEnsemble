@@ -1,7 +1,7 @@
 # README
 
 # Velveteen Ensemble
-A music group that performs for weddings, corporate events, and can be booked for concerts, tours, and recording sessions. 
+A company that books musicians across several cities for weddings, corporate events, and can be booked for concerts, tours, and recording sessions. 
 
 The main focus of this site is to create a proffessional and modern representation of this company so people know what to expect when hiring them to perform at different venues.
 
