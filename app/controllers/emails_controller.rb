@@ -39,7 +39,6 @@ class EmailsController < ApplicationController
     if @email.save 
       flash[:notice] = '' 
       respond_to do |format|
-        format.html
         format.js { |page| page.hide('email') }
       end
     else 
