@@ -13,10 +13,10 @@
 		<ul>
 			<li><a href="/abouts">About</a></li>
 			<li><a href="/venues">Venues</a></li>
-			<li><a href="/uploads">Media</a></li>
+			<li><a href="/media">Media</a></li>
 			<li><a href="/songs">Songs</a></li>
-			<li><a href="/review">Reviews</a></li>
-			<li><a href="/contacts/new">Contact</a></li>
+			<li><a href="/reviews">Reviews</a></li>
+			<li><a href="/contact">Contact</a></li>
 		</ul>
 		 <% if admin_signed_in? %>
 		 	<div id="adminlinks">
@@ -29,10 +29,10 @@
 			<div class="dropdown-content">
 			  <a href="/abouts">About</a>
 			  <a href="/venues">Venues</a>
-			  <a href="/uploads">Media</a>
+			  <a href="/media">Media</a>
 				<a href="/songs">Songs</a>
-				<a href="/review">Reviews</a>
-				<a href="/contacts/new">Contact</a>
+				<a href="/reviews">Reviews</a>
+				<a href="/contact">Contact</a>
 				<% if admin_signed_in? %>
 					<a href="/admin">Admin Page</a>
 					<%= link_to "Log out", destroy_admin_session_path, method: :delete, :id => "logout" %>

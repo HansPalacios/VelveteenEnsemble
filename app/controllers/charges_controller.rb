@@ -1,8 +1,18 @@
 class ChargesController < ApplicationController
 	def new
+		unless admin_signed_in? 
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
 	end
 
 	def create
+		unless admin_signed_in? 
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
 	  # Amount in cents
 	  @amount = 500
 
