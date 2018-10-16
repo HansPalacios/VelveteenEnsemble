@@ -36,10 +36,14 @@ class EmailsController < ApplicationController
     @email = Email.new(email_params)
 
     # respond_to do |format|
-      if @email.save 
-        flash.notice = '' 
-      else 
-        flash.notice = 'Email was not saved.' 
+    if @email.save 
+      flash[:notice] = '' 
+      respond_to do |format|
+        format.html
+        format.js { |page| page.hide('email') }
+      end
+    else 
+        flash[:notice] ='Email was not saved.' 
       end
     end
 
