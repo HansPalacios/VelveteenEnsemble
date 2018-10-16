@@ -1,7 +1,7 @@
 // Place all the styles related to the admin controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-#admin {
+.admin {
 	padding-top: 50px;
 	.login {
 		-webkit-border-radius: 20px;
@@ -127,7 +127,7 @@ tr:nth-child(odd) {
 	text-align: center;
 }
 
-#admin, .editpage {
+.admin, .editpage {
 	.background {
 		width: 500px;
 		margin: 0 auto;
@@ -135,7 +135,7 @@ tr:nth-child(odd) {
 		
 	}
 }
-.editpage, #admin {
+.editpage, .admin {
 	// padding: 100px 50px;
 	background-image: url('https://s3.amazonaws.com/velveteenensemble/wedding.png');
 	background-size: cover;

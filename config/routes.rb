@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  resources :emails
+  
   devise_for :admins
   
   get 'admin', to: 'admin#index'
@@ -10,12 +10,9 @@ Rails.application.routes.draw do
   get 'songs', to: 'songs#index'
   get 'venues', to: 'venues#index'
   get 'emails', to: 'home#index'
-  # devise_for :admins, controllers: { sessions: 'users/sessions'
-  # }
-  # devise_for :admins, controllers: { registrations: 'users/registrations' }
-
-
-
+ 
+  resources :emails
+  resources :charges
   resources :musicians
   resources :abouts
   resources :venues
