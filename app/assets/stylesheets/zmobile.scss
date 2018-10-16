@@ -47,21 +47,21 @@
 
 
 @media only screen and (max-width: 932px) {
-	#header {
-		height: 80px;
-		padding: 10px;
-		#logo {
-			height: 50px;
-		}
-		ul {
-			padding-left: 0;
-			top: 15px;
-			li {
-				width: 80px;
-				font-size: 15px;
-			}
-		}
-	}
+	// #header {
+	// 	height: 80px;
+	// 	padding: 10px;
+	// 	#logo {
+	// 		height: 50px;
+	// 	}
+	// 	ul {
+	// 		padding-left: 0;
+	// 		top: 15px;
+	// 		li {
+	// 			width: 80px;
+	// 			font-size: 15px;
+	// 		}
+	// 	}
+	// }
 	#home{
 		#home1 {
 			.fadeimage .img {
@@ -165,6 +165,9 @@
 		min-height: calc(100% - 110px);
 		margin-top: 60px;
 		background-attachment: initial;
+	}
+	#admin .links {
+		top: 60px;
 	}
 	#header {
 		height: 60px;
