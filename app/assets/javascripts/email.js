@@ -21,6 +21,13 @@ $(document).ready(function(){
   if (email.css('display') === 'block') {
   	html.css('overflow-y', 'hidden');
   	} 
+
+    function email() {
+      email.hide(); 
+      html.css('overflow-y', 'scroll');
+      document.body.scrollTop = 0; 
+      document.documentElement.scrollTop = 0; 
+    }
   });
 
     // copy emails to clipboard - for admin use
