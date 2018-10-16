@@ -3,17 +3,18 @@ class EmailsController < ApplicationController
 
   # GET /emails
   # GET /emails.json
-  def index
-    @emailpage = true
-    @emails = Email.all
-    @email = Email.new
-  end
+  # def index
+
+  #   @emails = Email.all
+  #   @email = Email.new
+  # end
 
   # GET /emails/1
   # GET /emails/1.json
 
   # GET /emails/new
   def new
+    @emailpage = true
     @email = Email.new
   end
 
@@ -34,10 +35,10 @@ class EmailsController < ApplicationController
 
    respond_to do |format|
       if @email.save
-        format.html { redirect_to 'home#index', notice: '' }
+        format.html { redirect_to '/home', notice: '' }
         format.json { render :show, status: :created, location: @email }
       else
-        format.html {redirect_to 'home#index', notice: 'error saving email' }
+        format.html {redirect_to '/home', notice: 'error saving email' }
         format.json { render json: @email.errors, status: :unprocessable_entity }
       end
     end
