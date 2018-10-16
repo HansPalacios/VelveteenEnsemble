@@ -4,12 +4,9 @@ class EmailsController < ApplicationController
   # GET /emails
   # GET /emails.json
   def index
-    unless admin_signed_in? 
-      flash[:notice] = "You don't have access to that page!"
-      redirect_to root_path
-      return
-    end
+    @emailpage = true
     @emails = Email.all
+    @email = Email.new
   end
 
   # GET /emails/1
@@ -35,14 +32,16 @@ class EmailsController < ApplicationController
   def create
     @email = Email.new(email_params)
 
-    # respond_to do |format|
-      if @email.save 
-        flash.notice = '' 
-        
-      else 
-        flash.notice = 'Email was not saved.' 
+   respond_to do |format|
+      if @email.save
+        format.html { redirect_to 'home#index', notice: '' }
+        format.json { render :show, status: :created, location: @email }
+      else
+        format.html {redirect_to 'home#index', notice: 'error saving email' }
+        format.json { render json: @email.errors, status: :unprocessable_entity }
       end
     end
+  end
 
 
   # PATCH/PUT /emails/1

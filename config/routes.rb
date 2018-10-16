@@ -4,11 +4,12 @@ Rails.application.routes.draw do
   devise_for :admins
   
   get 'admin', to: 'admin#index'
-
+  get 'home', to: 'home#index'
   get 'privacy', to: 'privacy#index'
   get 'review', to: 'review#index'
   get 'songs', to: 'songs#index'
   get 'venues', to: 'venues#index'
+  get 'emails', to: 'home#index'
   # devise_for :admins, controllers: { sessions: 'users/sessions'
   # }
   # devise_for :admins, controllers: { registrations: 'users/registrations' }
@@ -22,6 +23,6 @@ Rails.application.routes.draw do
   resources :contacts, only: [:new, :create]
   resources :songs
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  root to: 'home#index'
+  root to: 'emails#new'
 
 end

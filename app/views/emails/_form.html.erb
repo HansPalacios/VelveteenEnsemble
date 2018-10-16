@@ -1,4 +1,4 @@
-<%= form_for @email, :html => { :onsubmit => 'email'} do |f|  %>
+<%= form_for @email do |f|  %>
   
   <div class="field emailname">
     <%= f.label :name %>
@@ -6,7 +6,7 @@
   </div>
 
   <div class="field">
-    <% unless @homepage %>
+    <% unless @emailpage %>
       <%= f.label :email %>
     <% end %>
     <%= f.text_field :email, id: :email_email, :placeholder => 'Enter Email Address' %>
