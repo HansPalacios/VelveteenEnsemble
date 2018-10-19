@@ -16,6 +16,11 @@ class EmailsController < ApplicationController
   def new
     @emailpage = true
     @email = Email.new
+    unless admin_signed_in? 
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
   end
 
   # GET /emails/1/edit
