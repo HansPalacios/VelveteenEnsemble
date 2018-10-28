@@ -8,7 +8,7 @@ git_source(:github) do |repo_name|
 end
 
 # Checkout with stripe for card payments
-# gem 'stripe'
+gem 'stripe'
 # Copy emails for admin to clipboard
 gem 'clipboard-rails'
 #Devise for user login
