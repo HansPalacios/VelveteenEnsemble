@@ -126,7 +126,7 @@
 }
 #home {
 	margin-top: 0;
-	#home1 {
+	.home1 {
 		height: 100%;
 		position: relative;
 		ul {
@@ -184,7 +184,7 @@
 		 }
 		}
 	}
-	#home2 {
+	.home2 {
 		margin-top: 472px;
 		text-align: center;
 		background-size: cover;
@@ -237,11 +237,11 @@
 			background-position: center;
 		}
 	}
-	#home3 {
+	.home3 {
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
-		background-attachment: fixed;
+		// background-attachment: fixed;
 		background-image: url('https://s3.amazonaws.com/velveteenensemble/wedding2.png');
 		padding: 100px 0;
 
