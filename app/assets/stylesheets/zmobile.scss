@@ -1,6 +1,6 @@
 @media only screen and (max-width: 992px) {
 
-	#home #home2 {
+	#home .home2 {
 		margin-top: 480px;
 	}
 	#reviews {
@@ -51,7 +51,7 @@
 	// 	}
 	// }
 	#home{
-		#home1 {
+		.home1 {
 			.fadeimage .img {
 				height: 380px;
 			}
@@ -63,7 +63,7 @@
 				}
 			}
 		}
-		#home2 {
+		.home2 {
 			margin-top: 420px;
 			h2 {
 				font-size: 35px;
@@ -196,7 +196,7 @@
 		}
 	}	
 	#home {
-		#home1 {
+		.home1 {
 			ul {
 				width: 150px;
 				height: 300px;
@@ -212,7 +212,7 @@
 				height: 300px;
 			}
 		}
-		#home2 {
+		.home2 {
 			margin-top: 320px;
 			h2 {
 				font-size: 30px;
@@ -241,7 +241,7 @@
 				margin-bottom: 0;
 			}
 		}
-		#home3 {
+		.home3 {
 			background-attachment: initial;
 			padding: 50px 0;
 		}
@@ -378,7 +378,7 @@
 		}
 	}	
 	#home {
-		#home1 {
+		.home1 {
 			ul {
 				width: 120px;
 				height: 220px;
@@ -394,7 +394,7 @@
 				height: 220px;
 			}
 		}
-		#home2 {
+		.home2 {
 			margin-top: 250px;
 			.title {
 				padding: 0 20px;
@@ -513,7 +513,7 @@
 
 @media only screen and (max-width: 410px) {
 	#home {
-		#home1 {
+		.home1 {
 			ul {
 				width: 110px;
 				height: 170px;
@@ -529,7 +529,7 @@
 				height: 170px;
 			}
 		}
-		#home2 {
+		.home2 {
 			margin-top: 200px;
 			.title {
 				h2 {
