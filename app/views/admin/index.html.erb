@@ -18,7 +18,7 @@
 			</ul>
 		</div>
 		<div id="admin1" class="hidepages">
-			<div class="background row">
+			<div class="background row emaillist">
 				<table>
 					<thead>
 						<tr>
@@ -26,7 +26,7 @@
 						</tr>
 					  <tr>
 					    <th class="emailcol">Email</th>
-					    <th>Name</th> 
+					    <th class="hide600">Name</th> 
 					    <th class="linkcol">Links</th>
 				  	</tr>
 				  </thead>
@@ -34,7 +34,7 @@
 				  	<% @listemails.each do |email| %>
 							<tr>
 								<td class="emailcol"><%= email.email%></td>
-								<td><%= email.name%></td>
+								<td class="hide600"><%= email.name%></td>
 								<td class="linkcol">
 	            			<%= link_to 'Edit', edit_email_path(email) %>
 	            			<div class="vertical"></div>
@@ -45,8 +45,8 @@
 					</tbody>
 				</table>
 			</div>
-			<br>
-			<div class="background row emaillist">
+			<!-- <br> -->
+			<div class="background row copyemails">
 
 				<p id="copyme">
 					<%= @singlecopy %>

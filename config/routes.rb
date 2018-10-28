@@ -13,7 +13,6 @@ Rails.application.routes.draw do
   get 'media', to: 'uploads#index'
   # get 'about', to: 'abouts#index'
   get 'contact', to: 'contacts#new'
-
   resources :emails
   resources :charges
   resources :musicians

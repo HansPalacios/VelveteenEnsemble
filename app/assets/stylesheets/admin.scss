@@ -48,7 +48,7 @@ li:hover, .hover {
 		box-shadow: 0px 5px 20px -5px rgba(0,0,0,1);
 
 	}
-	.emaillist {
+	.copyemails {
 		padding: 20px;
 		#copyme {
 			display: block;
@@ -254,21 +254,4 @@ tr:nth-child(odd) {
 	background-color: black;
 	height: 10px;
 	display: inline-block;
-}
-@media only screen and (max-width: 932px) {
-	.editmobilehide {
-		display: none;
-	}
-	.editmobileshow {
-		display: inline-block;
-		.edit {
-			width: 100%;
-			text-align: center;
-			a {
-				color: rgba(123,210,33,1);
-				font-weight: 900;
-				font-size: 18px;
-			}
-		}
-	}
 }
