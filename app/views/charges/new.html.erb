@@ -1,29 +1,29 @@
-<div class="container-fluid chargecontainer" >
+<!-- <div class="container-fluid chargecontainer" >
 	<div class="charges">
 		<div class="login background">
-			<%= image_tag image_url('https://s3.amazonaws.com/velveteenensemble/whlogolines.png'), :class => "logo" %>
+			<#%= image_tag image_url('https://s3.amazonaws.com/velveteenensemble/whlogolines.png'), :class => "logo" %>
 			<h4>Invoice for your booking:</h4>
 			<p>Event Date: {date}</p>
 			<p>Event Length: {length}</p>
 			<p></p>
-			<%= form_tag charges_path do %>
+			<#%= form_tag charges_path do %>
 			  <article>
-			    <% if flash[:error].present? %>
+			    <#% if flash[:error].present? %>
 			      <div id="error_explanation">
-			        <p><%= flash[:error] %></p>
+			        <p><#%= flash[:error] %></p>
 			      </div>
-			    <% end %>
+			    <#% end %>
 			    <label class="amount">
 			      <span>Deposit Amount: $250.00</span>
 			    </label>
 			  </article>
 
 			  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-			          data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+			          data-key="<#%= Rails.configuration.stripe[:publishable_key] %>"
 			          data-description="A month's subscription"
 			          data-amount="500"
 			          data-locale="auto"></script>
-			<% end %>
+			<#% end %>
 		</div>
 	</div>
-</div>
+</div> -->

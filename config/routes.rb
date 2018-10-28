@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   # get 'about', to: 'abouts#index'
   get 'contact', to: 'contacts#new'
   resources :emails
-  resources :charges
+  # resources :charges
   resources :musicians
   resources :abouts
   resources :venues
