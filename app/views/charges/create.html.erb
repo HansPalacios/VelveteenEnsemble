@@ -1,1 +1,18 @@
-<h2>Thanks, you paid <strong>$5.00</strong>!</h2>
+
+<div class="container-fluid" >
+	<div class="charges">
+		<div class="login background">
+			<%= image_tag image_url('https://s3.amazonaws.com/velveteenensemble/whlogolines.png'), :class => "logo" %>
+			<h4>Your deposit of <strong>$<%= @displayamount %></strong> went through</h4>
+			<br>
+			<p><em>A receipt has been emailed to {email}</em></p>
+			<br>
+			<p><strong>Your event is booked for:</strong></p>
+			<p>Event Date: {date}</p>
+			<p>Event Length: {length}</p>
+			<br>
+			<button>Print Receipt</button>
+			<br>
+		</div>
+	</div>
+</div>
