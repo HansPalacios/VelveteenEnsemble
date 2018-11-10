@@ -12,11 +12,11 @@ admins = Admin.create([
 ])
 
 venues = Venue.create([
-	{title: "Weddings", bio: "We have performed at hundreds of upscale weddings.  A string ensemble in the configuration of your choice is our best-selling option for your ceremony, cocktail hour, dinner, and first dance. We also offer an entire string orchestra for the ultimate musical experience.  Each of our musicians is classically trained from top international music programs, and are experts in all genres.  Our in-house arranger ensures that the music performed on your big day will knock everyone's socks off! We will guide you through the process of choosing repertoire and offer suggestions along the way to help you create the perfect once-in-a-lifetime experience.", name: "https://s3.amazonaws.com/velveteenensemble/wedding3.png", video1: 'https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FVelveteenEnsemble%2Fvideos%2F2074352036179399%2F&show_text=0&width=560', video2: 'https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FVelveteenEnsemble%2Fvideos%2F2130941767187092%2F&show_text=0&width=560', video3: 'https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FVelveteenEnsemble%2Fvideos%2F2127559687525300%2F&show_text=0&width=560'},
+	{title: "Weddings", bio: "We have performed at hundreds of upscale weddings.  A string ensemble in the configuration of your choice is our best-selling option for your ceremony, cocktail hour, dinner, and first dance. We also offer an entire string orchestra for the ultimate musical experience.  Each of our musicians is classically trained from top international music programs, and are experts in all genres.  Our in-house arranger ensures that the music performed on your big day will knock everyone's socks off! We will guide you through the process of choosing repertoire and offer suggestions along the way to help you create the perfect once-in-a-lifetime experience.", name: "https://d3ffc7oj6uo4uj.cloudfront.net/wedding3.png", video1: 'https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FVelveteenEnsemble%2Fvideos%2F2074352036179399%2F&show_text=0&width=560', video2: 'https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FVelveteenEnsemble%2Fvideos%2F2130941767187092%2F&show_text=0&width=560', video3: 'https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FVelveteenEnsemble%2Fvideos%2F2127559687525300%2F&show_text=0&width=560'},
 	{title: "Concerts & Tours", bio: "
-Velveteen Ensemble has had the privilege of touring globally, collaborating with top artists, and providing award-winning performances for weddings and private events.  Most recently, we completed a 20-concert tour throughout China featuring classical, pop, and folk pieces.  We have also collaborated with hip-hop artists such as Migos and A-Boogie Wit Da Hoodie.  Ensemble members have personally toured with renowned artists such as John Legend, Sarah Bareilles, and Madonna.", name: "https://s3.amazonaws.com/velveteenensemble/PM9A1098.jpg", video1: 'https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FVelveteenEnsemble%2Fvideos%2F2080108822270387%2F&show_text=0&width=560', video2: 'https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FVelveteenEnsemble%2Fvideos%2F2075962539351682%2F&show_text=0&width=560', video3: 'https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FVelveteenEnsemble%2Fvideos%2F2059106041037332%2F&show_text=0&width=560'},
-	{title: "Corporate Events", bio: "Velveteen Ensemble regularly works with Fortune 500 companies including Google, Disney, and Swarovski to provide elegant musicianship for their events.  Our musicians have played for musical segments and starred in HBO's hit tv series Game of Thrones, Amazon Prime's Mozart in the Jungle, and NBC's Law and Order, to name just a few.  We love working with all companies, big and small, to bring their productions and events to the next level.", name: "https://s3.amazonaws.com/velveteenensemble/wine3.jpg"},
-	{title: "Recordings", bio: "Velveteen Ensemble regularly works with talented composers looking for professional recordings of their works.  These composers include students looking to build up their portfolio to songwriters looking to incorporate strings into their albums. Please contact us if you are looking to have strings in your next project!", name: "https://s3.amazonaws.com/velveteenensemble/recording.png", video1: 'https://www.youtube.com/embed/sKY_T4uGJD4', video2: 'https://www.youtube.com/embed/gxt8luAY63s'}
+Velveteen Ensemble has had the privilege of touring globally, collaborating with top artists, and providing award-winning performances for weddings and private events.  Most recently, we completed a 20-concert tour throughout China featuring classical, pop, and folk pieces.  We have also collaborated with hip-hop artists such as Migos and A-Boogie Wit Da Hoodie.  Ensemble members have personally toured with renowned artists such as John Legend, Sarah Bareilles, and Madonna.", name: "https://d3ffc7oj6uo4uj.cloudfront.net/PM9A1098.jpg", video1: 'https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FVelveteenEnsemble%2Fvideos%2F2080108822270387%2F&show_text=0&width=560', video2: 'https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FVelveteenEnsemble%2Fvideos%2F2075962539351682%2F&show_text=0&width=560', video3: 'https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FVelveteenEnsemble%2Fvideos%2F2059106041037332%2F&show_text=0&width=560'},
+	{title: "Corporate Events", bio: "Velveteen Ensemble regularly works with Fortune 500 companies including Google, Disney, and Swarovski to provide elegant musicianship for their events.  Our musicians have played for musical segments and starred in HBO's hit tv series Game of Thrones, Amazon Prime's Mozart in the Jungle, and NBC's Law and Order, to name just a few.  We love working with all companies, big and small, to bring their productions and events to the next level.", name: "https://d3ffc7oj6uo4uj.cloudfront.net/wine3.jpg"},
+	{title: "Recordings", bio: "Velveteen Ensemble regularly works with talented composers looking for professional recordings of their works.  These composers include students looking to build up their portfolio to songwriters looking to incorporate strings into their albums. Please contact us if you are looking to have strings in your next project!", name: "https://d3ffc7oj6uo4uj.cloudfront.net/recording.png", video1: 'https://www.youtube.com/embed/sKY_T4uGJD4', video2: 'https://www.youtube.com/embed/gxt8luAY63s'}
 ])
 
 abouts = About.create([
@@ -26,30 +26,30 @@ abouts = About.create([
     ])
 
 clients = Client.create([
-	{venue_id: 3, title: 'Swarovski', name: 'https://s3.amazonaws.com/velveteenensemble/swarovski.png'},
-	{venue_id: 3, title: 'Sony', name: 'https://s3.amazonaws.com/velveteenensemble/sony.png'},
-	{venue_id: 3, title: 'Disney', name: 'https://s3.amazonaws.com/velveteenensemble/disney.png'},
-	{venue_id: 3, title: 'HBO', name: 'https://s3.amazonaws.com/velveteenensemble/hbo.png'},
-	{venue_id: 3, title: 'New York Public Library', name: 'https://s3.amazonaws.com/velveteenensemble/nypl.png'},
-	{venue_id: 3, title: 'Amazon', name: 'https://s3.amazonaws.com/velveteenensemble/amazon.png'},
-	{venue_id: 3, title: 'NBC', name: 'https://s3.amazonaws.com/velveteenensemble/nbc.png'},
-	{venue_id: 3, title: 'Google', name: 'https://s3.amazonaws.com/velveteenensemble/google.png'}
+	{venue_id: 3, title: 'Swarovski', name: 'https://d3ffc7oj6uo4uj.cloudfront.net/swarovski.png'},
+	{venue_id: 3, title: 'Sony', name: 'https://d3ffc7oj6uo4uj.cloudfront.net/sony.png'},
+	{venue_id: 3, title: 'Disney', name: 'https://d3ffc7oj6uo4uj.cloudfront.net/disney.png'},
+	{venue_id: 3, title: 'HBO', name: 'https://d3ffc7oj6uo4uj.cloudfront.net/hbo.png'},
+	{venue_id: 3, title: 'New York Public Library', name: 'https://d3ffc7oj6uo4uj.cloudfront.net/nypl.png'},
+	{venue_id: 3, title: 'Amazon', name: 'https://d3ffc7oj6uo4uj.cloudfront.net/amazon.png'},
+	{venue_id: 3, title: 'NBC', name: 'https://d3ffc7oj6uo4uj.cloudfront.net/nbc.png'},
+	{venue_id: 3, title: 'Google', name: 'https://d3ffc7oj6uo4uj.cloudfront.net/google.png'}
 ])
 
 songs = Song.create([
 	# sample music
-{title: "Eine Kleine Nachtmusik", artist: "Mozart	", genre: "Classical", file: "https://s3.amazonaws.com/velveteenensemble/eine.mp3", play: true},
-{title: "Alla Hornpipe", artist: "Handel	", genre: "Classical", file: "https://s3.amazonaws.com/velveteenensemble/hornpipe.mp3", play: true},
-{title: "I'm Yours", artist: "Jason Mraz	", genre: "Pop", file: "https://s3.amazonaws.com/velveteenensemble/imyours.mp3", play: true},
-{title: "La Vie En Rose	", artist: "Edith Piaf", genre: "Traditional pop", file: "https://s3.amazonaws.com/velveteenensemble/lavieenrose.mp3", play: true},
-{title: "Libertango", artist: "Astor Piazzolla", genre: "Tango Nuevo", file: "https://s3.amazonaws.com/velveteenensemble/libertango.mp3", play: true},
-{title: "Moon River (Breakfast at Tiffanys)", artist: "Henry Mancini", genre: "Easy Listening", file: "https://s3.amazonaws.com/velveteenensemble/moonriver.mp3", play: true},
-{title: "Ode to Joy", artist: "Beethoven", genre: "Classical", file: "https://s3.amazonaws.com/velveteenensemble/odetojoy.mp3", play: true},
-{title: "Salut d'Amour", artist: "Edward Elgar", genre: "Classical", file: "https://s3.amazonaws.com/velveteenensemble/salut.mp3", play: true},
-{title: "Meditation from Thaïs", artist: "Massenet", genre: "Opera", file: "https://s3.amazonaws.com/velveteenensemble/thais.mp3", play: true},
-{title: "Viva La Vida", artist: "Coldplay", genre: "Pop", file: "https://s3.amazonaws.com/velveteenensemble/vivalavida.mp3", play: true},
-{title: "Spring", artist: "Vivaldi", genre: "Classical", file: "https://s3.amazonaws.com/velveteenensemble/vivaldi.mp3", play: true},
-{title: "Wedding March", artist: "Mendelssohn", genre: "Classical", file: "https://s3.amazonaws.com/velveteenensemble/weddingmarch.mp3", play: true},
+{title: "Eine Kleine Nachtmusik", artist: "Mozart	", genre: "Classical", file: "https://d3ffc7oj6uo4uj.cloudfront.net/eine.mp3", play: true},
+{title: "Alla Hornpipe", artist: "Handel	", genre: "Classical", file: "https://d3ffc7oj6uo4uj.cloudfront.net/hornpipe.mp3", play: true},
+{title: "I'm Yours", artist: "Jason Mraz	", genre: "Pop", file: "https://d3ffc7oj6uo4uj.cloudfront.net/imyours.mp3", play: true},
+{title: "La Vie En Rose	", artist: "Edith Piaf", genre: "Traditional pop", file: "https://d3ffc7oj6uo4uj.cloudfront.net/lavieenrose.mp3", play: true},
+{title: "Libertango", artist: "Astor Piazzolla", genre: "Tango Nuevo", file: "https://d3ffc7oj6uo4uj.cloudfront.net/libertango.mp3", play: true},
+{title: "Moon River (Breakfast at Tiffanys)", artist: "Henry Mancini", genre: "Easy Listening", file: "https://d3ffc7oj6uo4uj.cloudfront.net/moonriver.mp3", play: true},
+{title: "Ode to Joy", artist: "Beethoven", genre: "Classical", file: "https://d3ffc7oj6uo4uj.cloudfront.net/odetojoy.mp3", play: true},
+{title: "Salut d'Amour", artist: "Edward Elgar", genre: "Classical", file: "https://d3ffc7oj6uo4uj.cloudfront.net/salut.mp3", play: true},
+{title: "Meditation from Thaïs", artist: "Massenet", genre: "Opera", file: "https://d3ffc7oj6uo4uj.cloudfront.net/thais.mp3", play: true},
+{title: "Viva La Vida", artist: "Coldplay", genre: "Pop", file: "https://d3ffc7oj6uo4uj.cloudfront.net/vivalavida.mp3", play: true},
+{title: "Spring", artist: "Vivaldi", genre: "Classical", file: "https://d3ffc7oj6uo4uj.cloudfront.net/vivaldi.mp3", play: true},
+{title: "Wedding March", artist: "Mendelssohn", genre: "Classical", file: "https://d3ffc7oj6uo4uj.cloudfront.net/weddingmarch.mp3", play: true},
 
 # just listed music
 
