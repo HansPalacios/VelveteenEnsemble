@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .admin, .editpage {
+	overflow: scroll;
 	.background {
 		width: 500px;
 		margin: 0 auto;

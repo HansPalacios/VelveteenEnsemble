@@ -34,6 +34,7 @@ text-decoration: none;
 .height {
 	min-height: calc(100% - 140px);
 	margin-top: 80px;
+	overflow: scroll;
 }
 /*.loader {*/
     /*position: fixed;*/
