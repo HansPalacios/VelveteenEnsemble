@@ -1,5 +1,4 @@
-class Contact <  ActiveRecord::Base
-  include MailForm::Delivery
+class Contact < MailForm::Base
   belongs_to :customer
   belongs_to :event
   attribute :fname, :validate => true
@@ -15,7 +14,7 @@ class Contact <  ActiveRecord::Base
   attribute :nickname, :captcha  => true
   def headers
     {
-      :subject => "Client Email - Velveteen Ensemble",
+      :subject => "New Client - Velveteen Ensemble",
       :to => "marcel@velveteenensemble.com",
       :from =>  %("#{name}" <#{email}>)
     }
