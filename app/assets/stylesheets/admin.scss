@@ -166,8 +166,53 @@ tr:nth-child(odd) {
 	margin-bottom: 50px;
 }
 
-
-
+#admin3 {
+	background-image: none;
+	// height: 100%;
+	// top: 0;
+	// bottom: 0;
+	// left: 0;
+	// right: 0;
+	// position: absolute;
+	.events {
+		padding: 5px 0;
+		background-color: grey;
+		// width: 100%;
+		height: 100px;
+		text-align: center;
+		overflow-x: scroll;
+		h4 {
+			margin: 0 auto;
+			color: white;
+		}
+	}	
+	.customers {
+		padding: 5px 0;
+		background-color: black;
+		// width: 100%;
+		height: 100px;
+		text-align: center;
+		overflow-x: scroll;
+		h4 {
+			margin: 0 auto;
+			color: white;
+		}
+	}	
+	.contacts {
+		background-color: white;
+		overflow-y: scroll;
+		text-align: center;
+		h4 {
+			margin: 5px auto;
+			color: black;
+		}
+		.background {
+			width: 40%;
+			display: inline-block;
+			margin: 20px;
+		}
+	}
+}
 
 
 // additional scss for editing on different pages

@@ -1,18 +1,24 @@
 class AdminController < ApplicationController
 	def index
 		
-		@emails = Email.all
+		# @emails = Email.all
 		@contacts = Contact.all
-		@listemails = @emails.uniq 
-
+		@events = Event.all
+		@customers = Customer.all 
+		# @listemails = Array.new
 		@copy = Array.new
 
-		@emails.each do |email|
-		 	@copy.push( email.email )
-		 	@copy.push( 'hans@hspalacios.com' )
+		@contacts.each do |contact|
+		 	@copy.push( contact.email )
+		 	# @copy.push( 'hans@hspalacios.com' )
 		end
+		# @contacts.each do |contact|
+		#  	@listemails.push( contact.email, contact.fname )
+		#  	# @copy.push( 'hans@hspalacios.com' )
+		# end
 		
-
+		@singlelist = @copy.uniq.reject(&:blank?).sort()
+	
 		@singlecopy = @copy.uniq.reject(&:blank?).sort().join( + ', ')
 	
 		

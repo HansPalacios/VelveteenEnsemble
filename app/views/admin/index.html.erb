@@ -29,20 +29,20 @@
 						</tr>
 					  <tr>
 					    <th class="emailcol">Email</th>
-					    <th class="hide600">Name</th> 
-					    <th class="linkcol">Links</th>
+					    <!-- <th class="hide600">Name</th>  -->
+					    <!-- <th class="linkcol">Links</th> -->
 				  	</tr>
 				  </thead>
 				  <tbody>
-				  	<% @listemails.each do |email| %>
+				  	<% @singlelist.each do |list| %>
 							<tr>
-								<td class="emailcol"><%= email.email%></td>
-								<td class="hide600"><%= email.name%></td>
-								<td class="linkcol">
-	            			<%= link_to 'Edit', edit_email_path(email) %>
+								<td class="emailcol"><%= list %></td>
+								<!-- <td class="hide600"><#%= contact.fname%></td> -->
+								<!-- <td class="linkcol">
+	            			<#%= link_to 'Edit', edit_email_path(email) %>
 	            			<div class="vertical"></div>
-	            			<%= link_to 'Delete', @email = email, :method => :delete, :confirm => "Are you sure?" %>
-	       		 			</td>
+	            			<#%= link_to 'Delete', @email = email, :method => :delete, :confirm => "Are you sure?" %>
+	       		 			</td> -->
 							</tr>
 						<% end %>	
 					</tbody>
@@ -61,15 +61,44 @@
 		</div>
 		
 
-		<div id="admin3" class="hidepages">
-			<div class="background row">
-				 <% @contacts.each do |contact| %>
-				 	<!-- <div class="row"> -->
-				 		<h2><%= contact.fname%></h2>
-				 		<h2><%= contact.email%></h2>
-				 	<!-- </div> -->
+		<div id="admin3" class="hidepages row">
+
+			<div class="col-md-12 no-gutters events">
+				<div class="row">
+					<h4>Events</h4>
+				</div>
+				 <% @events.each do |event| %>
+				 	<div class="row">
+				 		<h2><%= event.fname%></h2>
+				 		<h2><%= event.email%></h2>
+				 	</div>
 				 <% end %>
 			</div>
+
+			<div class="col-md-12 no-gutters customers">
+				<div class="row">
+					<h4>Customers</h4>
+				</div>
+				 <% @customers.each do |customer| %>
+				 	<div class="row">
+				 		<h2><%= customer.fname%></h2>
+				 		<h2><%= customer.email%></h2>
+				 	</div>
+				 <% end %>
+			</div>
+
+			<div class="col-md-12 no-gutters contacts">
+				<div class="row">
+					<h4>Emails</h4>
+				</div>
+				 <% @contacts.each do |contact| %>
+				 	<div class="background">
+				 		<h2><%= contact.fname%></h2>
+				 		<h2><%= contact.email%></h2>
+				 	</div>
+				 <% end %>
+			</div>
+
 		</div>
 
 	<% end %>

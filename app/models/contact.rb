@@ -2,7 +2,7 @@ class Contact < ActiveRecord::Base
   define_model_callbacks :deliver
   include MailForm::Delivery
 
-  # append :remote_ip, :user_agent, :session
+  append :remote_ip, :user_agent, :session
   
   attribute :fname, :validate => true
   attribute :lname, :validate => true
@@ -18,8 +18,8 @@ class Contact < ActiveRecord::Base
   attribute :customer_id
   attribute :event_id
 
-  # belongs_to :customer
-  # belongs_to :event
+  belongs_to :customer
+  belongs_to :event
   def headers
     {
       :subject => "New Client - Velveteen Ensemble",
