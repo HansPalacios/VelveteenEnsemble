@@ -1,5 +1,7 @@
 class Contact < ActiveRecord::Base
   include MailForm::Delivery
+
+  append :remote_ip, :admin_agent, :session
   
   attribute :fname, :validate => true
   attribute :lname, :validate => true
