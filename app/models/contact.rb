@@ -2,7 +2,8 @@ class Contact <  ActiveRecord::Base
   include MailForm::Delivery
   belongs_to :customer
   belongs_to :event
-  attribute :name, :validate => true
+  attribute :fname, :validate => true
+  attribute :lname, :validate => true
   attribute :email, :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
   attribute :phone
   attribute :eventdate, :validate => true
