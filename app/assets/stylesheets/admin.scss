@@ -146,14 +146,7 @@ tr:nth-child(odd) {
 #admin2, #admin3 {
 	display: none;
 }
-
 #admin1 {
-	margin-top: 90px;
-	margin-bottom: 50px;
-}
-
-
-#admin2 {
 	// padding: 50px 20px;
 	background-image: none;
 	.calendar {
@@ -168,6 +161,13 @@ tr:nth-child(odd) {
 		}
 	}
 }
+#admin2 {
+	margin-top: 90px;
+	margin-bottom: 50px;
+}
+
+
+
 
 
 // additional scss for editing on different pages

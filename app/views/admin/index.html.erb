@@ -1,5 +1,4 @@
 <div class="container-fluid height admin">
-	<!-- <div > -->
 	<% unless admin_signed_in? %>
 			<%= render '/admin/login' %>
 	<% end %>
@@ -7,12 +6,21 @@
 	<% if admin_signed_in? %>
 		<div class="links col-md-12 no-gutters">
 			<ul class="no-gutters">
-				<li class="col-md-4 col-sm-4 col-xs-4 no-gutters color hover" id="link1">Emails</li>
-				<li class="col-md-4 col-sm-4 col-xs-4 no-gutters color" id="link2">Calendar</li>
+				<li class="col-md-4 col-sm-4 col-xs-4 no-gutters color hover" id="link1">Calendar</li>
+				<li class="col-md-4 col-sm-4 col-xs-4 no-gutters color" id="link2">Emails</li>
 				<li class="col-md-4 col-sm-4 col-xs-4 no-gutters color" id="link3">Payments</li>
 			</ul>
 		</div>
-		<div id="admin1" class="hidepages">
+
+		<div id="admin1" class=" no-gutters hidepages">
+			<div class="row no-gutters calendar">
+				<iframe src="https://calendar.google.com/calendar/embed?title=Velveteen%20Ensemble&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=velveteenensemble.com_mh8rm5olauqbct9squ4v6uka30%40group.calendar.google.com&amp;color=%2329527A&amp;ctz=America%2FNew_York" style="border-width:0" height="600px" frameborder="0" scrolling="no">
+				</iframe>
+			</div>
+		</div>
+
+
+		<div id="admin2" class="hidepages">
 			<div class="background row emaillist">
 				<table>
 					<thead>
@@ -40,7 +48,6 @@
 					</tbody>
 				</table>
 			</div>
-			<!-- <br> -->
 			<div class="background row copyemails">
 
 				<p id="copyme">
@@ -52,21 +59,9 @@
 				</button>
 			</div>
 		</div>
-		<div id="admin2" class=" no-gutters hidepages">
-			<div class="row no-gutters calendar">
-				
-				<iframe src="https://calendar.google.com/calendar/embed?title=Velveteen%20Ensemble&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=velveteenensemble.com_mh8rm5olauqbct9squ4v6uka30%40group.calendar.google.com&amp;color=%2329527A&amp;ctz=America%2FNew_York" style="border-width:0" height="600px" frameborder="0" scrolling="no">
-					<style>
-						div#warningBox {
-							display: none !important;
-						}
-					</style>
-				</iframe>
-			</div>
+		
 
-		</div>
 		<div id="admin3" class="hidepages"></div>
 
 	<% end %>
-<!-- </div> -->
 </div>
