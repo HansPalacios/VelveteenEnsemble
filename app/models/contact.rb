@@ -1,6 +1,5 @@
 class Contact < MailForm::Base
-  belongs_to :customer
-  belongs_to :event
+  
   attribute :fname, :validate => true
   attribute :lname, :validate => true
   attribute :email, :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
@@ -14,6 +13,9 @@ class Contact < MailForm::Base
   attribute :nickname, :captcha  => true
   attribute :customer_id
   attribute :event_id
+  
+  belongs_to :customer
+  belongs_to :event
   def headers
     {
       :subject => "New Client - Velveteen Ensemble",
