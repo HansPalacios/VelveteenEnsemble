@@ -1,7 +1,4 @@
-class Contact < ActiveRecord::Base
-  include MailForm::Delivery
-
-  append :remote_ip, :admin_agent, :session
+class Contact < MailForm::Base
   
   attribute :fname, :validate => true
   attribute :lname, :validate => true
@@ -16,7 +13,7 @@ class Contact < ActiveRecord::Base
   attribute :nickname, :captcha  => true
   attribute :customer_id
   attribute :event_id
-
+  
   # belongs_to :customer
   # belongs_to :event
   def headers
