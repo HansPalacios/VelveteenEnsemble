@@ -54,7 +54,7 @@ ActiveRecord::Schema.define(version: 20181118201801) do
     t.string "fname"
     t.string "lname"
     t.string "email"
-    t.integer "phone"
+    t.bigint "phone"
     t.date "eventdate"
     t.string "eventlocation"
     t.string "type"

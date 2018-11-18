@@ -64,9 +64,10 @@
 		<div id="admin3" class="hidepages">
 			<div class="background row">
 				 <% @contacts.each do |contact| %>
-				 	<div class="row">
+				 	<!-- <div class="row"> -->
 				 		<h2><%= contact.fname%></h2>
-				 	</div>
+				 		<h2><%= contact.email%></h2>
+				 	<!-- </div> -->
 				 <% end %>
 			</div>
 		</div>

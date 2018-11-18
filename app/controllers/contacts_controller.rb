@@ -19,6 +19,13 @@ class ContactsController < ApplicationController
       flash.now[:error] = 'Cannot send message'
       render :new
     end
+    if @contact.save
+        format.html { redirect_to @contact, notice: 'contact was successfully created.' }
+        format.json { render :show, status: :created, location: @contact }
+      else
+        format.html { render :new }
+        format.json { render json: @contact.errors, status: :unprocessable_entity }
+      end
   end
 
 end

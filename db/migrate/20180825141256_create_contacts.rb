@@ -5,7 +5,7 @@ class CreateContacts < ActiveRecord::Migration[5.1]
       t.string :fname
       t.string :lname
     	t.string :email
-    	t.integer :phone
+    	t.integer :phone, :limit => 8
     	t.date :eventdate
     	t.string :eventlocation
     	t.string :type
