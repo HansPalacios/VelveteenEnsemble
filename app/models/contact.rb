@@ -14,8 +14,8 @@ class Contact < MailForm::Base
   attribute :customer_id
   attribute :event_id
   
-  belongs_to :customer
-  belongs_to :event
+  # belongs_to :customer
+  # belongs_to :event
   def headers
     {
       :subject => "New Client - Velveteen Ensemble",
