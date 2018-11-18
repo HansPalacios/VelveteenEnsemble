@@ -1,4 +1,8 @@
-class Contact < MailForm::Base
+class Contact < ActiveRecord::Base
+  define_model_callbacks :deliver
+  include MailForm::Delivery
+
+  # append :remote_ip, :user_agent, :session
   
   attribute :fname, :validate => true
   attribute :lname, :validate => true
@@ -13,14 +17,14 @@ class Contact < MailForm::Base
   attribute :nickname, :captcha  => true
   attribute :customer_id
   attribute :event_id
-  
+
   # belongs_to :customer
   # belongs_to :event
   def headers
     {
       :subject => "New Client - Velveteen Ensemble",
       :to => "marcel@velveteenensemble.com",
-      :from =>  %("#{name}" <#{email}>)
+      :from =>  %("#{fname}" <#{email}>)
     }
   end
 end

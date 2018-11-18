@@ -2,6 +2,7 @@ class AdminController < ApplicationController
 	def index
 		
 		@emails = Email.all
+		@contacts = Contact.all
 		@listemails = @emails.uniq 
 
 		@copy = Array.new
