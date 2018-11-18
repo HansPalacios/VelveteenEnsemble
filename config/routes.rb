@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
   
+  resources :events
+  resources :customers
   devise_for :admins
   
   get 'admin', to: 'admin#index'

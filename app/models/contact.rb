@@ -1,4 +1,7 @@
-class Contact < MailForm::Base
+class Contact <  ActiveRecord::Base
+  include MailForm::Delivery
+  belongs_to :customer
+  belongs_to :event
   attribute :name, :validate => true
   attribute :email, :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
   attribute :phone
@@ -11,7 +14,7 @@ class Contact < MailForm::Base
   attribute :nickname, :captcha  => true
   def headers
     {
-      :subject => "Contact Form",
+      :subject => "Client Email - Velveteen Ensemble",
       :to => "marcel@velveteenensemble.com",
       :from =>  %("#{name}" <#{email}>)
     }

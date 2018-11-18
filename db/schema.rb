@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181004115725) do
+ActiveRecord::Schema.define(version: 20181118201801) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -51,7 +51,8 @@ ActiveRecord::Schema.define(version: 20181004115725) do
 
   create_table "contacts", force: :cascade do |t|
     t.text "message"
-    t.string "name"
+    t.string "fname"
+    t.string "lname"
     t.string "email"
     t.integer "phone"
     t.date "eventdate"
@@ -59,6 +60,18 @@ ActiveRecord::Schema.define(version: 20181004115725) do
     t.string "type"
     t.string "length"
     t.string "heardby"
+    t.integer "customer_id"
+    t.integer "event_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "customers", force: :cascade do |t|
+    t.string "fname"
+    t.string "lname"
+    t.string "email"
+    t.integer "phone"
+    t.string "city"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -67,6 +80,22 @@ ActiveRecord::Schema.define(version: 20181004115725) do
     t.string "name"
     t.string "email"
     t.string "nickname"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "events", force: :cascade do |t|
+    t.string "title"
+    t.date "date"
+    t.string "location"
+    t.string "type"
+    t.string "length"
+    t.integer "amount"
+    t.integer "deposit"
+    t.integer "subtotal"
+    t.boolean "deposit_paid"
+    t.boolean "total_paid"
+    t.integer "customer_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
