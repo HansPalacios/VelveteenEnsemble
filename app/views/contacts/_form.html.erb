@@ -1,6 +1,9 @@
 <%= form_for @contact do |f| %>
-    <%= f.label :name, 'Name (required) *' %> 
-    <%= f.text_field :name, required: true %>
+    <%= f.label :fname, 'First Name (required) *' %> 
+    <%= f.text_field :fname, required: true %>
+    <br>
+    <%= f.label :lname, 'Last Name (required) *' %> 
+    <%= f.text_field :lname, required: true %>
     <br>
     <%= f.label :email, 'Email (required) *' %>
     <%= f.text_field :email, required: true %>
