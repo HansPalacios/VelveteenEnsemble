@@ -1,4 +1,5 @@
-class Contact < MailForm::Base
+class Contact < ActiveRecord::Base
+  include MailForm::Delivery
   
   attribute :fname, :validate => true
   attribute :lname, :validate => true
@@ -13,7 +14,7 @@ class Contact < MailForm::Base
   attribute :nickname, :captcha  => true
   attribute :customer_id
   attribute :event_id
-  
+
   # belongs_to :customer
   # belongs_to :event
   def headers
