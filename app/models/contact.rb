@@ -12,6 +12,8 @@ class Contact < MailForm::Base
   attribute :length
   attribute :message, :validate => true
   attribute :nickname, :captcha  => true
+  attribute :customer_id
+  attribute :event_id
   def headers
     {
       :subject => "New Client - Velveteen Ensemble",
