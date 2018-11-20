@@ -26,33 +26,41 @@
 				<div class="background row">
 				 	<p>Carnegie Hall</p>
 				 	<p>Dec. 22nd</p>
-				 	<button>Edit Event</button>
+				 	<%= link_to edit_event_path(@events) do %> 
+				 		<button>Edit Event</button>
+				 	<% end %> 
 				</div>
 				<% @events.each do |event| %>
 					<div class="background row">
-						<p><%= event.fname%></p>
-						<p><%= event.email%></p>
-						<button>Edit Event</button>
+						<p><%= event.location%></p>
+						<p><%= event.date%></p>
+							<%= link_to edit_event_path(event) do %> 
+				 		<button>Edit Event</button>
+				 	<% end %> 
 					</div>
 				<% end %>
 				<%= image_tag image_url('https://s3.amazonaws.com/velveteenensemble/nofillarrow.png') %>
 			</div>
 			<hr>
 			<div class="row heading2">
-				<h4>Customers</h4>
+				<h4>Clients</h4>
 			</div>
 			<div class="no-gutters customers">
 				
 				<div class="background row">
 				 	<p>Marcel Krasner</p>
 				 	<p>marcelkrasner@gmail.com</p>
-				 	<button>Edit Customer</button>
+				 		<%= link_to customer_path(@customers) do %> 
+				 		<button>Go To Client Page</button>
+				 	<% end %> 
 				</div>
 				<% @customers.each do |customer| %>
 				 	<div class="background row">
 				 		<p><%= customer.fname%></p>
 				 		<p><%= customer.email%></p>
-				 		<button>Edit Customer</button>
+				 			<%= link_to customer_path(customer) do %> 
+				 		<button>Edit Event</button>
+				 	<% end %> 
 				 	</div>
 				<% end %>
 

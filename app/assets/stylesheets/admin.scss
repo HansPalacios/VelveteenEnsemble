@@ -116,7 +116,7 @@ li:hover, .hover {
 		white-space: nowrap;
 		position: relative;
 		.background {
-			height: 90px;
+			height: 100px;
 			margin: 5px;
 			width: 200px;
 			padding: 10px;
@@ -127,13 +127,19 @@ li:hover, .hover {
 				overflow-x: hidden;
 				margin: 0 auto;
 			}
-			button {
+			a button{
 				margin: 10px auto;
 				height: 20px;
 				padding: 2px 5px;
 				box-shadow: inset 0 0 50px white;
     		background-color: rgba(123, 210, 33, 0.5);
     		font-size: 12px;
+    		text-decoration: none;
+    		// border: 1px solid black;
+    		&:hover {
+    			text-decoration-line: none;
+    			text-decoration: none;
+    		}
 			}
 		}
 		img {
