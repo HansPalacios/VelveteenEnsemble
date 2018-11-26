@@ -58,9 +58,9 @@
 				 	<div class="background row">
 				 		<p><%= customer.fname%></p>
 				 		<p><%= customer.email%></p>
-				 			<%= link_to customer_path(customer) do %> 
+				 		<%= link_to customer_path(customer) do %> 
 				 		<button>Edit Event</button>
-				 	<% end %> 
+				 		<% end %> 
 				 	</div>
 				<% end %>
 
@@ -85,7 +85,9 @@
 				 		</div>
 				 		<p class="message"><%= contact.message %></p>
 				 		<br>
-				 		<button>Add as an Event</button>
+				 		<%= link_to new_event_path do %> 
+				 			<button>Add as an Event</button>
+				 		<% end %>
 				 		<br>
 				 		
 				 		

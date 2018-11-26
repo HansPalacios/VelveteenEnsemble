@@ -128,7 +128,19 @@ li:hover, .hover {
 				overflow-x: hidden;
 				margin: 0 auto;
 			}
-			a button{
+		}
+		img {
+			position: absolute;
+			top: 50%;
+	    right: 25px;
+	    width: 50px;
+	    transform: translate(-50%, -50%);
+	    margin: 0;
+	    background-color: rgba(255,255,255,.6);
+		}
+	}
+		.events, .customers, .contacts {
+			.background a button{
 				margin: 10px auto;
 				height: 20px;
 				padding: 2px 5px;
@@ -143,16 +155,7 @@ li:hover, .hover {
     		}
 			}
 		}
-		img {
-			position: absolute;
-			top: 50%;
-	    right: 25px;
-	    width: 50px;
-	    transform: translate(-50%, -50%);
-	    margin: 0;
-	    background-color: rgba(255,255,255,.6);
-		}
-	}	
+		
 	
 	.contacts {
 		background-color: white;
