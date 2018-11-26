@@ -73,13 +73,22 @@
 				</div>
 				 <% @contacts.each do |contact| %>
 				 	<div class="background">
-				 		<p><%= contact.fname%></p>
-				 		<p><%= contact.email%></p>
+				 		<div class="row">
+				 			<div class="col-md-6">
+				 				<p><b><%= contact.fname %>   &nbsp&nbsp<%= contact.lname %></b></p>
+				 			</div>
+				 			<div class="col-md-6">
+				 				<p class=" dates row"><b> Event Date: <%= contact.eventdate.strftime("%B %d, %Y") %></b></p>
+				 				<p class="emaildate dates row">Email Sent: <%= contact.created_at.strftime("%B %d, %Y")%></p>
+				 				
+				 			</div>
+				 		</div>
+				 		<p class="message"><%= contact.message %></p>
 				 		<br>
 				 		<button>Add as an Event</button>
 				 		<br>
-				 		<p><%= contact.created_at %></p>
-				 		<p><%= contact.message %></p>
+				 		
+				 		
 				 		<br>
 				 	</div>
 				 <% end %>
