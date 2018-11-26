@@ -18,8 +18,8 @@ class Contact < ActiveRecord::Base
   attribute :customer_id
   attribute :event_id
 
-  belongs_to :customer
-  belongs_to :event
+  has_many :customers
+  has_many :events
   def headers
     {
       :subject => "New Client - Velveteen Ensemble",

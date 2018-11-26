@@ -1,4 +1,4 @@
 class Event < ApplicationRecord
 	belongs_to :customer
-	has_many :contacts
+	belongs_to :contacts
 end
