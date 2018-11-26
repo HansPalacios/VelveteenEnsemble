@@ -12,7 +12,6 @@ class CreateEvents < ActiveRecord::Migration[5.1]
       t.boolean :deposit_paid
       t.boolean :total_paid
       t.integer :customer_id
-
       t.timestamps
     end
   end

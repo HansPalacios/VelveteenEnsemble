@@ -71,7 +71,7 @@
 				<div class="row">
 					<h4>Emails</h4>
 				</div>
-				 <% @contacts.each do |contact| %>
+				 <% @contacts.order('created_at DESC').each do |contact| %>
 				 	<div class="background">
 				 		<div class="row">
 				 			<div class="col-md-6">
