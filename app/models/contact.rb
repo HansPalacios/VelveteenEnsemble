@@ -21,8 +21,8 @@ class Contact < ActiveRecord::Base
   has_and_belongs_to_many :events
   def headers
     {
-      :subject => "New Client - Velveteen Ensemble",
-      :to => "hans@hspalacios.com",
+      :subject => "New Message - Velveteen Ensemble",
+      :to => "marcel@velveteenensemble.com", 
       :from =>  %("#{fname}" <#{email}>)
     }
   end
