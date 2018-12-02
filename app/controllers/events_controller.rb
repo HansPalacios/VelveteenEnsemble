@@ -4,21 +4,41 @@ class EventsController < ApplicationController
   # GET /events
   # GET /events.json
   def index
+    unless admin_signed_in? 
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
     @events = Event.all
   end
 
   # GET /events/1
   # GET /events/1.json
   def show
+    unless admin_signed_in? 
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
   end
 
   # GET /events/new
   def new
+    unless admin_signed_in? 
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
     @event = Event.new
   end
 
   # GET /events/1/edit
   def edit
+    unless admin_signed_in? 
+      flash[:notice] = "You don't have access to that page!"
+      redirect_to root_path
+      return
+    end
   end
 
   # POST /events
