@@ -15,7 +15,7 @@
     <%= f.date_field :eventdate, required: true %>
     <br>
     <div class="messagebox">
-        <%= f.label :message, :class => "messagelabel"%>
+        <%= f.label :message, 'Message (required) *',:class => "messagelabel"%>
         <%= f.text_area :message, as: :text, required: true %>
     </div>
     <br>

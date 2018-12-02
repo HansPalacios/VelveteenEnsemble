@@ -22,7 +22,7 @@ class Contact < ActiveRecord::Base
   def headers
     {
       :subject => "New Client - Velveteen Ensemble",
-      :to => "marcel@velveteenensemble.com", "hans@hspalacios.com"
+      :to => "marcel@velveteenensemble.com", "hans@hspalacios.com",
       :from =>  %("#{fname}" <#{email}>)
     }
   end
