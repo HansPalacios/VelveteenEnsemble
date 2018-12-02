@@ -15,6 +15,11 @@ Rails.application.routes.draw do
   get 'media', to: 'uploads#index'
   # get 'about', to: 'abouts#index'
   get 'contact', to: 'contacts#new'
+
+#calendar
+# get '/redirect', to: 'example#redirect', as: 'redirect'
+# get '/callback', to: 'example#callback', as: 'callback'
+
   resources :emails
   resources :charges
   resources :musicians

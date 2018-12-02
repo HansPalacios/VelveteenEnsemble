@@ -50,6 +50,34 @@
 		}
 	}
 }
+
+
+
+
+@media only screen and (max-width: 430px) {
+	#newevent {
+		form {
+			padding: 0;
+			text-align: right;
+			input {
+				width: 50%;
+				overflow-x: scroll;
+				font-size: 10px;
+			}
+			label, select {
+				width: auto;
+				font-size: 10px;
+			}
+			select {
+				font-weight: 900;
+			}
+		}
+	}
+}
+
+
+
+
 @media only screen and (max-width: 350px) {
 	.admin {
 		#admin1 {

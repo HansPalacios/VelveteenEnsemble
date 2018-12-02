@@ -6,7 +6,7 @@ git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
 end
-
+gem 'google-api-client', require: 'google/apis/calendar_v3'
 # Checkout with stripe for card payments
 gem 'stripe'
 # Copy emails for admin to clipboard

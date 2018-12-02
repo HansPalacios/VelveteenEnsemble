@@ -2,7 +2,7 @@
 
 $(document).ready(function() {   
 	var type = $('#contact_type');
-	var other_type = $('#othertype');
+	var other_type = $('#other_type');
 	var heard = $('#contact_heardby');
 	var other_heard = $('#other_heardby');
 
