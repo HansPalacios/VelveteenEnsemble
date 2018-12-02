@@ -1,0 +1,25 @@
+<div class="container-fluid editpage height" >
+	<div class="background">
+		<div class="row">
+			<h3>All Emails</h3>
+		</div>
+		<div class="row">
+			<% @contacts.each do |contact| %>
+				<ul>
+					<li><%= contact.message %></li>
+					<li><%= contact.fname %></li>
+					<li><%= contact.lname %></li>
+					<li><%= contact.email %></li>
+					<li><%= contact.phone %></li>
+					<li><%= contact.eventdate %></li>
+		    	<li><%= eventlocation %></li>
+					<li><%= contact.type %></li>
+					<li><%= contact.length %></li>
+					<li><%= contact.heardby %></li>
+					<li><%= contact.customer_id %></li>
+					<li><%= contact.event_id %></li>
+				</ul>
+			<% end %>
+		</div>
+	</div>
+</div>
