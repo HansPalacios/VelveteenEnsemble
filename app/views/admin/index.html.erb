@@ -94,9 +94,18 @@
 				 		</div>
 				 		<p class="message"><%= contact.message %></p>
 				 		<br>
-				 		<%= link_to new_event_path do %> 
-				 			<button>Add as an Event</button>
-				 		<% end %>
+				 		<div class="row no-gutters">
+					 		<div class="col-md-4"></div>
+					 		<div class="col-md-4">
+						 		<%= link_to new_event_path do %> 
+						 			<button>Add as an Event</button>
+						 		<% end %>
+					 		</div>
+					 		<div class="col-md-4 deletecontact">
+	       			 	<%= link_to 'Delete', contact, method: :delete, data: { confirm: 'Are you sure?' } %>
+	     			 	</div>
+     			 	</div>
+				 		
 				 		<br>
 				 		
 				 		
