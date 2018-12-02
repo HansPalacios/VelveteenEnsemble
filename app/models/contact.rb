@@ -2,7 +2,6 @@ class Contact < ActiveRecord::Base
   define_model_callbacks :deliver
   include MailForm::Delivery
 
-  append :remote_ip, :user_agent, :session
   
   attribute :fname, :validate => true
   attribute :lname, :validate => true
