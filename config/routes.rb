@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   get 'emails', to: 'home#index'
   get 'media', to: 'uploads#index'
   # get 'about', to: 'abouts#index'
-  get 'contact', to: 'contacts#new'
+  # get 'contact', to: 'contacts#new'
 
 #calendar
 # get '/redirect', to: 'example#redirect', as: 'redirect'
@@ -26,7 +26,7 @@ Rails.application.routes.draw do
   resources :abouts
   resources :venues
   # resources :uploads
-  resources :contacts, only: [:new, :create]
+  resources :contacts
   resources :songs
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root to: 'home#index'
