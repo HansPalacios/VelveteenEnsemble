@@ -67,7 +67,7 @@ class AboutsController < ApplicationController
     end
     respond_to do |format|
       if @about.update(about_params)
-        format.html { redirect_to @about, notice: 'About was successfully updated.' }
+        format.html { redirect_to abouts_path, notice: 'About was successfully updated.' }
         format.json { render :show, status: :ok, location: @about }
       else
         format.html { render :edit }
@@ -94,21 +94,11 @@ class AboutsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_about
-      unless admin_signed_in? 
-      flash[:notice] = "You don't have access to that page!"
-      redirect_to root_path
-      return
-    end
       @about = About.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def about_params
-      unless admin_signed_in? 
-      flash[:notice] = "You don't have access to that page!"
-      redirect_to root_path
-      return
-    end
-      params.fetch(:about, {})
+      params.require(:about).permit(:bio)
     end
 end

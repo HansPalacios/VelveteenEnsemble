@@ -1,5 +1,5 @@
 class ContactsController < ApplicationController
-  before_action :set_contact, only: [:show, :edit, :update, :destroy]
+  # before_action :set_contact, only: [:show, :edit, :update, :destroy]
 
   def index
     unless admin_signed_in? 
@@ -70,7 +70,7 @@ class ContactsController < ApplicationController
     end
     @contact.destroy
     respond_to do |format|
-      format.html { redirect_to contacts_url, notice: 'contact was successfully destroyed.' }
+      format.html { redirect_to admin_path, notice: 'contact was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
