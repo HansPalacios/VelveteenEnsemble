@@ -35,7 +35,7 @@
     <%= f.select :type, options_for_select(["Wedding","Corporate Event", "Concert", "Recording", "Other"]), :prompt => 'Select one', :id => "contact_type", required: false %>
 
    <br>
-    <%= f.text_field :type, :id => "other_type", :style => "display: none", required: false %>
+    <%= f.text_field :type, :id => "other_type", :placeholder => "Other event type", :style => "display: none", required: false %>
     <br>
     <div class="heardby">
         <%= f.label :heardby, "Where did you hear about us?" %>

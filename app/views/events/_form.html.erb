@@ -30,8 +30,10 @@
 
   <div class="field padright">
     <%= form.label :type, "Event Type" %>
-    <!-- <#%= form.text_field :type, :id => "other_newevent_type", value: :@type, required: false  %> -->
-     <input type='text' id='event_type' value='<%=@type%>' name='type' />
+    <%= form.select :type, options_for_select(["Wedding","Corporate Event", "Concert", "Recording", "Other"]), :prompt => 'Select one', :id => "event_type", required: false  %>
+
+   <br>
+    <%= form.text_field :type, :id => "other_newevent_type", :placeholder => "Other event type", :style => "display: none", required: false  %>
   </div>
 
   <div class="field">
