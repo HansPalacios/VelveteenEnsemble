@@ -95,21 +95,11 @@ class VenuesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_venue
-      unless admin_signed_in? 
-      flash[:notice] = "You don't have access to that page!"
-      redirect_to root_path
-      return
-    end
       @venue = Venue.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def venue_params
-      unless admin_signed_in? 
-      flash[:notice] = "You don't have access to that page!"
-      redirect_to root_path
-      return
-    end
       params.require(:venue).permit(:title, :bio, :name)
     end
 end

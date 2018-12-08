@@ -30,6 +30,10 @@ class EventsController < ApplicationController
       return
     end
     @event = Event.new
+    @event_date = params[:date]
+    @location = params[:location]
+    @type = params[:type]
+    @length = params[:length]
   end
 
   # GET /events/1/edit

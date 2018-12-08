@@ -18,25 +18,26 @@
 
   <div class="field padright">
     <%= form.label :date %>
-    <%= form.date_select :date, id: :event_date %>
+    <!-- <#%= form.date_select :date, id: :event_date, value: @event_date %> -->
+    <input type='select_date' id='event_date' value='<%=@event_date%>' name='date' />
   </div>
 
   <div class="field">
     <%= form.label :location %>
-    <%= form.text_field :location, id: :event_location %>
+    <!-- <#%= form.text_field :location, id: :event_location, value: @location %> -->
+    <input type='text' id='event_location' value='<%=@location%>' name='location' />
   </div>
 
   <div class="field padright">
     <%= form.label :type, "Event Type" %>
-    <%= form.select :type, options_for_select(["Wedding","Corporate Event", "Concert", "Recording", "Other"]), :prompt => 'Select one', :id => "event_type", required: false  %>
-
-   <br>
-    <%= form.text_field :type, :id => "other_newevent_type", :style => "display: none", required: false  %>
+    <!-- <#%= form.text_field :type, :id => "other_newevent_type", value: :@type, required: false  %> -->
+     <input type='text' id='event_type' value='<%=@type%>' name='type' />
   </div>
 
   <div class="field">
     <%= form.label :length %>
-    <%= form.text_field :length, id: :event_length %>
+    <!-- <#%= form.text_field :length, id: :event_length, value: :@length %> -->
+     <input type='text' id='event_length' value='<%=@length%>' name='length' />
   </div>
 
   <div class="field">

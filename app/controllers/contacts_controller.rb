@@ -1,5 +1,5 @@
 class ContactsController < ApplicationController
-  # before_action :set_contact, only: [:show, :edit, :update, :destroy]
+  before_action :set_contact, only: [:show, :edit, :update, :destroy]
 
   def index
     unless admin_signed_in? 
@@ -47,6 +47,7 @@ class ContactsController < ApplicationController
         format.json { render json: @contact.errors, status: :unprocessable_entity }
       end
     end
+  end
  
   def update
     respond_to do |format|
@@ -87,4 +88,4 @@ class ContactsController < ApplicationController
     end
   end
 
-end
+# end

@@ -25,9 +25,11 @@
 					<h4>Upcoming Events</h4>
 				</div>
 				<div class="col-md-4 left">
-					<%= link_to new_event_path do %> 
+
+				<!-- 	<#%= link_to new_event_path, :date =>' require?', :location => ' require?', :type => ' require?', :type => ' require?', :length => ' require?' do %>
 				 		<button>New Event</button>
-				 	<% end %> 
+				 	<#% end %>  -->
+
 				</div>
 				
 			</div>
@@ -97,9 +99,20 @@
 				 		<div class="row no-gutters">
 					 		<div class="col-md-4"></div>
 					 		<div class="col-md-4">
-						 		<%= link_to new_event_path do %> 
+
+
+
+						 	<%= link_to new_event_path(date: contact.eventdate, location: contact.eventlocation, type: contact.type, length: contact.length) do %>
 						 			<button>Add as an Event</button>
 						 		<% end %>
+
+
+						 	<!-- 	<a href='<#%= new_event_path(date: contact.eventdate, location: contact.eventlocation, type: contact.type, type: contact.type, length: contact.length) %>'>
+  								<h2>Add event</h2>
+								</a> -->
+
+
+
 					 		</div>
 					 		<div class="col-md-4 deletecontact">
 	       			 	<%= link_to 'Delete', contact, method: :delete, data: { confirm: 'Are you sure?' } %>

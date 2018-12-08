@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
 
   
-  resources :events
-  resources :customers
+  
   devise_for :admins
   
   get 'admin', to: 'admin#index'
@@ -19,7 +18,9 @@ Rails.application.routes.draw do
 #calendar
 # get '/redirect', to: 'example#redirect', as: 'redirect'
 # get '/callback', to: 'example#callback', as: 'callback'
-
+  get 'event/:date/:location/:type/:length', to: 'events#new', as: 'new_event_path'
+  resources :events
+  resources :customers
   resources :emails
   resources :charges
   resources :musicians
