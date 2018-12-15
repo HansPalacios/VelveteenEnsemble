@@ -73,6 +73,7 @@ ActiveRecord::Schema.define(version: 20181118201801) do
     t.string "email"
     t.integer "phone"
     t.string "city"
+    t.integer "event_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -96,7 +97,11 @@ ActiveRecord::Schema.define(version: 20181118201801) do
     t.integer "subtotal"
     t.boolean "deposit_paid"
     t.boolean "total_paid"
-    t.integer "customer_id"
+    t.string "fname"
+    t.string "lname"
+    t.string "email"
+    t.integer "phone"
+    t.string "city"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

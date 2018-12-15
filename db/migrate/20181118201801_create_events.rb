@@ -11,7 +11,12 @@ class CreateEvents < ActiveRecord::Migration[5.1]
       t.integer :subtotal
       t.boolean :deposit_paid
       t.boolean :total_paid
-      t.integer :customer_id
+      t.string :fname
+      t.string :lname
+      t.string :email
+      t.integer :phone
+      t.string :city
+      # t.integer :customer_id
       t.timestamps
     end
   end

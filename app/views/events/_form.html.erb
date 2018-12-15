@@ -18,14 +18,16 @@
 
   <div class="field">
     <%= form.label :date %>
-    <!-- <#%= form.date_select :date, id: :event_date, value: @event_date %> -->
-    <input type='select_date' id='event_date' value='<%=@event_date%>' name='date' />
+    <%= form.date_select :date, id: :event_date, :input_html => { :value => '@event_date'} %>
+    <!-- <#%= f.input :user, :input_html => { :value => 'user@domain.com' } %> -->
+    <!-- <input type='select_date' id='event_date' value='<%=@event_date%>' name='date' /> -->
   </div>
 
   <div class="field">
     <%= form.label :location %>
-    <!-- <#%= form.text_field :location, id: :event_location, value: @location %> -->
-    <input type='text' id='event_location' value='<%=@location%>' name='location' />
+    <%= form.text_field :location, id: :event_location, :input_html => { :value =>  @location } %>
+
+    <!-- <input type='text' id='event_location' value='<%=@location%>' name='location' /> -->
   </div>
 
   <div class="field padright">
@@ -39,7 +41,18 @@
   <div class="field">
     <%= form.label :length %>
     <!-- <#%= form.text_field :length, id: :event_length, value: :@length %> -->
-     <input type='text' id='event_length' value='<%=@length%>' name='length' />
+     <!-- <input type='text' id='event_length' value='<%=@length%>' name='length' /> -->
+   <!--   <select id='event_length' value='<%=@length%>' name='length'>
+      <option value="1_hour">1 hour</option>
+      <option value="1.5_hours">1.5 hours</option>
+      <option value="2_hours">2 hours</option>
+      <option value="2.5_hours">2.5 hours</option>
+      <option value="3_hours">3 hours</option>
+      <option value="3.5_hours">3.5 hours</option>
+      <option value="4_hours">4 hours</option>
+      <option value="Over_4_hours">Over 4 hours</option>
+    </select> -->
+     <%= form.select :length, [ "1 hour","1.5 hours","2 hours", "2.5 hours", "3 hours", "3.5 hours", "4 hours", "Over 4 hours" ], :prompt => 'Select one', :input_html => { :value => @length }  %>
   </div>
 
   <div class="field">
@@ -67,13 +80,48 @@
     <%= form.check_box :total_paid, id: :event_total_paid %>
   </div>
 
+<hr>
+
   <div class="field">
-    <%= form.label :customer_id %>
-    <%= form.number_field :customer_id, id: :event_customer_id %>
+    <%= form.label :fname %>
+    <%= form.text_field :fname, id: :customer_fname, :input_html => { :value => @fname }  %>
+    <!-- <input type='text' id='event_fname' value='<%=@fname%>' name='fname' /> -->
   </div>
+
   <div class="field">
+    <%= form.label :lname %>
+    <%= form.text_field :lname, id: :customer_lname, :input_html => { :value => @lname }  %>
+     <!-- <input type='text' id='event_lname' value='<%=@lname%>' name='lname' /> -->
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email, id: :customer_email, :input_html => { :value => @email }  %>
+     <!-- <input type='text' id='event_email' value='<%=@email%>' name='email' /> -->
+  </div>
+
+  <div class="field">
+    <%= form.label :phone %>
+    <%= form.number_field :phone, id: :customer_phone, :input_html => { :value => @phone }  %>
+     <!-- <input type='text' id='event_phone' value='<%=@phone%>' name='phone' /> -->
+  </div>
+
+  <div class="field" >
+    <%= form.label :city %>
+    <%= form.select :length, [ "New York City","Los Angeles","Miami"] %>
+
+   <!--  <select id='customer_city' name='city'>
+      <option value="New York City">New York City</option>
+      <option value="Los Angeles">Los Angeles</option>
+      <option value="Miami">Miami</option>
+    </select> -->
+  </div>
+   
+
+  <div class="field" >
     <%= form.label :contact_id %>
-    <%= form.number_field :contact_ids, id: :event_contact_id %>
+     <!-- < input type='integer' id='event_contact_id' value='<%=@contact_id%>' name='Contact_id' /> -->
+    <%= form.number_field :contact_ids, id: :contact_id, :input_html => { :value => @contact_id }  %>
   </div>
 
   <div class="actions">

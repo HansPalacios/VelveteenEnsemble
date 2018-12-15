@@ -18,7 +18,7 @@ Rails.application.routes.draw do
 #calendar
 # get '/redirect', to: 'example#redirect', as: 'redirect'
 # get '/callback', to: 'example#callback', as: 'callback'
-  get 'event/:date/:location/:type/:length', to: 'events#new', as: 'new_event_path'
+  get 'event/:date/:location/:type/:length/:contact_id/:fname/:lname/:email/:phone/:message', to: 'events#new', as: 'new_event_path'
   resources :events
   resources :customers
   resources :emails

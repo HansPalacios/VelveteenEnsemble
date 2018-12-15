@@ -30,10 +30,17 @@ class EventsController < ApplicationController
       return
     end
     @event = Event.new
+    @customer = Customer.new
     @event_date = params[:date]
     @location = params[:location]
     @type = params[:type]
     @length = params[:length]
+    @contact_id = params[:contact_id]
+    @fname = params[:fname]
+    @lname = params[:lname]
+    @email = params[:email]
+    @phone = params[:phone]
+    @message = params[:message]
   end
 
   # GET /events/1/edit
@@ -52,7 +59,7 @@ class EventsController < ApplicationController
 
     respond_to do |format|
       if @event.save
-        format.html { redirect_to @event, notice: 'Event was successfully created.' }
+        format.html { redirect_to admin_path, notice: 'Event was successfully created.' }
         format.json { render :show, status: :created, location: @event }
       else
         format.html { render :new }
@@ -93,6 +100,6 @@ class EventsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def event_params
-      params.require(:event).permit(:title, :date, :location, :type, :length, :amount, :deposit, :subtotal, :deposit_paid, :total_paid, :customer_id)
+      params.require(:event).permit(:title, :date, :location, :type, :length, :amount, :deposit, :subtotal, :deposit_paid, :total_paid, :customer_id, :customers_attributes => [:fname, :lname, :email, :phone, :city, :event_id])
     end
 end

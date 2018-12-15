@@ -53,31 +53,31 @@
 				<%= image_tag image_url('https://s3.amazonaws.com/velveteenensemble/nofillarrow.png') %>
 			</div>
 			<hr>
-			<div class="row heading2">
+		<!-- 	<div class="row heading2">
 				<h4>Clients</h4>
-			</div>
-			<div class="no-gutters customers">
+			</div> -->
+<!-- 			<div class="no-gutters customers">
 				
 				<div class="background row">
 				 	<p>Marcel Krasner</p>
 				 	<p>marcelkrasner@gmail.com</p>
-				 		<%= link_to customer_path(@customers) do %> 
+				 		<#%= link_to customer_path(@customers) do %> 
 				 		<button>Go To Client Page</button>
-				 	<% end %> 
+				 	<#% end %> 
 				</div>
-				<% @customers.each do |customer| %>
+				<#% @customers.each do |customer| %>
 				 	<div class="background row">
-				 		<p><%= customer.fname%></p>
-				 		<p><%= customer.email%></p>
-				 		<%= link_to customer_path(customer) do %> 
+				 		<p><#%= customer.fname%></p>
+				 		<p><#%= customer.email%></p>
+				 		<#%= link_to customer_path(customer) do %> 
 				 		<button>Edit Event</button>
-				 		<% end %> 
+				 		<#% end %> 
 				 	</div>
-				<% end %>
+				<#% end %>
 
-				<%= image_tag image_url('https://s3.amazonaws.com/velveteenensemble/nofillarrow.png') %>
-			</div>
-			<hr>
+				<#%= image_tag image_url('https://s3.amazonaws.com/velveteenensemble/nofillarrow.png') %>
+			</div> -->
+			<!-- <hr> -->
 			<div class="col-md-12 no-gutters contacts">
 				<div class="row">
 					<h4>Emails</h4>
@@ -102,7 +102,7 @@
 
 
 
-						 	<%= link_to new_event_path(date: contact.eventdate, location: contact.eventlocation, type: contact.type, length: contact.length) do %>
+						 	<%= link_to new_event_path(date: contact.eventdate, location: contact.eventlocation, type: contact.type, length: contact.length, contact_id: contact.id, fname: contact.fname, lname: contact.lname, email: contact.email, phone: contact.phone, message: contact.message) do %>
 						 			<button>Add as an Event</button>
 						 		<% end %>
 
