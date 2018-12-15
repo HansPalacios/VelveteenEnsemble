@@ -115,9 +115,9 @@
 
 					 		</div>
 					 		<div class="col-md-4 deletecontact">
-	       			 	<%= link_to 'Delete', contact, method: :delete, data: { confirm: 'Are you sure?' } %>
+	       			 	<!-- <#%= link_to 'Delete', contact, method: :delete, data: { confirm: 'Are you sure?' } %> -->
 
-	       			 	<%= form_for(contact), remote: true) do |f| %>
+	       			 	<%= form_for(contact, edit_path(contact), remote: true) do |f| %>
 							    <div><%= f.hidden_field :contact_id %></div>
 							    <div><%= f.hidden_field :hidden, :value => true %></div>
 							    <%= f.submit "Remove", class: "btn btn-large btn-primary" %>
