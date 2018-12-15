@@ -60,6 +60,7 @@ ActiveRecord::Schema.define(version: 20181118201801) do
     t.string "type"
     t.string "length"
     t.string "heardby"
+    t.boolean "hidden"
     t.integer "customer_id"
     t.integer "event_id"
     t.datetime "created_at", null: false

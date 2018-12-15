@@ -82,7 +82,7 @@
 				<div class="row">
 					<h4>Emails</h4>
 				</div>
-				 <% @contacts.order('created_at DESC').each do |contact| %>
+				 <% @contacts.order('created_at DESC').reject(&:hidden).each do |contact| %>
 				 	<div class="background">
 				 		<div class="row">
 				 			<div class="col-md-6">
@@ -116,7 +116,18 @@
 					 		</div>
 					 		<div class="col-md-4 deletecontact">
 	       			 	<%= link_to 'Delete', contact, method: :delete, data: { confirm: 'Are you sure?' } %>
+
+	       			 	<%= form_for(contact), remote: true) do |f| %>
+							    <div><%= f.hidden_field :contact_id %></div>
+							    <div><%= f.hidden_field :hidden, :value => true %></div>
+							    <%= f.submit "Remove", class: "btn btn-large btn-primary" %>
+							<% end %>
+
 	     			 	</div>
+
+
+
+
      			 	</div>
 				 		
 				 		<br>

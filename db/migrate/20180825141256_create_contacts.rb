@@ -11,6 +11,7 @@ class CreateContacts < ActiveRecord::Migration[5.1]
     	t.string :type
     	t.string :length
       t.string :heardby
+      t.boolean :hidden
       t.integer :customer_id
       t.integer :event_id
       t.timestamps

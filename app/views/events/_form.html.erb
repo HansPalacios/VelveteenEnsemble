@@ -16,7 +16,7 @@
     <%= form.text_field :title, id: :event_title %>
   </div>
 
-  <div class="field padright">
+  <div class="field">
     <%= form.label :date %>
     <!-- <#%= form.date_select :date, id: :event_date, value: @event_date %> -->
     <input type='select_date' id='event_date' value='<%=@event_date%>' name='date' />
@@ -54,7 +54,7 @@
 
   <div class="field">
     <%= form.label :subtotal %>
-    <%= form.number_field :subtotal, id: :event_subtotal %>
+    <%= form.number_field :subtotal, id: :event_subtotal  %>
   </div>
 
   <div class="field">
