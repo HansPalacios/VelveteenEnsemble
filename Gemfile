@@ -19,6 +19,7 @@ gem 'mail_form'
 gem 'sendgrid-ruby'
 # Instafeed gem to show recent instagram posts
 gem 'instafeed'
+# gem 'instagram' 
 # Jquery gem
 gem 'jquery-rails'
 # Environment Variables

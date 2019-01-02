@@ -53,60 +53,68 @@
 					target: "news1",
 	        get: 'user',
 	        userId: '<%= ENV['USER_ID'] %>',
-	        get: 'tagged',
-        	tagName: 'velveteenensemble',
+	        // get: 'tagged',
+        	// tagName: 'velveteenensemble',
 	        accessToken: '<%= ENV['ACCESS_TOKEN'] %>',
 	        clientId: '<%= ENV['CLIENT_ID'] %>',
 	        limit: 1,
 	        sortBy: 'most-recent',
 	        resolution: 'standard_resolution',
 	        template: '<div class="col-md-12 col-sm-12 col-xs-12"><div class="col-md-5 col-sm-5 col-xs-5"><a href="{{link}}" target="_blank"><div id="img1" class="img" style="background-image:url({{image}})"></div></a></div><div class="col-md-7 col-sm-7 col-xs-7"><h3>{{location}}</h3><p>{{caption}}</p></div></div>',
-	        links: true
+	        links: true,
+	        mock: false,
+	        useHttp: false
 	    	});
 
 	    	var feed2 = new Instafeed({
 					target: "news2",
 	        get: 'user',
 	        userId: '<%= ENV['USER_ID'] %>',
-	        get: 'tagged',
-        	tagName: 'velveteenensemble',
+	        // get: 'tagged',
+        	// tagName: 'velveteenensemble',
 	        accessToken: '<%= ENV['ACCESS_TOKEN'] %>',
 	        clientId: '<%= ENV['CLIENT_ID'] %>',
 	        limit: 2,
 	        sortBy: 'most-recent',
 	        resolution: 'standard_resolution',
 	        template: '<div class="hide2 col-md-12 col-sm-12 col-xs-12"><div class="col-md-7 col-sm-7 col-xs-7"><h3>{{location}}</h3><p>{{caption}}</p></div><div class="col-md-5 col-sm-5 col-xs-5"><a href="{{link}}" target="_blank"><div id="img2" class="img" style="background-image:url({{image}})"></div></a></div></div>',
-					links: true
+					links: true,
+	        mock: false,
+	        useHttp: false
 	    	});
 
 	    	var feed3 = new Instafeed({
 					target: "news3",
 	        get: 'user',
 	        userId: '<%= ENV['USER_ID'] %>',
-	        get: 'tagged',
-        	tagName: 'velveteenensemble',
+	        // get: 'tagged',
+        	// tagName: 'velveteenensemble',
 	        accessToken: '<%= ENV['ACCESS_TOKEN'] %>',
 	        clientId: '<%= ENV['CLIENT_ID'] %>',
 	        limit: 3,
 	        sortBy: 'most-recent',
 	        resolution: 'standard_resolution',
 	        template: '<div class="hide3 col-md-12 col-sm-12 col-xs-12"><div class="col-md-5 col-sm-5 col-xs-5"><a href="{{link}}" target="_blank"><div id="img3" class="img" style="background-image:url({{image}})"></div></a></div><div class="col-md-7 col-sm-7 col-xs-7"><h3>{{location}}</h3><p>{{caption}}</p></div></div>',
-	        links: true
+	        links: true,
+	        mock: false,
+	        useHttp: false
 	    	});
 
 	    	var feed4 = new Instafeed({
 					target: "news4",
 	        get: 'user',
 	        userId: '<%= ENV['USER_ID'] %>',
-	        get: 'tagged',
-        	tagName: 'velveteenensemble',
+	        // get: 'tagged',
+        	// tagName: 'velveteenensemble',
 	        accessToken: '<%= ENV['ACCESS_TOKEN'] %>',
 	        clientId: '<%= ENV['CLIENT_ID'] %>',
 	        sortBy: 'most-recent',
 	        limit: 4,
 	        resolution: 'standard_resolution',
 	        template: '<div class="hide4 col-md-12 col-sm-12 col-xs-12"><div class="col-md-7 col-sm-7 col-xs-7"><h3>{{location}}</h3><p>{{caption}}</p></div><div class="col-md-5 col-sm-5 col-xs-5"><a href="{{link}}" target="_blank"><div id="img4" class="img" style="background-image:url({{image}})"></div></a></div></div>',
-	        links: true
+	        links: true,
+	        mock: false,
+	        useHttp: false
 	    	});
 
 			  feed.run();
