@@ -1,6 +1,143 @@
-<h1>Editing Event</h1>
+<div class="container-fluid editpage height" id="editevent">
+	<div class="background">
+		<div class="row">
+			<h3>Edit Event</h3>
+		</div>
+		<div class="row">
+			
+			<%= form_for @event do |form| %>
+  <% if @event.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(event.errors.count, "error") %> prohibited this event from being saved:</h2>
 
-<%= render 'form', event: @event %>
+      <ul>
+      <% event.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
 
-<%= link_to 'Show', @event %> |
-<%= link_to 'Back', events_path %>
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title, id: :event_title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :date %>
+    <%= form.date_select :date, id: :event_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :location %>
+    <%= form.text_field :location, id: :event_location %>
+
+  </div>
+
+  <div class="field padright">
+    <%= form.label :event_type, "Event Type" %>
+    <%= form.select :event_type, ["Wedding","Corporate Event", "Concert", "Recording", "Other"], :prompt => 'Select one', :id => "event_event_type", required: false %>
+
+   <br>
+    
+    <% if @event_type == "Other" %>
+      <%= form.text_field :other_type, :id => "other_newevent_type", :placeholder => "Other event type", required: false %>
+    <% end %>
+  </div>
+  
+
+  <div class="field">
+    <%= form.label :length %>
+     <%= form.select :length, [ "1 hour","1.5 hours","2 hours", "2.5 hours", "3 hours", "3.5 hours", "4 hours", "Over 4 hours" ], :prompt => 'Select one' %>
+  </div>
+
+  <div class="field">
+    <%= form.label :amount %>
+    <%= form.number_field :amount, id: :event_amount %>
+  </div>
+
+  <div class="field">
+    <%= form.label :deposit %>
+    <%= form.number_field :deposit, id: :event_deposit %>
+  </div>
+
+
+
+  <script>
+    $(function() {
+      $("#event_amount, #event_deposit").keyup(function() {
+        var a = $("#event_amount").val();
+        var d = $("#event_deposit").val();
+        $("#event_subtotal").val(a - d);
+      });
+    });
+  </script>
+
+
+
+  <div class="field">
+    <%= form.label :subtotal %>
+    <%= form.number_field :subtotal, id: :event_subtotal  %>
+  </div>
+
+  <div class="field">
+    <%= form.label :deposit_paid %>
+    <%= form.check_box :deposit_paid, id: :event_deposit_paid %>
+  </div>
+
+  <div class="field">
+    <%= form.label :total_paid %>
+    <%= form.check_box :total_paid, id: :event_total_paid %>
+  </div>
+
+<hr>
+
+  <div class="field">
+    <%= form.label :fname %>
+    <%= form.text_field :fname, id: :event_fname %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lname %>
+    <%= form.text_field :lname, id: :event_lname %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email, id: :event_email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :phone %>
+    <%= form.number_field :phone, id: :event_phone  %>
+  </div>
+
+  <div class="field" >
+    <%= form.label :city %>
+    <%= form.select :length, [ "New York City","Los Angeles","Miami"] %>
+
+  </div>
+   
+
+  <div class="field" style="display: none" >
+    <%= form.label :contact_id %>
+     <!-- < input type='integer' id='event_contact_id' value='<%=@contact_id%>' name='Contact_id' /> -->
+    <%= form.number_field :contact_ids, id: :contact_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
+
+
+
+		</div>
+		<div class="row">
+			<div class="links">
+				<%= link_to 'Show', @event %> |
+				<%= link_to 'Back', admin_path %>
+			</div>
+		</div>
+	</div>
+</div>

@@ -107,7 +107,7 @@
 						 		<% end %>
 
 
-						 	<!-- 	<a href='<#%= new_event_path(date: contact.eventdate, location: contact.eventlocation, type: contact.type, type: contact.type, length: contact.length) %>'>
+						 	<!-- 	<a href='<#%= new_event_path(date: event.eventdate, location: event.eventlocation, type: event.type, type: event.type, length: event.length) %>'>
   								<h2>Add event</h2>
 								</a> -->
 
@@ -176,7 +176,7 @@
 				  	<% @singlelist.each do |list| %>
 							<tr>
 								<td class="emailcol"><%= list %></td>
-								<!-- <td class="hide600"><#%= contact.fname%></td> -->
+								<!-- <td class="hide600"><#%= event.fname%></td> -->
 								<!-- <td class="linkcol">
 	            			<#%= link_to 'Edit', edit_email_path(email) %>
 	            			<div class="vertical"></div>

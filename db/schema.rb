@@ -102,7 +102,7 @@ ActiveRecord::Schema.define(version: 20181118201801) do
     t.string "fname"
     t.string "lname"
     t.string "email"
-    t.integer "phone"
+    t.bigint "phone"
     t.string "city"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

@@ -15,7 +15,7 @@ class CreateEvents < ActiveRecord::Migration[5.1]
       t.string :fname
       t.string :lname
       t.string :email
-      t.integer :phone
+      t.integer :phone, :limit => 8
       t.string :city
       # t.integer :customer_id
       t.timestamps
