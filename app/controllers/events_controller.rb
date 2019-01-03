@@ -35,6 +35,7 @@ class EventsController < ApplicationController
     @location = params[:location]
     @event_type = params[:event_type]
     @other_type = params[:other_type]
+    
     @length = params[:length]
     @contact_id = params[:contact_id]
     @fname = params[:fname]
@@ -42,6 +43,12 @@ class EventsController < ApplicationController
     @email = params[:email]
     @phone = params[:phone]
     @message = params[:message]
+
+    if @event_type == "Other"
+      @basic_type = [@fname, @other_type].join(' ') 
+    else 
+      @basic_type = [@fname, @event_type].join(' ')
+    end
   end
 
   # GET /events/1/edit

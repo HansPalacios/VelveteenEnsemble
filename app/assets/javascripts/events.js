@@ -1,6 +1,6 @@
 // ( function($) {
-	$(document).ready(function() {   
-		var newevent_type = $('#event_type');
+	$(function() {   
+		var newevent_type = $('#event_event_type');
 		var other_newevent_type = $('#other_newevent_type');
 
 		newevent_type.change(function(){   

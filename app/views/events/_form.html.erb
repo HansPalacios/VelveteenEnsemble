@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= form.label :title %>
-    <%= form.text_field :title, id: :event_title %>
+    <%= form.text_field :title, id: :event_title, :value => @basic_type %>
   </div>
 
   <div class="field">
@@ -29,13 +29,15 @@
 
   <div class="field padright">
     <%= form.label :event_type, "Event Type" %>
-    <%= form.select :event_type, options_for_select(["Wedding","Corporate Event", "Concert", "Recording", "Other"]), :prompt => 'Select one', :id => "event_type", required: false, :selected => @type, :value => @type %>
+    <%= form.select :event_type, ["Wedding","Corporate Event", "Concert", "Recording", "Other"], :prompt => 'Select one', :id => "event_event_type", required: false, :selected => @event_type %>
 
    <br>
-   <% if @type == "Other" %>
-    <%= form.text_field :other_type, :id => "other_newevent_type", :placeholder => "Other event type", required: false, :value => @other_type %>
+    
+    <% if @event_type == "Other" %>
+      <%= form.text_field :other_type, :id => "other_newevent_type", :placeholder => "Other event type", required: false, :value => @other_type %>
     <% end %>
   </div>
+  
 
   <div class="field">
     <%= form.label :length %>
@@ -117,7 +119,7 @@
   </div>
    
 
-  <div class="field" >
+  <div class="field" style="display: none" >
     <%= form.label :contact_id %>
      <!-- < input type='integer' id='event_contact_id' value='<%=@contact_id%>' name='Contact_id' /> -->
     <%= form.number_field :contact_ids, id: :contact_id, :value => @contact_id  %>
