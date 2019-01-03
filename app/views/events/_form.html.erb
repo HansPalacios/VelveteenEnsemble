@@ -18,41 +18,26 @@
 
   <div class="field">
     <%= form.label :date %>
-    <%= form.date_select :date, id: :event_date, :input_html => { :value => '@event_date'} %>
-    <!-- <#%= f.input :user, :input_html => { :value => 'user@domain.com' } %> -->
-    <!-- <input type='select_date' id='event_date' value='<%=@event_date%>' name='date' /> -->
+    <%= form.date_select :date, id: :event_date, :selected => @event_date %>
   </div>
 
   <div class="field">
     <%= form.label :location %>
-    <%= form.text_field :location, id: :event_location, :input_html => { :value =>  @location } %>
+    <%= form.text_field :location, id: :event_location, :value =>  @location %>
 
-    <!-- <input type='text' id='event_location' value='<%=@location%>' name='location' /> -->
   </div>
 
   <div class="field padright">
     <%= form.label :type, "Event Type" %>
-    <%= form.select :type, options_for_select(["Wedding","Corporate Event", "Concert", "Recording", "Other"]), :prompt => 'Select one', :id => "event_type", required: false  %>
+    <%= form.select :type, options_for_select(["Wedding","Corporate Event", "Concert", "Recording", "Other"]), :prompt => 'Select one', :id => "event_type", required: false, :selected => @type, :value => @type %>
 
    <br>
-    <%= form.text_field :type, :id => "other_newevent_type", :placeholder => "Other event type", :style => "display: none", required: false  %>
+    <%= form.text_field :type, :id => "other_newevent_type", :placeholder => "Other event type", :style => "display: none", required: false, :value => @type %>
   </div>
 
   <div class="field">
     <%= form.label :length %>
-    <!-- <#%= form.text_field :length, id: :event_length, value: :@length %> -->
-     <!-- <input type='text' id='event_length' value='<%=@length%>' name='length' /> -->
-   <!--   <select id='event_length' value='<%=@length%>' name='length'>
-      <option value="1_hour">1 hour</option>
-      <option value="1.5_hours">1.5 hours</option>
-      <option value="2_hours">2 hours</option>
-      <option value="2.5_hours">2.5 hours</option>
-      <option value="3_hours">3 hours</option>
-      <option value="3.5_hours">3.5 hours</option>
-      <option value="4_hours">4 hours</option>
-      <option value="Over_4_hours">Over 4 hours</option>
-    </select> -->
-     <%= form.select :length, [ "1 hour","1.5 hours","2 hours", "2.5 hours", "3 hours", "3.5 hours", "4 hours", "Over 4 hours" ], :prompt => 'Select one', :input_html => { :value => @length }  %>
+     <%= form.select :length, [ "1 hour","1.5 hours","2 hours", "2.5 hours", "3 hours", "3.5 hours", "4 hours", "Over 4 hours" ], :prompt => 'Select one', :selected => @length %>
   </div>
 
   <div class="field">
@@ -64,6 +49,20 @@
     <%= form.label :deposit %>
     <%= form.number_field :deposit, id: :event_deposit %>
   </div>
+
+
+
+  <script>
+    $(function() {
+      $("#event_amount, #event_deposit").keyup(function() {
+        var a = $("#event_amount").val();
+        var d = $("#event_deposit").val();
+        $("#event_subtotal").val(a - d);
+      });
+    });
+  </script>
+
+
 
   <div class="field">
     <%= form.label :subtotal %>
@@ -84,25 +83,23 @@
 
   <div class="field">
     <%= form.label :fname %>
-    <%= form.text_field :fname, id: :customer_fname, :input_html => { :value => @fname }  %>
-    <!-- <input type='text' id='event_fname' value='<%=@fname%>' name='fname' /> -->
+    <%= form.text_field :fname, id: :customer_fname, :value => @fname  %>
   </div>
 
   <div class="field">
     <%= form.label :lname %>
-    <%= form.text_field :lname, id: :customer_lname, :input_html => { :value => @lname }  %>
-     <!-- <input type='text' id='event_lname' value='<%=@lname%>' name='lname' /> -->
+    <%= form.text_field :lname, id: :customer_lname, :value => @lname %>
   </div>
 
   <div class="field">
     <%= form.label :email %>
-    <%= form.text_field :email, id: :customer_email, :input_html => { :value => @email }  %>
+    <%= form.text_field :email, id: :customer_email, :value => @email %>
      <!-- <input type='text' id='event_email' value='<%=@email%>' name='email' /> -->
   </div>
 
   <div class="field">
     <%= form.label :phone %>
-    <%= form.number_field :phone, id: :customer_phone, :input_html => { :value => @phone }  %>
+    <%= form.number_field :phone, id: :customer_phone, :value => @phone  %>
      <!-- <input type='text' id='event_phone' value='<%=@phone%>' name='phone' /> -->
   </div>
 
@@ -121,7 +118,7 @@
   <div class="field" >
     <%= form.label :contact_id %>
      <!-- < input type='integer' id='event_contact_id' value='<%=@contact_id%>' name='Contact_id' /> -->
-    <%= form.number_field :contact_ids, id: :contact_id, :input_html => { :value => @contact_id }  %>
+    <%= form.number_field :contact_ids, id: :contact_id, :value => @contact_id  %>
   </div>
 
   <div class="actions">

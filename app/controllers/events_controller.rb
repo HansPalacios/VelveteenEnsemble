@@ -31,7 +31,7 @@ class EventsController < ApplicationController
     end
     @event = Event.new
     @customer = Customer.new
-    @event_date = params[:date]
+    @event_date = params[:date].to_date
     @location = params[:location]
     @type = params[:type]
     @length = params[:length]
