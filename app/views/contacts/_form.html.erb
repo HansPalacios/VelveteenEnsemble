@@ -30,12 +30,12 @@
     <%= f.select :length, [ "1 hour","1.5 hours","2 hours", "2.5 hours", "3 hours", "3.5 hours", "4 hours", "Over 4 hours" ], :prompt => 'Select one', required: false %>
     <br>
 
-    <%= f.label :type, "Event Type" %>
+    <%= f.label :event_type, "Event Type" %>
 
-    <%= f.select :type, options_for_select(["Wedding","Corporate Event", "Concert", "Recording", "Other"]), :prompt => 'Select one', :id => "contact_type", required: false %>
+    <%= f.select :event_type, ["Wedding","Corporate Event", "Concert", "Recording", "Other"], :prompt => 'Select one', :id => "contact_type", required: false %>
 
    <br>
-    <%= f.text_field :type, :id => "other_type", :placeholder => "Other event type", :style => "display: none", required: false %>
+    <%= f.text_field :other_type, :id => "other_type", :placeholder => "Other event type", :style => "display: none", required: false %>
     <br>
     <div class="heardby">
         <%= f.label :heardby, "Where did you hear about us?" %>

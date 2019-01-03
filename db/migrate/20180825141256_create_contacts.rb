@@ -8,7 +8,8 @@ class CreateContacts < ActiveRecord::Migration[5.1]
     	t.integer :phone, :limit => 8
     	t.date :eventdate
     	t.string :eventlocation
-    	t.string :type
+    	t.string :event_type
+      t.string :other_type
     	t.string :length
       t.string :heardby
       t.boolean :hidden

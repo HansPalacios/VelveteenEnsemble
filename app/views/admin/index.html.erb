@@ -102,7 +102,7 @@
 
 
 
-						 	<%= link_to new_event_path(date: contact.eventdate, location: contact.eventlocation, type: contact.type, length: contact.length, contact_id: contact.id, fname: contact.fname, lname: contact.lname, email: contact.email, phone: contact.phone, message: contact.message) do %>
+						 	<%= link_to new_event_path(date: contact.eventdate, location: contact.eventlocation, event_type: contact.event_type, other_type: contact.other_type, length: contact.length, contact_id: contact.id, fname: contact.fname, lname: contact.lname, email: contact.email, phone: contact.phone, message: contact.message) do %>
 						 			<button>Add as an Event</button>
 						 		<% end %>
 

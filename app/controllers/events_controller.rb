@@ -33,7 +33,8 @@ class EventsController < ApplicationController
     @customer = Customer.new
     @event_date = params[:date].to_date
     @location = params[:location]
-    @type = params[:type]
+    @event_type = params[:event_type]
+    @other_type = params[:other_type]
     @length = params[:length]
     @contact_id = params[:contact_id]
     @fname = params[:fname]
@@ -100,6 +101,6 @@ class EventsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def event_params
-      params.require(:event).permit(:title, :date, :location, :type, :length, :amount, :deposit, :subtotal, :deposit_paid, :total_paid, :customer_id, :customers_attributes => [:fname, :lname, :email, :phone, :city, :event_id])
+      params.require(:event).permit(:title, :date, :location, :event_type, :other_type, :length, :amount, :deposit, :subtotal, :deposit_paid, :total_paid, :customer_id, :customers_attributes => [:fname, :lname, :email, :phone, :city, :event_id])
     end
 end
