@@ -4,7 +4,8 @@ class CreateEvents < ActiveRecord::Migration[5.1]
       t.string :title
       t.date :date
       t.string :location
-      t.string :type
+      t.string :event_type
+      t.string :other_type
       t.string :length
       t.integer :amount
       t.integer :deposit
