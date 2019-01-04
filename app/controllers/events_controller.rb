@@ -35,7 +35,6 @@ class EventsController < ApplicationController
     @location = params[:location]
     @event_type = params[:event_type]
     @other_type = params[:other_type]
-    
     @length = params[:length]
     @contact_id = params[:contact_id]
     @fname = params[:fname]
