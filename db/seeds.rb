@@ -8,7 +8,8 @@
 
 admins = Admin.create([
 	{ email: "marcelkrasner@gmail.com", password: "Violoncello2018", fname: "Marcel", lname: "Krasner"},
-	{ email: "hans@hspalacios.com", password: "jackrabbit93", fname: "Hans", lname: "Palacios"}
+	{ email: "hans@hspalacios.com", password: "jackrabbit93", fname: "Hans", lname: "Palacios"},
+	{ email: "seo@developer.com", password: "seodeveloper6", fname: "SEO", lname: "Developer"}
 ])
 
 venues = Venue.create([

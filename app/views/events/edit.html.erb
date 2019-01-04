@@ -48,7 +48,7 @@
 
   <div class="field">
     <%= form.label :length %>
-     <%= form.select :length, [ "1 hour","1.5 hours","2 hours", "2.5 hours", "3 hours", "3.5 hours", "4 hours", "Over 4 hours" ], :prompt => 'Select one' %>
+     <%= form.select :length, [ "1 hour","1.5 hours","2 hours", "2.5 hours", "3 hours", "3.5 hours", "4 hours", "Over 4 hours" ], :id => "event_length", :prompt => 'Select one' %>
   </div>
 
   <div class="field">
@@ -114,7 +114,7 @@
 
   <div class="field" >
     <%= form.label :city %>
-    <%= form.select :length, [ "New York City","Los Angeles","Miami"] %>
+    <%= form.select :length, [ "New York City","Los Angeles","Miami"], :id => "event_city" %>
 
   </div>
    
