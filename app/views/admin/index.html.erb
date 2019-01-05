@@ -43,8 +43,8 @@
 				</div>
 				<% @events.each do |event| %>
 					<div class="background row">
-						<p><%= event.location%></p>
-						<p><%= event.date%></p>
+						<p><%= event.title%></p>
+						<p><%= event.date.to_time.strftime('%a %b %d, %Y')%></p>
 							<%= link_to edit_event_path(event) do %> 
 				 		<button>Edit Event</button>
 				 	<% end %> 
