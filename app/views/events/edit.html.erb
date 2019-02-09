@@ -137,6 +137,10 @@
 			<div class="links">
 				<%= link_to 'Show', @event %> |
 				<%= link_to 'Back', admin_path %>
+        <hr>
+        <%= link_to new_charge_path(amount: ,eventdate: ,eventlocation: ,deposit: ,description: ,fname: ,lname: ) do %>
+                  <button>Send Invoice</button>
+                <% end %>
 			</div>
 		</div>
 	</div>

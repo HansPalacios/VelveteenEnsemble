@@ -19,11 +19,18 @@ Rails.application.routes.draw do
 # get '/redirect', to: 'example#redirect', as: 'redirect'
 # get '/callback', to: 'example#callback', as: 'callback'
   get 'event/:date/:location/:type/:length/:contact_id/:fname/:lname/:email/:phone/:message', to: 'events#new', as: 'new_event_path'
+
+  # get 'new/:amount/:eventdate/:eventlocation/:deposit/:description/:fname/:lname', to: 'charges#new', as: 'new_charge_path'
+  namespace :stripe do
+    resources :charges, only: :create
+  end  
+  
+  resources :musicians
+
   resources :events
   resources :customers
   resources :emails
-  resources :charges
-  resources :musicians
+
   resources :abouts
   resources :venues
   # resources :uploads

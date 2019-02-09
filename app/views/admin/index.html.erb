@@ -45,9 +45,12 @@
 					<div class="background row">
 						<p><%= event.title%></p>
 						<p><%= event.date.to_time.strftime('%a %b %d, %Y')%></p>
-							<%= link_to edit_event_path(event) do %> 
-				 		<button>Edit Event</button>
-				 	<% end %> 
+						<%= link_to event_path(event) do %> 
+						<button>Show</button>
+						<% end %>|
+						<%= link_to edit_event_path(event) do %> 
+				 			<button>Edit</button>
+				 		<% end %> 
 					</div>
 				<% end %>
 				<%= image_tag image_url('https://s3.amazonaws.com/velveteenensemble/nofillarrow.png') %>
@@ -100,8 +103,6 @@
 					 		<div class="col-md-4"></div>
 					 		<div class="col-md-4">
 
-
-
 						 	<%= link_to new_event_path(date: contact.eventdate, location: contact.eventlocation, event_type: contact.event_type, other_type: contact.other_type, length: contact.length, contact_id: contact.id, fname: contact.fname, lname: contact.lname, email: contact.email, phone: contact.phone, message: contact.message) do %>
 						 			<button>Add as an Event</button>
 						 		<% end %>
@@ -148,7 +149,7 @@
 
 		<div id="admin2" class="col-md-12 no-gutters hidepages">
 			<div class="row no-gutters calendar">
-				<iframe src="https://calendar.google.com/calendar/embed?title=Velveteen%20Ensemble&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=velveteenensemble.com_mh8rm5olauqbct9squ4v6uka30%40group.calendar.google.com&amp;color=%2329527A&amp;ctz=America%2FNew_York" style="border-width:0" height="600px" frameborder="0" scrolling="no">
+				<!-- <iframe src="https://calendar.google.com/calendar/embed?title=Velveteen%20Ensemble&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=velveteenensemble.com_mh8rm5olauqbct9squ4v6uka30%40group.calendar.google.com&amp;color=%2329527A&amp;ctz=America%2FNew_York" style="border-width:0" height="600px" frameborder="0" scrolling="no"> -->
 				</iframe>
 			</div>
 		</div>

@@ -1,83 +1,86 @@
 <div class="container-fluid editpage height" id="showevent">
-  <div class="background">
+  <div class="background row">
+    <h4 class="col-md-12"><%= @event.title %></h4>
+    <div class="col-md-6">
+      
 
-    <h4><%= @event.title %></h4>
+      <p>
+          <strong>Date:</strong>
+        <%= @event.date %>
+      </p>
+      <p>
+        <strong>Location:</strong>
+        <%= @event.location %>
+      </p>
 
-    <p>
-        <strong>Date:</strong>
-      <%= @event.date %>
-    </p>
-    <p>
-      <strong>Location:</strong>
-      <%= @event.location %>
-    </p>
+      <p>
+        <strong>Type:</strong>
+        <% if @event.event_type == "Other" %>
+          <%= @event.other_type %>
+        <% else %>
+          <%= @event.event_type %>
+        <% end %>
+      </p>
 
-    <p>
-      <strong>Type:</strong>
-      <% if @event.event_type == "Other" %>
-        <%= @event.other_type %>
-      <% else %>
-        <%= @event.event_type %>
-      <% end %>
-    </p>
+      <p>
+        <strong>Length:</strong>
+        <%= @event.length %>
+      </p>
 
-    <p>
-      <strong>Length:</strong>
-      <%= @event.length %>
-    </p>
+      <p>
+        <strong>Amount:</strong>
+        <%= @event.amount %>
+      </p>
 
-    <p>
-      <strong>Amount:</strong>
-      <%= @event.amount %>
-    </p>
+      <p>
+        <strong>Deposit:</strong>
+        <%= @event.deposit %>
+      </p>
 
-    <p>
-      <strong>Deposit:</strong>
-      <%= @event.deposit %>
-    </p>
+      <p>
+        <strong>Subtotal:</strong>
+        <%= @event.subtotal %>
+      </p>
 
-    <p>
-      <strong>Subtotal:</strong>
-      <%= @event.subtotal %>
-    </p>
+      <p>
+        <strong>Deposit paid:</strong>
+        <%= @event.deposit_paid %>
+      </p>
+      <p>
+        <strong>Total paid:</strong>
+        <%= @event.total_paid %>
+      </p>
+    </div>
+    <div class="col-md-6">
+      <p>
+        <strong>First Name:</strong>
+        <%= @event.fname %>
+      </p>
 
-    <p>
-      <strong>Deposit paid:</strong>
-      <%= @event.deposit_paid %>
-    </p>
-    <p>
-      <strong>Total paid:</strong>
-      <%= @event.total_paid %>
-    </p>
-    <hr>
-    <p>
-      <strong>First Name:</strong>
-      <%= @event.fname %>
-    </p>
-
-    <p>
-      <strong>Last Name:</strong>
-      <%= @event.lname %>
-    </p>
-    <p>
-      <strong>Phone:</strong>
-      <%= @event.phone %>
-    </p>
-    <p>
-      <strong>Email:</strong>
-      <%= @event.email %>
-    </p>
-    <p>
-      <strong>City:</strong>
-      <%= @event.city %>
-    </p>
+      <p>
+        <strong>Last Name:</strong>
+        <%= @event.lname %>
+      </p>
+      <p>
+        <strong>Phone:</strong>
+        <%= @event.phone %>
+      </p>
+      <p>
+        <strong>Email:</strong>
+        <%= @event.email %>
+      </p>
+      <p>
+        <strong>City:</strong>
+        <%= @event.city %>
+      </p>
+    </div>
 
 
-    <div class="row">
+    <!-- <div class="row"> -->
       <div class="links">
         <%= link_to 'Edit', edit_event_path(@event) %> |
         <%= link_to 'Back', admin_path %>
       </div>
-    </div>
+    <!-- </div> -->
   </div>
 </div>
