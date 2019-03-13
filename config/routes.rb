@@ -3,6 +3,9 @@ Rails.application.routes.draw do
   
   
   devise_for :admins
+
+  get 'BookingVE', to: 'home#BookingVE', as: 'BookingVE'
+
   
   get 'admin', to: 'admin#index'
   get 'home', to: 'home#index'

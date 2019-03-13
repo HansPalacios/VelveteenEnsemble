@@ -1,115 +1,117 @@
-<div class="row no-gutters" >
-	<div id="trigger1"></div>
-	<div id="header">
-		<% if notice %>
-		  <p class="alert alert-success"><%= notice %></p>
-		<% end %>
-		<% if alert %>
-		  <p class="alert alert-danger"><%= flash[:error] %><%= alert %></p>
-		<% end %>
-		<a href="/" id="logo" >
-			<%= image_tag image_url('https://d3ffc7oj6uo4uj.cloudfront.net/whlogolines.png'), :id => "logo" %>
-		</a>
-		<ul>
-			<li><a href="/abouts">About</a></li>
-			<li><a href="/venues">Venues</a></li>
-			<li><a href="/media">Media</a></li>
-			<li><a href="/songs">Songs</a></li>
-			<li><a href="/reviews">Reviews</a></li>
-			<li><a href="/contact">Contact</a></li>
-		</ul>
-		 <% if admin_signed_in? %>
-		 	<div id="adminlinks">
-		 		<a href="/admin">Admin Page</a>
-     		<%= link_to "Log out", destroy_admin_session_path, method: :delete, :id => "logout" %>
-     	</div>
-     <% end %>
-		<div class="dropdown">
-			<%= image_tag image_url("https://d3ffc7oj6uo4uj.cloudfront.net/hamburgermenu.png") %>
-			<div class="dropdown-content">
-			  <a href="/abouts">About</a>
-			  <a href="/venues">Venues</a>
-			  <a href="/media">Media</a>
-				<a href="/songs">Songs</a>
-				<a href="/reviews">Reviews</a>
-				<a href="/contact">Contact</a>
-				<% if admin_signed_in? %>
-					<a href="/admin">Admin Page</a>
-					<%= link_to "Log out", destroy_admin_session_path, method: :delete, :id => "logout" %>
+<% unless @landing %>
+	<div class="row no-gutters" >
+		<div id="trigger1"></div>
+		<div id="header">
+			<% if notice %>
+			  <p class="alert alert-success"><%= notice %></p>
 			<% end %>
+			<% if alert %>
+			  <p class="alert alert-danger"><%= flash[:error] %><%= alert %></p>
+			<% end %>
+			<a href="/" id="logo" >
+				<%= image_tag image_url('https://d3ffc7oj6uo4uj.cloudfront.net/whlogolines.png'), :id => "logo" %>
+			</a>
+			<ul>
+				<li><a href="/abouts">About</a></li>
+				<li><a href="/venues">Venues</a></li>
+				<li><a href="/media">Media</a></li>
+				<li><a href="/songs">Songs</a></li>
+				<li><a href="/reviews">Reviews</a></li>
+				<li><a href="/contact">Contact</a></li>
+			</ul>
+			 <% if admin_signed_in? %>
+			 	<div id="adminlinks">
+			 		<a href="/admin">Admin Page</a>
+	     		<%= link_to "Log out", destroy_admin_session_path, method: :delete, :id => "logout" %>
+	     	</div>
+	     <% end %>
+			<div class="dropdown">
+				<%= image_tag image_url("https://d3ffc7oj6uo4uj.cloudfront.net/hamburgermenu.png") %>
+				<div class="dropdown-content">
+				  <a href="/abouts">About</a>
+				  <a href="/venues">Venues</a>
+				  <a href="/media">Media</a>
+					<a href="/songs">Songs</a>
+					<a href="/reviews">Reviews</a>
+					<a href="/contact">Contact</a>
+					<% if admin_signed_in? %>
+						<a href="/admin">Admin Page</a>
+						<%= link_to "Log out", destroy_admin_session_path, method: :delete, :id => "logout" %>
+				<% end %>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
-<style>
-	<% if @homepage %>
-		#header {
-			position: static;
-			position: relative;
-		}
-		.height {
-			min-height: calc(100% - 120px);
-		}
-		@media only screen and (min-width: 992px) {
+	<style>
+		<% if @homepage %>
 			#header {
-				height: 120px;
-				padding: 20px;
+				position: static;
+				position: relative;
 			}
-			#header #logo {
-				height: 70px;
-				margin-right: 5%;
+			.height {
+				min-height: calc(100% - 120px);
 			}
-			#header ul {
-				top: 40px;
+			@media only screen and (min-width: 992px) {
+				#header {
+					height: 120px;
+					padding: 20px;
+				}
+				#header #logo {
+					height: 70px;
+					margin-right: 5%;
+				}
+				#header ul {
+					top: 40px;
+				}
 			}
+		<% end %>
+		<% if admin_signed_in? %>
+		#header .alert {
+			right: 150px;
 		}
-	<% end %>
-	<% if admin_signed_in? %>
-	#header .alert {
-		right: 150px;
-	}
-		@media only screen and (max-height: 410px) {
-			.dropdown-content {
-				height: 308px;
-				overflow: scroll;
+			@media only screen and (max-height: 410px) {
+				.dropdown-content {
+					height: 308px;
+					overflow: scroll;
+				}
 			}
-		}
-		@media only screen and (max-height: 366px) {
-			.dropdown-content {
-				height: 264px;
-				overflow: scroll;
+			@media only screen and (max-height: 366px) {
+				.dropdown-content {
+					height: 264px;
+					overflow: scroll;
+				}
 			}
-		}
-		<% else %>
-		@media only screen and (max-height: 322px) {
-			.dropdown-content {
-				height: 220px;
-				overflow: scroll;
+			<% else %>
+			@media only screen and (max-height: 322px) {
+				.dropdown-content {
+					height: 220px;
+					overflow: scroll;
+				}
 			}
-		}
-		@media only screen and (max-height: 278px) {
-			.dropdown-content {
-				height: 176px;
-				overflow: scroll;
+			@media only screen and (max-height: 278px) {
+				.dropdown-content {
+					height: 176px;
+					overflow: scroll;
+				}
 			}
-		}
-		@media only screen and (max-height: 234px) {
-			.dropdown-content {
-				height: 132px;
-				overflow: scroll;
+			@media only screen and (max-height: 234px) {
+				.dropdown-content {
+					height: 132px;
+					overflow: scroll;
+				}
 			}
-		}
-		@media only screen and (max-height: 190px) {
-			.dropdown-content {
-				height: 88px;
-				overflow: scroll;
+			@media only screen and (max-height: 190px) {
+				.dropdown-content {
+					height: 88px;
+					overflow: scroll;
+				}
 			}
-		}
-		@media only screen and (max-height: 146px) {
-			.dropdown-content {
-				height: 44px;
-				overflow: scroll;
+			@media only screen and (max-height: 146px) {
+				.dropdown-content {
+					height: 44px;
+					overflow: scroll;
+				}
 			}
-		}
-	<% end %>
-</style>
+		<% end %>
+	</style>
+<% end %>

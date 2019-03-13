@@ -1,24 +1,49 @@
 <%= form_for @contact do |f| %>
-    <%= f.label :fname, 'First Name (required) *' %> 
+    <% if @landing %>
+        <h3>Get your free quote today!</h3>
+        <%= f.label :fname, 'Name' %> 
+    <% else %>
+        <%= f.label :fname, 'Name (required) *' %> 
+    <% end %>
     <%= f.text_field :fname, required: true %>
+   
+   <!--  <#%= f.label :lname, 'Last Name (required) *' %> 
+    <#%= f.text_field :lname, required: true %> -->
     <br>
-    <%= f.label :lname, 'Last Name (required) *' %> 
-    <%= f.text_field :lname, required: true %>
-    <br>
+    <% if @landing %>
+        <%= f.label :email, 'Email' %>
+    <% else %>
+     <br>
     <%= f.label :email, 'Email (required) *' %>
+    <% end %>
     <%= f.text_field :email, required: true %>
     <br>
-    <%= f.label :phone, 'Phone No.' %>
-    <%= f.telephone_field :phone, required: false %>
-    <br>
-    <%= f.label :eventdate, 'Event Date (required) *' %>
-    <%= f.date_field :eventdate, required: true %>
-    <br>
+
+    <% unless @landing %>
+        <%= f.label :phone, 'Phone No.' %>
+        <%= f.telephone_field :phone, required: false %>
+        <br>
+        <%= f.label :eventdate, 'Event Date (required) *' %>
+        <%= f.date_field :eventdate, required: true %>
+        <br>
+    <% end %>
+
     <div class="messagebox">
-        <%= f.label :message, 'Message (required) *',:class => "messagelabel"%>
+        <% if @landing %>
+        <div class="labelbox">
+            <!-- <#%= f.label :message, 'Event<br/>Information',:class => " -->
+        <!-- messagelabel"%> -->
+        <label for="message" class="messagelabel">Event<br>Information</label>
+        </div>
+        <% else %>
+            <%= f.label :message, 'Message (required) *',:class => "
+        messagelabel"%>
+        <% end %>
         <%= f.text_area :message, as: :text, required: true %>
     </div>
+    
     <br>
+    <% unless @landing %>
     <br>
     <hr>
     <br>
@@ -45,7 +70,7 @@
         <%= f.text_field :heardby, :id => "other_heardby", :style => "display: none", required: false %>
     </div>
     <br>
-   
+   <% end %>
 
   <div class="nickname">
     <%= f.label :nickname %> <br>

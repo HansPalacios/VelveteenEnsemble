@@ -23,4 +23,7 @@ class AdminController < ApplicationController
 	
 		
 	end
+	def bookingVE
+		
+	end
 end
