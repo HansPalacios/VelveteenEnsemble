@@ -1,35 +1,86 @@
 <div class="container-fluid" id="landing">
+	<div id="firstsection">
+		<div class="row">
 
-	<div class="row">
-		<div class="col-md-6" style="padding:50px;text-align:center;">
-			<div id="iframebox">
-				<iframe src="https://www.youtube.com/embed/Rtennabdzlc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<div class="col-md-5 col-sm-6 col-xs-6" id="logorow">
+				<%= image_tag image_url('https://d3ffc7oj6uo4uj.cloudfront.net/bllogolines.png'), :id => "logo" %>
+			</div>
+
+			<div class="col-md-7 col-sm-12 col-xs-12">
+				<%= render '/contacts/form', contact: @contact %>
 			</div>
 		</div>
-		<div class="col-md-6">
-			<%= render '/contacts/form', contact: @contact %>
+
+		<div class="row">
+			<div class="col-lg-1 col-md-0 col-sm-0 col-xs-0"></div>
+			<div class="col-lg-7 col-md-8 col-sm-8 col-xs-8" id="framerow">
+				<div id="iframebox">
+					<iframe src="https://www.youtube.com/embed/Rtennabdzlc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-4"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-3 col-sm-2 col-xs-1"></div>
+			<div class="col-md-9 col-sm-10 col-xs-11" id="reviewrow">
+				<div id="reviewbox" >
+						<div  class="reviews review1">
+							<p>" Velveteen Ensemble was PHENOMENAL! They were super flexible about learning a few new pieces we requested and they played exactly what we wanted them to play for our wedding day. They have a huge list of repertoire and their pop music is incredible. Thanks so much!! "</p>
+							<h5>Anastasia</h5>
+						</div>
+						<div class="reviews review2">
+							<p>" Great performance and super accommodating! Marcel and his team helped to make our wedding truly magical! As a classically trained pianist myself, having a quartet was a must and they really delivered. They are able to perform a wide number of classical pieces, including traditional Chinese songs at an excellent value. I would definitely recommend them to a friend! "</p>
+							<h5>Angela</h5>
+						</div>
+						<div class="reviews review3">
+							<p>" The Velveteen Ensemble was exceptional. We had the String Quartet for 1 hour. For the first 30 minutes our guests were arriving and we had them playing fun songs - like Jurassic Park and Game of Thrones theme songs, Taylor Swift, Beatles and even Despacito! Our guests absolutely loved it. The quartet moved to our ceremony space and played another 30 minuts for our ceremony. They have a really extensive list of songs with traditional and modern ones. They were totally open to learning new songs for us, which we loved. "</p>
+							<h5>Anelise</h5>
+						</div>
+						<div class="reviews review4">
+							<p>" The Velveteen Ensemble helped make our wedding an unbelievable experience that we will never forget! From the beginning, Marcel and his team were incredibly warm and attentive. They showed awesome flexibility with music selection, were always available to answer questions, and worked seamlessly with the venue to leave us without a worry. Their most important trait, however, was their unbelievable music talent. The quartet gave our ceremony an amazing soundtrack that no one will ever forget, and their contemporary sound at the cocktail hour made that party unforgettable. We could not have asked for a more incredible experience with the Velveteen Ensemble! "</p>
+							<h5>Juan</h5>
+						</div>
+					</div>
+			</div>
 		</div>
 	</div>
-
-
-	<div class="row" id="reviewrow">
-		<div id="reviewbox" class="col-md-6">
-				<div  class="reviews review1">
-					<p>" Velveteen Ensemble was PHENOMENAL! They were super flexible about learning a few new pieces we requested and they played exactly what we wanted them to play for our wedding day. They have a huge list of repertoire and their pop music is incredible. Thanks so much!! "</p>
-					<h5>Anastasia</h5>
-				</div>
-				<div class="reviews review2">
-					<p>" Great performance and super accommodating! Marcel and his team helped to make our wedding truly magical! As a classically trained pianist myself, having a quartet was a must and they really delivered. They are able to perform a wide number of classical pieces, including traditional Chinese songs at an excellent value. I would definitely recommend them to a friend! "</p>
-					<h5>Angela</h5>
-				</div>
-				<div class="reviews review3">
-					<p>" The Velveteen Ensemble was exceptional. We had the String Quartet for 1 hour. For the first 30 minutes our guests were arriving and we had them playing fun songs - like Jurassic Park and Game of Thrones theme songs, Taylor Swift, Beatles and even Despacito! Our guests absolutely loved it. The quartet moved to our ceremony space and played another 30 minuts for our ceremony. They have a really extensive list of songs with traditional and modern ones. They were totally open to learning new songs for us, which we loved. "</p>
-					<h5>Anelise</h5>
-				</div>
-				<div class="reviews review4">
-					<p>" The Velveteen Ensemble helped make our wedding an unbelievable experience that we will never forget! From the beginning, Marcel and his team were incredibly warm and attentive. They showed awesome flexibility with music selection, were always available to answer questions, and worked seamlessly with the venue to leave us without a worry. Their most important trait, however, was their unbelievable music talent. The quartet gave our ceremony an amazing soundtrack that no one will ever forget, and their contemporary sound at the cocktail hour made that party unforgettable. We could not have asked for a more incredible experience with the Velveteen Ensemble! "</p>
-					<h5>Juan</h5>
-				</div>
+	<div class="row" id="secondsection">
+		<!-- <div id="tint"></div> -->
+		<!-- <div class="col-md-0 col-sm-0 col-xs-3"></div> -->
+		<div class="col-md-3 col-sm-3 col-xs-4">
+			<div class="round weddings">
+				<div class="tint">
+					<p>Weddings</p>
+				</div>		
 			</div>
+		</div>	
+		<div class="col-md-3 col-sm-3 col-xs-4">		
+			<div class="round recordings">
+				<div class="tint">
+					<p>Recordings</p>
+				</div>		
+			</div>
+		</div>
+		<!-- <div class="col-md-0 col-sm-0 col-xs-1"></div> -->
+
+
+		<!-- <div class="col-md-0 col-sm-0 col-xs-1"></div> -->
+
+		<div class="col-md-3 col-sm-3 col-xs-4">
+			<div class="round corporate">
+				<div class="tint">
+					<p>Corporate Events</p>
+				</div>		
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-3 col-xs-4">
+			<div class="round concerts">
+				<div class="tint">
+					<p>Concerts</p>
+				</div>		
+			</div>		
+		</div>	
+		<!-- <div class="col-md-0 col-sm-0 col-xs-3"></div> -->
+
 	</div>
 </div>

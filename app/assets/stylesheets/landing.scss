@@ -1,93 +1,168 @@
 #landing {
-	background-image: url(https://s3.amazonaws.com/velveteenensemble/Carnegie1.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
 	overflow-x: hidden;
 	overflow-y: scroll;
 	height: 100%;
 	width: 100%;
-	#iframebox {
-		position: relative; 
-		padding-top: 56.25%;
-		// margin: 50px;
-		// margin: 0 auto;
-		iframe {
-			position:absolute;
-			top:0;
-			left:0;
-			width:100%;
-			height:100%;
-			
-		}
-	}
-	form {
-		border-radius: 20px;
-
-		background-color: white;
-		box-shadow: 2px 4px 16px 0px rgba(189,214,163,1);
-		padding: 20px;
-		width: calc(100% - 100px);
-		margin: 50px;
-		// text-align: right;
-		input, textarea {
-			border: 1px solid lightgray;
-			border-radius: 10px;
-			padding: 0 10px;
-			margin: 10px 0;
-			}
-		.labelbox {
-			display: inline-block;
-			height: 45px;
-			width: 60px;
-			margin-left: -5px;
-			label.messagelabel {
-				margin-bottom: 0;
-			} 
-		}
-		input.button {
-			margin: 0 auto;
-		}
-		.messagebox {
+	#firstsection {
+		background-image: url(https://s3.amazonaws.com/velveteenensemble/Carnegie1.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-attachment: local;
+		#logorow {
 			position: relative;
+			display: block;
+			// height: 300px;
+			#logo {
+				position: absolute;
+				top: 50%;
+		    left: 50%;
+		    transform: translate(-50%, -50%);
+		    width: 50%;
+		    // margin: 50px;
+			}
 		}
-	}
-	#reviewrow {
-		height: 400px;
-		// padding: 100px;
-		text-align: center;
-		position: relative;
-		#reviewbox {
-			background-color: rgba(250,250,250,.8);
-			box-shadow: 0px 0px 50px 30px rgba(250,250,250,.8);
-			border-radius: 20px;
+		#framerow {
+			text-align: center;
+			padding: 50px;
+		}
+		#iframebox {
+			position: relative; 
+			padding-top: 56.25%;
+			// display: block;
+			// margin: 50px;
 			margin: 0 auto;
-			position: absolute;
-			top: 50%;
-	    left: 50%;
-	    transform: translate(-50%, -50%);
+			iframe {
+				position:absolute;
+				top:0;
+				left:0;
+				width:100%;
+				height:100%;
+				
+			}
 		}
-		.reviews {
+		form {
+			border-radius: 20px;
+
+			background-color: white;
+			box-shadow: 2px 4px 16px 0px black;
+			padding: 20px;
+			width: 400px;
+			height: 294px;
+			margin: 50px auto;
+			// text-align: right;
+			input, textarea {
+				border: 1px solid lightgray;
+				border-radius: 10px;
+				padding: 0 10px;
+				margin: 10px 0;
+				}
+			.labelbox {
+				display: inline-block;
+				height: 45px;
+				width: 60px;
+				margin-left: -5px;
+				label.messagelabel {
+					margin-bottom: 0;
+				} 
+			}
+			input.button {
+				margin: 0 auto;
+			}
+			.messagebox {
+				position: relative;
+			}
+		}
+		#reviewrow {
+			height: 400px;
+			// padding: 100px;
 			text-align: center;
 			position: relative;
-			display: none;
-			margin: 0 auto;
-			padding-bottom: 20px;
-			padding-top: 10px;
-			p {
-				font-weight: 900;
-			}
-			h5 {
-				font-style: italic;
+			#reviewbox {
+				background-color: rgba(250,250,250,.8);
+				box-shadow: 0px 0px 50px 30px rgba(250,250,250,.8);
+				border-radius: 20px;
+				margin: 0 auto;
 				position: absolute;
-				right: 20px;
-				bottom: 0px;
-				font-weight: 900;
+				top: 50%;
+		    left: 50%;
+		    transform: translate(-50%, -50%);
 			}
-		}
-		.review1 {
-			display: inline-block;
+			.reviews {
+				text-align: center;
+				position: relative;
+				display: none;
+				margin: 0 auto;
+				padding-bottom: 20px;
+				padding-top: 10px;
+				p {
+					font-weight: 900;
+				}
+				h5 {
+					font-style: italic;
+					position: absolute;
+					right: 20px;
+					bottom: 0px;
+					font-weight: 900;
+				}
+			}
+			.review1 {
+				display: inline-block;
+			}
 		}
 	}
 	
+	#secondsection {
+		background-color: black;
+		text-align: center;
+		// box-shadow: 2px 4px 16px 0px black;
+		margin-top: -1px;
+		padding: 60px 20px 20px 20px;
+		position: relative;
+		// }
+		.round {
+			border-radius: 50%;
+			width: 150px;
+			height: 150px;
+			display: inline-block;
+			background-color: white;
+			position: relative;
+			margin: 20px  auto;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			// box-shadow: 2px 4px 16px 0px grey;
+			.tint {
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0,0,0,.3);
+				border-radius: 50%;
+				p {
+					font-weight: 900;
+					font-size: 25px;
+					color: white;
+					position: absolute;
+					top: 50%;
+		    	left: 50%;
+		    	transform: translate(-50%, -50%);
+				}
+			}
+			
+		}
+		.weddings { 
+			  background-image: url('https://d3ffc7oj6uo4uj.cloudfront.net/wedding4.png');
+		}
+		.recordings {
+			  background-image: url('https://d3ffc7oj6uo4uj.cloudfront.net/recording2.png');
+		}
+		.corporate {
+			  background-image: url('https://d3ffc7oj6uo4uj.cloudfront.net/wine3.jpg');
+		}
+		.concerts {
+			  background-image: url('https://d3ffc7oj6uo4uj.cloudfront.net/PM9A1049.jpg');
+		}
+		.recordings, .concerts {
+			margin-top: -20px;
+		}
+	}
 }
