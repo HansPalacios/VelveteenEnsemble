@@ -12,7 +12,6 @@
 		#logorow {
 			position: relative;
 			display: block;
-			// height: 300px;
 			#logo {
 				position: absolute;
 				top: 50%;
@@ -64,6 +63,9 @@
 				margin-left: -5px;
 				label.messagelabel {
 					margin-bottom: 0;
+					position: absolute;
+					top: 10px;
+					left: 54px;
 				} 
 			}
 			input.button {
@@ -115,11 +117,9 @@
 	#secondsection {
 		background-color: black;
 		text-align: center;
-		// box-shadow: 2px 4px 16px 0px black;
 		margin-top: -1px;
 		padding: 60px 20px 20px 20px;
 		position: relative;
-		// }
 		.round {
 			border-radius: 50%;
 			width: 150px;
@@ -131,7 +131,7 @@
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center;
-			// box-shadow: 2px 4px 16px 0px grey;
+			background-color: rgb(62,0,0);
 			.tint {
 				width: 100%;
 				height: 100%;
@@ -167,12 +167,7 @@
 	}
 	#thirdsection {
 		padding: 100px;
-		background-color: rgba(240,255,227,1);
-		// background-size: cover;
-		// background-repeat: no-repeat;
-		// background-position: center;
-		// background-attachment: local;
-		// background-image: url('https://d3ffc7oj6uo4uj.cloudfront.net/musicsheet.png');
+		background-color: rgba(255,249,227,1);
 		h3 {
 			margin: 0 auto;
 			width: 80%;
@@ -180,11 +175,114 @@
 			font-weight: 900;
 			line-height: 35px;
 		}
-		// .tint {
-			
-		// 	width: 100%;
-		// 	height: 100%;
-		// 	padding: 100px;
-		// }
 	}
 }
+
+@media only screen and (max-width: 768px) {
+#landing {
+	#firstsection {
+		#logorow {
+			height: 200px;
+			#logo {
+				// max-width: 30%;
+				// max-height: 70%;
+			}
+		}
+	}
+}
+};
+@media only screen and (max-width: 768px) {
+	#landing {
+		#secondsection .round {
+			width: 100px;
+			height: 100px;
+			.tint p {
+				font-size: 18px;
+			}
+		}
+		#thirdsection {
+			h3 {
+				font-size: 18px;
+			}
+		}
+	}
+};
+@media only screen and (max-width: 576px) {
+ #landing {
+ 	#secondsection {
+ 		padding-top: 95px;
+ 		.roundcolumn {
+ 			width: 30%;
+ 			margin: 0 auto;
+ 		}
+ 		.recordings, .concerts {
+			margin-top: -50px;
+		}
+ 	}
+ 	#thirdsection {
+ 		padding: 50px 20px;
+ 	}
+ }
+};
+
+
+@media only screen and (max-width: 440px) {
+ #landing {
+ 	#firstsection {
+ 		#logorow {
+ 			height: 100px;
+ 			#logo {
+ 				max-height: 80%;
+ 				width: auto;
+ 			}
+ 		}
+ 		form {
+ 			width: 80%;
+ 			h3 {
+ 				font-size: 18px;
+ 			}
+ 			label, input, textarea {
+ 				font-size: 12px;
+ 			}
+ 			.labelbox label.messagelabel {
+ 				top: 10px;
+ 				left: 33px;
+ 			}
+ 		}
+ 	}
+ 	#secondsection .roundcolumn{
+ 		width: auto;
+ 	}
+ 	#thirdsection {
+ 		h3 {
+ 			font-size: 15px;
+ 		}
+ 	}
+ }
+};
+@media only screen and (max-width: 400px) {
+	#landing #firstsection form .labelbox label.messagelabel {
+		left: 5%;
+	}
+};
+@media only screen and (max-width: 330px) {
+	#landing #firstsection form .labelbox label.messagelabel {
+		left: 2%;
+
+	}
+};
+@media only screen and (max-width: 309px) {
+	#landing #firstsection form {
+		height: 380px;
+		label, input, .labelbox {
+			display: block;
+			margin: 0 auto;
+			text-align: center;
+			label.messagelabel {
+				position: relative;
+			}
+		}
+	}
+};
+
+
