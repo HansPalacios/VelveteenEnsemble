@@ -13,18 +13,32 @@
 		#logorow {
 			position: relative;
 			display: block;
+			// height: 100px;
 			#logo {
-				position: absolute;
-				top: 50%;
-		    left: 50%;
-		    transform: translate(-50%, -50%);
-		    width: 50%;
-		    // margin: 50px;
+				// position: absolute;
+				// top: 50%;
+		  //   left: 50%;
+		  //   transform: translate(-50%, -50%);
+		    width: 20%;
+		    height: auto;
+		    margin: 50px 15%;
+		    float: left;
 			}
+		}
+		#framecol {
+			position: relative;
+			// width: 100%;
+			// height: 100%;
 		}
 		#framerow {
 			text-align: center;
-			padding: 50px;
+			padding: 0 50px;
+			position: absolute;
+			top: 50%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		  width: 100%;
+
 		}
 		#iframebox {
 			position: relative; 
@@ -32,6 +46,7 @@
 			// display: block;
 			// margin: 50px;
 			margin: 0 auto;
+			width: 100%;
 			iframe {
 				position:absolute;
 				top:0;
@@ -47,9 +62,9 @@
 			background-color: white;
 			box-shadow: 2px 4px 16px 0px black;
 			padding: 20px;
-			width: 400px;
-			height: 294px;
-			margin: 50px auto;
+			width: 395px;
+			height: auto;
+			margin: 20px auto;
 			// text-align: right;
 			input, textarea {
 				border: 1px solid lightgray;
@@ -77,13 +92,19 @@
 			}
 		}
 		#reviewrow {
-			min-height: 400px;
+			min-height: 300px;
 			margin-bottom: 50px;
 			text-align: center;
 			position: relative;
+			.imgbox {
+				height: 100%;
+				img {
+					margin: 20px;
+				}
+			}
 			#reviewbox {
 				background-color: rgba(250,250,250,.8);
-				box-shadow: 0px 0px 50px 30px rgba(250,250,250,.8);
+				// box-shadow: 0px 0px 50px 30px rgba(250,250,250,.8);
 				border-radius: 20px;
 				margin: 0 auto;
 				position: absolute;
@@ -91,6 +112,7 @@
 		    left: 50%;
 		    transform: translate(-50%, -50%);
 		    padding: 10px;
+		    width: 80%;
 			}
 			.reviews {
 				text-align: center;
@@ -99,14 +121,21 @@
 				margin: 0 auto;
 				padding-bottom: 20px;
 				padding-top: 10px;
+				img {
+					height: 50px;
+					display: inline-block;
+					float: left;
+				}
 				p {
 					font-weight: 900;
 				}
 				h5 {
 					font-style: italic;
-					position: absolute;
-					right: 20px;
-					bottom: 0px;
+					// position: absolute;
+					// right: 20px;
+					// bottom: 0px;
+					float: right;
+					margin-right: 20px;
 					font-weight: 900;
 				}
 			}
@@ -180,14 +209,16 @@
 	}
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
 #landing {
 	#firstsection {
-		#logorow {
-			height: 200px;
-			#logo {
-				// max-width: 30%;
-				// max-height: 70%;
+		#framerow {
+			padding: 30px; 
+		}
+		form {
+			width: 300px;
+			.labelbox label.messagelabel {
+				left: 6px;
 			}
 		}
 	}
@@ -232,10 +263,10 @@
  #landing {
  	#firstsection {
  		#logorow {
- 			height: 100px;
+ 			// height: 100px;
  			#logo {
- 				max-height: 80%;
- 				width: auto;
+ 				// max-height: 80%;
+ 				// width: auto;
  			}
  		}
  		form {
