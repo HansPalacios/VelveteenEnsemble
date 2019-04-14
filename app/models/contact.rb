@@ -5,7 +5,7 @@ class Contact < ActiveRecord::Base
   # append :remote_ip, :user_agent, :session
   
   attribute :fname, :validate => true
-  attribute :lname, :validate => true
+  attribute :lname
   attribute :email, :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
   attribute :phone
   attribute :eventdate, :validate => true
