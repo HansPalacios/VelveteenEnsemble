@@ -105,6 +105,8 @@
 			#reviewbox {
 				background-color: rgba(250,250,250,.8);
 				// box-shadow: 0px 0px 50px 30px rgba(250,250,250,.8);
+				box-shadow: 2px 4px 16px 0px rgb(72, 72, 72);
+
 				border-radius: 20px;
 				margin: 0 auto;
 				position: absolute;
@@ -129,15 +131,24 @@
 				p {
 					font-weight: 900;
 				}
-				h5 {
-					font-style: italic;
-					// position: absolute;
-					// right: 20px;
-					// bottom: 0px;
-					float: right;
-					margin-right: 20px;
-					font-weight: 900;
+				.signature {
+					
+					h5 {
+						font-style: italic;
+						// position: absolute;
+						// right: 20px;
+						// bottom: 0px;
+						float: right;
+						margin-right: 20px;
+						font-weight: 900;
+					}
+					img {
+						display: none;
+						height: 30px;
+						float: right;
+					}
 				}
+				
 			}
 			.review1 {
 				display: inline-block;
@@ -252,6 +263,17 @@
 				width: 250px;
 				textarea {
 					width: calc(100% - 85px);
+				}
+			}
+			#reviewrow #reviewbox {
+				padding: 20px;
+				.reviews {
+					img {
+						display: none;
+					}
+					.signature img {
+						display: inline-block;
+					}
 				}
 			}
 		}
