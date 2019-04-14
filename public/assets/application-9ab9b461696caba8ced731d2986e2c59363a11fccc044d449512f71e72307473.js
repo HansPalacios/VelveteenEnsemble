@@ -12788,6 +12788,18 @@ $(document).ready(function(){
 });
 
 } ) ( jQuery );
+// ( function($) {
+	$(document).ready(function(){	
+	 	var reviews = $('.review1, .review2, .review3, .review4');
+
+		function reviewloop(index) {
+	    reviews.eq(index).fadeIn(600).delay(6000).fadeOut(600, function() { 
+	      reviewloop((index + 1) % reviews.length);
+	    });
+		} 
+		reviewloop(0)
+	});
+	
 ( function($) {
 $(document).ready(function(){	
 	document.addEventListener('play', function(e){
@@ -13610,5 +13622,33 @@ module.exports = E;
 
 
 
+// ( function($) {
+$(document).ready(function(){	
+	// Save data to sessionStorage
+// sessionStorage.setItem('firstVisit', '1');
 
-;
+// /* Fix size on document ready.*/
+//     if (!sessionStorage.getItem('firstVisit') === "1")
+//     {
+//        $("#email").show(); 
+//     } 
+
+
+
+
+// if(!sessionStorage.getItem('firstVisit')){ 
+// 	sessionStorage.setItem('firstVisit', '1'); }
+// else{ 
+// 	sessionStorage.setItem('firstVisit', '0'); }
+
+// $(function(){ if (sessionStorage.getItem('firstVisit') === "1"){ $("#email").css('display', 'block') } 
+
+
+
+	$('#close').click(function() {
+	   $('#email').hide();     
+	  });
+
+// });
+
+} ) ;

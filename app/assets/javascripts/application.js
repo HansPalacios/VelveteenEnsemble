@@ -16,12 +16,33 @@
 //= require_tree .
 //= require clipboard
 
-( function($) {
+// ( function($) {
 $(document).ready(function(){	
+	// Save data to sessionStorage
+// sessionStorage.setItem('firstVisit', '1');
+
+// /* Fix size on document ready.*/
+//     if (!sessionStorage.getItem('firstVisit') === "1")
+//     {
+//        $("#email").show(); 
+//     } 
+
+
+
+
+// if(!sessionStorage.getItem('firstVisit')){ 
+// 	sessionStorage.setItem('firstVisit', '1'); }
+// else{ 
+// 	sessionStorage.setItem('firstVisit', '0'); }
+
+// $(function(){ if (sessionStorage.getItem('firstVisit') === "1"){ $("#email").css('display', 'block') } 
+
+
+
 	$('#close').click(function() {
 	   $('#email').hide();     
 	  });
-	
-});
 
-} ) ( jQuery );
+// });
+
+} ) ;
