@@ -12731,6 +12731,45 @@ $(document).ready(function() {
 	});   
 });   
 // ( function($) {
+$(document).ready(function(){	
+
+
+	$('#close').click(function() {
+	 $('#email').hide();     
+	});
+
+	if (sessionStorage.getItem('firstVisit') === "1")
+    {
+       $("#email").hide(); 
+    }
+    else {
+    	 $("#email").show(); 
+    }
+
+	$('#new_email').on('submit', function() {
+		sessionStorage.setItem('firstVisit', '1');
+	  $('#email').hide();
+	});
+
+	// Save data to sessionStorage
+// 
+
+// /* Fix size on document ready.*/
+     
+
+
+
+
+// if(!sessionStorage.getItem('firstVisit')){ 
+// 	sessionStorage.setItem('firstVisit', '1'); }
+// else{ 
+// 	sessionStorage.setItem('firstVisit', '0'); }
+
+// $(function(){ if (sessionStorage.getItem('firstVisit') === "1"){ $("#email").css('display', 'block') } 
+
+
+} ) ;
+// ( function($) {
 	$(function() {   
 		var newevent_type = $('#event_event_type');
 		var other_newevent_type = $('#other_newevent_type');
@@ -13616,7 +13655,6 @@ module.exports = E;
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 ///
-
 
 
 
