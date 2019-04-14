@@ -205,6 +205,7 @@
 			color: rgb(40,40,40);
 			font-weight: 900;
 			line-height: 35px;
+			font-size: 17px;
 		}
 	}
 }
@@ -222,26 +223,59 @@
 			}
 		}
 	}
+	#thirdsection h3 {
+		font-size: 17px;
+	}
 }
 };
 @media only screen and (max-width: 768px) {
 	#landing {
+
 		#secondsection .round {
 			width: 100px;
 			height: 100px;
 			.tint p {
-				font-size: 18px;
+				font-size: 15px;
 			}
 		}
 		#thirdsection {
 			h3 {
-				font-size: 18px;
+				font-size: 15px;
 			}
 		}
 	}
 };
+@media only screen and (max-width: 650px) {
+	#landing {
+		#firstsection {
+			form {
+				width: 250px;
+				textarea {
+					width: calc(100% - 85px);
+				}
+			}
+		}
+	}
+}
 @media only screen and (max-width: 576px) {
  #landing {
+ 	#firstsection {
+ 		#logo {
+ 			margin: 30px;
+ 		}
+ 		#framerow {
+			text-align: center;
+			padding: 40px;
+			position: relative;
+			top: auto;
+		  left: auto;
+		  transform: none;
+		  width: 100%;
+		}
+		form {
+			width: 400px;
+		}
+ 	}
  	#secondsection {
  		padding-top: 95px;
  		.roundcolumn {
@@ -270,7 +304,7 @@
  			}
  		}
  		form {
- 			width: 80%;
+ 			width: 250px;
  			h3 {
  				font-size: 18px;
  			}
@@ -279,7 +313,7 @@
  			}
  			.labelbox label.messagelabel {
  				top: 10px;
- 				left: 33px;
+ 				left: 16px;
  			}
  		}
  	}
@@ -294,8 +328,11 @@
  }
 };
 @media only screen and (max-width: 400px) {
-	#landing #firstsection form .labelbox label.messagelabel {
-		left: 5%;
+	#landing #firstsection form {
+		width: 80%;
+		.labelbox label.messagelabel {
+			left: 5%;
+		}
 	}
 };
 @media only screen and (max-width: 330px) {
@@ -304,9 +341,10 @@
 
 	}
 };
-@media only screen and (max-width: 309px) {
+@media only screen and (max-width: 310px) {
 	#landing #firstsection form {
 		height: 380px;
+		width: 250px;
 		label, input, .labelbox {
 			display: block;
 			margin: 0 auto;
