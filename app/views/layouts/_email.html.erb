@@ -1,15 +1,15 @@
-<!-- # <#% if @first_visit %> -->
+ <% if @first_visit %>
 <% if @homepage %>
-  <div class="new-visitor-show" id="email">
-	  	<div class="close">X</div>
-	  	<div class=" no-gutters background">
-	  		<div class="row">
-	  			<%= image_tag image_url('https://d3ffc7oj6uo4uj.cloudfront.net/whlogolines.png'), :id => "logo" %>
-	  		</div>
+  <div class="new-visitor-show background" id="email">
+	  	<div id="close">X</div>
+	  	<div class=" no-gutters ">
+	  		<!-- <div class="row"> -->
+	  			<h5>Enter your email and receive <br>15% off any order if you book with us!</h5>
+	  		<!-- </div> -->
 	  		<div class="row">
 	  			<%= render '/emails/form', email: @email %>
 	  		</div>
 			</div>
 	</div>
 	<% end %>
-<!-- <#% end %> -->
+<% end %>

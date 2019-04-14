@@ -16,4 +16,12 @@
 //= require_tree .
 //= require clipboard
 
+( function($) {
+$(document).ready(function(){	
+	$('#close').click(function() {
+	   $('#email').hide();     
+	  });
+	
+});
 
+} ) ( jQuery );
