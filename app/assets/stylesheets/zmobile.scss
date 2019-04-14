@@ -772,19 +772,14 @@
 			}
 		}
 	}
-	#email .background {
-		width: 80%;
-	}
 }
 
 @media only screen and (max-width: 400px) {
-	#email .background {
-		width: 90%;
+	#email {
+		width: calc(100% - 40px);
+		margin: 0 auto;
 		form input#email_email {
 			width: 90%;
-		}
-		img {
-			height: 80px;
 		}
 	}
 }
