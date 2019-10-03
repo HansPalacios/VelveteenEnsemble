@@ -42,6 +42,14 @@
         <% end %>
         <%= f.text_area :message, as: :text, required: true %>
     </div>
+    <br>
+    <div class="heardby">
+    <%= f.label :heardby, "Where did you hear about us? *" %>
+
+    <%= f.select :heardby, options_for_select(["WeddingWire","The Knot", "GigMasters", "Instagram", "Facebook", "Google", "Other"]), :prompt => 'Select one', :id => "heard_by", required: false %>
+    <br>
+    <%= f.text_field :heardby, :id => "other_heardby", :style => "display: none", required: false %>
+    </div>
     
     <br>
     <% unless @landing %>
@@ -63,13 +71,7 @@
    <br>
     <%= f.text_field :other_type, :id => "other_type", :placeholder => "Other event type", :style => "display: none", required: false %>
     <br>
-    <div class="heardby">
-        <%= f.label :heardby, "Where did you hear about us?" %>
 
-        <%= f.select :heardby, options_for_select(["WeddingWire","The Knot", "GigMasters", "Instagram", "Facebook", "Google", "Other"]), :prompt => 'Select one', :id => "heard_by", required: false %>
-        <br>
-        <%= f.text_field :heardby, :id => "other_heardby", :style => "display: none", required: false %>
-    </div>
     <br>
    <% end %>
 

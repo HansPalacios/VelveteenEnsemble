@@ -2,7 +2,7 @@
 
 ( function($) {
 $(document).ready(function(){	
- 	var elements = $('.loopOne, .loopTwo, .loopThree, .loopFour');
+ 	var elements = $('.loopOne, .loopTwo, .loopThree, .loopFour, .loopFive');
  	var hamburger = $('.dropdown');
  	var dropdown = $('.dropdown-content');
 
