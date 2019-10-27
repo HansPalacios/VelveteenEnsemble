@@ -39,5 +39,6 @@ The Venue page is using parrallax scrolling for every other image to create a mo
 
 For the media page I used Instafeed to show the 20 most recent Instagram posts on the website. Which is the maximum amount they allow for public use at the moment. Because it is only showing minimal content the clients account only needs to be in Sandbox mode.
 
+Built Admin site so manager can view and edit various texts.
 
 
