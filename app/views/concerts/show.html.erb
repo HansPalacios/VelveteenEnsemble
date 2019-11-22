@@ -8,48 +8,76 @@
 <p><%= @concert.about %></p>
 <br><br>
 <div class="row">
-  <div class="col-sm-3 col-md-3">
-    <p><Strong><%= @concert.comp1name %></Strong></p>
+  <div class="col-sm-4 col-md-4">
+    <%=image_tag image_url("https://d3ffc7oj6uo4uj.cloudfront.net/bartok.jpeg")%>
   </div>
-  <div class="col-sm-9 col-md-9">
-    <p><%= @concert.comp1bio %></p>
-  </div>
-</div>
-
-<hr>
-
-<div class="row">
-  <div class="col-sm-3 col-md-3">
-    <p><Strong><%= @concert.comp2name %></Strong></p>
-  </div>
-  <div class="col-sm-9 col-md-9">
-    <p><%= @concert.comp2bio %></p>
+  <div class="col-sm-8 col-md-8">
+    <div class="row">
+      <p><Strong><%= @concert.comp1name %></Strong></p>
+    </div>
+    <div class="row">
+      <p><%= @concert.comp1bio %></p>
+    </div>
+    
   </div>
 </div>
 
 <hr>
 
 <div class="row">
-  <div class="col-sm-3 col-md-3">
-    <p><Strong><%= @concert.comp3name %></Strong></p>
+  
+  <div class="col-sm-8 col-md-8">
+    <div class="row right">
+      <p><Strong><%= @concert.comp2name %></Strong></p>
+    </div>
+    <div class="row">
+      <p><%= @concert.comp2bio %></p>
+    </div>
+    
   </div>
-  <div class="col-sm-9 col-md-9">
-    <p><%= @concert.comp3bio %></p>
+  <div class="col-sm-4 col-md-4">
+    <%=image_tag image_url("https://d3ffc7oj6uo4uj.cloudfront.net/ponce.jpeg")%>
   </div>
 </div>
 
 <hr>
 
 <div class="row">
-  <div class="col-sm-3 col-md-3">
-    <p><Strong><%= @concert.comp4name %></Strong></p>
+  <div class="col-sm-4 col-md-4">
+    <%=image_tag image_url("https://d3ffc7oj6uo4uj.cloudfront.net/rodrigo.jpeg")%>
   </div>
-  <div class="col-sm-9 col-md-9">
-    <p><%= @concert.comp4bio %></p>
+  <div class="col-sm-8 col-md-8">
+    <div class="row">
+      <p><Strong><%= @concert.comp3name %></Strong></p>
+    </div>
+    <div class="row">
+      <p><%= @concert.comp3bio %></p>
+    </div>
+    
+  </div>
+</div>
+
+<hr>
+
+<div class="row">
+  
+  <div class="col-sm-8 col-md-8">
+    <div class="row right">
+      <p><Strong><%= @concert.comp4name %></Strong></p>
+    </div>
+    <div class="row">
+      <p><%= @concert.comp4bio %></p>
+    </div>
+    
+  </div>
+  <div class="col-sm-4 col-md-4">
+    <%=image_tag image_url("https://d3ffc7oj6uo4uj.cloudfront.net/boccherini.jpeg")%>
   </div>
 </div>
 <br><br>
+  <% if admin_signed_in? %>
 <%= link_to 'Edit', edit_concert_path(@concert) %> |
-<%= link_to 'Back', concerts_path %>
+<% end %>
+<%= link_to 'Back', root_path %>
 </div>
 </div>

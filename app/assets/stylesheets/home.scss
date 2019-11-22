@@ -209,6 +209,18 @@
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
+		.banner {
+			text-align: center;
+			a {
+				margin: 0 auto;
+			}
+			button {
+				padding: 10px;
+				height: 40px;
+				font-size: 15px;
+				box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 1);
+			}
+		}
 		.row {
 			text-align: center;
 		}
