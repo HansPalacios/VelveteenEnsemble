@@ -12,7 +12,7 @@
     <%=image_tag image_url("https://d3ffc7oj6uo4uj.cloudfront.net/bartok.jpeg")%>
   </div>
   <div class="col-sm-8 col-md-8">
-    <div class="row">
+    <div class="row pad">
       <p><Strong><%= @concert.comp1name %></Strong></p>
     </div>
     <div class="row">
@@ -25,9 +25,11 @@
 <hr>
 
 <div class="row">
-  
+  <div class="col-sm-4 col-md-4">
+    <%=image_tag image_url("https://d3ffc7oj6uo4uj.cloudfront.net/ponce.jpeg")%>
+  </div>
   <div class="col-sm-8 col-md-8">
-    <div class="row right">
+    <div class="row pad">
       <p><Strong><%= @concert.comp2name %></Strong></p>
     </div>
     <div class="row">
@@ -35,9 +37,7 @@
     </div>
     
   </div>
-  <div class="col-sm-4 col-md-4">
-    <%=image_tag image_url("https://d3ffc7oj6uo4uj.cloudfront.net/ponce.jpeg")%>
-  </div>
+  
 </div>
 
 <hr>
@@ -47,7 +47,7 @@
     <%=image_tag image_url("https://d3ffc7oj6uo4uj.cloudfront.net/rodrigo.jpeg")%>
   </div>
   <div class="col-sm-8 col-md-8">
-    <div class="row">
+    <div class="row pad">
       <p><Strong><%= @concert.comp3name %></Strong></p>
     </div>
     <div class="row">
@@ -60,9 +60,11 @@
 <hr>
 
 <div class="row">
-  
+  <div class="col-sm-4 col-md-4">
+    <%=image_tag image_url("https://d3ffc7oj6uo4uj.cloudfront.net/boccherini.jpeg")%>
+  </div>
   <div class="col-sm-8 col-md-8">
-    <div class="row right">
+    <div class="row pad">
       <p><Strong><%= @concert.comp4name %></Strong></p>
     </div>
     <div class="row">
@@ -70,9 +72,7 @@
     </div>
     
   </div>
-  <div class="col-sm-4 col-md-4">
-    <%=image_tag image_url("https://d3ffc7oj6uo4uj.cloudfront.net/boccherini.jpeg")%>
-  </div>
+  
 </div>
 <br><br>
   <% if admin_signed_in? %>
