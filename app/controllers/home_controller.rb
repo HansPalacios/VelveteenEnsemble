@@ -4,6 +4,7 @@ class HomeController < ApplicationController
 		@homepage = true
 		@contact = Contact.new
 		@email = Email.new
+		@concerts = Concert.all
 		# @popular = Instagram.media_popular
 	end
 	def BookingVE

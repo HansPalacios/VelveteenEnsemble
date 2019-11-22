@@ -5,6 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+concerts = Concert.create([
+{ title: "November 22nd 2019 7pm Soireé", subtitle: "Sponsored by Vera Cruz", about: "Velveteen Ensemble is a new fashioned NYC string quartet with a modern twist. It made its Carnegie Hall debut in 2019 and performs globally, including a recent 20-city China tour. Its members studied at America's top conservatories and are touring soloists. Velveteen works with renowned artists like Migos, luxury showcases like Swarovski, and networks such as HBO and Sony. It has recorded for hit TV shows and performs at celebrity weddings and pop-up events.", comp1name: "Bartok", comp1bio: "Romanian Folk Dances", comp2name: "Ponce", comp2bio: "Andantino from Sonata for Guitar and Harpsichord; arranged for Cello and guitar", comp3name: "Rodrigo", comp3bio: "Concierto De Aranjuez; Adagio", comp4name: "Boccherini", comp4bio: "Guitar Quintet in D major, G.448"}
+])
 
 admins = Admin.create([
 	{ email: "marcelkrasner@gmail.com", password: "Violoncello2018", fname: "Marcel", lname: "Krasner"},

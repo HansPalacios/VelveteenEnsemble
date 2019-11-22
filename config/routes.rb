@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   
   
+  resources :concerts
   devise_for :admins
 
   get 'BookingVE', to: 'home#BookingVE', as: 'BookingVE'

@@ -1,0 +1,100 @@
+<%= form_with(model: concert, local: true) do |form| %>
+  <% if concert.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(concert.errors.count, "error") %> prohibited this concert from being saved:</h2>
+
+      <ul>
+      <% concert.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title, id: :concert_title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :subtitle %>
+    <%= form.text_field :subtitle, id: :concert_subtitle %>
+  </div>
+
+  <div class="field">
+    <%= form.label :about %>
+    <%= form.text_area :about, id: :concert_about %>
+  </div>
+
+<hr>
+
+  <div class="field">
+    <%= form.label :composer_1, class: :leftm  %>
+    <%= form.text_field :comp1name, id: :concert_comp1name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bio %>
+    <%= form.text_area :comp1bio, id: :concert_comp1bio %>
+  </div>
+
+ <!--  <div class="field">
+    <#%= form.file_field :comp1pic %>
+    
+  </div> -->
+
+<hr>
+
+  <div class="field">
+    <%= form.label :composer_2, class: :leftm  %>
+    <%= form.text_field :comp2name, id: :concert_comp2name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bio %>
+    <%= form.text_area :comp2bio, id: :concert_comp2bio %>
+  </div>
+
+<!--   <div class="field">
+    <#%= form.file_field :comp2pic %>
+  </div> -->
+
+<hr>
+
+  <div class="field">
+    <%= form.label :composer_3, class: :leftm  %>
+    <%= form.text_field :comp3name, id: :concert_comp3name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bio %>
+    <%= form.text_area :comp3bio, id: :concert_comp3bio %>
+  </div>
+
+ <!--  <div class="field">
+    <#%= form.file_field :comp3pic %>
+
+  </div> -->
+
+<hr>
+
+  <div class="field">
+    <%= form.label :composer_4, class: :leftm %>
+    <%= form.text_field :comp4name, id: :concert_comp4name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bio %>
+    <%= form.text_area :comp4bio, id: :concert_comp4bio %>
+  </div>
+
+ <!--  <div class="field">
+    <#%= form.file_field :pic %>
+  </div> -->
+
+<hr>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

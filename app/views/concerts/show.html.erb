@@ -1,0 +1,55 @@
+<title>Velveteen Ensemble Concert Page</title>
+<div id="concert" class="container-fluid height">
+  <div class="col-md-12 background">
+  <h2><%= @concert.title %></h2>
+  <img id="logo" src="https://d3ffc7oj6uo4uj.cloudfront.net/whlogolines.png" alt="Whlogolines">
+<h4><strong><%= @concert.subtitle %></strong></h4>
+<br>
+<p><%= @concert.about %></p>
+<br><br>
+<div class="row">
+  <div class="col-sm-3 col-md-3">
+    <p><Strong><%= @concert.comp1name %></Strong></p>
+  </div>
+  <div class="col-sm-9 col-md-9">
+    <p><%= @concert.comp1bio %></p>
+  </div>
+</div>
+
+<hr>
+
+<div class="row">
+  <div class="col-sm-3 col-md-3">
+    <p><Strong><%= @concert.comp2name %></Strong></p>
+  </div>
+  <div class="col-sm-9 col-md-9">
+    <p><%= @concert.comp2bio %></p>
+  </div>
+</div>
+
+<hr>
+
+<div class="row">
+  <div class="col-sm-3 col-md-3">
+    <p><Strong><%= @concert.comp3name %></Strong></p>
+  </div>
+  <div class="col-sm-9 col-md-9">
+    <p><%= @concert.comp3bio %></p>
+  </div>
+</div>
+
+<hr>
+
+<div class="row">
+  <div class="col-sm-3 col-md-3">
+    <p><Strong><%= @concert.comp4name %></Strong></p>
+  </div>
+  <div class="col-sm-9 col-md-9">
+    <p><%= @concert.comp4bio %></p>
+  </div>
+</div>
+<br><br>
+<%= link_to 'Edit', edit_concert_path(@concert) %> |
+<%= link_to 'Back', concerts_path %>
+</div>
+</div>

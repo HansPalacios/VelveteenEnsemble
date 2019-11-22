@@ -12,21 +12,21 @@ require 'carrierwave/orm/activerecord'
 #   config.fog_directory  = ENV['BUCKET']
 # end
 CarrierWave.configure do |config|
-  if Rails.env.production?
-    config.storage :fog
+  # if Rails.env.production?
+    # config.storage/ :aws
     config.fog_provider = 'fog/aws'
     config.fog_credentials = {
       :provider               => 'AWS',                            # required
       :aws_access_key_id      => ENV['AWS_ACCESS_KEY_ID'],         # required
       :aws_secret_access_key  => ENV['AWS_SECRET_ACCESS_KEY'], 
-      region: 'us-east-1',
-      endpoint: 'https://s3.amazonaws.com'    # required
+      region: 'us-east-1'
+      # endpoint: 'https://s3.amazonaws.com'    # required
     }
     config.fog_directory  = ENV['BUCKET']                 # required
     config.fog_public     = true
-    else
-    config.storage :file
-    config.enable_processing = false if Rails.env.test?
+    # else
+    # config.storage :file
+    # config.enable_processing = false if Rails.env.test?
     #optional, defaults to true
-  end
+  # end
 end

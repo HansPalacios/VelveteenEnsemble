@@ -1,0 +1,16 @@
+
+<div class="container-fluid editpage height">
+	<div class="background" id="newconcert">
+		<div class="row">
+			<h3>New Concert</h3>
+		</div>
+		<div class="row">
+			<%= render 'form', concert: @concert %>
+		</div>
+		<div class="row">
+			<div class="links">
+				<%= link_to 'Back', concerts_path %>
+			</div>
+		</div>
+	</div>
+</div>

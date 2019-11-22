@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Concerts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Subtitle</th>
+      <th>About</th>
+      <th>Comp1name</th>
+      <th>Comp1bio</th>
+      <th>Comp1pic</th>
+      <th>Comp2name</th>
+      <th>Comp2bio</th>
+      <th>Comp2pic</th>
+      <th>Comp3name</th>
+      <th>Comp3bio</th>
+      <th>Comp3pic</th>
+      <th>Comp4name</th>
+      <th>Comp4bio</th>
+      <th>Comp4pic</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @concerts.each do |concert| %>
+      <tr>
+        <td><%= concert.title %></td>
+        <td><%= concert.subtitle %></td>
+        <td><%= concert.about %></td>
+        <td><%= concert.comp1name %></td>
+        <td><%= concert.comp1bio %></td>
+        <td><%= concert.comp1pic %></td>
+        <td><%= concert.comp2name %></td>
+        <td><%= concert.comp2bio %></td>
+        <td><%= concert.comp2pic %></td>
+        <td><%= concert.comp3name %></td>
+        <td><%= concert.comp3bio %></td>
+        <td><%= concert.comp3pic %></td>
+        <td><%= concert.comp4name %></td>
+        <td><%= concert.comp4bio %></td>
+        <td><%= concert.comp4pic %></td>
+        <td><%= link_to 'Show', concert %></td>
+        <td><%= link_to 'Edit', edit_concert_path(concert) %></td>
+        <td><%= link_to 'Destroy', concert, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Concert', new_concert_path %>
