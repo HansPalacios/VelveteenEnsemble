@@ -11,7 +11,7 @@ class Contact < ActiveRecord::Base
   attribute :eventdate, :validate => true
   attribute :eventlocation
   attribute :type
-  attribute :heardby, :validate => true
+  attribute :heardby
   attribute :length
   attribute :message, :validate => true
   attribute :nickname, :captcha  => true

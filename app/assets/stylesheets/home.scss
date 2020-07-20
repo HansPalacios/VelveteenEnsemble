@@ -1,6 +1,24 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.home2  {
+	.iframe {
+		padding: 20px;
+		margin: 20px auto;
+		height: auto;
+		min-height: 200px;
+		width: 80%;
+  	padding-top: 112%; 
+  	position: relative;
+	}
+	iframe {
+		position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+		}
+	}
 .row {
 	text-align: center;
 }
@@ -18,7 +36,6 @@
 	position: fixed;
 	z-index: 20;
 	text-align: left;
-	box-shadow: 0px 5px 20px -5px rgba(0,0,0,.1);
 	.alert {
 		z-index: 10;
 		position: absolute;

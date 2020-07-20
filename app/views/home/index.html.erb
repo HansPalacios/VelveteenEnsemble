@@ -61,14 +61,21 @@
 			</div>
 			<div class="col-md-4 col-sm-4 col-xs-4"></div>
 		</div>
-		<hr>
-		<div class="row background news" id="news1"></div>
+		<!-- <hr> -->
+		<!-- <div class="row background news" id="news1"></div>
 		<hr>
 		<div class="row background news" id="news2"></div>
 		<hr>
 		<div class="row background news" id="news3"></div>
 		<hr>
-		<div class="row background news" id="news4"></div>
+		<div class="row background news" id="news4"></div> -->
+		<!-- SnapWidget -->
+		<!-- SnapWidget -->
+
+	<div class="iframe">
+		<script src="https://snapwidget.com/js/snapwidget.js"></script>
+		<iframe src="https://snapwidget.com/embed/852998" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:100%; height: 100%;"></iframe>
+			</div>
 	</div>
 
 	<div class="col-md-12 col-sm-12 col-xs-12 no-gutters home3">
@@ -80,15 +87,15 @@
 </div>
 
 
-<script>
+<<!-- script>
   			var feed = new Instafeed({
 					target: "news1",
 	        get: 'user',
-	        userId: '<%= ENV['USER_ID'] %>',
+	        userId: '<#%= ENV['USER_ID'] %>',
 	        // get: 'tagged',
         	// tagName: 'velveteenensemble',
-	        accessToken: '<%= ENV['ACCESS_TOKEN'] %>',
-	        clientId: '<%= ENV['CLIENT_ID'] %>',
+	        accessToken: '<#%= ENV['ACCESS_TOKEN'] %>',
+	        clientId: '<#%= ENV['CLIENT_ID'] %>',
 	        limit: 1,
 	        sortBy: 'most-recent',
 	        resolution: 'standard_resolution',
@@ -101,11 +108,11 @@
 	    	var feed2 = new Instafeed({
 					target: "news2",
 	        get: 'user',
-	        userId: '<%= ENV['USER_ID'] %>',
+	        userId: '<#%= ENV['USER_ID'] %>',
 	        // get: 'tagged',
         	// tagName: 'velveteenensemble',
-	        accessToken: '<%= ENV['ACCESS_TOKEN'] %>',
-	        clientId: '<%= ENV['CLIENT_ID'] %>',
+	        accessToken: '<#%= ENV['ACCESS_TOKEN'] %>',
+	        clientId: '<#%= ENV['CLIENT_ID'] %>',
 	        limit: 2,
 	        sortBy: 'most-recent',
 	        resolution: 'standard_resolution',
@@ -118,11 +125,11 @@
 	    	var feed3 = new Instafeed({
 					target: "news3",
 	        get: 'user',
-	        userId: '<%= ENV['USER_ID'] %>',
+	        userId: '<#%= ENV['USER_ID'] %>',
 	        // get: 'tagged',
         	// tagName: 'velveteenensemble',
-	        accessToken: '<%= ENV['ACCESS_TOKEN'] %>',
-	        clientId: '<%= ENV['CLIENT_ID'] %>',
+	        accessToken: '<#%= ENV['ACCESS_TOKEN'] %>',
+	        clientId: '<#%= ENV['CLIENT_ID'] %>',
 	        limit: 3,
 	        sortBy: 'most-recent',
 	        resolution: 'standard_resolution',
@@ -135,11 +142,11 @@
 	    	var feed4 = new Instafeed({
 					target: "news4",
 	        get: 'user',
-	        userId: '<%= ENV['USER_ID'] %>',
+	        userId: '<#%= ENV['USER_ID'] %>',
 	        // get: 'tagged',
         	// tagName: 'velveteenensemble',
-	        accessToken: '<%= ENV['ACCESS_TOKEN'] %>',
-	        clientId: '<%= ENV['CLIENT_ID'] %>',
+	        accessToken: '<#%= ENV['ACCESS_TOKEN'] %>',
+	        clientId: '<#%= ENV['CLIENT_ID'] %>',
 	        sortBy: 'most-recent',
 	        limit: 4,
 	        resolution: 'standard_resolution',
@@ -155,3 +162,4 @@
 			  feed4.run();
 
 			</script>
+ -->
