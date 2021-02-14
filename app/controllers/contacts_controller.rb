@@ -39,7 +39,7 @@ class ContactsController < ApplicationController
     @contact = Contact.new(params[:contact].permit!)
     @contact.request = request
     respond_to do |format|
-      if @contact.deliver
+      if @contact.deliver!
         format.html { redirect_to new_contact_path, notice: 'Message was successfully sent' }
         format.json { render :show, status: :created, location: @contact }
       else
