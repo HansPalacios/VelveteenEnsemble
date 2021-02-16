@@ -11,6 +11,7 @@ Rails.application.configure do
   :password => ENV['SENDGRID_PASSWORD'],
   :api_key  => ENV['SENDGRID_API_KEY'],
   :domain => 'heroku.com',
+  :default => Bearer ENV['SENDGRID_API_KEY'],
   :address => 'smtp.sendgrid.net',
   :port => 587,
   :authentication => :plain,
