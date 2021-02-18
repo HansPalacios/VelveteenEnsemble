@@ -7,13 +7,12 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
 
   ActionMailer::Base.smtp_settings = {
-  :authorization => Bearer ENV['SENDGRID_API_KEY'],
-  :from  => 'marcel@velveteenensemble.com',
-  :domain => 'heroku.com',
-  :address => 'smtp.sendgrid.net',
-  :port => 587,
-  :authentication => :plain,
-  :enable_starttls_auto => true
+  domain:'heroku.com',  
+  address: 'smtp.sendgrid.net',
+  port: 587,
+  authentication: :plain,
+  user_name: 'apikey',
+  password: ENV['SENDGRID_API_KEY']
   }
 
   # Code is not reloaded between requests.
