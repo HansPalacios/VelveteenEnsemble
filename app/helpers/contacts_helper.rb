@@ -2,8 +2,8 @@ module ContactsHelper
 	require 'sendgrid-ruby'
 	include SendGrid
 
-from = SendGrid::Email.new(email: 'test@example.com')
-to = SendGrid::Email.new(email: 'test@example.com')
+from = SendGrid::Email.new(email: 'hans@hspalacios.com')
+to = SendGrid::Email.new(email: 'hans@hspalacios.com')
 subject = 'Sending with Twilio SendGrid is Fun'
 content = SendGrid::Content.new(type: 'text/plain', value: 'and easy to do anywhere, even with Ruby')
 mail = SendGrid::Mail.new(from, subject, to, content)
