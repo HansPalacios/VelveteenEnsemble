@@ -6,7 +6,9 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { host: 'https://your app.herokuapp.com' }
   config.action_mailer.delivery_method = :smtp
 
-  ActionMailer::Base.smtp_settings = {
+  Rails.application.configure do
+  if ENV["SENDGRID_API_KEY"].present?
+    config.action_mailer.smtp_settings = {
   domain:'heroku.com',  
   address: 'smtp.sendgrid.net',
   port: 587,
@@ -14,7 +16,9 @@ Rails.application.configure do
   user_name: 'apikey',
   password: ENV["SENDGRID_API_KEY"],
   enable_starttls_auto: true
-  }
+ }
+  end
+end
 
   # Code is not reloaded between requests.
   config.cache_classes = true
