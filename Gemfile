@@ -23,6 +23,9 @@ gem 'instafeed'
 # Jquery gem
 gem 'jquery-rails'
 # Environment Variables
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
+gem 'dotenv-rails', groups: [:development, :test]
+
 gem 'figaro'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.6'

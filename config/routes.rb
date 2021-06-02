@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
   
   
+  get 'contacts/index'
+
   resources :concerts
   devise_for :admins
 
@@ -17,7 +19,8 @@ Rails.application.routes.draw do
   get 'emails', to: 'home#index'
   get 'media', to: 'uploads#index'
   # get 'about', to: 'abouts#index'
-  get 'contact', to: 'contacts#new'
+  get 'contact', to: 'contacts#index'
+  resources :contact, only: [:index, :new, :create]
 
 #calendar
 # get '/redirect', to: 'example#redirect', as: 'redirect'
@@ -38,7 +41,6 @@ Rails.application.routes.draw do
   resources :abouts
   resources :venues
   # resources :uploads
-  resources :contacts
   resources :songs
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root to: 'home#index'
