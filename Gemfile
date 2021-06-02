@@ -56,7 +56,7 @@ gem 'aws-sdk', '~> 3'
 # gem 'capistrano-rails', group: :development
 gem 'listen', '>= 3.0.5', '< 3.2'
 # Carrierwave and supporting gems for media upload
-gem "carrierwave", '~> 1.2.1'
+gem "carrierwave", '~> 1.3.2'
 gem "mini_magick"
 # gem 'asset_sync'
 gem 'fog'
