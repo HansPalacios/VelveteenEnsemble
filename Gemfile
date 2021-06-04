@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-# ruby '2.4.4'
+ruby '3.0.1'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -28,7 +28,7 @@ gem 'dotenv-rails', groups: [:development, :test]
 
 gem 'figaro'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.1.6'
+gem 'rails', '~> 6.1.1'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
@@ -54,7 +54,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'aws-sdk', '~> 3'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-gem 'listen', '>= 3.0.5', '< 3.2'
+# gem 'listen', '>= 3.0.5', '< 3.2'
 # Carrierwave and supporting gems for media upload
 gem "carrierwave", '~> 2'
 gem "mini_magick"

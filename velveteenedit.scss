@@ -1,0 +1,94 @@
+// Place all the styles related to the contacts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#contact {
+	padding: 100px 50px;
+	background-image: url('https://d3ffc7oj6uo4uj.cloudfront.net/wedding2.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;	
+	text-align: center;
+	.notice {
+		color: rgba(123,210,33,1);
+	}
+	p, h2 {
+		width: 100%;
+		margin: 10px auto;
+		display: block;
+	}
+	h2 {
+		margin: 40px auto;
+		width: 80%;
+	}
+	.background {
+		background-color: rgba(255,255,255,.95);
+	}
+	.row {
+		text-align: center;
+	}
+}
+.contactform {
+		width: 700px;
+		margin: 0 auto;
+		max-width: 800px;
+		text-align: center;
+
+		h2 {
+			margin: 0 auto;
+		}
+		form {
+			width: 325px;
+			text-align: right;
+			margin: 0 auto;
+			padding-top: 20px;
+			label, input, select {
+				margin: 10px auto;
+				display: inline-block;
+			}
+			label {
+				margin-right: 5px;
+			}
+			input, textarea, select {
+				background-color: rgba(240,240,240,1);
+				}
+			#other_type {
+				margin-bottom: 30px;
+			}
+			.heardby {
+				margin-top: -20px;
+			}
+			#other_heardby {
+				margin-right: 5px;
+			}
+			#othertype {
+				margin-bottom: 30px;
+			}
+			.messagebox {
+				position: relative;
+				padding-right: 5px;
+				padding-top: 10px;
+				textarea {
+					width: calc(100% - 100px);
+					height: 100px;
+					padding: 5px;
+				}
+				.messagelabel {
+					position: absolute;
+					top: 10px;
+					right: calc(100% - 95px);
+					margin-top: 0;
+				}
+			}
+			input.button {
+				margin: 20px auto;
+				display: block;
+			}
+			.nickname {
+				display: none;
+			}
+		}
+	}
+	.field_with_errors {
+		display: inline-block;
+	}

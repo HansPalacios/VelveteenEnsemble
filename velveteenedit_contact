@@ -1,0 +1,82 @@
+<%= form_for @contact do |f| %>
+    <% if @landing %>
+        <h3>Get your free quote today!</h3>
+        <%= f.label :fname, 'Name' %> 
+    <% else %>
+        <%= f.label :fname, 'Name (required) *' %> 
+    <% end %>
+    <%= f.text_field :fname, required: true %>
+   
+   <!--  <#%= f.label :lname, 'Last Name (required) *' %> 
+    <#%= f.text_field :lname, required: true %> -->
+    
+    <% if @landing %>
+    <br>
+        <%= f.label :email, 'Email' %>
+    <% else %>
+     <br>
+    <%= f.label :email, 'Email (required) *' %>
+    <% end %>
+    <%= f.text_field :email, required: true %>
+    <br>
+
+    <% unless @landing %>
+        <%= f.label :phone, 'Phone No.' %>
+        <%= f.telephone_field :phone, required: false %>
+        <br>
+        <%= f.label :eventdate, 'Event Date (required) *' %>
+        <%= f.date_field :eventdate, required: true %>
+        <br>
+    <% end %>
+
+    <div class="messagebox">
+        <% if @landing %>
+        <div class="labelbox">
+            <!-- <#%= f.label :message, 'Event<br/>Information',:class => " -->
+        <!-- messagelabel"%> -->
+        <label for="message" class="messagelabel">Event<br>Information</label>
+        </div>
+        <% else %>
+            <%= f.label :message, 'Message (required) *',:class => "
+        messagelabel"%>
+        <% end %>
+        <%= f.text_area :message, as: :text, required: true %>
+    </div>
+    <br>
+    <div class="heardby">
+    <%= f.label :heardby, "Where did you hear about us? *" %>
+    <%= f.select :heardby, options_for_select(["WeddingWire","The Knot", "GigMasters", "Instagram", "Facebook", "Google", "Other"]), :prompt => 'Select one', :id => "heard_by", required: false %>
+    <br>
+    <%= f.text_field :heardby, :id => "other_heardby", :style => "display: none", required: false %>
+    </div>
+    
+    <br>
+    <% unless @landing %>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <%= f.label :eventlocation, 'Event Location' %>
+    <%= f.text_field :eventlocation, required: false %>
+    <br>
+    <%= f.label :length, "Event Length" %>
+    <%= f.select :length, [ "1 hour","1.5 hours","2 hours", "2.5 hours", "3 hours", "3.5 hours", "4 hours", "Over 4 hours" ], :prompt => 'Select one', required: false %>
+    <br>
+
+    <%= f.label :event_type, "Event Type" %>
+    <%= f.select :event_type, ["Wedding","Corporate Event", "Concert", "Recording", "Other"], :prompt => 'Select one', :id => "contact_type", required: false %>
+
+   <br>
+    <%= f.text_field :other_type, :id => "other_type", :placeholder => "Other event type", :style => "display: none", required: false %>
+    <br>
+
+    <br>
+   <% end %>
+
+  <div class="nickname">
+    <%= f.label :nickname %> <br>
+    <%= f.text_field :nickname, hint: 'leave this field blank', required: false %>
+  </div>
+
+    <%= f.submit 'Send Message', class: "button" %>
+  <% end %>

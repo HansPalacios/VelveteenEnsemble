@@ -1,0 +1,39 @@
+<head>
+	<title>Velveteen Ensemble Contact Information and Message Form</title>
+	<!-- Facebook Pixel Code -->
+	<script>
+	!function(f,b,e,v,n,t,s)
+	{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+	if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+	n.queue=[];t=b.createElement(e);t.async=!0;
+	t.src=v;s=b.getElementsByTagName(e)[0];
+	s.parentNode.insertBefore(t,s)}(window,document,'script',
+	'https://connect.facebook.net/en_US/fbevents.js');
+	 fbq('init', '433933810863059'); 
+	fbq('track', 'PageView');
+	fbq('track', 'Contact');
+	</script>
+	<noscript>
+	 <img height="1" width="1" 
+	src="https://www.facebook.com/tr?id=433933810863059&ev=PageView
+	&noscript=1"/>
+	</noscript>
+	<!-- End Facebook Pixel Code -->
+</head>
+<div id="contact" class="container-fluid height">
+	
+	<div class=" row background contactform">
+		<div class="col-md-12 no-gutters">
+			<div class="row">
+				<h2>Contact us to request info or to inquire about availability</h2>
+				<p>Marcel Krasner- manager and cellist of Velveteen Ensemble</p>
+				<p>Email: Marcel@velveteenensemble.com</p>
+				<p> Call/text: (917)733-4650</p>
+			</div>
+			<div class="row">
+				<%= render 'form', contact: @contact %>
+			</div>
+		</div>
+	</div>
+</div>
