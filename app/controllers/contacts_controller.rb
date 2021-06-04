@@ -1,5 +1,4 @@
-class Contacts
-	Controller < ApplicationController
+class ContactsController < ApplicationController
    def index
     @contact = Contact.new(params[:contact])
   end
