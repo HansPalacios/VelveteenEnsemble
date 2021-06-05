@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_22_003629) do
+ActiveRecord::Schema.define(version: 2019_11_22_002737) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -58,7 +58,6 @@ ActiveRecord::Schema.define(version: 2019_11_22_003629) do
     t.string "comp4pic"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "pic"
   end
 
   create_table "contacts", force: :cascade do |t|
@@ -80,42 +79,10 @@ ActiveRecord::Schema.define(version: 2019_11_22_003629) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "customers", force: :cascade do |t|
-    t.string "fname"
-    t.string "lname"
-    t.string "email"
-    t.integer "phone"
-    t.string "city"
-    t.integer "event_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "emails", force: :cascade do |t|
     t.string "name"
     t.string "email"
     t.string "nickname"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "events", force: :cascade do |t|
-    t.string "title"
-    t.date "date"
-    t.string "location"
-    t.string "event_type"
-    t.string "other_type"
-    t.string "length"
-    t.integer "amount"
-    t.integer "deposit"
-    t.integer "subtotal"
-    t.boolean "deposit_paid"
-    t.boolean "total_paid"
-    t.string "fname"
-    t.string "lname"
-    t.string "email"
-    t.bigint "phone"
-    t.string "city"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
