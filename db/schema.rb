@@ -43,7 +43,6 @@ ActiveRecord::Schema.define(version: 2019_11_22_003629) do
   create_table "clients", force: :cascade do |t|
     t.string "title"
     t.string "name"
-    t.bigint "venue_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["venue_id"], name: "index_clients_on_venue_id"

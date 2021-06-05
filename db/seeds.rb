@@ -31,17 +31,6 @@ abouts = About.create([
   {id: 3, bio: "Our ensemble is based in New York City and its members have received graduate degrees from the most prestigious Conservatories and are experts in performing and recording Classical, Pop and Jazz Genres. Our repertoire includes classical, Bollywood, Jewish, Broadway and Pop, though we can perform virtually any piece of any genre.  We cannot wait to be a part of your next event!"}
     ])
 
-clients = Client.create([
-	{venue_id: 3, title: 'Swarovski', name: 'https://d3ffc7oj6uo4uj.cloudfront.net/swarovski.png'},
-	{venue_id: 3, title: 'Sony', name: 'https://d3ffc7oj6uo4uj.cloudfront.net/sony.png'},
-	{venue_id: 3, title: 'Disney', name: 'https://d3ffc7oj6uo4uj.cloudfront.net/disney.png'},
-	{venue_id: 3, title: 'HBO', name: 'https://d3ffc7oj6uo4uj.cloudfront.net/hbo.png'},
-	{venue_id: 3, title: 'New York Public Library', name: 'https://d3ffc7oj6uo4uj.cloudfront.net/nypl.png'},
-	{venue_id: 3, title: 'Amazon', name: 'https://d3ffc7oj6uo4uj.cloudfront.net/amazon.png'},
-	{venue_id: 3, title: 'NBC', name: 'https://d3ffc7oj6uo4uj.cloudfront.net/nbc.png'},
-	{venue_id: 3, title: 'Google', name: 'https://d3ffc7oj6uo4uj.cloudfront.net/google.png'}
-])
-
 songs = Song.create([
 	# sample music
 {title: "Eine Kleine Nachtmusik", artist: "Mozart	", genre: "Classical", file: "https://d3ffc7oj6uo4uj.cloudfront.net/eine.mp3", play: true},
