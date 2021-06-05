@@ -40,14 +40,6 @@ ActiveRecord::Schema.define(version: 2019_11_22_003629) do
     t.index ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true
   end
 
-  create_table "clients", force: :cascade do |t|
-    t.string "title"
-    t.string "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["venue_id"], name: "index_clients_on_venue_id"
-  end
-
   create_table "concerts", force: :cascade do |t|
     t.string "title"
     t.string "subtitle"
