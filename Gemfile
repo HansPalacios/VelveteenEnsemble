@@ -59,8 +59,7 @@ gem 'aws-sdk', '~> 3'
 gem "carrierwave", '~> 2.2.2'
 gem "mini_magick"
 # gem 'asset_sync'
-gem 'fog-core', '~> 2.2', '>= 2.2.4'
-gem 'fog-aws', group: :production
+gem 'fog-aws'
   # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3', group: :development # Added development group.

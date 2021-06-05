@@ -1446,7 +1446,6 @@ DEPENDENCIES
   dotenv-rails
   figaro
   fog-aws
-  fog-core (~> 2.2, >= 2.2.4)
   google-api-client
   instafeed
   jbuilder (~> 2.5)
