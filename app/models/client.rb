@@ -1,3 +1,3 @@
 class Client < ApplicationRecord
-  belongs_to :venue
+ has_one :venue
 end
