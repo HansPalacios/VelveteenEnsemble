@@ -1,3 +1,3 @@
-class Concert < ApplicationRecord
-	mount_uploader :pic, PicUploader
+class Concert< ActiveRecord::Base
+  
 end
