@@ -148,5 +148,4 @@ ActiveRecord::Schema.define(version: 2019_11_22_003629) do
     t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "clients", "venues"
 end

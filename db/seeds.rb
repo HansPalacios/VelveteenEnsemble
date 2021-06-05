@@ -656,7 +656,7 @@ songs = Song.create([
 
 {title: "Ode To Joy", artist: "Beethoven (CLASSICAL)"},
 
-{title: "Oh", artist: "pretty woman", artist: "Roy Orbison and Bill Dees"},
+{title: "Oh", artist: "Roy Orbison and Bill Dees"},
 
 {title: "On Top of the World", artist: "Imagine Dragons"},
 
