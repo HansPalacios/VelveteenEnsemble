@@ -68,7 +68,7 @@ songs = Song.create([
 
 {title: "A Whole New World -", artist: "Aladdin"},
 
-{title: "Agnus Dei/Holy", artist: "Holy Holy", artist: "Michael W. SmithINSPIRATIONAL"},
+{title: "Agnus Dei/Holy", artist: "Holy Holy"},
 
 {title: "Aint No Sunshine", artist: "Withers"},
 
@@ -320,7 +320,7 @@ songs = Song.create([
 
 {title: "Flightless Bird", artist: "American Mouth"},
 
-{title: "Flightless Bird", artist: "American Mouth", artist: "Iron and Wine (from the movie Twilight) FILM SCORE"},
+{title: "Flightless Bird", artist: "American Mouth"},
 
 {title: "Flora’s Secret", artist: "Enya"},
 
@@ -368,7 +368,7 @@ songs = Song.create([
 
 {title: "Happy", artist: "Pharrell Williams"},
 
-{title: "Harry Potter Medley", artist: "(music from Harry Potter and the Sorcerer's Stone", artist: "Harry Potter and the Chamber of Secrets", artist: "and Harry Potter and the Prisoner of Azkaban) (FILM SCORE)"},
+{title: "Harry Potter Medley", artist: "(music from Harry Potter and the Sorcerer's Stone"},
 
 {title: "Havan Nagila -", artist: "Israeli Folk Songs"},
 
@@ -386,9 +386,9 @@ songs = Song.create([
 
 {title: "Here Comes Your Man", artist: "Pixies"},
 
-{title: "Here", artist: "There and Everywhere", artist: "The Beatles"},
+{title: "Here", artist: "The Beatles"},
 
-{title: "Here", artist: "there", artist: "everywhere", artist: "- Beatles"},
+{title: "Here", artist: "The Beatles"},
 
 {title: "Heroes", artist: "David Bowie"},
 
@@ -396,7 +396,7 @@ songs = Song.create([
 
 {title: "Ho Hey", artist: "The Lumineers"},
 
-{title: "Hold On", artist: "We’re Going Home", artist: "Drake Human"},
+{title: "Hold On", artist: "Drake Human"},
 
 {title: "Holocene", artist: "Bon Iver"},
 
@@ -432,7 +432,7 @@ songs = Song.create([
 
 {title: "I Caught Myself (from the movie Twilight)", artist: "Paramore (from the movie Twilight) FILM SCORE"},
 
-{title: "I Do", artist: "I Do", artist: "I Do", artist: "Abba"},
+{title: "I Do", artist: "Abba"},
 
 {title: "I Don’t Want to Miss AThing", artist: "Diane Warren"},
 
@@ -462,7 +462,7 @@ songs = Song.create([
 
 {title: "I’m Yours", artist: "Jason Mraz"},
 
-{title: "If I Had $1", artist: "00", artist: "00", artist: "Barenaked Ladies"},
+{title: "If I Had $1", artist: "Barenaked Ladies"},
 
 {title: "If I Had a Boat", artist: "Lyle Lovett"},
 
@@ -570,7 +570,7 @@ songs = Song.create([
 
 {title: "Love Came Down", artist: "Brian Johnson INSPIRATIONAL"},
 
-{title: "Love Is All Around in the style of Wet Wet Wet", artist: "Wet Wet WetLove Is All Around originally by The Troggs", artist: "in the style of Wet Wet Wet (from the movie Four Weddings and a Funeral) FILM SCORE"},
+{title: "Love Is All Around in the style of Wet Wet Wet", artist: "Wet Wet WetLove Is All Around originally by The Troggs"},
 
 {title: "Love me like you do", artist: "Ellie Goulding"},
 
@@ -664,7 +664,7 @@ songs = Song.create([
 
 {title: "One Day Like This", artist: "Elbow"},
 
-{title: "One Hand", artist: "One Heart (from West Side Story) SHOWTUNES", artist: "Leonard Bernstein"},
+{title: "One Hand", artist: "Leonard Bernstein"},
 
 {title: "Only Hope", artist: "Switchfoot"},
 
@@ -784,7 +784,7 @@ songs = Song.create([
 
 {title: "Siegfried Idyll", artist: "Richard Wagner (OPERA CLASSICS)"},
 
-{title: "Signed", artist: "Sealed", artist: "Delivered I’m Yours", artist: "Stevie Wonder"},
+{title: "Signed", artist: "Stevie Wonder"},
 
 {title: "Skinny Love", artist: "Bon Iver"},
 
@@ -956,7 +956,7 @@ songs = Song.create([
 
 {title: "Today Was a Fairytale", artist: "Taylor Swift"},
 
-{title: "Tonight", artist: "Tonight", artist: "Smashing Pumpkins"},
+{title: "Tonight", artist: "Smashing Pumpkins"},
 
 {title: "Toxic", artist: "Britney Spears"},
 
