@@ -1439,7 +1439,7 @@ DEPENDENCIES
   bootstrap-sass (~> 3.3, >= 3.3.6)
   byebug
   capybara (~> 2.13)
-  carrierwave (~> 2)
+  carrierwave (~> 2.2.2)
   clipboard-rails
   coffee-rails (~> 4.2)
   devise
