@@ -1284,7 +1284,7 @@ GEM
     listen (3.5.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
-    loofah (2.9.1)
+    loofah (2.10.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
@@ -1439,13 +1439,14 @@ DEPENDENCIES
   bootstrap-sass (~> 3.3, >= 3.3.6)
   byebug
   capybara (~> 2.13)
-  carrierwave (~> 2.2.2)
+  carrierwave (~> 2)
   clipboard-rails
   coffee-rails (~> 4.2)
   devise
   dotenv-rails
   figaro
   fog-aws
+  fog-core (~> 2.2, >= 2.2.4)
   google-api-client
   instafeed
   jbuilder (~> 2.5)

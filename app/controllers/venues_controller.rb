@@ -4,7 +4,6 @@ class VenuesController < ApplicationController
   # GET /venues
   # GET /venues.json
   def index
-    @venues = Venue.all
   end
 
   # GET /venues/1

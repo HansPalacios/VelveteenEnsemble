@@ -20,33 +20,70 @@
   </noscript>
   <!-- End Facebook Pixel Code -->
 </head>
+
+
 <div id="venues" class="container-fluid height">
     <h1>Venues</h1>
-    
-    <% @venues.each do |venue| %>
-      
-      <div class="row no-gutters venue" id="venue_<%= venue.id %>">
+      <div class="row no-gutters venue" id="venue_1">
         <div class="col-md-12">
           <div class="background">
-            <div id="section<%= venue.id %>" class="placeholder"></div>
+            <div id="section1" class="placeholder"></div>
             <div class="row no-gutters title">
-              <h2><%= venue.title %></h2>
+              <h2>Weddings</h2>
             </div>
             <hr>
             <div class="row">
               <p>
-                <%= venue.bio %>
+                We have performed at hundreds of upscale weddings.  A string ensemble in the configuration of your choice is our best-selling option for your ceremony, cocktail hour, dinner, and first dance. We also offer an entire string orchestra for the ultimate musical experience.  Each of our musicians is classically trained from top international music programs, and are experts in all genres.  Our in-house arranger ensures that the music performed on your big day will knock everyone's socks off! We will guide you through the process of choosing repertoire and offer suggestions along the way to help you create the perfect once-in-a-lifetime experience.
 
-                <% if admin_signed_in? %>
-                  <div class="edit">
-                <%= link_to 'Edit', edit_venue_path(venue) %>
-              
               </p>
-
-              
-
               </div>
-            <% end %>
+            </div>
+           
+            <div class="row venuevideos">
+              <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FVelveteenEnsemble%2Fvideos%2F2074352036179399%2F&show_text=0&width=560" allowTransparency="true" allowFullScreen="true" class="video video1"></iframe>
+              <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FVelveteenEnsemble%2Fvideos%2F2130941767187092%2F&show_text=0&width=560" allowTransparency="true" allowFullScreen="true" class="video video2"></iframe>
+              <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FVelveteenEnsemble%2Fvideos%2F2127559687525300%2F&show_text=0&width=560" allowTransparency="true" allowFullScreen="true" class="video video3"></iframe>               
+            </div>
+          </div>
+        </div>
+        <div class="row no-gutters venue" id="venue_2">
+        <div class="col-md-12">
+          <div class="background">
+            <div id="section2" class="placeholder"></div>
+            <div class="row no-gutters title">
+              <h2>Concerts & Tours</h2>
+            </div>
+            <hr>
+            <div class="row">
+              <p>
+               Velveteen Ensemble has had the privilege of touring globally, collaborating with top artists, and providing award-winning performances for weddings and private events.  Most recently, we completed a 20-concert tour throughout China featuring classical, pop, and folk pieces.  We have also collaborated with hip-hop artists such as Migos and A-Boogie Wit Da Hoodie.  Ensemble members have personally toured with renowned artists such as John Legend, Sarah Bareilles, and Madonna.
+
+              </p>
+              </div>
+            </div>
+           
+            <div class="row venuevideos">
+              <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FVelveteenEnsemble%2Fvideos%2F2080108822270387%2F&show_text=0&width=560" allowTransparency="true" allowFullScreen="true" class="video video1"></iframe>
+              <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FVelveteenEnsemble%2Fvideos%2F2075962539351682%2F&show_text=0&width=560" allowTransparency="true" allowFullScreen="true" class="video video2"></iframe>
+              <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FVelveteenEnsemble%2Fvideos%2F2059106041037332%2F&show_text=0&width=560" allowTransparency="true" allowFullScreen="true" class="video video3"></iframe>               
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row no-gutters venue" id="venue_3">
+        <div class="col-md-12">
+          <div class="background">
+            <div id="section3" class="placeholder"></div>
+            <div class="row no-gutters title">
+              <h2>Corporate Events</h2>
+            </div>
+            <hr>
+            <div class="row">
+              <p>
+                Velveteen Ensemble regularly works with Fortune 500 companies including Google, Disney, and Swarovski to provide elegant musicianship for their events.  Our musicians have played for musical segments and starred in HBO's hit tv series Game of Thrones, Amazon Prime's Mozart in the Jungle, and NBC's Law and Order, to name just a few.  We love working with all companies, big and small, to bring their productions and events to the next level.
+              </p>
+              </div>
             </div>
             <div class="row clients">
                 <div class="eachclient">
@@ -68,61 +105,46 @@
                   <img src="<https://d3ffc7oj6uo4uj.cloudfront.net/amazon.png">
                 </div>
             </div>
-            <div class="row venuevideos">
-              <iframe src="<%= venue.video1 %>" allowTransparency="true" allowFullScreen="true" class="video video1"></iframe>
-              <iframe src="<%= venue.video2 %>" allowTransparency="true" allowFullScreen="true" class="video video2"></iframe>
-              <iframe src="<%= venue.video3 %>" allowTransparency="true" allowFullScreen="true" class="video video3"></iframe>
-              <% if (venue.video1 == nil && venue.video2 == nil && venue.video3 == nil)%>
-                <style>
-                  #venue_<%= venue.id %> .venuevideos {
-                    display: none;
-                  }
-                  #venue_<%= venue.id %> .clients .eachclient {
-                    margin: 0 auto 20px auto !important;
-                  }
-                </style>
-              <% end %>
-              <% if venue.video1 == nil %>
-                <style>
-                  #venue_<%= venue.id %> .video1 {
-                    display: none;
-                  }
-                  #venue_<%= venue.id %> .video {
-                    width: 40% !important;
-                  }
-                </style>
-              <% end %>
-              <% if venue.video2 == nil %>
-                <style>
-                  #venue_<%= venue.id %> .video2 {
-                    display: none;
-                  }
-                  #venue_<%= venue.id %> .video {
-                    width: 40% !important;
-                  }
-                </style>
-              <% end %>
-              <% if venue.video3 == nil %>
-                <style>
-                  #venue_<%= venue.id %> .video3 {
-                    display: none;
-                  }
-                  #venue_<%= venue.id %> .video {
-                    width: 40% !important;
-                  }
-                </style>
-              <% end %>
-            </div>
-            
-          </div>
 
-          
+
+      <div class="row no-gutters venue" id="venue_3">
+        <div class="col-md-12">
+          <div class="background">
+            <div id="section3" class="placeholder"></div>
+            <div class="row no-gutters title">
+              <h2>Recordings</h2>
+            </div>
+            <hr>
+            <div class="row">
+              <p>
+               Velveteen Ensemble regularly works with talented composers looking for professional recordings of their works.  These composers include students looking to build up their portfolio to songwriters looking to incorporate strings into their albums. Please contact us if you are looking to have strings in your next project!
+
+              </p>
+              </div>
+            </div>
+           
+            <div class="row venuevideos">
+              <iframe src="https://www.youtube.com/embed/sKY_T4uGJD4" allowTransparency="true" allowFullScreen="true" class="video video1"></iframe>
+              <iframe src="https://www.youtube.com/embed/gxt8luAY63s" allowTransparency="true" allowFullScreen="true" class="video video2"></iframe>             
+            </div>
+          </div>
         </div>
-      </div>
+
       <style>
-        #venue_<%= venue.id %> {
-          background-image: url("<%= venue.name %>");
+        #venue_1 {
+          background-image: url("https://d3ffc7oj6uo4uj.cloudfront.net/wedding3.png");
+        }
+        #venue_2 {
+          background-image: url("https://d3ffc7oj6uo4uj.cloudfront.net/PM9A1098.jpg");
+        }
+        #venue_3 {
+          background-image: url("https://d3ffc7oj6uo4uj.cloudfront.net/wine3.jpg");
+        }
+        #venue_4 {
+          background-image: url("https://d3ffc7oj6uo4uj.cloudfront.net/recording.png");
         }
       </style>
-    <% end %>
+
+
+
 </div>

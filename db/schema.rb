@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 2019_11_22_002737) do
 
   create_table "abouts", force: :cascade do |t|
     t.text "bio"
+    t.integer "about_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -32,8 +33,6 @@ ActiveRecord::Schema.define(version: 2019_11_22_002737) do
     t.datetime "last_sign_in_at"
     t.inet "current_sign_in_ip"
     t.inet "last_sign_in_ip"
-    t.string "fname"
-    t.string "lname"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_admins_on_email", unique: true
@@ -100,17 +99,6 @@ ActiveRecord::Schema.define(version: 2019_11_22_002737) do
   create_table "uploads", force: :cascade do |t|
     t.string "name"
     t.string "folder"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "venues", force: :cascade do |t|
-    t.string "title"
-    t.text "bio"
-    t.string "name"
-    t.string "video1"
-    t.string "video2"
-    t.string "video3"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
